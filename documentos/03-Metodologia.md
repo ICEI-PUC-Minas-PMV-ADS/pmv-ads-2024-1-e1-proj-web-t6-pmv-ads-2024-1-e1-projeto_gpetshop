@@ -47,6 +47,8 @@ Com isso, o processo foi inteiramente concluído nessas duas étapas(planejament
   <li>Prioridade média laranja</li>
   <li>Prioridade alta preta</li>
 </ul>
+
+<img src="img/Trello_Etiquetas.png" />
   
 ### Ferramentas
 
