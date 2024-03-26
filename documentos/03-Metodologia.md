@@ -1,27 +1,25 @@
 
 # Metodologia
 
-Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
-
+Nesta seção descreveremos como a equipe se organizou para realizar o projeto, bem como as ferramentas e metodologia utilizada para a execução da tarefas geradas em cada etapa;
 
 ## Gerenciamento de Projeto
-A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a
 
-“visão clara dos resultados a entregar; ritmo e disciplina necessários à execução; definição de papéis e responsabilidades dos integrantes do projeto (Scrum Owner, Scrum "MASTER" e Team); empoderamento dos membros da equipe de projetos para atingir o desafio; conhecimento distribuído e compartilhado de forma colaborativa; ambiência favorável para crítica às ideias e não às pessoas.”
+A metodologia ágil escolhida para o desenvolvimento do projeto foi o SCRUM. PRIKLADNICKI, WILLI e MILANI (2014. p. 44 - 45), descrevem dentre seus principais benefícios:
+
+- “Prescreve um conjunto de práticas leves e objetivas”;
+- “O Scrum maximiza a entrega de software de modo eficaz, adaptando-se à realidade das mudanças”;
+- “As funcionalidades de maior valor são desenvolvidas antecipadamente, enquanto se reflete sobre a necessidade ou não das menos prioritárias”;
+- “Se mudanças forem necessárias, a equipe ágil poderá facilmente mudar as prioridades”;
+- “As entregas podem ser alteradas a qualquer momento, garantindo assim que o produto desenvolvido esteja absorvendo os acontecimentos externos e sendo fiel às reais necessidades do negócio”.
 
 ### Divisão de Papéis
 
-A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
-[Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
-- Scrum "MASTER": Nome de um membro da equipe, principal responsável pela gestão do projeto.
-- Product Owner: Nome de um membro da equipe, representante dos interesses de todos os envolvidos (Stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
-- Equipe de Desenvolvimento: Nomes de todos os membros da equipe, pois todos os membros deverão implementar uma tela/funcionalidade.
-- Equipe de Design: Nomes dos membros da equipe que trabalharão com design.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mind"MASTER".com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+Ainda tendo como base a metodologia Scrum, e seguindo PRIKLADNICKI, WILLI e MILANI (2014. p. 46), foi definida divisão dos membros do grupo pelo seguintes papéis:
+- Scrum Master: Rafael Santos Carvalho;
+- Product Owner: Felipe Costa Moreira;
+- Equipe de Desenvolvimento: Felipe Costa Moreira, Gabriel Marchi Ziviani, João Henrique Andrade Leite, Paulo Henrique Sousa Carvalho, Rafael Santos Carvalho e Thainá Crisóstomo Bernardes; 
+- Equipe de Design: Paulo Henrique Sousa Carvalho e Thainá Crisóstomo Bernardes; 
 
 ### Processo
 
