@@ -55,8 +55,13 @@ Com isso, o processo foi inteiramente concluído nessas duas étapas(planejament
 <img src="img/Trello_Etiquetas.png" />
   
 ### Ferramentas
+As ferramentas empregadas no projeto:
 
-A ferramenta de gerenciamento do Github foi selecionada pela flexibilidade para criar fluxos de trabalho personalizados que atendam às necessidades da equipe. A ferramenta de comunicação, Microsoft Teams, foi selecionada por ser a mesma utilizada nas reuniões com o professor orientador e product owner do projeto. Por fim, para criar os desenhos de tela, utilizamos a ferramenta Figma por melhor captar as necessidades da nossa solução.
+Ferramenta de gerenciamento: Github
+Ferramenta de comunicação: Microsoft Teams
+Ferramenta de Projeto de Interface: Figma
+
+A ferramenta de gerenciamento do Github foi selecionada pela flexibilidade para criar fluxos de trabalho personalizados que atendam às necessidades da equipe. A ferramenta de comunicação, Microsoft Teams, foi selecionada por ser a mesma utilizada nas reuniões com o professor orientador e product owner do projeto. Por fim, para criar as interfaces, utilizamos a ferramenta Figma por melhor captar as necessidades da nossa solução.
 
 Relação de ambientes de trabalho
 
