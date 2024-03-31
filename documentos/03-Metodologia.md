@@ -62,10 +62,10 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
-| Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de Interface                | Figma                              | http://....                            |
-| Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
+| Repositório de código fonte         | GitHub                             |(https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop)                        |
+| Documentos do projeto               | GitHub                             | (https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop)                           |
+| Projeto de Interface                | Figma                              | (https://www.figma.com/team_invite/redeem/Ysdx2563qTHpcuRLnCZKUn)                           |
+| Gerenciamento do Projeto            | Trello                    | (https://trello.com/b/ICTGlIrm)                           |
 | Hospedagem                          | GitHub Pages                       | http://....                            |
 
 
