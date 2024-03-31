@@ -55,7 +55,7 @@ Com isso, o processo foi inteiramente concluído nessas duas étapas(planejament
 <img src="img/Trello_Etiquetas.png" />
   
 ### Ferramentas
-As ferramentas empregadas no projeto:
+Ferramentas empregadas no projeto:
 
 - Ferramenta de gerenciamento: Github
 - Ferramenta de comunicação: Microsoft Teams
