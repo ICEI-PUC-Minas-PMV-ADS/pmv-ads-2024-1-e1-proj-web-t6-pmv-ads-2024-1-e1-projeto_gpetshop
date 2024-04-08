@@ -56,7 +56,7 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <h3><ins> Barra de Navegação </ins></h3>
 
-<img src="img/wireframe-nav-bar.jpg" height="200px" alt="Nav-bar"/>
+<img src="img/wireframe-nav-bar.jpg" height="600px" alt="Nav-bar"/>
 
 </div>
 
