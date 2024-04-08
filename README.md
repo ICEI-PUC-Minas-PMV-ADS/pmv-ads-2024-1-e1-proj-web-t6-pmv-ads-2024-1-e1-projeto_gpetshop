@@ -1,25 +1,25 @@
-# Título do Projeto
+# Petpuc Banho e Tosa
 
-`CURSO`
+`TECNÓLOGO EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`PROJETO DESENVOLVIMENTO DE APLICAÇÃO WEB FRONT-END`
 
-`SEMESTRE`
+`SEMESTRE 01/2024`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Felipe Costa Moreira
+* Gabriel Marchi Ziviani
+* João Henrique Andrade Leite
+* Paulo Henrique Sousa Carvalho
+* Rafael Santos Carvalho
+* Thainá Crisóstomo Bernardes 
 
 ## Orientador
 
-* Nome completo do professor
+* Simone de Assis Alves da Silva
 
 # Documentação
 
