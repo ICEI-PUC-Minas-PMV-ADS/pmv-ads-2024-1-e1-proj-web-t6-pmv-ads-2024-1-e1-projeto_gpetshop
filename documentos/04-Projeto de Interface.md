@@ -50,7 +50,7 @@ Por fim, o usuário também tem a opção de entrar em contato com a equipe de s
 
 ## User Flow
 
-![userflowclient](C:\Users\conta\PUC\pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop\documentos\img\user-flow-client.jpg)
+![userflowclient]([documentos/img/user-flow-client.jpg](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/documentos/img/user-flow-client.jpg))
 
 <br>
 
