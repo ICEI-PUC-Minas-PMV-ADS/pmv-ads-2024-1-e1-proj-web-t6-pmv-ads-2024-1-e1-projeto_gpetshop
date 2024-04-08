@@ -49,7 +49,7 @@ Com isso, o processo foi inteiramente concluído nessas duas étapas(planejament
   <li>Bug (Erro no código)</li>
   <li>Prioridade baixa verde</li>
   <li>Prioridade média laranja</li>
-  <li>Prioridade alta preta</li>
+  <li>Prioridade alta Vermelha</li>
 </ul>
 
 <img src="img/Trello_Etiquetas.png" />
