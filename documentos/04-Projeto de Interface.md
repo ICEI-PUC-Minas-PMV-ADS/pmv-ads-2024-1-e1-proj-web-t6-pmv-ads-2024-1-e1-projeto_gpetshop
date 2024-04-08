@@ -25,7 +25,7 @@ Por fim, o usuário também tem a opção de entrar em contato com a equipe de s
 
 <br>
 
-## Wireframes
+## Protótipo de Baixa Fidelidade
 
 Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma experiência aprimorada e mais versátil ao agendar os serviços de banho e tosa oferecidos pelo estabelecimento.
 
