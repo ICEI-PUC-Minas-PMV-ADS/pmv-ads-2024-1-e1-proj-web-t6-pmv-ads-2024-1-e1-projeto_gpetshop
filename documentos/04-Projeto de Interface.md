@@ -29,7 +29,6 @@ Por fim, o usuário também tem a opção de entrar em contato com a equipe de s
 
 Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma experiência aprimorada e mais versátil ao agendar os serviços de banho e tosa oferecidos pelo estabelecimento.
 
-                                       até aqui já alterei -- Paulo
 <div align="left">
 
 <h3><ins> Tela de Abertura </ins></h3>
@@ -69,7 +68,7 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <h3><ins> Secão de Contato com o Suporte </ins></h3>
 
-![Section Contact Support](img/wireframe-section-contact-suport.jpg)
+![Section Contact Support](img/wireframe-section-contact-suport.png)
 
 </div>
 
