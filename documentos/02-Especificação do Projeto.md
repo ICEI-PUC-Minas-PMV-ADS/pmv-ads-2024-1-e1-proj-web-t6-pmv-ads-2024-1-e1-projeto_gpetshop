@@ -132,7 +132,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição                | Prioridade |
+|ID| Descrição                | Prioridade |
 |-------|---------------------------------|----|
 | RF-01 | <strong>Cadatro de usuário </strong> <p> <li> Além das informações básicas de contato, o sistema deve permitir que os usuários cadastrem informações adicionais sobre seus animais de estimação, como raça, idade, histórico médico, etc.</li>                         | ALTA   | 
 | RF-02 |  <strong>Agendamento de Atendimento </strong> <p> <li> O sistema deve permitir que o usuário escolha o tipo de serviço desejado e selecione a data e hora preferidas para o agendamento. <li>Deve incluir um calendário interativo para facilitar a seleção de datas. </li>| ALTA   | 
@@ -153,8 +153,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
-| RNF-01 |  ...                    | ...   | 
-| ...    |  ...                    | ...   | 
+| RNF-01 |  <strong>Ambiente acessível publicamente na Internet</strong> <p> <li> A aplicação interativa deve ser publicada em um ambiente acessível publicamente na Internet </li> | ALTA   |
+| RNF-02 |  <strong>Ambiente responsivo</strong> <p> <li>A aplicação interativa deverá ser responsiva permitindo a visualização em um celular de forma adequada. </li> | ALTA   | 
+| RNF-03 | <strong>Aplicação compatível com navegadores web</strong> <p> <li> A aplicação interativa deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).</li>  | ALTA   | 
+| RNF-04 | <strong>Linguagem web</strong> <p> <li> A aplicação deve ser implementada em uma linguagem para aplicação Web. </li>  | ALTA   | 
+| RNF-05 | <strong>Disponibilidade</strong> <p> <li> A aplicação deve estar disponível pelo menos 99% das 24 horas do dia, nos 07 dias da semana.</li>  | ALTA   | 
+| RNF-06 | <strong>Segurança dos Dados</strong> <p> <li>Garantir que todas as informações dos clientes e dos animais de estimação sejam armazenadas de forma segura, com criptografia adequada e medidas de proteção contra acesso não autorizado.</li>  | ALTA   | 
+| RNF-07 | <strong>Desempenho do Sistema</strong> <p> <li>O sistema deve ser otimizado para carregar rapidamente, mesmo durante períodos de pico de tráfego.</li> <li>Além disso, deve ser capaz de lidar com múltiplos usuários simultaneamente sem comprometer a velocidade ou a qualidade do serviço. </li>  | ALTA   | 
+| RNF-08 | <strong>Interface Amigável</strong> <p> <li>A interface do usuário deve ser intuitiva e fácil de usar, mesmo para pessoas com pouca experiência em tecnologia. </li> <li>Deve ser acessível para usuários com deficiências visuais ou motoras, seguindo as diretrizes de acessibilidade da web. </li> | MÉDIA  | 
+
 
 **Prioridade: Alta / Média / Baixa. 
 
