@@ -24,7 +24,7 @@ Por fim, o usuário também tem a opção de entrar em contato com a equipe de s
 
 <br>
 
-## Protótipo de Baixa Fidelidade
+## Protótipo de Média Fidelidade
 
 Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma experiência aprimorada e mais versátil ao agendar os serviços de banho e tosa oferecidos pelo estabelecimento.
 
@@ -259,6 +259,3 @@ Nessa tela o gestor conseguirá acessar todas as solicitações de suporte (assu
 </div>
 
 <br>
-<br>
-
-
