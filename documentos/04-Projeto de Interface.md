@@ -28,14 +28,17 @@ Por fim, o usuário também tem a opção de entrar em contato com a equipe de s
 
 Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma experiência aprimorada e mais versátil ao agendar os serviços de banho e tosa oferecidos pelo estabelecimento.
 
+<div>
 
 <h3><ins> Tela Principal </ins></h3>
 
-<img src= "img/prototipo_home.png" />
+<br>
+
+ **Tela Principal:** Na tela principal são apresentado uma estrutura organizada, com seções distintas para os serviços oferecidos, um breve resumo sobre a empresa, imagens dos pets atendidos, depoimentos de clientes atendidos e um formulário de contato com o suporte para assuntos que não terão haver com com o agendamento de banho e tosa;
+
+<img src= "img/prototipo_home.png" width="600px"  />
 
 </div>
-
-* **Tela Principal:** Na tela principal são apresentado uma estrutura organizada, com seções distintas para os serviços oferecidos, um breve resumo sobre a empresa, imagens dos pets atendidos, depoimentos de clientes atendidos e um formulário de contato com o suporte para assuntos que não terão haver com com o agendamento de banho e tosa;
 
 <br>
 
@@ -43,11 +46,13 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <h3><ins> Barra de Navegação </ins></h3>
 
-<img src="img/prototipo_nav_bar.png" width="150px"/>
+<br>
+
+**Barra de Navegação:** Há uma barra de navegação disposta ao topo esquerdo da página para facilitar a exploração do conteúdo e proporcionar uma navegação mais intuitiva ao usuário.
+
+<img src="img/prototipo_nav_bar.png" width="100px"/>
 
 </div>
-
-* **Barra de Navegação:** Há uma barra de navegação disposta ao topo esquerdo da página para facilitar a exploração do conteúdo e proporcionar uma navegação mais intuitiva ao usuário.
 
 <br>
 
@@ -57,28 +62,38 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <br>
 
-<img src="img/Sessao_suporte_pag_princ.png" />
+**Secão de Contato com o Suporte:** Na seção de Contato com a Equipe de Suporte é mostrado um formulário simples com campos para nome, e-mail, telefone e mensagem. Podendo assim ser feito um retorno ao usuário via e-mail ou WhatsApp. O layout é limpo e direto, incentivando os usuários a entrar em contato de maneira rápida e fácil.
+
+<br>
+
+<img src="img/Sessao_suporte_pag_princ.png" width="600px" />
 
 </div>
 
-* **Secão de Contato com o Suporte:** Na seção de Contato com a Equipe de Suporte é mostrado um formulário simples com campos para nome, e-mail, telefone e mensagem. Podendo assim ser feito um retorno ao usuário via e-mail ou WhatsApp. O layout é limpo e direto, incentivando os usuários a entrar em contato de maneira rápida e fácil.
+
 
 <br>
 
 <div align="left">
 
 <h3><ins> Tela de Agendamento / Requisição </ins></h3>
+
 <br>
-Versão web
-<img src= "img/prototipo_request_desktop_web.png" />
+
+**Tela de Agendamento / Requisição:** No Agendamento de Serviço é exibido um formulário claro e intuitivo, dividido em seções para informações do usuário e do pet, seleção de serviço e escolha de horário. Os campos são organizados de forma lógica e fácil de preencher.
+
+*Versão web*
 <br>
-Versão Mobile
-<img src= "img/prototipo_request_celular.png" />
+<img src= "img/prototipo_request_desktop_web.png" width="600px"/>
+<br>
+*Versão Mobile*
+<br>
+<img src= "img/prototipo_request_celular.png" width="300px"/>
 
 
 </div>
 
-* **Tela de Agendamento / Requisição:** No Agendamento de Serviço é exibido um formulário claro e intuitivo, dividido em seções para informações do usuário e do pet, seleção de serviço e escolha de horário. Os campos são organizados de forma lógica e fácil de preencher.
+
 
 
 
