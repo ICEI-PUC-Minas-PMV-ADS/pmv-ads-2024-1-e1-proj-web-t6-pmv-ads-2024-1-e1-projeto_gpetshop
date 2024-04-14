@@ -30,7 +30,7 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <div>
 
-<h3><ins> Página do Cliente </ins></h3>
+## Página do Cliente
 
 Essa será a página que os clientes (dono dos pets) acessarão para interarigem com o estabelecimento e será formada pelos seguintes componentes:
 
@@ -98,7 +98,7 @@ No Agendamento de Serviço é exibido um formulário claro e intuitivo, dividido
 
 <div>
 
-<h3><ins> Página do Gestor </ins></h3>
+## Página do Gestor
 
 Essa será a página do gestor do estabelecimento. Nela serão encontradas todas as funcionalidades da página do Atendente/Banhista, mais as funções de Cadastro de clientes, colaboradores e serviços, além da geração de relatórios de gestão; conforme detalhamento abaixo:
 
@@ -122,7 +122,7 @@ Nessa tela o gestor conseguirá consultar todos os agendamentos feitos, bem como
 
 Nessa tela o gestor conseguirá acessar todas as solicitações de agendamento feitas pelos clientes via site (web ou mobile) e deverá fazer o tratamento aceitando-as, alterando-as ou excluindo-as:
 
-<img src= "img/gestao/prototipo_gestao_tratamento_solicitacoes.png" width="600px"  />
+<img src= "img/gestao/prototipo_gestao_tratamento_solicitacoes.png" width="900px"  />
 
 <br>
 
@@ -166,7 +166,7 @@ No topo dessa página o gestor terá acesso ainda a um card clicável que retorn
 
 Nessa tela o gestor conseguirá acessar todas as solicitações de suporte (assuntos que não tem haver com agendamento de serviços) feitas pelos clientes via site (web ou mobile) e deverá fazer o tratamento respondendo-as:
 
-<img src= "documentos/img/gestao/prototipo_gestao_tratamento_suporte.png" width="600px"  />
+<img src= "img/gestao/prototipo_gestao_tratamento_suporte.png" width="800px"  />
 
 <br>
 
