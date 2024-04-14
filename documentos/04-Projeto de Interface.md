@@ -55,7 +55,9 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <h3><ins> Secão de Contato com o Suporte </ins></h3>
 
-![Section Contact Support](img/wireframe-section-contact-suport.png)
+<br>
+
+<img src="img/Sessao_suporte_pag_princ.png" />
 
 </div>
 
@@ -67,7 +69,7 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <h3><ins> Tela de Agendamento / Requisição </ins></h3>
 
-![Request Screen](img/wireframe-request-screen.jpg)
+<img src= "img/prototipo_request_desktop_web.png" />
 
 </div>
 
