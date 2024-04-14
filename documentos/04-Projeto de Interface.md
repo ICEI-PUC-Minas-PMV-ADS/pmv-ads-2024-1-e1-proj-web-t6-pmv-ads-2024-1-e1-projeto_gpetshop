@@ -93,7 +93,7 @@ No Agendamento de Serviço é exibido um formulário claro e intuitivo, dividido
 <br>
 *Versão Mobile*
 <br>
-<img src= "img/prototipo_request_celular.png" width="300px"/>
+<img src= "img/prototipo_request_celular.png" width="200px"/>
 
 <br>
 <br>
