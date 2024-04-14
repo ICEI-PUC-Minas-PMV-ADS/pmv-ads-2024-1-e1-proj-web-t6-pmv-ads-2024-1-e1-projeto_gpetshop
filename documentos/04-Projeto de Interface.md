@@ -12,15 +12,14 @@ Por fim, o usuário também tem a opção de entrar em contato com a equipe de s
 
 ## User Flow
 
-<img src ="" />
+<img src ="img/user-flow-client.jpg" />
 
 <br>
 
 > **Representação Visual do User Flow**
 
-* **🔴Vermelho:** Início e fim do user flow
-* **🟠Laranja:** Ações principais deste user flow
-* **🟢Verde:** Ações pertinentes ao usuário
+* **🟠Laranja:** Ações pertinentes ao cliente
+* **🟢Verde:** Ações pertinentes ao estabelecimento
 * **🟡Amarelo:** Decisão
 
 <br>
