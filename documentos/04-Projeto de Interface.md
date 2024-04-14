@@ -35,7 +35,7 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 </div>
 
-* **Tela Principal:** Na tela principal são apresentado uma estrutura organizada, com seções distintas para os serviços oferecidos, um breve resumo sobre a empresa, imagens dos pets atendidos e depoimentos de clientes. 
+* **Tela Principal:** Na tela principal são apresentado uma estrutura organizada, com seções distintas para os serviços oferecidos, um breve resumo sobre a empresa, imagens dos pets atendidos, depoimentos de clientes atendidos e um formulário de contato com o suporte para assuntos que não terão haver com com o agendamento de banho e tosa;
 
 <br>
 
