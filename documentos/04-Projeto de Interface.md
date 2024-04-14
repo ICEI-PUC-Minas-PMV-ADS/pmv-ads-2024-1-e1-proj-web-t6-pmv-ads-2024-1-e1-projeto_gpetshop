@@ -94,9 +94,84 @@ No Agendamento de Serviço é exibido um formulário claro e intuitivo, dividido
 *Versão Mobile*
 <br>
 <img src= "img/prototipo_request_celular.png" width="300px"/>
+<br>
 
+<div>
+
+<h3><ins> Página do Gestor </ins></h3>
+
+Essa será a página do gestor do estabelecimento. Nela serão encontradas todas as funcionalidades da página do Atendente/Banhista, mais as funções de Cadastro de clientes, colaboradores e serviços, além da geração de relatórios de gestão; conforme detalhamento abaixo:
+
+<h3> Tela Inserir Agendamentos </h3>
+
+Nessa tela o gestor conseguirá inserir um agendamento solicitado pelo cliente que entrar em contato via telefone ou wathsapp:
+
+<img src= "img/gestao/prototipo_gestao_novo_agendamento.png" width="600px"  />
+
+<br>
+
+<h3> Tela Consulta Agendados </h3>
+
+Nessa tela o gestor conseguirá consultar todos os agendamentos feitos, bem como alterá-los e excluí-los:
+
+<img src= "img/gestao/prototipo_gestao_consulta_agendados.png" width="600px"  />
+
+<br>
+
+<h3> Tela Tratar Solicitações </h3>
+
+Nessa tela o gestor conseguirá acessar todas as solicitações de agendamento feitas pelos clientes via site (web ou mobile) e deverá fazer o tratamento aceitando-as, alterando-as ou excluindo-as:
+
+<img src= "img/gestao/prototipo_gestao_tratamento_solicitacoes.png" width="600px"  />
+
+<br>
+
+<h3> Tela Cadastro - Clientes </h3>
+
+Nessa tela o gestor conseguirá acessar o cadastro dos clientes, criar o cadastro de um novo cliente, alterar o cadastro de um cliente já existente, bem como excluí-lo:
+
+<img src= "img/gestao/prototipo_gestao_cad_cliente.png" width="600px"  />
+
+<br>
+
+<h3> Tela Cadastro - Colaboradores </h3>
+
+Nessa tela o gestor conseguirá acessar o cadastro dos colaboradores, criar o cadastro de um novo colaborador, alterar o cadastro de um colaborador já existente, bem como excluí-lo:
+
+<img src= "img/gestao/prototipo_gestao_cad_colaborador.png" width="600px"  />
+
+<br>
+
+<h3> Tela Cadastro - Serviços </h3>
+
+Nessa tela o gestor conseguirá acessar os serviços cadastrados para serem ofertados aos clientes, cadastrar um novo serviço, alterar o cadastro de um serviço, bem como excluí-lo:
+
+<img src= "img/gestao/prototipo_gestao_cad_services.png" width="600px"  />
+
+<br>
+
+<h3> Tela Relatórios </h3>
+
+Nessa tela o gestor conseguirá ter acesso a um dashboard, que poderá ser filtrado por período, com as informações de "Total de Agendamentos Solicitados", "Total de serviços agendados", "Total de Serviços Executados" e "Total de Serviços Cancelados". Esses cards serão clicáveis e ao serem acionados, exibirão no painel abaixo todos os dados dos clientes correspondentes a esses filtros, que poderão ser baixdos em .CSV.
+
+<br>
+
+No topo dessa página o gestor terá acesso ainda a um card clicável que retornará a base total de clientes do estabelecimento, que também poderá ser baixada em .CSV.
+
+<img src= "img/gestao/prototipo_gestao_relatorio.png" width="600px"  />
+
+<br>
+
+<h3> Tela Suporte </h3>
+
+Nessa tela o gestor conseguirá acessar todas as solicitações de suporte (assuntos que não tem haver com agendamento de serviços) feitas pelos clientes via site (web ou mobile) e deverá fazer o tratamento respondendo-as:
+
+<img src= "documentos/img/gestao/prototipo_gestao_tratamento_suporte.png" width="600px"  />
+
+<br>
 
 </div>
+
 
 
 
