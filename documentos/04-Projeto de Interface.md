@@ -12,7 +12,7 @@ Por fim, o usuário também tem a opção de entrar em contato com a equipe de s
 
 ## User Flow
 
-![userflowclient](img/user-flow-client.jpg)
+<img src ="" />
 
 <br>
 
