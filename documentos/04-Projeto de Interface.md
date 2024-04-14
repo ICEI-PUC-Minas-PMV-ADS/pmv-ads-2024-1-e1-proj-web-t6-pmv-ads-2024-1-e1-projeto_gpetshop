@@ -30,7 +30,7 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <div>
 
-<h3><ins> Tela Principal </ins></h3>
+<h3><ins> Página do Cliente </ins></h3>
 
 <br>
 
