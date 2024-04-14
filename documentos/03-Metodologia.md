@@ -42,6 +42,12 @@ Esse processo anterior é realizado tanto por um cliente(para que ele possa ente
 
 Com isso, o processo foi inteiramente concluído nessas duas étapas(planejamento e desenvolvimento) e as subetapas("backlog", "planejamento", "sprint", "fazendo", "finalizado" e "concluído").
 
+O quadro kanban do grupo foi desenvolvido no Trello e está disponível no link https://trello.com/b/ICTGlIrm conforme figura abaixo:
+
+<img src= "" />
+
+
+
 ### Etiquetas
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
 
