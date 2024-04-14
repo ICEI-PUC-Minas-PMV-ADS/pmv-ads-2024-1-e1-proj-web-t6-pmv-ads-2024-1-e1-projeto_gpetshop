@@ -104,12 +104,15 @@ No Agendamento de Serviço é exibido um formulário claro e intuitivo, dividido
 
 Essa página será acessada pelos colaboradores que terão o contato diretamente com os clientes, seja por solicitações através do site (web e mobile), ou mesmo por telefone, pessoalmente ou por wathsapp;
 
+<br>
+
 <h3> Tela de Login no Sistema </h3>
 
 Nessa tela o colaborador deverá entrar com seu login e senha criada junto ao gestor:
 
-<img src= "img/atendente/prototipo_atendente_login.jpg" width="900px" />
+<img src= "img/atendente/prototipo_atendente_login.jpg" width="600px" />
 
+<br>
 <br>
 
 <h3> Tela Inserir Agendamentos </h3>
@@ -119,6 +122,7 @@ Nessa tela o colaborador conseguirá inserir um agendamento solicitado pelo clie
 <img src= "img/atendente/prototipo_atendente_novo_agendamento.png" width="900px" />
 
 <br>
+<br>
 
 <h3> Tela Consulta Agendados </h3>
 
@@ -126,6 +130,7 @@ Nessa tela o Colaborador conseguirá consultar todos os agendamentos feitos, bem
 
 <img src= "img/atendente/prototipo_atendente_consulta_agendados.png" width="900px" />
 
+<br>
 <br>
 
 <h3> Tela Tratar Solicitações </h3>
@@ -139,6 +144,7 @@ Essa é a tela mais importante para esse colaborador e seu tratamento rápido ga
 <img src= "img/atendente/prototipo_atendente_tratamento_solicitacoes.png" width="900px"  />
 
 <br>
+<br>
 
 <h3> Tela Suporte </h3>
 
@@ -150,6 +156,9 @@ Nessa tela o colaborador conseguirá acessar todas as solicitações de suporte 
 
 </div>
 
+<br>
+<br>
+
 
 <div>
 
@@ -157,12 +166,15 @@ Nessa tela o colaborador conseguirá acessar todas as solicitações de suporte 
 
 Essa será a página do gestor do estabelecimento. Nela serão encontradas todas as funcionalidades da página do Atendente/Banhista, mais as funções de Cadastro de clientes, colaboradores e serviços, além da geração de relatórios de gestão; conforme detalhamento abaixo:
 
+<br>
+
 <h3> Tela de Login no Sistema </h3>
 
 Nessa tela o gestor deverá entrar com seu login e senha criada junto ao administrador do sistema:
 
-<img src= "img/gestao/prototipo_gestao_login.jpg" width="900px" />
+<img src= "img/gestao/prototipo_gestao_login.jpg" width="600px" />
 
+<br>
 <br>
 
 <h3> Tela Inserir Agendamentos </h3>
@@ -172,6 +184,7 @@ Nessa tela o gestor conseguirá inserir um agendamento solicitado pelo cliente q
 <img src= "img/gestao/prototipo_gestao_novo_agendamento.png" width="900px"  />
 
 <br>
+<br>
 
 <h3> Tela Consulta Agendados </h3>
 
@@ -179,6 +192,7 @@ Nessa tela o gestor conseguirá consultar todos os agendamentos feitos, bem como
 
 <img src= "img/gestao/prototipo_gestao_consulta_agendados.png" width="900px"  />
 
+<br>
 <br>
 
 <h3> Tela Tratar Solicitações </h3>
@@ -188,6 +202,7 @@ Nessa tela o gestor conseguirá acessar todas as solicitações de agendamento f
 <img src= "img/gestao/prototipo_gestao_tratamento_solicitacoes.png" width="900px"  />
 
 <br>
+<br>
 
 <h3> Tela Cadastro - Clientes </h3>
 
@@ -195,6 +210,7 @@ Nessa tela o gestor conseguirá acessar o cadastro dos clientes, criar o cadastr
 
 <img src= "img/gestao/prototipo_gestao_cad_cliente.png" width="900px"  />
 
+<br>
 <br>
 
 <h3> Tela Cadastro - Colaboradores </h3>
@@ -204,6 +220,7 @@ Nessa tela o gestor conseguirá acessar o cadastro dos colaboradores, criar o ca
 <img src= "img/gestao/prototipo_gestao_cad_colaborador.png" width="900px"  />
 
 <br>
+<br>
 
 <h3> Tela Cadastro - Serviços </h3>
 
@@ -211,6 +228,7 @@ Nessa tela o gestor conseguirá acessar os serviços cadastrados para serem ofer
 
 <img src= "img/gestao/prototipo_gestao_cad_services.png" width="900px"  />
 
+<br>
 <br>
 
 <h3> Tela Relatórios </h3>
@@ -223,6 +241,7 @@ No topo dessa página o gestor terá acesso ainda a um card clicável que retorn
 
 <img src= "img/gestao/prototipo_gestao_relatorio.png" width="900px"  />
 
+<br>
 <br>
 
 <h3> Tela Suporte </h3>
