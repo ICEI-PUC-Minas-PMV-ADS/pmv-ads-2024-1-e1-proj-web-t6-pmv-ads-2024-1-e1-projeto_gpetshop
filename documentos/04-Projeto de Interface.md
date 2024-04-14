@@ -32,9 +32,11 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <h3><ins> Página do Cliente </ins></h3>
 
-<br>
+Essa será a página que os clientes (dono dos pets) acessarão para interarigem com o estabelecimento e será formada pelos seguintes componentes:
 
-* **Tela Principal:** Na tela principal são apresentado uma estrutura organizada, com seções distintas para os serviços oferecidos, um breve resumo sobre a empresa, imagens dos pets atendidos, depoimentos de clientes atendidos e um formulário de contato com o suporte para assuntos que não terão haver com com o agendamento de banho e tosa;
+<h3> Tela principal </h3>
+
+Na tela principal são apresentado uma estrutura organizada, com seções distintas para os serviços oferecidos, um breve resumo sobre a empresa, imagens dos pets atendidos, depoimentos de clientes atendidos e um formulário de contato com o suporte para assuntos que não terão haver com com o agendamento de banho e tosa;
 
 <img src= "img/prototipo_home.png" width="600px"  />
 
@@ -47,7 +49,9 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <br>
 
-* **Barra de Navegação:** Há uma barra de navegação disposta ao topo esquerdo da página para facilitar a exploração do conteúdo e proporcionar uma navegação mais intuitiva ao usuário.
+<h3> Barra de Navegação </h3>
+
+Há uma barra de navegação disposta ao topo esquerdo da página para facilitar a exploração do conteúdo e proporcionar uma navegação mais intuitiva ao usuário.
 
 <img src="img/prototipo_nav_bar.png" width="100px"/>
 
@@ -60,7 +64,9 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <br>
 
-* **Secão de Contato com o Suporte:** Na seção de Contato com a Equipe de Suporte é mostrado um formulário simples com campos para nome, e-mail, telefone e mensagem. Podendo assim ser feito um retorno ao usuário via e-mail ou WhatsApp. O layout é limpo e direto, incentivando os usuários a entrar em contato de maneira rápida e fácil.
+<h3> Secão de Contato com o Suporte </h3>
+
+Na seção de Contato com a Equipe de Suporte é mostrado um formulário simples com campos para nome, e-mail, telefone e mensagem. Podendo assim ser feito um retorno ao usuário via e-mail ou WhatsApp. O layout é limpo e direto, incentivando os usuários a entrar em contato de maneira rápida e fácil.
 
 <br>
 
@@ -77,7 +83,9 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <br>
 
-* **Tela de Agendamento / Requisição:** No Agendamento de Serviço é exibido um formulário claro e intuitivo, dividido em seções para informações do usuário e do pet, seleção de serviço e escolha de horário. Os campos são organizados de forma lógica e fácil de preencher.
+<h3>Tela de Agendamento / Requisição</h3>
+
+No Agendamento de Serviço é exibido um formulário claro e intuitivo, dividido em seções para informações do usuário e do pet, seleção de serviço e escolha de horário. Os campos são organizados de forma lógica e fácil de preencher.
 
 *Versão web*
 <br>
