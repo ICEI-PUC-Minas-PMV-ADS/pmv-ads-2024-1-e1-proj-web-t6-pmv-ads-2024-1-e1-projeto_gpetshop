@@ -44,7 +44,7 @@ Com isso, o processo foi inteiramente concluído nessas duas étapas(planejament
 
 O quadro kanban do grupo foi desenvolvido no Trello e está disponível no link https://trello.com/b/ICTGlIrm conforme figura abaixo:
 
-<img src= "" />
+<img src= "documentos/img/Trello PucPet.png" />
 
 
 
