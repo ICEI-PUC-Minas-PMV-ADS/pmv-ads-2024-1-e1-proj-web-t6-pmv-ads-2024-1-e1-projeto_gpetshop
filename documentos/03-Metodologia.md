@@ -79,7 +79,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop)                           |
 | Projeto de Interface                | Figma                              | https://www.figma.com/team_invite/redeem/Ysdx2563qTHpcuRLnCZKUn)                           |
 | Gerenciamento do Projeto            | Trello                    | https://trello.com/b/ICTGlIrm)                           |
-
+| Hospedagem                          | GitHub Pages                    | https://...                           |
 
 ### Estratégia de Organização de Codificação 
 
