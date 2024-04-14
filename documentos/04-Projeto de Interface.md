@@ -68,8 +68,13 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 <div align="left">
 
 <h3><ins> Tela de Agendamento / Requisição </ins></h3>
+<br>
+Versão web
+<img src= "img/prototipo_request_desktop_web.png" width="900px" />
+<br>
+Versão Mobile
+<img src= "img/prototipo_request_celular.png" width="300px" />
 
-<img src= "img/prototipo_request_desktop_web.png" />
 
 </div>
 
