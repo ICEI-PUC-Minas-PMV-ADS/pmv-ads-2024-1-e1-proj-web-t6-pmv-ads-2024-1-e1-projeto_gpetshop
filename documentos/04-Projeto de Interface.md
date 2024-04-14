@@ -28,22 +28,10 @@ Por fim, o usuário também tem a opção de entrar em contato com a equipe de s
 
 Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma experiência aprimorada e mais versátil ao agendar os serviços de banho e tosa oferecidos pelo estabelecimento.
 
-<div align="left">
-
-<h3><ins> Tela de Abertura </ins></h3>
-
-![Splash Screen](img/wireframe-splash-screen.jpg)
-
-</div>
-
-* **Tela de Abertura :** A tela de abertura apresenta apenas o logo do sistema, oferecendo uma entrada limpa e minimalista para os usuários. O seu propósito é estabelecer a identidade visual do sistema de forma simples e direta, preparando os usuários para navegarem pelas funcionalidades oferecidas.
-<br>
-
-<div align="left">
 
 <h3><ins> Tela Principal </ins></h3>
 
-![Home](img/wireframe-home.jpg)
+<img src= "img/prototipo_home.png" />
 
 </div>
 
@@ -55,7 +43,7 @@ Estas telas fazem parte de um sistema projetado para oferecer aos usuários uma 
 
 <h3><ins> Barra de Navegação </ins></h3>
 
-<img src="img/wireframe-nav-bar.jpg" height="600px" alt="Nav-bar"/>
+<img src="img/prototipo_nav_bar.png" width="150px"/>
 
 </div>
 
