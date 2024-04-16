@@ -134,7 +134,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID| Descrição                | Prioridade |
 |-------|---------------------------------|----|
-| RF-01 | <strong>Cadatro de usuário </strong> <p> <li> Além das informações básicas de contato, o sistema deve permitir que os usuários cadastrem informações adicionais sobre seus animais de estimação, como raça, idade, histórico médico, etc.</li>                         | ALTA   | 
+| RF-01 | <strong>Cadastro de Serviços Disponíveis</strong> <p> <li>O sistema deve categorizar os serviços disponíveis, como banho, tosa, tratamentos especiais, etc.</li>  <li>OAlém disso, pode incluir uma breve descrição de cada serviço e seus benefícios.</li>                       | ALTA   | 
 | RF-02 |  <strong>Agendamento de Atendimento </strong> <p> <li> O sistema deve permitir que o usuário escolha o tipo de serviço desejado e selecione a data e hora preferidas para o agendamento. <li>Deve incluir um calendário interativo para facilitar a seleção de datas. </li>| ALTA   | 
 | RF-03 | <strong>Aceitar ou Recusar Agendamentos</strong> <p> <li> Além de aceitar ou recusar os agendamentos, o administrador deve poder adicionar notas ou comentários para informar os clientes sobre a decisão. </li>| ALTA   | 
 | RF-04 |  <strong>Acompanhamento de Solicitações de Agendamento </strong> <p> <li> A aplicação deve fornecer aos usuários uma forma de receber notificações sobre o status de sua solicitação de agendamento, incluindo confirmações, recusas ou necessidade de mais informações.</li>  | ALTA   | 
