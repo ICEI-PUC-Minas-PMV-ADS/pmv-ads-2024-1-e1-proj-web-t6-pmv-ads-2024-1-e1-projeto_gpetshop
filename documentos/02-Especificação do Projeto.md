@@ -134,15 +134,20 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID| Descrição                | Prioridade |
 |-------|---------------------------------|----|
-| RF-01 | <strong>Cadastro de Serviços Disponíveis</strong> <p> <li>O sistema deve categorizar os serviços disponíveis, como banho, tosa, tratamentos especiais, etc.</li>  <li>OAlém disso, pode incluir uma breve descrição de cada serviço e seus benefícios.</li>                       | ALTA   | 
-| RF-02 |  <strong>Agendamento de Atendimento </strong> <p> <li> O sistema deve permitir que o usuário escolha o tipo de serviço desejado e selecione a data e hora preferidas para o agendamento. <li>Deve incluir um calendário interativo para facilitar a seleção de datas. </li>| ALTA   | 
-| RF-03 | <strong>Aceitar ou Recusar Agendamentos</strong> <p> <li> Além de aceitar ou recusar os agendamentos, o administrador deve poder adicionar notas ou comentários para informar os clientes sobre a decisão. </li>| ALTA   | 
-| RF-04 |  <strong>Acompanhamento de Solicitações de Agendamento </strong> <p> <li> A aplicação deve fornecer aos usuários uma forma de receber notificações sobre o status de sua solicitação de agendamento, incluindo confirmações, recusas ou necessidade de mais informações.</li>  | ALTA   | 
-| RF-05 |  <strong>Visualização e Alteração dos Agendamentos </strong> <p> <li> O administrador deve poder visualizar todos os agendamentos de forma clara e intuitiva, com opções para filtrar por data, tipo de serviço, etc.</li> <li> Também deve ser possível editar ou cancelar agendamentos, se necessário.</li>| ALTA   | 
-| RF-06 | <strong>Cadastro de Usuários</strong> <li>Além das informações básicas de contato, o sistema deve permitir que os usuários cadastrem informações adicionais sobre seus animais de estimação, como raça, idade, histórico médico, etc. </li> | ALTA   | 
-| RF-07 |  <strong>Lembretes Periódicos</strong>  <p> <li>A aplicação  deve permitir ao usuário receber lembretes periódicos sobre o momento de retorno do pet para refazer o banho e/ou tosa.</li> | BAIXA   | 
-| RF-08 |  <strong>Acesso a Promoções e Descontos</strong> <p> <li>O sistema deve exibir de forma proeminente as promoções e descontos atuais, além de permitir que os usuários optem por receber notificações sobre ofertas especiais.</li> | MÉDIA   | 
-| RF-09 |  <strong>Visualização de Painel de Serviços Agendados</strong> <p> <li>O painel de serviços agendados deve ser atualizado em tempo real e incluir informações relevantes, como nome do cliente, tipo de serviço, horário agendado, etc.</li> | BAIXA   | 
+| RF-01 |  <strong>Página Inicial</strong> <p> <li>A aplicação deve contar com uma página inicial que permita informar aos clientes os serviços oferecidos, apresentar a empresa e compartilhar depoimentos de outros clientes sobre a percepção dos serviços utilizados, além se servir como ponto de partida para as solicitações desses clientes; </li>  | ALTA   | 
+| RF-02 |  <strong>Agendamento de Serviço pelo cliente </strong> <p> <li> O sistema deve permitir que o usuário cliente escolha o tipo de serviço desejado e selecione a data e hora preferidas para o agendamento. | ALTA   |
+| RF-03 |  <strong>Agendamento de Serviço pelo colaborador</strong> <p> <li> O sistema deve possibilitar o cadastramento de uma solicitação de serviços para clientes que ligarem e/ou chegarem presencialmente na loja sem avisar;</li>  | ALTA   | 
+| RF-04 |  <strong>Solicitações de suporte</strong> <p> <li>O sistema deve permitir que o cliente consiga interagir com a empresa para assuntos que não tenham a ver diretamente com agendamento de serviços, através de um formulário de suporte; </li>  | ALTA   | 
+| RF-05 | <strong>Tratamento das Solicitações de Serviço</strong> <p> <li> A aplicação deve fornecer aos usuários colaboradores uma forma de tratar as solicitações de agendamentos recebidas, permitindo a confirmação, alteração ou exclusão da mesma. </li>| ALTA   | 
+| RF-06 |  <strong>Tratamento de solicitações de suporte</strong> <p> <li>O Sistema deve permitir que os colaboradores tratem as solicitações vindas do formulário de suporte (solicitações que não tem a ver diretamente com o agendamento de serviços). </li>  | ALTA   | 
+| RF-07 |  <strong>Visualização de Painel de Serviços Agendados</strong> <p> <li>O painel de serviços agendados deve ser atualizado em tempo real e incluir informações relevantes, como nome do cliente, tipo de serviço, horário agendado, etc.</li> | ALTA   | 
+| RF-08 | <strong>Cadastro de Serviços Disponíveis</strong> <p> <li>O sistema deve permitir que o gestor consiga cadastrar os serviços que serão orferecidos pelo estabelecimento;</li> | ALTA   | 
+| RF-09 | <strong>Cadastro de usuários colaboradores </strong> <li>O Sistema deve possibilitar o gestor cadastrar, alterar e excluir os acessos dos colaboradores, com informações pessoais e criação de login e senha; </li> | ALTA   | 
+| RF-10 |  <strong>Validação de Login e senha para colaboradores</strong> <p> <li> A aplicação deve possibilitar a validação de perfil com o uso de Login e Senha de acesso diferentes para Gestor, Atendente e Banhista;</li>  | ALTA   | 
+| RF-11 |  <strong>Dashboard de performance</strong> <p> <li>O sistema deve permitir que o gestor tenha acesso a um dashboard onde consiga consultar a base de clientes, total de agendamento solicitados, total de serviços agendados, total de serviços executados, total de serviços cancelados; </li>  | ALTA   | 
+| RF-12 |  <strong>Lembretes Periódicos</strong>  <p> <li>A aplicação  deve permitir ao usuário receber lembretes periódicos sobre o momento de retorno do pet para refazer o banho e/ou tosa.</li> | BAIXA   | 
+| RF-13 |  <strong>Acesso a Promoções e Descontos</strong> <p> <li>O sistema deve exibir de forma proeminente as promoções e descontos atuais, além de permitir que os usuários optem por receber notificações sobre ofertas especiais.</li> | BAIXA   | 
+
 
 
 **Prioridade: Alta / Média / Baixa. 
