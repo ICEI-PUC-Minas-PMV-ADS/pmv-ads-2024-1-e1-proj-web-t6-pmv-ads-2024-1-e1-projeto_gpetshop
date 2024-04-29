@@ -4,19 +4,9 @@
 O sistema de gestão para pet shops possui um template focado na identidade visual e responsividade, garantindo 
 consistência e uma experiência agradável em todos os dispositivos. 
 
-Utilizamos as linguagens de marcação HTML e CSS para a construção dos layout e a linguagem de programação JavaScript foi utilizada para o envio e armazenamento dos dados preenchidos nos formulários e recuperação destes nas telas de tratamento, dashboards e listas de dados;
+Utilizamos as linguagens HTML e CSS para a contrução do layout, e a linguagem JavaScript para o armazenamento dos dados enviados, através de formulários, em localStorage e recuperação destes nas telas de tratamento das solicitações, bem como dashboards e listas de dados;
 
-Teremos os seguintes templates padrões divididas entre as diversas páginas do projeto:
-
-
-
-# Página Inicial
-
-A página inicial terá como elementos padrões o menu de navegação, o header e o footer;
-
-Utilizamos as linguagens HTML e CSS para a contrução do layout, e a linguagem JavaScript para o armazenamento dos dados enviados, através dos formulários, em localStorage e recuperação destes nas telas de tratamento das solicitações, bem como dashboards e listas de dados;
-
-Na página inícial utilizamos os seguintes elementos visuais:
+Utilizamos os seguintes elementos visuais:
 
 <ul>
 <li>Cor do background do Body: RGB: #f6f9ff;</li>
@@ -28,32 +18,88 @@ Na página inícial utilizamos os seguintes elementos visuais:
 <li>Font-size: Padrão do CSS. </li>
 </ul>
 
+Nossa aplicação contará com as seguintes funcionalidades:
+
+<ul>
+<li>Página inicial</li>
+<li>Formulário</li>
+<li>Tela de login (para colaboradores)</li>
+<li>Lista de exibição com elementos clicáveis</li>
+<li>Dashboard com informações do banco de dados (localStorage)</li>
+<li>Agenda em formato de calendário com os agendamentos em formato de eventos</li>
+</ul>
+
+Abaixo temos a apresentação visual dos templates padrões dessas funcionalidades:
+
+## Página Inicial
+
+
+
+A página inicial terá como elementos padrões o menu de navegação lateral (oculto), o header, o main e o footer;
+
 
 ### Header
 O cabeçalho inclui o logotipo da empresa, um pequeno texto inspirador e um botão que abre um menu de navegação para facilitar a exploração do conteúdo.
 
-<img src ="img/HeaderSection.png" width="500"/>
+<img src ="img/cabecalhoPagInicial.png" width="500"/>
 <br>
 <br>
 
 ### Main
-No centro da página que está designada ao conteúdo principal está disponível uma área dedicada aos serviços oferecidos, 
-com 
-botões de fácil acesso para o agendamento dos mesmos. Há 
-também uma seção informativa sobre a empresa, acompanhada por uma foto do time. Além disso, uma área destinada aos depoimentos dos clientes já atendidos, oferecendo uma perspectiva autêntica sobre a experiência com a empresa.
+No Main da página temos as seguintes sessões:
 
-<img src ="img/MainSection.png" width="500"/>
+<br>
+
+#### - Sessão de Agendamento
+
+Compostas por dois cards com uma breve descrição dos serviços oferecidos e um botão que leva o usuário à página de solicitação de serviços, nesse caso banho e tosa;
+
+<img src ="img/sessaoAgendamento.png" width="500"/>
+<br>
+<br>
+
+
+#### - Sessão de Apresentação institucional
+
+Uma sessão dedicada a apresentar a empresa, sua missão e seus valores, além de uma foto amigável de todo o time;
+
+<img src ="img/sessaoQuemSomos.png" width="500"/>
+<br>
+<br>
+
+
+####  - Sessão depoimentos
+
+Nessa sessão trazemos depoimentos de clientes sobre suas experiências na utilização de nossos serviços:
+
+<img src ="img/sessaoDepoimentos.png" width="500"/>
 <br>
 <br>
 
 ### Footer
-Na parte inferior da página, é disposto uma seção onde os usuários podem inserir seus dados para tirar dúvidas ou 
-discutir outros assuntos. Além disso, estão os ícones das redes sociais da empresa, permitindo que os 
-visitantes se conectem facilmente através dessas plataformas.
 
-<img src ="img/FooterSection.png" width="500"/>
+No footer da página encontramos as seguintes sessões:
+
+
+#### - Contato com o Suporte e link para Redes Sociais
+
+No lado esquerdo temos um formulário que é destinado a assuntos que os usuários precisem resolver com a empresa além da solicitação de serviços; ex.: pedido de alterações, dúvidas, esclarecimentos, reclamações, dentre outros assuntos;
+
+Já no lado direito do footer temos os ícones com os links e um convite aos usuários para visitarem nossas redes sociais;
+
+<img src ="img/sessaoSuporte-e-Redes.png" width="500"/>
 <br>
 <br>
+
+## Página de formulários
+
+## Tela de Login
+
+## Tela com Lista de exibição com elementos clicáveis
+
+## Tela Dashboard com informações do banco de dados (localStorage)
+
+## Agenda em formato de calendário com os agendamentos em formato de eventos
 
 
 
