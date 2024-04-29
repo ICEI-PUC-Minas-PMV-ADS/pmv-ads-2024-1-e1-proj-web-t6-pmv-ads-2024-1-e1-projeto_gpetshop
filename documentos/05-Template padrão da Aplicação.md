@@ -106,15 +106,6 @@ Já no lado direito do footer temos os ícones com os links e um convite aos usu
 <br>
 <br>
 
-## Página de formulários
-
-## Tela de Login
-
-## Tela com Lista de exibição com elementos clicáveis
-
-## Tela Dashboard com informações do banco de dados (localStorage)
-
-## Agenda em formato de calendário com os agendamentos em formato de eventos
 
 
 
