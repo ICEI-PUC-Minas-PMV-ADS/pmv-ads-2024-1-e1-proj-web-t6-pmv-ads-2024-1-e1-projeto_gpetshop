@@ -2,13 +2,32 @@
 
 
 O sistema de gestão para pet shops possui um template focado na identidade visual e responsividade, garantindo 
-consistência e uma experiência agradável em todos os dispositivos. O layout é composto por três seções: cabeçalho 
-(header), conteúdo principal(main) e rodapé(footer). O template padrão da aplicação é apresentado de acordo com os 
-protótipos 
-previamente disponibilizados.
+consistência e uma experiência agradável em todos os dispositivos. 
+
+Utilizamos as linguagens de marcação HTML e CSS para a construção dos layout e a linguagem de programação JavaScript foi utilizada para o envio e armazenamento dos dados preenchidos nos formulários e recuperação destes nas telas de tratamento, dashboards e listas de dados;
+
+Teremos os seguintes templates padrões divididas entre as diversas páginas do projeto:
 
 
-<img src ="img/LayoutPadraoCSS.png" width="500"/>
+
+# Página Inicial
+
+A página inicial terá como elementos padrões o menu de navegação, o header e o footer;
+
+Utilizamos as linguagens HTML e CSS para a contrução do layout, e a linguagem JavaScript para o armazenamento dos dados enviados, através dos formulários, em localStorage e recuperação destes nas telas de tratamento das solicitações, bem como dashboards e listas de dados;
+
+Na página inícial utilizamos os seguintes elementos visuais:
+
+<ul>
+<li>Cor do background do Body: RGB: #f6f9ff;</li>
+<li>Cor do background dos cards de agendamento e campos do formulário: RGB: #FDCE6D4D;</li>
+<li>Cor geral do texto do Body : RGB: #2F435A;</li>
+<li>Cor do texto dos titulos dos cards de agendamento e depoimentos: RGB: #11979C;</li>
+<li>Cor do background dos botões: linear-gradient(to right, #2F435A, #8195ac)</li>
+<li>Font-family: Arial, Helvetica, sans-serif;</li>
+<li>Font-size: Padrão do CSS. </li>
+</ul>
+
 
 ### Header
 O cabeçalho inclui o logotipo da empresa, um pequeno texto inspirador e um botão que abre um menu de navegação para facilitar a exploração do conteúdo.
