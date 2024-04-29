@@ -6,6 +6,8 @@ consistência e uma experiência agradável em todos os dispositivos.
 
 Utilizamos as linguagens HTML e CSS para a contrução do layout, e a linguagem JavaScript para o armazenamento dos dados enviados, através de formulários, em localStorage e recuperação destes nas telas de tratamento das solicitações, bem como dashboards e listas de dados;
 
+O código utilizado para a construção dos elementos citados, estão disponíveis <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/tree/main/codigo-fonte">aqui</a>. As imagens <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/tree/main/documentos/img">aqui</a> e ícones utilizados no projeto estão disponíveis <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">aqui</a>;
+
 Utilizamos os seguintes elementos visuais:
 
 <ul>
