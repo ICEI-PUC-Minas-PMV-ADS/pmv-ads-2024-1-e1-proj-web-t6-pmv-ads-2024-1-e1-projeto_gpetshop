@@ -29,7 +29,12 @@ Nossa aplicação contará com as seguintes funcionalidades:
 <li>Agenda em formato de calendário com os agendamentos em formato de eventos</li>
 </ul>
 
+<br>
+
 Abaixo temos a apresentação visual dos templates padrões dessas funcionalidades:
+
+<br>
+
 
 ## Página Inicial
 
@@ -39,7 +44,10 @@ A página inicial terá como elementos padrões o menu de navegação lateral (o
 
 
 ### Header
-O cabeçalho inclui o logotipo da empresa, um pequeno texto inspirador e um botão que abre um menu de navegação para facilitar a exploração do conteúdo.
+
+#### - Logo e informações da empresa
+
+O cabeçalho inclui o logotipo da empresa, um pequeno texto com o endereço e telefone de contato da empresa, além do icone da barra de navegação lateral que está oculta;
 
 <img src ="img/cabecalhoPagInicial.png" width="500"/>
 <br>
@@ -48,14 +56,11 @@ O cabeçalho inclui o logotipo da empresa, um pequeno texto inspirador e um bot�
 ### Main
 No Main da página temos as seguintes sessões:
 
-<br>
-
 #### - Sessão de Agendamento
 
 Compostas por dois cards com uma breve descrição dos serviços oferecidos e um botão que leva o usuário à página de solicitação de serviços, nesse caso banho e tosa;
 
 <img src ="img/sessaoAgendamento.png" width="500"/>
-<br>
 <br>
 
 
@@ -65,7 +70,6 @@ Uma sessão dedicada a apresentar a empresa, sua missão e seus valores, além d
 
 <img src ="img/sessaoQuemSomos.png" width="500"/>
 <br>
-<br>
 
 
 ####  - Sessão depoimentos
@@ -73,7 +77,6 @@ Uma sessão dedicada a apresentar a empresa, sua missão e seus valores, além d
 Nessa sessão trazemos depoimentos de clientes sobre suas experiências na utilização de nossos serviços:
 
 <img src ="img/sessaoDepoimentos.png" width="500"/>
-<br>
 <br>
 
 ### Footer
