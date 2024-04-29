@@ -10,6 +10,8 @@ Utilizamos os seguintes elementos visuais:
 
 <ul>
 <li>Cor do background do Body: RGB: #f6f9ff;</li>
+<li>Cor do background da barra de navegação lateral: RGB: #FDCE6D </li>
+<li>Cor do texto e do background da barra de navegação lateral em efeito hover: RGB:  color:#fff; background-color: #2F435A; </li>  
 <li>Cor do background dos cards de agendamento e campos do formulário: RGB: #FDCE6D4D;</li>
 <li>Cor geral do texto do Body : RGB: #2F435A;</li>
 <li>Cor do texto dos titulos dos cards de agendamento e depoimentos: RGB: #11979C;</li>
@@ -52,6 +54,14 @@ O cabeçalho inclui o logotipo da empresa, um pequeno texto com o endereço e te
 <img src ="img/cabecalhoPagInicial.png" width="500"/>
 <br>
 <br>
+
+### Menu de navegação
+
+#### - Barra de navegação lateral oculta
+
+Todas as páginas da aplicação contarão com essa barra de navegação lateral que ficará oculta, aparecendo somente o ícone clicável de menu na parte superior da página.
+
+<img src ="img/sessaoNavbar.png" width="200"/>
 
 ### Main
 No Main da página temos as seguintes sessões:
