@@ -1,37 +1,51 @@
 # Programação de Funcionalidades
 
-Implementação da aplicação descritas por meio dos requisitos codificados. 
+Abaixo estão as funcionalidades implementadas de acordo com os requisitos funcionais apresentados na <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/documentos/02-Especifica%C3%A7%C3%A3o%20do%20Projeto.md">Especificação do projeto</a>;
 
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
+### Página Inicial
+<br>
 
-### Título da funcionalidade
-
-[Adicione imagem da funcionalidade/tela]
+<img src ="img/cabecalhoPagInicial.png" width="500"/>
+<img src ="img/sessaoAgendamento.png" width="500"/>
+<img src ="img/sessaoQuemSomos.png" width="500"/>
+<img src ="img/sessaoDepoimentos.png" width="500"/>
+<img src ="img/sessaoSuporte-e-Redes.png" width="500"/>
+<br>
+Barra de navegação lateral oculta:
+<br>
+<img src ="img/sessaoNavbar.png" width="200"/>
 
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+RF-001: Página inicial.
+
+A aplicação deve contar com uma página inicial que permita informar aos clientes os serviços oferecidos, apresentar a empresa e compartilhar depoimentos de outros clientes sobre a percepção dos serviços utilizados, além se servir como ponto de partida para as solicitações desses clientes;
 
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+<li>
+  index.html
+</li>
+<li>
+  index.css
+</li>
 
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+Inserir os links das estruturas de HTML, CSS e JS.
 
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+Abra um navegador de Internet e informe a seguinte URL: 
 
 
 #### Responsável
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+João Henrique Andrade Leite
 
 
 
