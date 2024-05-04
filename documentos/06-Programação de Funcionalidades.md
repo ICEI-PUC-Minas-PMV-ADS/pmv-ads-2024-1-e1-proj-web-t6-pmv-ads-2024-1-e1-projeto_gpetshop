@@ -31,16 +31,27 @@ A aplicação deve contar com uma página inicial que permita informar aos clien
 <li>
   index.css
 </li>
+<li>
+  index.js
+</li>
 
 
 #### Estrutura de Dados
 
-Inserir os links das estruturas de HTML, CSS e JS.
+<li>
+  <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/codigo-fonte/src/paginaInicial/index.html">index.html</a>
+</li>
+<li>
+  <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/codigo-fonte/src/paginaInicial/index.css">index.css</a>
+</li>
+<li>
+ <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/codigo-fonte/src/paginaInicial/index.js">index.js</a>
+</li>
 
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL: 
+Abra um navegador de Internet e informe a seguinte URL:
 
 
 #### Responsável
