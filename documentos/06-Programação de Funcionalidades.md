@@ -58,12 +58,67 @@ Abra um navegador de Internet e informe a seguinte URL:
 
 João Henrique Andrade Leite
 
+<br>
+<br>
 
 
+## Solicitação de Suporte
+<br>
 
+<img src ="img/sessaoSuporte-e-Redes.png" width="900"/>
+
+#### Requisito atendido
+
+RF-004: Solicitação de Suporte.
+
+O sistema deve permitir que o cliente consiga interagir com a empresa para assuntos que não tenham a ver diretamente com agendamento de serviços, através de um formulário de suporte que deverá constar na página inicial do site;
+
+
+#### Artefatos da funcionalidade
+
+<li>
+  index.html
+</li>
+<li>
+  index.css
+</li>
+<li>
+  index.js
+</li>
+
+
+#### Estrutura de Dados
+
+<li>
+  <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/codigo-fonte/src/paginaInicial/index.html">index.html</a>
+</li>
+<li>
+  <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/codigo-fonte/src/paginaInicial/index.css">index.css</a>
+</li>
+<li>
+ <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/codigo-fonte/src/paginaInicial/index.js">index.js</a>
+</li>
+
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL:
+
+
+#### Responsável
+
+João Henrique Andrade Leite
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--
 > **Links Úteis**:
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
 > - [JSON Tutorial](https://www.w3resource.com/JSON)
 > - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
 > - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
-
+-->
