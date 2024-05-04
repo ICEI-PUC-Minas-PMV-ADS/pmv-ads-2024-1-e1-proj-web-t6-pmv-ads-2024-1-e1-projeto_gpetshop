@@ -2,7 +2,7 @@
 
 Abaixo estão as funcionalidades implementadas de acordo com os requisitos funcionais apresentados na <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/documentos/02-Especifica%C3%A7%C3%A3o%20do%20Projeto.md">Especificação do projeto</a>;
 
-### Página Inicial
+## Página Inicial
 <br>
 
 <img src ="img/cabecalhoPagInicial.png" width="500"/>
