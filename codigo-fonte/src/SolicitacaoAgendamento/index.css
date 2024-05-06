@@ -1,0 +1,172 @@
+* {
+
+    font-family: sans-serif;
+    color: #2F435A;
+    font-weight: bold;
+  
+    .pd-bt-10 {
+      padding-bottom: 10px;
+    }
+  
+    .mg-bt-5 {
+      margin-bottom: 5px;
+    }
+  
+    .mg-bt-10 {
+      margin-bottom: 10px;
+    }
+  
+    .mg-bt-15 {
+      margin-bottom: 15px;
+    }
+  
+    .fs-20 {
+      font-size: 20px;
+    }
+  
+    .fs-16 {
+      font-size: 16px;
+    }
+  
+    .input-form {
+      background-color: #FFF1D4;
+      color: #2F435A;
+      height: 25px;
+    }
+  
+    .input-border {
+      border-radius: 10px;
+      border: none;
+      box-shadow: 6px 6px 10px 2px #AFAFAF
+    }
+  
+    .input-border:focus-visible {
+      outline: none;
+    }
+  
+    .scheduling-request-body {
+      width: 50%;
+      position: relative;
+      left: 25%;
+  
+      .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+  
+      .forms-cliente  {
+        display: flex;
+        flex-direction: column;
+  
+        .header-font {
+          color: #FDCE6D;
+          background-color: #2F435A;
+          border-radius: 10px;
+          margin-bottom: 5px;
+          padding: 4px;
+          font-size: 20px;
+    
+        }
+  
+        .body-user {
+          display: flex;
+          align-items: center;
+  
+          .input-name {
+            width: 100%;
+          }
+  
+          .input-phone {
+            width: 100%;
+          }
+  
+          .input-email {
+            width: 100%;
+          }
+        }
+      }
+      
+      .header-font {
+        color: #FDCE6D;
+        background-color: #2F435A;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        padding: 4px;
+        font-size: 20px;
+        
+      }
+  
+      .input-pet-name {
+        width: 100%;
+      }
+  
+      .select-service {
+        width: 50%;
+      }
+  
+      .obs-forms {
+        display: flex;
+        flex-direction: column;
+  
+        .header-font {
+          background-color: #2F435A;
+          border-radius: 10px;
+          margin-bottom: 5px;
+          display: flex;
+        }
+  
+        .title {
+          color: #FDCE6D;
+        }
+  
+        .obs-text-area {
+          height: 50px !important;
+          font-size: 16px; 
+        }
+  
+      }
+  
+      .submit-button {
+        position: relative;
+        left: 37%;
+        border-radius: 10px;
+        background-color: #2F435A;
+        color: #FDCE6D;
+        width: 257px;
+        height: 30px;
+        border: none;
+      }
+  
+      .dog-info {
+        display: flex;
+        justify-content: space-between;
+  
+        .dog-info-body {
+          width: 49%;
+  
+          .dog-info-title {
+            display: flex;
+            align-items: center;
+  
+            .title {
+              color: #FDCE6D;
+            }
+  
+          }
+          
+          .select-dog-info {
+            width: 100%;
+          }
+        }
+  
+      }
+  
+      .pet-name-body {
+        display: flex;
+        align-items: center;
+      }
+  
+    }
+  }
