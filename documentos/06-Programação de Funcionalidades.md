@@ -109,11 +109,48 @@ Abra um navegador de Internet e informe a seguinte URL:
 
 João Henrique Andrade Leite
 
+
 <br>
+
+## Tela de Agendamento de Serviço pelo colaborador  (RF-03)
+
+O acesso a tela de cadastro poderá ser feito através da opção de menu “Cadastre-se”. As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+Exemplo da tela de agendamento:
+
+
+<img src="/documentos/img/telaAgendamentoColaborador.png" alt="" width="900">
+
+
+### Requisito Atendido
+
+RF-03: O sistema deve possibilitar o cadastramento de uma solicitação de serviços para clientes que ligarem e/ou 
+chegarem presencialmente na loja sem avisar.
+
+
+### Artefatos da funcionalidade
+
+novoAgendamentoColab.html
+
+novoAgendamentoColab.css
+
+novoAgendamentoColab.js
+
 <br>
+
+### Estrutura de Dados
+<code> // Ainda não desenvolvido a estrutura de dados desta página.</code>
+
 <br>
+
+### Instruções de acesso
+
 <br>
-<br>
+
+### Responsável
+
+Paulo Henrique Sousa Carvalho
+
 
 <!--
 > **Links Úteis**:
