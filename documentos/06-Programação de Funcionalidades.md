@@ -152,6 +152,54 @@ novoAgendamentoColab.js
 Paulo Henrique Sousa Carvalho
 
 
+<br>
+
+## Tela de Cadastro de Usuários Colaboradores  (RF-09)
+
+O acesso a tela de cadastro poderá ser feito através da opção de menu “Cadastre-se”  em seguida " Clientes". As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+Exemplo da tela de agendamento:
+
+
+Adcionar imagem
+
+
+### Requisito Atendido
+
+RF-09: O Sistema deve possibilitar o gestor cadastrar, alterar e excluir os acessos dos colaboradores, com informações pessoais e criação de login e senha.
+
+
+### Artefatos da funcionalidade
+
+cadastrodeclientes.html
+
+cadastrodeclientes.css
+
+cadastrodeclientes.js
+
+<br>
+
+### Estrutura de Dados
+<li>
+  <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/codigo-fonte/src/cadastrodeclientes/index.html">index.html</a>
+</li>
+<li>
+  <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/codigo-fonte/src/cadastrodeclientes/index.css">index.css</a>
+</li>
+<li>
+ <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/codigo-fonte/src/cadastrodecliente/index.js">index.js</a>
+</li>
+
+<br>
+
+### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL:
+
+### Responsável
+
+Felipe Costa Moreira 
+
 <!--
 > **Links Úteis**:
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
