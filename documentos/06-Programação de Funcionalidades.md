@@ -200,6 +200,44 @@ Abra um navegador de Internet e informe a seguinte URL:
 
 Felipe Costa Moreira 
 
+<br>
+
+## Tela de Cadastro de Serviços Disponíveis (RF-08)
+
+Exemplo da tela de cadastro:
+
+
+<img src="/documentos/img/telaCadastroServicos.png" alt="" width="900">
+
+
+### Requisito Atendido
+
+RF-08: O sistema deve permitir que o gestor consiga cadastrar os serviços que serão orferecidos pelo estabelecimento.
+
+
+### Artefatos da funcionalidade
+
+CadastroServicos.html
+
+CadastroServicos.css
+
+CadastroServicos.js
+
+<br>
+
+### Estrutura de Dados
+<code> // Ainda não desenvolvido a estrutura de dados desta página.</code>
+
+<br>
+
+### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL:
+
+### Responsável
+
+Thainá Crisótomo Bernardes
+
 <!--
 > **Links Úteis**:
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
