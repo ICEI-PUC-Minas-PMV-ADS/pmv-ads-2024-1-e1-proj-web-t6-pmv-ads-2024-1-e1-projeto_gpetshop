@@ -207,7 +207,7 @@ Felipe Costa Moreira
 Exemplo da tela de cadastro:
 
 
-<img src="/documentos/img/telaCadastroServicos.png" alt="" width="900">
+<img src="/documentos/img/telaCadastroServicos.png" alt="" width="700">
 
 
 ### Requisito Atendido
