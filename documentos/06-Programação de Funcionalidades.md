@@ -236,7 +236,7 @@ Abra um navegador de Internet e informe a seguinte URL:
 
 ### Responsável
 
-Thainá Crisótomo Bernardes
+Thainá Crisóstomo Bernardes
 
 <!--
 > **Links Úteis**:
