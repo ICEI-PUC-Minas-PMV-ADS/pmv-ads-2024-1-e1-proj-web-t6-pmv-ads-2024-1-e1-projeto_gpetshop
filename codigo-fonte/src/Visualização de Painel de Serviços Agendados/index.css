@@ -120,8 +120,9 @@ body {
   font-size: 16px;
   font-weight: bold;
 }
+
 #menu {
-    
+ position: fixed; 
   width: 10%;
   height: 100vh;
   background-color: rgba(253, 206, 109, 1); 
@@ -129,6 +130,7 @@ body {
   color: #2F435A; 
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  margin-left: 0;
 }
 ul {
   list-style-type: none;
