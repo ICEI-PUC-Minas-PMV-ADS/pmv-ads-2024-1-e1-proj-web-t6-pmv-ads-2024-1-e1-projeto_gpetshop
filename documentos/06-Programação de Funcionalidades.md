@@ -392,7 +392,7 @@ estruturas de dados foram baseadas em HTML, CSS e JS.
 
 Exemplo da tela de agendamento:
 
-![Imageprojetopetpuc](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/082c72b6-15a2-4a38-b47c-1f77be042f91)
+![telacadastroclientespetshopetpuc](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/985155d6-469e-4f43-8ebe-32f610d84578)
 
 
 ### Requisito Atendido
