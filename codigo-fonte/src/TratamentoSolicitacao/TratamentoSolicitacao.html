@@ -19,6 +19,7 @@
     <script src="js/bd_operationsTratamento.js" defer></script>
     <script src="js/actionsTratamento.js" defer></script>
     <script src="js/bdTratamento.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -47,7 +48,7 @@
                         <ul>
                             <li><a href="/codigo-fonte/src/Cadastroclientes/index.html">Clientes</a></li>
                             <li><a href="#">Colaboradores</a></li>
-                            <li><a href="/codigo-fonte/src/CadastroServicos/CadastroServicos.html">Serviços</a></li>
+                            <li><a href="codigo-fonte/src/CadastroServicos/CadastroServicos.html">Serviços</a></li>
                         </ul>
                     </div>
                 </li>
@@ -82,6 +83,13 @@
     <main>
         <!-- INICIO FORMULÁRIO -->
         <form id="form">
+            
+            <select>
+                <label>Selecione um animal</label>
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="coelho">Coelho</option>
+            </select>
             <!-- INICIO CLIENTE -->
             <div id="client">
                 <div class="label-title-cliente">
@@ -91,13 +99,15 @@
                 <div class="input-line-1">
                     <div class="id-client-container">
                         <i class="fa-solid fa-id-card"></i>
-                        <label for="idClient"></label><input class="dataClient" id="idClient" type="" name="id-client"
+                        <label for="idClient"></label>
+                        <input class="dataClient" id="idClient" type="" name="id-client"
                             placeholder="000000">
                     </div>
 
                     <div class="name-client-container">
                         <i class="fa-solid fa-user"></i>
-                        <label for="nameClient"></label><input class="dataClient" id="nameClient" type="text"
+                        <label for="nameClient"></label>
+                        <input class="dataClient" id="nameClient" type="text"
                             name="name-client" placeholder="ABCDEF" maxlength="100" required>
                     </div>
                 </div>
@@ -106,7 +116,8 @@
                 <!-- INICIO E-MAIL CLIENTE -->
                 <div class="email-client-container">
                     <i class="fa-solid fa-envelope"></i>
-                    <label for="emailClient"></label><input class="dataClient" id="emailClient" type="text"
+                    <label for="emailClient"></label>
+                    <input class="dataClient" id="emailClient" type="text"
                         name="email-client" placeholder="abcd@email.com" maxlength="100" required>
                 </div>
                 <!-- FIM E-MAIL CLIENTE -->
@@ -114,7 +125,8 @@
                 <!-- INICIO TELEFONE CLIENTE -->
                 <div class="fone-client-container">
                     <i class="fa-solid fa-phone"></i>
-                    <label for="foneClient"></label><input class="dataClient" id="foneClient" type="text"
+                    <label for="foneClient"></label>
+                    <input class="dataClient" id="foneClient" type="text"
                         name="fone-client" placeholder="(00) 11111-2222" maxlength="15" required>
                 </div>
                 <!-- FIM TELEFONE CLIENTE -->
@@ -165,21 +177,21 @@
                                 onfocus="dropDownIdade(0)" onblur="dropDownIdade(1)">
                             <div class="dropDownIdade">
                                 <div class="listDropDownIdade">
-                                    <div class="itemIdade" id="itemIdade-1" onmousedown="idade(1)">1 Ano</div>
-                                    <div class="itemIdade" id="itemIdade-2" onmousedown="idade(2)">2 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-3" onmousedown="idade(3)">3 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-4" onmousedown="idade(4)">4 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-5" onmousedown="idade(5)">5 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-6" onmousedown="idade(6)">6 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-7" onmousedown="idade(7)">7 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-8" onmousedown="idade(8)">8 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-9" onmousedown="idade(9)">9 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-10" onmousedown="idade(10)">10 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-11" onmousedown="idade(11)">11 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-12" onmousedown="idade(12)">12 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-13" onmousedown="idade(13)">13 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-14" onmousedown="idade(14)">14 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-15" onmousedown="idade(15)">15 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-1" onmousedown="idade(1)">1 Ano</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-2" onmousedown="idade(2)">2 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-3" onmousedown="idade(3)">3 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-4" onmousedown="idade(4)">4 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-5" onmousedown="idade(5)">5 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-6" onmousedown="idade(6)">6 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-7" onmousedown="idade(7)">7 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-8" onmousedown="idade(8)">8 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-9" onmousedown="idade(9)">9 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-10" onmousedown="idade(10)">10 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-11" onmousedown="idade(11)">11 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-12" onmousedown="idade(12)">12 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-13" onmousedown="idade(13)">13 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-14" onmousedown="idade(14)">14 Anos</div>
+                                    <div class="itemIdade" id="item" id="itemIdade-15" onmousedown="idade(15)">15 Anos</div>
                                 </div>
                             </div>
                         </div>
@@ -424,9 +436,9 @@
     <footer>
         <!-- INICIO AÇÕES -->
         <div id="actions">
-            <button id="alterar-solicitacao" type="button" value="ALTERAR" onkeyup="">ALTERAR</button>
-            <button id="excluir-solicitacao" type="button" value="EXCLUIR" onkeyup="">EXCLUIR</button>
-            <button id="aceitar-solicitacao" type="button" value="ACEITAR" onkeyup="sendRequest()">ACEITAR</button>
+            <button id="alterar-solicitacao" type="button" value="ALTERAR" onclick="onClickButtonAlterar()">ALTERAR</button>
+            <button id="excluir-solicitacao" type="button" value="EXCLUIR" onclick="onClickbButtonRecusar()">EXCLUIR</button>
+            <button id="aceitar-solicitacao" type="button" value="ACEITAR" onclick="onClickbButtonAceitar()">ACEITAR</button>
         </div>
         <!-- FIM AÇÕES -->
     </footer>

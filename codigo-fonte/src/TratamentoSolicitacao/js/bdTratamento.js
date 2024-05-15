@@ -1,9 +1,12 @@
-const clearFields = () => {
-	const dataClient = document.querySelectorAll('.dataClient')
-	dataClient.forEach(field => field.value = "")
+function clearFields() {
+	const dataClient = document.querySelectorAll('.dataClient');
+	dataClient.forEach(function(field) {
+		field.value = "";
+	});
 }
 
-const sendRequest = () => {
+ 
+export function sendRequest() {
 	if (isValidFields()) {
 		const clientRequest = {
 			cliente: {
@@ -39,10 +42,12 @@ const sendRequest = () => {
 }
 
 
+
+
 document.getElementById('aceitar-solicitacao')
 	.addEventListener('click', sendRequest)
 
-const isValidFields = () => {
-	return document.getElementById('form').reportValidity()
+function isValidFields() {
+	return document.getElementById('form').reportValidity();
 }
 
