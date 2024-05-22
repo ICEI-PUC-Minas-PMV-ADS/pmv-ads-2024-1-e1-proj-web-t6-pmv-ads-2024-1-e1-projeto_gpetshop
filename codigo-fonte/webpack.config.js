@@ -5,9 +5,9 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
     entry: {
-        SolicitacaoAgendamento: './src/SolicitacaoAgendamento/index.js',
+        solicitacaoAgendamento: './src/SolicitacaoAgendamento/index.js',
         paginaInicial: './src/paginaInicial/index.js',
-        CadastroClientes: './src/Cadastroclientes/index.js'
+        cadastroClientes: './src/Cadastroclientes/index.js'
     },
     devServer: {
         static: {
@@ -54,18 +54,18 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/SolicitacaoAgendamento/index.html',
-            filename: 'SolicitacaoAgendamento/SolicitacaoAgendamento.html',
-            chunks: ['page1'],
+            filename: 'solicitacaoAgendamento/SolicitacaoAgendamento.html',
+            chunks: ['solicitacaoAgendamento'],
         }),
         new HtmlWebpackPlugin({
             template: './src/paginaInicial/index.html',
             filename: 'paginaInicial/paginaInicial.html', 
-            chunks: ['page2'], 
+            chunks: ['paginaInicial'], 
         }),
         new HtmlWebpackPlugin({
             template: './src/Cadastroclientes/index.html',
-            filename: 'Cadastroclientes/Cadastroclientes.html', 
-            chunks: ['page3'], 
-        }),
-    ],
+            filename: 'cadastroClientes/CadastroClientes.html', 
+            chunks: ['cadastroClientes'], 
+        }),
+    ],
 }
