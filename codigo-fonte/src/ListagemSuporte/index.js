@@ -12,13 +12,13 @@ openSlide.addEventListener("click", function () {
 });
 
 // Função para salvar os dados de suporte no local storage.
-function setLocalStorageSupport(db_support) {
-  return localStorage.setItem("db_support", JSON.stringify(db_support));
+function setLocalStorageSupport(minhaLista) {
+  return localStorage.setItem("minhaLista", JSON.stringify(minhaLista));
 }
 
 // Função para recuperar os dados de suporte do local storage.
 function getLocalStorageSupport() {
-  return JSON.parse(localStorage.getItem("db_support")) ?? [];
+  return JSON.parse(localStorage.getItem("minhaLista")) ?? [];
 }
 
 // CRUD: Lê os dados de suporte do local storage.
@@ -31,17 +31,21 @@ function identifyingCustomer(event) {
   const row = event.currentTarget; // A linha (tr) que foi clicada.
   const index = row.getAttribute("data-index"); // Obtém o índice da linha.
   console.log("Este é o cliente de índice", index);
-  
+
   // Obter os dados do cliente do localStorage usando o índice.
-  const db_support = getLocalStorageSupport();
-  const clientData = db_support[index];
-  
+  const minhaLista = getLocalStorageSupport();
+  const clientData = minhaLista[index];
   // Verificar se os dados do cliente existem.
   if (clientData) {
     // Serializar os dados do cliente como uma string JSON.
     const serializedData = JSON.stringify(clientData);
     // Redirecionar para a página de edição com os dados do cliente como parâmetros de consulta.
-    window.open(`/codigo-fonte/src/TratamentoSuporte/index.html?data=${encodeURIComponent(serializedData)}`, '_blank');
+    window.open(
+      `/codigo-fonte/src/TratamentoSuporte/index.html?data=${encodeURIComponent(
+        serializedData
+      )}`,
+      "_blank"
+    );
   } else {
     console.log("Não foram encontrados dados para o índice", index);
   }
@@ -49,10 +53,11 @@ function identifyingCustomer(event) {
 
 // Função para preencher os campos do formulário com os dados do cliente.
 function fillFields(client) {
-  document.getElementById("nameClient").value = client.cliente.nome;
-  document.getElementById("emailClient").value = client.cliente.email;
-  document.getElementById("foneClient").value = client.cliente.celular;
-  document.getElementById("text-value-msg").value = client.cliente.mensagem;
+  /*   document.getElementsByName("id").value = client.cliente.nome; */
+  document.getElementsByName("nome").value = client.nome;
+  document.getElementsByName("email").value = client.email;
+  document.getElementsByName("telefone").value = client.telefone;
+  document.getElementsByName("mensagem").value = client.mensagem;
 }
 
 // Função para criar uma nova linha na tabela para um cliente.
@@ -60,14 +65,14 @@ function createRow(client, index) {
   const newRow = document.createElement("tr");
   newRow.setAttribute("data-index", index); // Adiciona um atributo de dados com o índice.
   newRow.innerHTML = `
-        <td>${client.cliente.nome}</td>
-        <td>${client.cliente.email}</td>
-        <td>${client.cliente.celular}</td>
-        <td>${client.cliente.mensagem}</td>
-    `;
+        <td>${client.nome}</td>
+        <td>${client.mensagem}</td>
+        `;
   document.querySelector("#tableClient>tbody").appendChild(newRow);
   newRow.addEventListener("click", identifyingCustomer); // Adiciona o event listener à nova linha.
 }
+/*       <td>${client.cliente.email}</td>
+      <td>${client.cliente.celular}</td> */
 
 // Função para limpar todas as linhas da tabela.
 function clearTable() {
@@ -77,9 +82,9 @@ function clearTable() {
 
 // Função para atualizar a tabela com os dados de suporte do local storage.
 function updateTable() {
-  const db_support = readSupport();
+  const minhaLista = readSupport();
   clearTable();
-  db_support.forEach(createRow);
+  minhaLista.forEach(createRow);
 }
 
 // Atualiza a tabela quando a página é carregada.

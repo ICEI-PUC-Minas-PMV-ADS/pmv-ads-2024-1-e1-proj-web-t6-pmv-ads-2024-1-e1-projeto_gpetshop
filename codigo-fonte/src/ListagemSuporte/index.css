@@ -333,8 +333,8 @@
   
   thead > tr > th {
     align-self: flex-start;
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 400px;
+    max-width: 400px;
     color: #2f435a;
     text-align: start;
     font-size: 16px;
@@ -364,8 +364,8 @@
   
   tbody > tr > td {
     align-self: flex-start;
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 400px;
+    max-width: 400px;
     color: #2f435a;
     text-align: left;
     font-size: 16px;

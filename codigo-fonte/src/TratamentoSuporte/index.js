@@ -26,6 +26,61 @@ openSlide.addEventListener("click", function () {
   }
 });
 
+// Salva os dados de suporte no local storage na key minhaLista
+function setLocalStorageSupport(minhaLista) {
+  return localStorage.setItem("minhaLista", JSON.stringify(minhaLista));
+}
+
+// Recupera os dados de suporte do local storage da key minhaLista
+function getLocalStorageSupport() {
+  return JSON.parse(localStorage.getItem("minhaLista")) ?? [];
+}
+
+// Se houver dados nos parâmetros da query string, preenche o formulário com esses dados.
+const queryParams = getQueryParams();
+if (queryParams.data) {
+  fillFormWithData(queryParams.data);
+}
+
+// Recupera os parâmetros da query string da URL.
+function getQueryParams() {
+  const params = {};
+  const queryString = window.location.search.substring(1);
+  const regex = /([^&=]+)=([^&]*)/g;
+  let m;
+  while ((m = regex.exec(queryString))) {
+    params[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+  }
+  return params;
+}
+
+// Preenche o formulário com os dados fornecidos.
+function fillFormWithData(data) {
+  const clientData = JSON.parse(decodeURIComponent(data));
+  document.getElementById("nameClient").value = clientData.nome;
+  document.getElementById("emailClient").value = clientData.email;
+  document.getElementById("foneClient").value = clientData.telefone;
+  document.getElementById("text-value-msg").value = clientData.mensagem;
+}
+
+// Lê os dados de suporte do local storage da key minhaLista
+function readSupport() {
+  return getLocalStorageSupport();
+}
+
+// Deleta um suporte específico pelo índice da key minhaLista
+function deleteSupport(index) {
+  const minhaLista = readSupport();
+  minhaLista.splice(index,1);
+  setLocalStorageSupport(minhaLista);
+}
+
+// Chama a função de deletar suporte e exibe um alerta informando que a mensagem foi excluída.
+function onClickbButtonDelete(index) {
+  deleteSupport(index);
+  alert("Mensagem excluída!");
+}
+
 // Seta as infos para o evento de carregamento da janela.
 window.addEventListener("load", () => {
   // Define os campos de entrada como somente leitura.
@@ -122,59 +177,4 @@ function createSupportMessage(client) {
   const db_support_reply = getLocalStorageSupportMessage();
   db_support_reply.push(client);
   setLocalStorageSupportMessage(db_support_reply);
-}
-
-// Recupera os parâmetros da query string da URL.
-function getQueryParams() {
-  const params = {};
-  const queryString = window.location.search.substring(1);
-  const regex = /([^&=]+)=([^&]*)/g;
-  let m;
-  while ((m = regex.exec(queryString))) {
-    params[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
-  }
-  return params;
-}
-
-// Se houver dados nos parâmetros da query string, preenche o formulário com esses dados.
-const queryParams = getQueryParams();
-if (queryParams.data) {
-  fillFormWithData(queryParams.data);
-}
-
-// Preenche o formulário com os dados fornecidos.
-function fillFormWithData(data) {
-  const clientData = JSON.parse(decodeURIComponent(data));
-  document.getElementById("nameClient").value = clientData.cliente.nome;
-  document.getElementById("emailClient").value = clientData.cliente.email;
-  document.getElementById("foneClient").value = clientData.cliente.celular;
-  document.getElementById("text-value-msg").value = clientData.cliente.mensagem;
-}
-
-// Salva os dados de suporte no local storage na key db_support
-function setLocalStorageSupport(db_support) {
-  return localStorage.setItem("db_support", JSON.stringify(db_support));
-}
-
-// Recupera os dados de suporte do local storage da key db_support
-function getLocalStorageSupport() {
-  return JSON.parse(localStorage.getItem("db_support")) ?? [];
-}
-
-// Lê os dados de suporte do local storage da key db_support
-function readSupport() {
-  return getLocalStorageSupport();
-}
-
-// Deleta um suporte específico pelo índice da key db_support
-function deleteSupport(index) {
-  const db_support = readSupport();
-  db_support.splice(index, 1);
-  setLocalStorageSupport(db_support);
-}
-
-// Chama a função de deletar suporte e exibe um alerta informando que a mensagem foi excluída.
-function onClickbButtonDelete() {
-  deleteSupport();
-  alert("Mensagem excluída!");
 }
