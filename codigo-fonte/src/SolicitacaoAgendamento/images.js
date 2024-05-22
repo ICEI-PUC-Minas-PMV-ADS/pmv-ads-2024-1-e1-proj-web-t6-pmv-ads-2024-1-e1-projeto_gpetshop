@@ -1,14 +1,14 @@
-import petPucSVG from './img/petPuc.svg';
-import user from './icons/icon_user.svg';
-import phone from './icons/phone.svg';
-import email from './icons/icon_user_email.svg';
-import dog from './icons/Dog.svg';
-import pelagem from './icons/icon_pet_hair.svg';
-import dogIdade from './icons/dog_years.svg';
-import dogPorte from './icons/icon_porte_dog.svg';
-import menuSanduiche from './icons/menu_sanduiche.svg';
-import dogRaca from './icons/dogRaca.svg';
-import dogObs from './icons/icon_obs.svg';
+import petPucSVG from '../assets/petPuc.svg';
+import user from '../assets/icon_user.svg';
+import phone from '../assets/phone.svg';
+import email from '../assets/icon_user_email.svg';
+import dog from '../assets/Dog.svg';
+import pelagem from '../assets/icon_pet_hair.svg';
+import dogIdade from '../assets/dog_years.svg';
+import dogPorte from '../assets/icon_porte_dog.svg';
+import arrowLeft from '../assets/arrow-left-solid.svg';
+import dogRaca from '../assets/dogRaca.svg';
+import dogObs from '../assets/icon_obs.svg';
 
 export function setImages() {
     setImageInHeader();
@@ -28,13 +28,21 @@ function setImageSVG(imageSource) {
     img.src = imageSource;  
     return img;
 }
+
+function arrowLeftBackPage() {
+    const a = document.createElement("a");
+    a.href = "../paginaInicial/paginaInicial.html"
+    const imageSVG = setImageSVG(arrowLeft);
+    a.appendChild(imageSVG);
+    return a;
+}
   
 function setImageInHeader() {
     const imageSVG = setImageSVG(petPucSVG);
-    const imageMenuSanduicheSVG = setImageSVG(menuSanduiche);
+    const arrowLeftSVG = arrowLeftBackPage();
     const header = document.querySelector(".header");
     const titleHeader = document.getElementById("title-header");
-    header.insertBefore(imageMenuSanduicheSVG, titleHeader);
+    header.insertBefore(arrowLeftSVG, titleHeader);
     header.appendChild(imageSVG);
 
 }
