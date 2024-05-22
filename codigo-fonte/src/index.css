@@ -1,1 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 
+}
+
+body {
+  background: #f6f9ff;
+  height: 100vh;
+  width: 100%;
+
+  display: contents;
+  justify-content: center;
+  align-items: center;
+
+  color: #2F435A;
+
+}
+
+/* configuração titulos das sessões */
+
+
+.principalTitles {
+  height: 100%;
+  width: 100%;
+  padding: 32px;
+  padding-left: 64px;
+  background-color: 0;
+}
+
+/* configuração barra de navegação lateral oculta */
+
+
+.slide {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  background-color: #FDCE6D;
+  transition: 0.5s ease;
+  transform: translateX(-250px);
+}
+
+ul li {
+  list-style: none;
+}
+
+.menu {
+  margin-top: 64px;
+}
+
+ul li a {
+  padding: 16px;
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s ease-out;
+  color: #2F435A;
+  
+}
+
+ul li:hover a {
+  color: #fff;
+  background-color: #2F435A;
+}
+
+ul li a i {
+  width: 40px;
+  text-align: center;
+
+}
+
+
+.inputMenu {
+  display: none;
+  visibility: hidden;
+}
+
+.toggle {
+  position: fixed;
+  height: 16px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding-top: 16px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color:0;
+}
+
+.toggle i {
+  font-size: 30px;
+  margin-left: 16px;
+}
+
+
+.inputMenu:checked~.slide {
+  transform: translateX(0);
+}
+
+
+
+/* configuração Cabeçalho logo*/
+
+main.topo section.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-height: 1000px;
+  padding: 64px;
+  background-color: 0;
+}
+
+main.topo section.cabecalho .logo img {
+  width: 500px;
+  margin-right: 32px;
+
+}
+
+main.topo section.cabecalho .textlogo {
+  text-align: right;
+  margin-left: 64px;
+  margin-right: 32px;
+
+}
+
+/* configuração da sessão agendamento*/
+
+main.cards {
+  display: flex;
+  flex-direction: row;
+  padding: 64px;
+  background-color: 0;
+
+}
+
+main.cards section.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #FDCE6D4D;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 200px;
+  margin-left: 32px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  
+}
+
+main.cards section.card .text {
+
+  flex-direction: column;
+  text-align: left;
+  padding: 32px;
+  padding-left: 64px;
+  background-color: 0;
+
+
+
+}
+
+#title {
+  font: bold;
+  color: #11979C;
+
+}
+
+main.cards section.card:first-child {
+  margin-left: 0;
+}
+
+main.cards section.card .icon {
+
+  display: flex;
+  width: 180px;
+  height: 180px;
+  
+
+
+}
+
+main.cards section.card img {
+  width: 150%;
+  padding: 1px;
+  border-radius: 5px;
+}
+
+main.cards section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-size: auto;
+  font-weight: 700;
+  background: linear-gradient(to right, #2F435A, #8195ac);
+  color: #FDCE6D;
+
+}
+
+/* configuração Quem Somos*/
+
+main.quem section.quemsomos {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding: 64px;
+  background-color: 0;
+}
+
+
+main.quem section.quemsomos .textoquem {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 64px;
+  align-self: center;
+}
+
+main.quem section.quemsomos .foto img {
+
+  width: 350px;
+  margin-right: 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+/* configuração Depoimentos*/
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  font-size: 14px;
+  grid-gap: 0px;
+  background-color: 0;
+  margin-top: 16px;
+  margin-bottom: 64px;
+}
+
+.grid1>div:nth-child(n + 1) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: 0;
+  padding-right: 64px;
+  padding-left: 64px;
+  
+ 
+
+}
+
+#imgdepo {
+  width: 250px;
+}
+
+#depoTitles {
+  font: bold;
+  color: #11979C;
+  margin-bottom: 16px;
+}
+
+
+
+/* configuração Contato com o Suporte*/
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background-color: 0;
+  padding-left: 32px;
+  margin-bottom: 64px;
+ 
+  
+
+}
+
+.form_box {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+
+}
+
+.form_box form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-wrap: flex;
+  padding: 16px;
+  margin-left: 16px;
+}
+
+.form_box input,
+.form_box textarea {
+  width: calc(50% - 8px);
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  background-color: #FDCE6D4D;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.form_box input:first-child {
+  margin-right: 16px;
+
+}
+
+.form_box input {
+  width: 100%;
+
+}
+
+.form_box textarea {
+  width: 100%;
+  height: 100px;
+  padding: 16px;
+
+}
+
+.form_box button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-size: auto;
+  font-weight: 700;
+  background: linear-gradient(to right, #2F435A, #8195ac);
+  color: #FDCE6D;
+}
+
+
+/* configuração Redes sociais */
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: 0;
+
+}
+
+.grid2 img {
+  margin-right: 24px;
+
+
+}
+
+.grid2 .redessociais {
+  margin-left: 20%;
+  margin-top: 10%;
+
+
+}
+
+/* configuração Responsividade para tela de notebook --- não funciona ainda para celulares*/
+
+
+@media screen and (max-width: 720px) {
+  main.cards {
+      flex-direction: column;
+  }
+
+  main.cards section.card {
+      margin-left: 0;
+      margin-bottom: 32px;
+  }
+
+  main.quem section.quemsomos {
+      flex-direction: column;
+  }
+
+  main.quem section.quemsomos .textoquem {
+      text-align: center;
+      padding: 5px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 16px;
+      margin-bottom: 16px
+  }
+
+  main.topo section.cabecalho {
+      display: flex;
+      flex-direction: column;
+  }
+
+  main.topo section.cabecalho .textlogo {
+      text-align: center;
+      margin-left: 32px;
+      margin-right: 32px;
+
+  }
+
+  main.quem section.quemsomos .foto img {
+
+      align-items: center;
+      margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .grid1 {
+      grid-template-columns: 1fr;
+  }
+
+  .grid2 {
+      grid-template-columns: 1fr;
+
+  }
+
+}
