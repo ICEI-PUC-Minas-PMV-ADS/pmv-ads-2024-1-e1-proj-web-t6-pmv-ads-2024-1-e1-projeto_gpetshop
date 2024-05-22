@@ -7,7 +7,11 @@ module.exports = {
     entry: {
         solicitacaoAgendamento: './src/SolicitacaoAgendamento/index.js',
         paginaInicial: './src/paginaInicial/index.js',
-        cadastroClientes: './src/Cadastroclientes/index.js'
+        cadastroClientes: './src/Cadastroclientes/index.js',
+        visualizacaoPainelServicosAgendados: './src/Visualização_Painel_Serviços_Agendados/index.js',
+        tratamentoSolicitacao: './src/TratamentoSolicitacao/index.js',
+        listagemSolicitacoes: './src/ListagemSolicitacoes/index.js',
+        listagemSuporte: './src/ListagemSuporte/index.js'
     },
     devServer: {
         static: {
@@ -31,6 +35,18 @@ module.exports = {
                         outputPath: 'assets/svg',
                     },
                 }],
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      name: '[name].[ext]',
+                      outputPath: 'fonts/'
+                    }
+                  }
+                ]
             },
             {
                 test: /\.png$/,
@@ -66,6 +82,26 @@ module.exports = {
             template: './src/Cadastroclientes/index.html',
             filename: 'cadastroClientes/CadastroClientes.html', 
             chunks: ['cadastroClientes'], 
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/Visualização_Painel_Serviços_Agendados/index.html',
+            filename: 'visualizacaoPainelServicosAgendados/visualizacaoPainelServicosAgendados.html', 
+            chunks: ['visualizacaoPainelServicosAgendados'], 
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/TratamentoSolicitacao/index.html',
+            filename: 'tratamentoSolicitacao/tratamentoSolicitacao.html', 
+            chunks: ['tratamentoSolicitacao'], 
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/ListagemSolicitacoes/index.html',
+            filename: 'listagemSolicitacoes/listagemSolicitacoes.html', 
+            chunks: ['listagemSolicitacoes'], 
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/ListagemSuporte/index.html',
+            filename: 'listagemSuporte/listagemSuporte.html', 
+            chunks: ['listagemSuporte'], 
         }),
     ],
 }
