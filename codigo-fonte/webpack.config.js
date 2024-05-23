@@ -11,7 +11,9 @@ module.exports = {
         visualizacaoPainelServicosAgendados: './src/Visualização_Painel_Serviços_Agendados/index.js',
         tratamentoSolicitacao: './src/TratamentoSolicitacao/index.js',
         listagemSolicitacoes: './src/ListagemSolicitacoes/index.js',
-        listagemSuporte: './src/ListagemSuporte/index.js'
+        listagemSuporte: './src/ListagemSuporte/index.js',
+        novoAgendamento: './src/NovoAgendamento/index.js',
+        tratamentoSuporte: './src/TratamentoSuporte/index.js'
     },
     devServer: {
         static: {
@@ -37,13 +39,13 @@ module.exports = {
                 }],
             },
             {
-                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
                   {
                     loader: 'file-loader',
                     options: {
                       name: '[name].[ext]',
-                      outputPath: 'fonts/'
+                      outputPath: 'assets/fonts/'
                     }
                   }
                 ]
@@ -102,6 +104,16 @@ module.exports = {
             template: './src/ListagemSuporte/index.html',
             filename: 'listagemSuporte/listagemSuporte.html', 
             chunks: ['listagemSuporte'], 
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/NovoAgendamento/index.html',
+            filename: 'novoAgendamento/novoAgendamento.html', 
+            chunks: ['novoAgendamento'], 
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/TratamentoSuporte/index.html',
+            filename: 'tratamentoSuporte/tratamentoSuporte.html', 
+            chunks: ['tratamentoSuporte'], 
         }),
     ],
 }
