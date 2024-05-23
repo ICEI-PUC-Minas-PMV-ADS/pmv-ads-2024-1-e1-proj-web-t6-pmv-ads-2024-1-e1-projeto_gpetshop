@@ -69,15 +69,18 @@ function setSolicitacaoDeAgendamento() {
   localStorage.setItem("solicitacoes", JSON.stringify(solicitacoes));
 
   alert("Sua solicitação foi enviada com sucesso vai chegar um email com seu processo");
+
+  document.getElementById("form").reset();
+
   window.location.href = "../paginaInicial/paginaInicial.html";
 }
 
-function submitButton() {
-  const btnAgendar = document.getElementById("agendar");
-  btnAgendar.onclick = (event) => {
-    setSolicitacaoDeAgendamento();
+function attachFormSubmitEvent() {
+  const formAgendar = document.getElementById("form");
+  formAgendar.addEventListener("submit", (event) => {
     event.preventDefault();
-  } 
+    setSolicitacaoDeAgendamento();
+  })
 }
 
 function getRacasDosCachorros() {
@@ -93,9 +96,9 @@ function getRacasDosCachorros() {
 }
 
 
-window.addEventListener("load", (event) => {
+window.addEventListener("DOMContentLoaded", (event) => {
   setOptionsSelect();
   setImages();
   getRacasDosCachorros()
-  submitButton();
+  attachFormSubmitEvent();
 });
