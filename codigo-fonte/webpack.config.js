@@ -17,11 +17,16 @@ module.exports = {
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, 'public'),
+            directory: path.join(__dirname, 'dist'),
+            staticOptions: {
+                index: 'paginaInicial/paginaInicial.html'
+            }
         },
         compress: true,
         port: 9000,
-        historyApiFallback: true,
+        historyApiFallback: {
+            index: '/paginaInicial/paginaInicial.html'
+        },
     },
     module: {
         rules: [
