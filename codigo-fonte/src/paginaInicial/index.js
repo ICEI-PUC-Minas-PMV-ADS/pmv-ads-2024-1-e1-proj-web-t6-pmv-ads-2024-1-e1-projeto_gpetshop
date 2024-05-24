@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let lista = localStorage.getItem("minhaLista")
 const formulario = document.querySelector("form");
 
@@ -41,3 +42,19 @@ function formatarTelefone(input) {
 }
 
 
+=======
+import "./index.css";
+import depoimentos1 from  "../Imagens/depoimentos1 (1).png";
+import depoimentos2 from  "../Imagens/depoimentos1 (2).png";
+import depoimentos3 from  "../Imagens/depoimentos1 (3).png";
+import depoimentos4 from  "../Imagens/depoimentos1 (4).png";
+import depoimentos5 from  "../Imagens/depoimentos1 (5).png";
+import depoimentos6 from  "../Imagens/depoimentos1 (6).png";
+import icon_facebook from  "../Imagens/icon_facebook.png";
+import icon_instagram from  "../Imagens/icon_instagram.png";
+import icon_whatsapp from  "../Imagens/icon_whatsapp.png";
+import imagem_quem_somos from  "../Imagens/ImagemQuemSomos.png";
+import logo_pet_puc from  "../Imagens/LogoPetpuc.png";
+import servico_banho from  "../Imagens/servicoBanho.png";
+import servico_tosa from  "../Imagens/servicoTosa.png";
+>>>>>>> fb46f8947da66805c2002feee63661b777d59591

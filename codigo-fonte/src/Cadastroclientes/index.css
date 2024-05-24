@@ -1,0 +1,220 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#menu {
+    
+    width: 10%;
+    height: 100vh;
+    background-color: rgba(253, 206, 109, 1); 
+    float: left;
+    color: #2F435A; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+li {
+    display: flex; 
+    align-items: center; 
+    padding: 15px 10px; 
+    text-align: left; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    position: relative;
+    font-size: 12px; 
+}
+
+
+    li:hover {
+        background-color: rgba(253, 206, 109, 1); 
+    }
+
+.menu-icon {
+    width: 20px;
+     padding: 3px  5px;
+    margin-right: 10px;
+}
+
+ul ul {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #FFF1D4; 
+    width: 180px; 
+}
+
+li:hover > ul {
+    display: block;
+}
+
+.geral {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    height: 80%;
+}
+
+.titulo {
+    font-size: 16px;
+    text-align: center; 
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    line-height: 1.2; 
+    text-align: center;
+    color: #2F435A;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botoes {
+    margin-top: 10px; 
+    width: 40%;
+    display: flex; 
+    justify-content: center; 
+}
+
+    .botoes button {
+        font-family: 'Poppins', sans-serif;
+        border-radius: 20px;
+        margin: 0 40px;
+        padding: 5px 20px; 
+        font-size: 12px;
+        border: none;
+        background-color: #2F435A; 
+        color: rgba(253, 206, 109, 1);
+        cursor: pointer; 
+        width: 25%; 
+        max-width: 200px; 
+    }
+
+.formulario {
+    margin-top: 2px;
+    width: 40%;
+    padding: 10px;
+}
+
+ 
+.cabecalho {
+    font-size: 14px; 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+    background-color: #2F435A;
+    color: rgba(253, 206, 109, 1); 
+    border-radius: 20px;
+    padding: 4px 10px;
+    display: flex; 
+    align-items: center;
+}
+
+    .cabecalho svg {
+        margin-right: 5px; 
+        vertical-align: middle; 
+        fill: #FDCE6D; 
+    }
+
+.campo {
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    height: 28px;
+}
+
+    .campo img {
+        width: 15px;
+        margin-right: 15px;
+    }
+
+    .campo input {
+        flex: 1;
+        padding: 1px 6px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #FFF1D4;
+        font-family: 'Poppins', sans-serif;
+        margin-right: 15px;
+    }
+
+    .campo .add {
+        margin-left: 15px;
+    }
+
+
+.nomecliente {
+    flex: 1;
+}
+
+.nomepet {
+    flex: 1; 
+    margin-left:5px
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+}
+
+.grupo {
+    display: grid; 
+    grid-template-rows: auto auto;
+    grid-gap: 5px; 
+}
+
+.campo {
+    align-self: start; 
+    border-radius: 10px; 
+}
+
+   
+    .campo select {
+        width: 100%;
+        background-color: #FFF1D4; 
+        padding: 4px;
+        border: 1px solid #ccc; 
+        border-radius: 10px;
+        font-weight: bold; 
+        font-family: 'Poppins', sans-serif;
+    }
+       
+        .campo select option {
+            
+            font-size: 14px;
+            color: #2F435A; 
+        }
+
+.cabecalho {
+    text-align: left;
+    font-weight: bold;
+}
+
+.observacao {
+    text-align: left;
+    padding: 5px; 
+    padding-top: 10px; 
+    height: 80px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFF1D4;
+    resize: none; 
+    margin-bottom: 10px
+}
+.pet1 {
+    display: none;
+}
+
+.add {
+    cursor: pointer;
+}
