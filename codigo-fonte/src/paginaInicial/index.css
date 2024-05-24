@@ -2,32 +2,70 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: poppinsmedium, sans-serif;
 
 }
 
-body {
+
+
+main {
   background: #f6f9ff;
   height: 100vh;
   width: 100%;
-
   display: contents;
   justify-content: center;
   align-items: center;
-
   color: #2F435A;
-
 }
 
-/* configuração titulos das sessões */
+/* Footer */
 
+footer {
+  padding: 24px;
+  text-align: center;
+  width: 100%;
+  color: #2F435A;
+  background-color: #FDCE6D;
+}
 
-.principalTitles {
+/*Faixa do topo da página*/
+
+#faixatopo {
+  width: 100%;
+  height: 64px;
+  background-color:#FDCE6D;
+  
+}
+
+/*Titulos entre as sessões*/
+
+h2 {
   height: 100%;
   width: 100%;
   padding: 32px;
   padding-left: 64px;
   background-color: 0;
+}
+
+/*titulos internos das sessões*/
+
+h3 {
+  font: bold;
+  color: #11979C;
+}
+
+/* Botões*/
+
+button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-size: auto;
+  font-weight: 700;
+  background: linear-gradient(to right, #2F435A, #8195ac);
+  color: #FDCE6D;
 }
 
 /* configuração barra de navegação lateral oculta */
@@ -57,7 +95,7 @@ ul li a {
   text-transform: capitalize;
   transition: 0.2s ease-out;
   color: #2F435A;
-  
+
 }
 
 ul li:hover a {
@@ -87,7 +125,7 @@ ul li a i {
   z-index: 1;
   cursor: pointer;
   border-radius: 2px;
-  background-color:0;
+  background-color: 0;
 }
 
 .toggle i {
@@ -102,169 +140,116 @@ ul li a i {
 
 
 
-/* configuração Cabeçalho logo*/
+/* Cabeçalho */
 
-main.topo section.cabecalho {
+
+header.topo section.cabecalho {
   display: flex;
   flex-direction: row;
   align-items: center;
   max-height: 1000px;
   padding: 64px;
-  background-color: 0;
 }
 
-main.topo section.cabecalho .logo img {
+header.topo section.cabecalho .logo img {
   width: 500px;
   margin-right: 32px;
 
 }
 
-main.topo section.cabecalho .textlogo {
+header.topo section.cabecalho .textlogo {
   text-align: right;
   margin-left: 64px;
   margin-right: 32px;
 
 }
 
-/* configuração da sessão agendamento*/
+/* Sessão de agendamento*/
 
-main.cards {
+.container1 {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   padding: 64px;
   background-color: 0;
-
+  width: 100%;
 }
 
-main.cards section.card {
+.card {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: #FDCE6D4D;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  max-height: 200px;
-  margin-left: 32px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-  
-}
-
-main.cards section.card .text {
-
-  flex-direction: column;
-  text-align: left;
-  padding: 32px;
-  padding-left: 64px;
-  background-color: 0;
-
-
-
-}
-
-#title {
-  font: bold;
-  color: #11979C;
-
-}
-
-main.cards section.card:first-child {
-  margin-left: 0;
-}
-
-main.cards section.card .icon {
-
-  display: flex;
-  width: 180px;
+  margin-right: 32px;
+  width: 60%;
   height: 180px;
-  
-
-
+  border-radius: 15px;
+  background-color: #FDCE6D4D;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-main.cards section.card img {
-  width: 150%;
-  padding: 1px;
-  border-radius: 5px;
+.fototosa {
+  width: 150px;
+  height: 160px;
+  border-radius: 8px;
+  margin: 10px;
 }
 
-main.cards section.card button {
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  border-radius: 10px;
-  border: 0;
-  cursor: pointer;
-  font-size: auto;
-  font-weight: 700;
-  background: linear-gradient(to right, #2F435A, #8195ac);
-  color: #FDCE6D;
-
+.textoagendamento {
+  height: 160px;
+  width: 60%;
+  padding: 16px;
+  max-width: 60%;
 }
 
-/* configuração Quem Somos*/
+/* Sessão Quem Somos*/
 
-main.quem section.quemsomos {
+section.quemsomos {
   display: flex;
   flex-direction: row;
   text-align: left;
   padding: 64px;
-  background-color: 0;
+  gap: 64px;
 }
 
 
-main.quem section.quemsomos .textoquem {
+section.quemsomos .textoquem {
   display: flex;
-  flex-direction: column;
   text-align: left;
-  margin-right: 64px;
   align-self: center;
 }
 
-main.quem section.quemsomos .foto img {
+section.quemsomos .foto img {
 
   width: 350px;
-  margin-right: 32px;
+  margin-right: 64px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-/* configuração Depoimentos*/
+/* Sessão Depoimentos*/
 
 .grid1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 100%;
   font-size: 14px;
-  grid-gap: 0px;
-  background-color: 0;
-  margin-top: 16px;
-  margin-bottom: 64px;
+  padding: 64px;
+  gap: 32px;
 }
 
 .grid1>div:nth-child(n + 1) {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
-  background-color: 0;
-  padding-right: 64px;
-  padding-left: 64px;
-  
- 
-
+  padding-right: 32px;
 }
 
 #imgdepo {
   width: 250px;
 }
 
-#depoTitles {
-  font: bold;
-  color: #11979C;
-  margin-bottom: 16px;
-}
 
 
-
-/* configuração Contato com o Suporte*/
+/* Sessão Solicitação de Suporte*/
 
 
 .container {
@@ -275,8 +260,8 @@ main.quem section.quemsomos .foto img {
   background-color: 0;
   padding-left: 32px;
   margin-bottom: 64px;
- 
-  
+
+
 
 }
 
@@ -327,20 +312,8 @@ main.quem section.quemsomos .foto img {
 
 }
 
-.form_box button {
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  border-radius: 10px;
-  border: 0;
-  cursor: pointer;
-  font-size: auto;
-  font-weight: 700;
-  background: linear-gradient(to right, #2F435A, #8195ac);
-  color: #FDCE6D;
-}
 
-
-/* configuração Redes sociais */
+/* Sessão Redes sociais */
 
 .grid2 {
   display: grid;
@@ -362,59 +335,662 @@ main.quem section.quemsomos .foto img {
 
 }
 
-/* configuração Responsividade para tela de notebook --- não funciona ainda para celulares*/
+/* Responsividade para tela grandes - Tablets ------------------------------------------------------------------*/
 
 
-@media screen and (max-width: 720px) {
-  main.cards {
-      flex-direction: column;
+
+@media only screen and (max-width: 854px){
+
+  /*cabeçalho*/
+  header.topo section.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 1000px;
+    padding: 0px;
+  }
+  
+  header.topo section.cabecalho .logo img {
+    width: 250px;
+    margin-right: 0px;
+  
+  }
+  
+  header.topo section.cabecalho .textlogo {
+    text-align: center;
+    margin-left: 64px;
+    margin-right: 32px;
+  
   }
 
-  main.cards section.card {
-      margin-left: 0;
-      margin-bottom: 32px;
-  }
+  /*Titulos das sessões*/
 
-  main.quem section.quemsomos {
-      flex-direction: column;
-  }
-
-  main.quem section.quemsomos .textoquem {
-      text-align: center;
-      padding: 5px;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 16px;
-      margin-bottom: 16px
-  }
-
-  main.topo section.cabecalho {
-      display: flex;
-      flex-direction: column;
-  }
-
-  main.topo section.cabecalho .textlogo {
-      text-align: center;
-      margin-left: 32px;
-      margin-right: 32px;
+  h2 {
+    height: 100%;
+    width: 100%;
+    padding: 64px;
+    
+    font-size: 16px;
+    text-align: center;
 
   }
 
-  main.quem section.quemsomos .foto img {
+  /*Sessão de agendamento*/
 
-      align-items: center;
-      margin-left: 16px;
+  .container1 {
+    display: block;
+    justify-content: center;
+    padding: 16px;
+    width: 100%;
   }
-}
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 80%;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #FDCE6D4D;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 64px;
+    
+  }
+  
+  .fototosa {
+    width: 150px;
+    height: 160px;
+    border-radius: 8px;
+    margin: 10px;
+  }
+  
+  .textoagendamento {
+    height: 100px;
+    width: 60%;
+    padding: 8px;
+    padding-top: 24px;
+    max-width: 60%;
+    align-self: flex-start;
+    
+  }
 
-@media screen and (max-width: 720px) {
+  /*Sessão "Quem Somos*/
+
+  section.quemsomos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 64px;
+    padding-top: 16px;
+    align-items: center;
+  
+  }
+  
+  
+  section.quemsomos .textoquem {
+    display: flex;
+    text-align: center;
+    align-self: center;
+  }
+  
+  section.quemsomos .foto img {
+  
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 64px;
+
+  }
+
+  /*Sessão Depoimentos*/
+
   .grid1 {
-      grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 0;
+    max-width: 100%;
+    font-size: 14px;
+    padding: 64px;
+    padding-top: 16px;
+    align-self: center;
+  }
+  
+  .grid1>div:nth-child(n + 0) {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 0;
+    align-items: center;
+    padding-right: 0;
+    align-self: center;
+    text-align: center;
+  }
+  
+  #imgdepo {
+    width: 150px;
+    align-self: center;
   }
 
+  /*Sessão Solicitação de Suporte*/
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 32px;
+    margin-bottom: 64px;
+  
+  }
+  
+  .form_box {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  
+  }
+  
+  .form_box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin-left: 16px;
+  }
+  
+  .form_box input,
+  .form_box textarea {
+    width: calc(50% - 8px);
+    height: 36px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    background-color: #FDCE6D4D;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  }
+  
+  
+  .form_box input:first-child {
+    margin-right: 16px;
+  
+  }
+  
+  .form_box input {
+    width: 100%;
+  
+  }
+  
+  .form_box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 16px;
+  
+  }
+  
+  
+  /* Sessão Redes sociais */
+  
   .grid2 {
-      grid-template-columns: 1fr;
-
+    display: flex;
+    flex-direction: column;
   }
+  
+  .grid2 img {
+    margin-right: 24px;
+  }
+  
+  .grid2 .redessociais {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10%;
+    width: 100%;
+    text-align: center;
+  
+  }
+
 
 }
+
+/* Responsividade para telas médias - Celulares -------------------------------------------------- */
+
+@media only screen and (max-width: 400px){
+
+  /*cabeçalho*/
+
+  header.topo section.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 1000px;
+    padding: 0px;
+  }
+  
+  header.topo section.cabecalho .logo img {
+    width: 250px;
+    margin-right: 0px;
+  
+  }
+  
+  header.topo section.cabecalho .textlogo {
+    text-align: center;
+    margin-left: 64px;
+    margin-right: 32px;
+  
+  }
+
+  /*Titulos das sessões*/
+
+  h2 {
+    height: 100%;
+    width: 100%;
+    padding: 64px;
+    
+    font-size: 16px;
+    text-align: center;
+
+  }
+
+  /*Sessão de agendamento*/
+
+  .container1 {
+    display: block;
+    justify-content: center;
+    padding: 16px;
+    width: 100%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 80%;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #FDCE6D4D;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 46px;
+    
+  }
+  
+  .fototosa {
+    width: 100px;
+    height: 110px;
+    border-radius: 8px;
+    margin: 10px;
+  }
+  
+  .textoagendamento {
+    height: 10px;
+    width: 60%;
+    padding: 8px;
+    padding-top: 24px;
+    max-width: 60%;
+    align-self: flex-start;
+    
+  }
+
+  /*Sessão quem somos*/
+
+  section.quemsomos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 64px;
+    padding-top: 16px;
+    align-items: center;
+  
+  }
+  
+  
+  section.quemsomos .textoquem {
+    display: flex;
+    text-align: center;
+    align-self: center;
+  }
+  
+  section.quemsomos .foto img {
+  
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 64px;
+
+  }
+
+  /*sessão Depoimentos*/
+
+  .grid1 {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 0;
+    max-width: 100%;
+    font-size: 14px;
+    padding: 64px;
+    padding-top: 16px;
+    align-self: center;
+  }
+  
+  .grid1>div:nth-child(n + 0) {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 0;
+    align-items: center;
+    padding-right: 0;
+    align-self: center;
+    text-align: center;
+  }
+  
+  #imgdepo {
+    width: 150px;
+    align-self: center;
+  }
+
+  /*Sessão Solicitação de Suporte*/
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 32px;
+    margin-bottom: 64px;
+  }
+  
+  .form_box {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  
+  .form_box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin-left: 16px;
+  }
+  
+  .form_box input,
+  .form_box textarea {
+    width: calc(50% - 8px);
+    height: 36px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    background-color: #FDCE6D4D;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  }
+  
+  
+  .form_box input:first-child {
+    margin-right: 16px;
+  
+  }
+  
+  .form_box input {
+    width: 100%;
+  
+  }
+  
+  .form_box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 16px;
+  
+  }
+  
+  
+  /* Sessão Redes sociais */
+  
+  .grid2 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid2 img {
+    margin-right: 24px;
+  }
+  
+  .grid2 .redessociais {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10%;
+    width: 100%;
+    text-align: center;
+  }
+
+
+}
+
+/*Responsividade para telas pequenas - Celulares ----------------------------------------------------------*/
+
+@media only screen and (max-width: 321px){
+
+  /*cabeçalho*/
+
+  header.topo section.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+    padding: 0px;
+  }
+  
+  header.topo section.cabecalho .logo img {
+    width: 250px;
+    margin-right: 0px;
+  
+  }
+  
+  header.topo section.cabecalho .textlogo {
+    text-align: center;
+    margin-left: 64px;
+    margin-right: 32px;
+  
+  }
+
+  /*Faixa do topo do site*/
+
+  #faixatopo{
+    width: 350px;
+  }
+  
+  /*Titulos entre as sessões*/
+
+  h2 {
+    height: 100%;
+    width: 100%;
+    padding: 64px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /*Sessão de Agendamento*/
+
+  .container1 {
+    display: block;
+    justify-content: center;
+    padding: 16px;
+    width: 100%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 80%;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #FDCE6D4D;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 46px;
+    
+  }
+  
+  .fototosa {
+    width: 90px;
+    height: 95px;
+    border-radius: 8px;
+    margin: 10px;
+  }
+  
+  .textoagendamento {
+    height: 10px;
+    width: 60%;
+    padding: 8px;
+    padding-top: 24px;
+    max-width: 60%;
+    align-self: flex-start;
+    font-size: 14px;
+    
+  }
+
+  /*sessão Quem Somos*/
+
+  section.quemsomos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 64px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+    align-items: center;
+  }
+  
+  
+  section.quemsomos .textoquem {
+    display: flex;
+    text-align: center;
+    align-self: center;
+  }
+  
+  section.quemsomos .foto img {
+  
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 64px;
+
+  }
+
+  /*sessão Depoimentos*/
+
+  .grid1 {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 0;
+    max-width: 100%;
+    font-size: 14px;
+    padding: 64px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-self: center;
+  }
+  
+  .grid1>div:nth-child(n + 0) {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 0;
+    align-items: center;
+    padding-right: 0;
+    align-self: center;
+    text-align: center;
+  }
+  
+  #imgdepo {
+    width: 150px;
+    align-self: center;
+  }
+
+  /*Sessão Solicitação de Suporte*/
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 32px;
+    margin-bottom: 64px;
+  }
+  
+  .form_box {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  
+  }
+  
+  .form_box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin-left: 16px;
+  }
+  
+  .form_box input,
+  .form_box textarea {
+    width: calc(50% - 8px);
+    height: 36px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    background-color: #FDCE6D4D;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  }
+  
+  
+  .form_box input:first-child {
+    margin-right: 16px;
+  
+  }
+  
+  .form_box input {
+    width: 100%;
+  
+  }
+  
+  .form_box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 16px;
+  
+  }
+  
+  
+  /* Sessão Redes sociais */
+  
+  .grid2 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid2 img {
+    margin-right: 8px;
+  }
+  
+  .grid2 .redessociais {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10%;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer */
+
+  footer{
+    width: 350px;
+  }
+
+
+}
+  
