@@ -31,6 +31,7 @@ formulario.addEventListener("submit", function (e) {
     novaPessoa.email = this.email.value;
     novaPessoa.telefone = this.telefone.value;
     novaPessoa.mensagem = this.mensagem.value;
+    novaPessoa.status = "Pendente"; // Definindo o status como "Pendente" no momento da criação
 
     lista.push(novaPessoa);
 
