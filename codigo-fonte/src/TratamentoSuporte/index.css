@@ -28,14 +28,14 @@
     border-radius: 2px;
 }
 
-.fa-bars {
+.fa-arrow-left {
     font-weight: 600;
     font-size: 36px;
     color: #2F435A;
     filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-.fa-bars:hover {
+.fa-arrow-left:hover {
     font-weight: 600;
     color: #FDCE6D;
     transition: .2s all;

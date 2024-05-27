@@ -13,10 +13,10 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="shortcut icon" href="./components/img/logo/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="fonts.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="../assets/fonts.css">
+
 </head>
 
 <body>
@@ -55,7 +55,7 @@
             </div>
             <!-- Barra de navegação lateral oculta-->
             <div class="menu-icon-container">
-                <button id="ativar"><i class="fa-solid fa-bars fa-2xl"></i></button>
+                <a href="/codigo-fonte/src/ListagemSuporte/index.html"><i class="fa-solid fa-arrow-left fa-2xl"></i></a>
             </div>
 
             <div>
@@ -63,7 +63,7 @@
             </div>
 
             <div class="logo">
-                <img src="components/img/logo/nomesemfundo.png" alt="" width="80" height="43">
+                <img src="../Imagens/nomesemfundo.png" alt="" width="80" height="43">
             </div>
         </div>
         <!-- FIM CABEÇALHO -->
@@ -77,16 +77,14 @@
                 <div class="label-title-cliente">
                     <div class="text-title-cliente">CLIENTE</div>
                 </div>
+                <input type="hidden" id="id" name="id">
                 <!-- INICIO NOME CLIENTE -->
-
-
                 <div class="name-client-container">
                     <i class="fa-solid fa-user"></i>
                     <label for="nameClient"></label>
                     <input class="dataSupport" id="nameClient" type="text" name="name-client" placeholder="ABCDEF"
                         maxlength="100" required>
                 </div>
-
                 <!-- FIM NOME CLIENTE -->
 
                 <!-- INICIO E-MAIL CLIENTE -->
@@ -130,7 +128,7 @@
                     <div id="resp">
                         <label for="text-value-resp"></label>
                         <textarea rows="10" name="resp" placeholder="Mensagem de resposta..." id="text-value-resp"
-                            class="dataSupport"></textarea>
+                            class="dataSupport" required></textarea>
                     </div>
                 </div>
             </div>
@@ -142,14 +140,14 @@
     <footer>
         <!-- INICIO AÇÕES -->
         <div id="actions">
-            <button id="inserir-resposta" type="button" value="INSERIR" onclick="onClickButtonEnterAnswer()">INSERIR
-                RESPOSTA</button>
-            <button id="excluir-mensagem" type="button" value="EXCLUIR"
-                onclick="onClickbButtonDelete()">EXCLUIR</button>
-            <button id="enviar-resposta" type="submit" value="ENVIAR" onclick="onClickbButtonSend()">ENVIAR</button>
+            <button id="inserir-resposta" type="button" value="INSERIR" onclick="onClickButtonEnterAnswer()">INSERIR RESPOSTA</button>
+            <button id="excluir-mensagem" type="button" value="EXCLUIR" onclick="onClickButtonDelete()">EXCLUIR</button>
+            <button id="enviar-resposta" type="submit" value="ENVIAR" onclick="onClickButtonSend()">ENVIAR</button>
         </div>
         <!-- FIM AÇÕES -->
     </footer>
+
+    <script src="index.js" defer></script>
 </body>
 
 </html>

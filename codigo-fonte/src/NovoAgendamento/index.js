@@ -5,8 +5,12 @@ const clearFields = () => {
 
 const sendRequest = () => {
   if (isValidFields()) {
+    const db_client = getLocalStorage();
+    const newClientId = db_client.length + 1; // Gera o ID baseado na posição no localStorage
+
     const clientRequest = {
       cliente: {
+        id: newClientId, // Usa o ID gerado
         nome: document.getElementById("nameClient").value,
         email: document.getElementById("emailClient").value,
         celular: document.getElementById("foneClient").value,
@@ -17,19 +21,19 @@ const sendRequest = () => {
         idade: document.getElementById("idade").value,
         porte: document.getElementById("porte").value,
         pelagem: document.getElementById("pelagem").value,
-        raça: document.getElementById("raca").value,
+        raca: document.getElementById("raca").value,
       },
 
-      serviço: {
+      servico: {
         servicos: document.getElementById("services").value,
       },
 
       agendamento: {
-        horário: document.getElementById("dt-agenda").value,
+        horario: document.getElementById("dt-agenda").value,
       },
 
-      observação: {
-        observação: document.getElementById("text-value-obs").value,
+      observacao: {
+        observacao: document.getElementById("text-value-obs").value,
       },
     };
     createClient(clientRequest);
@@ -46,54 +50,51 @@ const isValidFields = () => {
   return document.getElementById("form").reportValidity();
 };
 
-function setLocalStorage(db_client) {
-  return localStorage.setItem("db_client", JSON.stringify(db_client));
+function setLocalStorage(db_agenda) {
+  return localStorage.setItem("db_agenda", JSON.stringify(db_agenda));
 }
 
 function getLocalStorage() {
-  return JSON.parse(localStorage.getItem("db_client")) ?? [];
+  return JSON.parse(localStorage.getItem("db_agenda")) ?? [];
 }
 
-//crud
+function findClientIndexById(id) {
+  const db_agenda = getLocalStorage();
+  return db_agenda.findIndex((client) => client.cliente.id === id);
+}
+
+// CRUD
 function createClient(client) {
-  const db_client = getLocalStorage();
-  db_client.push(client);
-  setLocalStorage(db_client);
+  const db_agenda = getLocalStorage();
+  db_agenda.push(client);
+  setLocalStorage(db_agenda);
 }
 
 function readClient() {
   return getLocalStorage();
 }
 
-function updateClient(index, client) {
-  const db_client = readClient();
-  db_client[index] = client;
-  setLocalStorage(db_client);
-}
-
-function deleteClient(index) {
-  const db_client = readClient();
-  db_client.splice(index, 1);
-  setLocalStorage(db_client);
-}
-
-
-
-
-
-
-// OPEN CLOSE
-var openSlide = document.querySelector("#ativar");
-
-openSlide.addEventListener("click", function () {
-  var slide = document.querySelector("#slide");
-
-  if (slide.style.display === "block") {
-    slide.style.display = "none";
+function updateClient(id, updatedClient) {
+  const db_agenda = getLocalStorage();
+  const index = findClientIndexById(id);
+  if (index !== -1) {
+    db_agenda[index] = updatedClient;
+    setLocalStorage(db_agenda);
   } else {
-    slide.style.display = "block";
+    console.error("Client not found");
   }
-});
+}
+
+function deleteClient(id) {
+  const db_agenda = getLocalStorage();
+  const index = findClientIndexById(id);
+  if (index !== -1) {
+    db_agenda.splice(index, 1);
+    setLocalStorage(db_agenda);
+  } else {
+    console.error("Client not found");
+  }
+}
 
 // DROPDOWN
 function dropDownIdade(parameterIdade) {
