@@ -1,7 +1,7 @@
-import "./index.css";
-import "./img/agenda.png";
-import "./img/cadastro.png";
-import "./img/file.png";
-import "./img/home.png";
-import "./img/power.png";
-import "./img/suporte.png";
+import './index.css';
+import '../Imagens/agenda.png';
+import '../Imagens/cadastro.png';
+import '../Imagens/file.png';
+import '../Imagens/home.png';
+import '../Imagens/power.png';
+import '../Imagens/suporte.png';
