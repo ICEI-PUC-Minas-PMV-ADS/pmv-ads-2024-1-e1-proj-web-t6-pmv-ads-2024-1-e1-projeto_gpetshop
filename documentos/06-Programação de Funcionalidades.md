@@ -385,6 +385,68 @@ Paulo Henrique Sousa Carvalho
 
 <br>
 
+## Visualização de Painel de Serviços Agendados (RF-07)
+
+O painel de serviços agendados pode ser acessado pelo menu lateral ele deve fornecer
+ informações relevantes, como nome do cliente, tipo de serviço, horário agendado, etc.
+
+#### Painel de Serviços Agendados:
+
+
+
+<img src ="img/painel_exib.png" width="800"/>
+
+
+
+### Requisito Atendido
+
+RF-07: O Sistema deve permitir que os colaboradores vejam as informações relevantes, como nome do cliente, tipo de serviço, horário agendado, etc..
+
+### Artefatos da funcionalidade
+
+#### <li>Listagem das Solicitações</li>
+index.html
+<br> index.css
+<br> index.js
+<br>
+
+
+
+### Estrutura de Dados
+
+
+#### <li>Listagem das Solicitações</li>
+<a href="codigo-fonte\src\Visualização de Painel de Serviços Agendados\index.html">
+index.html</a>
+<br>
+<a href="codigo-fonte\src\Visualização de Painel de Serviços Agendados\index.css">
+index.css</a>
+<br>
+<a href="codigo-fonte\src\Visualização de Painel de Serviços Agendados\index.js">
+index.js</a>
+<br>
+
+
+<br>
+
+
+
+### Instruções de acesso
+
+**1º Passo:** Fazer o login como **gestor** ou **atendente / banhista**;
+
+**2º Passo:** Acessar o menu lateral que será aberto ao clicar no ícone esquerdo do cabeçalho da página;
+
+**3º Passo:** Ir até o item de **painel de serviços** onde o usuário será levado à página. assim tendo acesso as informações do calendário
+
+<br>
+
+### Responsável
+
+Gabriel Marchi Ziviani
+
+<br>
+
 ## Tela de Cadastro de Usuários Colaboradores  (RF-09)
 
 O acesso a tela de cadastro poderá ser feito através da opção de menu “Cadastre-se” em seguida " Clientes". As
