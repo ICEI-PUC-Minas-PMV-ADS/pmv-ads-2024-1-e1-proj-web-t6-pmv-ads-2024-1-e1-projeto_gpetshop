@@ -16,13 +16,15 @@ function identifyingCustomer(event) {
 
   // Obter os dados do cliente do localStorage usando o ID.
   const solicitacoes = getLocalStorageSupport();
-  const clientData = solicitacoes.find(client => client.id === parseInt(id));
+  const clientData = solicitacoes.find((client) => client.id === parseInt(id));
   // Verificar se os dados do cliente existem.
   if (clientData) {
     // Serializar os dados do cliente como uma string JSON.
     const serializedData = JSON.stringify(clientData);
     // Redirecionar para a página de edição com os dados do cliente como parâmetros de consulta.
-    window.location.href = `/codigo-fonte/src/TratamentoSolicitacao/index.html?data=${encodeURIComponent(serializedData)}`;
+    window.location.href = `/codigo-fonte/src/TratamentoSolicitacao/index.html?data=${encodeURIComponent(
+      serializedData
+    )}`;
   } else {
     console.log("Não foram encontrados dados para o ID", id);
   }
@@ -40,9 +42,9 @@ function createRow(client) {
   const newRow = document.createElement("tr");
   newRow.setAttribute("data-id", client.id); // Adiciona um atributo de dados com o ID.
   newRow.innerHTML = `
-    <td class="td-nome">${client.clientName}</td>
-    <td class="td-nome-pet">${client.petName}</td>
-    <td class="td-celular">${client.clientPhone}</td>
+    <td class="td td-nome">${client.clientName}</td>
+    <td class="td td-nome-pet">${client.petName}</td>
+    <td class="td td-celular">${client.clientPhone}</td>
   `;
   document.querySelector("#tableClient>tbody").appendChild(newRow);
   newRow.addEventListener("click", identifyingCustomer); // Adiciona o event listener à nova linha.
@@ -68,27 +70,65 @@ function readSupport() {
 
 // Função de pesquisa
 function searchMessages() {
-  const input = document.getElementById('searchBarList');
+  const input = document.getElementById("searchBarList");
   const filter = input.value.toUpperCase();
   const solicitacoes = readSupport();
-  
-  const filteredData = solicitacoes.filter(client => {
-    return client.clientName.toUpperCase().includes(filter) || (client.observacoes && client.observacoes.toUpperCase().includes(filter));
+
+  const filteredData = solicitacoes.filter((client) => {
+    return (
+      client.clientName.toUpperCase().includes(filter) ||
+      (client.observacoes && client.observacoes.toUpperCase().includes(filter))
+    );
   });
-  
+
   updateTable(filteredData);
 }
 
-// Evento que executa o abrir e fechar da barra lateral
 var openSlide = document.querySelector("#ativar");
 
-openSlide.addEventListener("click", function () {
+openSlide.addEventListener("click", function (event) {
+  event.stopPropagation(); // Impede que o clique se propague para o documento
   var slide = document.querySelector("#slide");
 
   if (slide.style.display === "block") {
-    slide.style.display = "none";
+    slide.classList.remove("animate__fadeInLeft");
+    slide.classList.add("animate__fadeOutLeft");
+
+    slide.addEventListener("animationend", function handleAnimationEnd() {
+      slide.style.display = "none";
+      slide.classList.remove("animate__fadeOutLeft");
+      slide.removeEventListener("animationend", handleAnimationEnd);
+    });
   } else {
     slide.style.display = "block";
+    slide.classList.add("animate__fadeInLeft");
+    slide.classList.remove("animate__fadeOutLeft");
+
+    slide.addEventListener("animationend", function handleAnimationEnd() {
+      slide.classList.remove("animate__fadeInLeft");
+      slide.removeEventListener("animationend", handleAnimationEnd);
+    });
+  }
+});
+
+// Evento de clique no documento para fechar a barra lateral quando clicar fora dela
+document.addEventListener("click", function (event) {
+  var slide = document.querySelector("#slide");
+
+  // Verifica se o clique foi fora da barra lateral e do botão de ativação
+  if (
+    !slide.contains(event.target) &&
+    !openSlide.contains(event.target) &&
+    slide.style.display === "block"
+  ) {
+    slide.classList.remove("animate__fadeInLeft");
+    slide.classList.add("animate__fadeOutLeft");
+
+    slide.addEventListener("animationend", function handleAnimationEnd() {
+      slide.style.display = "none";
+      slide.classList.remove("animate__fadeOutLeft");
+      slide.removeEventListener("animationend", handleAnimationEnd);
+    });
   }
 });
 
