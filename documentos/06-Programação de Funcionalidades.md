@@ -65,7 +65,48 @@ João Henrique Andrade Leite
 
 <br>
 
-<img/>
+<img src="img/SolicitacaoAgendamento.png"/>
+
+#### Requisito atendido
+
+RD-002: Solicitação de Agendamento.
+
+O requisito pede um agendamento por um formulário que permita o cliente cadastrar os seus dados e o do cachorro que vai ser agendado.
+
+#### Artefatos da funcionalidade
+
+<li>
+  index.html
+</li>
+<li>
+  index.css
+</li>
+<li>
+  index.js
+</li>
+
+#### Estrutura de Dados
+
+<li>
+  <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/codigo-fonte/src/SolicitacaoAgendamento/index.html">index.html</a>
+</li>
+<li>
+  <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/codigo-fonte/src/SolicitacaoAgendamento/index.js">index.js</a>
+</li>
+<li>
+  <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/codigo-fonte/src/SolicitacaoAgendamento/index.css">index.css</a>
+</li>
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL:
+
+#### Responsável
+
+Rafael Santos Carvalho
+
+<br>
+<br>
 
 ## Solicitação de Suporte
 
