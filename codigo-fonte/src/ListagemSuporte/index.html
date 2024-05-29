@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="../assets/fonts.css">
-
+    <script src="index.js" defer></script>
 
 </head>
 
@@ -26,7 +26,7 @@
 
         <div class="header">
             <!-- Barra de navegação lateral oculta-->
-            <div id="slide" class="animar animate__animated animate__fadeInLeft animate__bounceOutLeft">
+            <div id="slide" class="animar animate__animated animate__fadeInLeft animate__fadeOutLeft">
                 <li><i class="fa-solid fa-home fa-2xl"></i><a href="#">Inicio</a></li>
                 <li><i class="fa-solid fa-calendar fa-2xl"></i><a href="#">Agenda<i
                             class="fa-solid fa-angle-down um"></i></a>
@@ -70,33 +70,32 @@
 
         </div>
     </header>
-    <div class="list-container">
-        <div class="title">
-            <div class="title-list">LISTA DE MENSAGENS</div>
-            <div class="search-bar">
-        <!--         <select id="statusFilter" onchange="searchMessages()">
-                    <option value="">Todos</option>
-                    <option value="Concluído">Concluído</option>
-                    <option value="Pendente">Pendente</option>
-                </select> -->
-                <input id="searchBarList" type="text" name="search-bar-list"
-                    placeholder="Pesquisar cliente" onkeyup="searchMessages()">
-                <i class="material-symbols-rounded">search</i>
+    <main>
+        <div class="header-pagina">
+            <h3 class="title-pagina">Tratar Suporte</h3>
+        </div>
+
+        <div class="list-container">
+            <div class="title">
+                <div class="title-list">LISTA DE MENSAGENS</div>
+                <div class="search-bar">
+                    <input id="searchBarList" type="text" name="search-bar-list" placeholder="Pesquisar cliente"
+                        onkeyup="searchMessages()">
+                    <i class="material-symbols-rounded">search</i>
+                </div>
             </div>
         </div>
-    </div>
-    <table id="tableClient">
-        <thead>
-            <tr>
-                <th>NOME</th>
-             <!--    <th>SITUAÇÃO</th> -->
-                <th>MENSAGEM</th>
-            </tr>
-        <tbody>
-            <!-- Linhas da tabela serão adicionadas dinamicamente aqui -->
-        </tbody>
-    </table>
-
-    <script src="index.js" defer></script>
+        <table id="tableClient">
+            <thead class="thead">
+                <tr class="thead-tr">
+                    <th class="th th-nome-cliente">NOME</th>
+                    <th class="th th-mensagem">MENSAGENS</th>
+                </tr>
+            <tbody class="tbody">
+                <!-- Linhas da tabela serão adicionadas dinamicamente aqui -->
+            </tbody>
+        </table>
+    </main>
 </body>
+
 </html>
