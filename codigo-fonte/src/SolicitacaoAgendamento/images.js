@@ -1,14 +1,14 @@
-import petPucSVG from '../assets/petPuc.svg';
-import user from '../assets/icon_user.svg';
-import phone from '../assets/phone.svg';
-import email from '../assets/icon_user_email.svg';
-import dog from '../assets/Dog.svg';
-import pelagem from '../assets/icon_pet_hair.svg';
-import dogIdade from '../assets/dog_years.svg';
-import dogPorte from '../assets/icon_porte_dog.svg';
-import arrowLeft from '../assets/arrow-left-solid.svg';
-import dogRaca from '../assets/dogRaca.svg';
-import dogObs from '../assets/icon_obs.svg';
+import petPucSVG from '../assets/svg/petPuc.svg';
+import user from '../assets/svg/icon_user.svg';
+import phone from '../assets/svg/phone.svg';
+import email from '../assets/svg/icon_user_email.svg';
+import dog from '../assets/svg/Dog.svg';
+import pelagem from '../assets/svg/icon_pet_hair.svg';
+import dogIdade from '../assets/svg/dog_years.svg';
+import dogPorte from '../assets/svg/icon_porte_dog.svg';
+import arrowLeft from '../assets/svg/arrow-left-solid.svg';
+import dogRaca from '../assets/svg/dogRaca.svg';
+import dogObs from '../assets/svg/icon_obs.svg';
 
 export function setImages() {
     setImageInHeader();

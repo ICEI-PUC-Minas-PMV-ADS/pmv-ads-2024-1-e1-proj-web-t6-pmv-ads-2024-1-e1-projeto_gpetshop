@@ -1,5 +1,5 @@
-/* import "./index.css";
-/* import "../assets/fonts.css";
+import "./index.css";
+import "../assets/fonts.css";
 import depoimentos1 from  "../Imagens/depoimentos1.png";
 import depoimentos2 from  "../Imagens/depoimentos2.png";
 import depoimentos3 from  "../Imagens/depoimentos3.png";
@@ -12,7 +12,7 @@ import icon_whatsapp from  "../Imagens/icon_whatsapp.png";
 import imagem_quem_somos from  "../Imagens/ImagemQuemSomos.png";
 import logo_pet_puc from  "../Imagens/LogoPetpuc.png";
 import servico_banho from  "../Imagens/servicoBanho.png";
-import servico_tosa from  "../Imagens/servicoTosa.png"; */
+import servico_tosa from  "../Imagens/servicoTosa.png";
 
 
 let lista = localStorage.getItem("minhaLista")

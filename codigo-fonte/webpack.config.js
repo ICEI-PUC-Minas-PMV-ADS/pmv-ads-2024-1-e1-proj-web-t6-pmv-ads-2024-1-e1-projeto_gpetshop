@@ -13,7 +13,8 @@ module.exports = {
         listagemSolicitacoes: './src/ListagemSolicitacoes/index.js',
         listagemSuporte: './src/ListagemSuporte/index.js',
         novoAgendamento: './src/NovoAgendamento/index.js',
-        tratamentoSuporte: './src/TratamentoSuporte/index.js'
+        tratamentoSuporte: './src/TratamentoSuporte/index.js',
+        cadastroServicos: './src/CadastroServicos/index.js'
     },
     devServer: {
         static: {
@@ -39,6 +40,7 @@ module.exports = {
                 use: [{
                     loader: 'file-loader',
                     options: {
+                        name: '[name].[ext]',
                         outputPath: 'assets/svg',
                     },
                 }],
@@ -119,6 +121,11 @@ module.exports = {
             template: './src/TratamentoSuporte/index.html',
             filename: 'tratamentoSuporte/tratamentoSuporte.html', 
             chunks: ['tratamentoSuporte'], 
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/CadastroServicos/CadastroServicos.html',
+            filename: 'CadastroServicos/CadastroServicos.html', 
+            chunks: ['cadastroServicos'], 
         }),
     ],
 }

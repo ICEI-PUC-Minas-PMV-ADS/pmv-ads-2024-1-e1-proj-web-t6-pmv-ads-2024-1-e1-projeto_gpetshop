@@ -1,3 +1,6 @@
+import "./CadastroServicos.css";
+import "./ListagemCadastroServicos.css";
+import logopetpuc from "../assets/svg/petPuc.svg"
 // OPEN CLOSE
 var openSlide = document.querySelector("#ativar");
 
