@@ -15,7 +15,7 @@ module.exports = {
         novoAgendamento: './src/NovoAgendamento/index.js',
         tratamentoSuporte: './src/TratamentoSuporte/index.js',
         cadastroServicos: './src/CadastroServicos/index.js',
-        cadastroPromocoes: './src/CadastroPromocoes/cadastroPromocoes.js'
+        cadastroPromocoes: './src/CadastroPromocoes/index.js'
     },
     devServer: {
         static: {
@@ -125,12 +125,12 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: './src/CadastroServicos/CadastroServicos.html',
-            filename: 'CadastroServicos/CadastroServicos.html', 
+            filename: 'cadastroServicos/CadastroServicos.html', 
             chunks: ['cadastroServicos'], 
         }),
         new HtmlWebpackPlugin({
             template: './src/CadastroPromocoes/CadastroPromocoes.html',
-            filename: 'CadastroPromocoes/CadastroPromocoes.html', 
+            filename: 'cadastroPromocoes/CadastroPromocoes.html', 
             chunks: ['cadastroPromocoes'], 
         })
     ],

@@ -1399,9 +1399,9 @@ module.exports = styleTagTransform;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!****************************************************!*\
-  !*** ./src/CadastroPromocoes/cadastroPromocoes.js ***!
-  \****************************************************/
+/*!****************************************!*\
+  !*** ./src/CadastroPromocoes/index.js ***!
+  \****************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cadastroPromocoes_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cadastroPromocoes.css */ "./src/CadastroPromocoes/cadastroPromocoes.css");
 
