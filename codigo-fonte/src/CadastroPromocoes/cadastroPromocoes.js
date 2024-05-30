@@ -1,3 +1,5 @@
+import "./cadastroPromocoes.css";
+
 // OPEN CLOSE
 var openSlide = document.querySelector("#ativar");
 
