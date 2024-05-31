@@ -1,3 +1,7 @@
+import "./index.css";
+import "../assets/fonts.css";
+import nomesemfundo from "../Imagens/nomesemfundo.png";
+
 // Função para deletar um suporte específico pelo ID da key minhaLista
 function deleteSupport(id) {
   const minhaLista = readSupport();

@@ -1,3 +1,7 @@
+import "./index.css";
+import "../assets/fonts.css";
+import nomesemfundo from "../Imagens/nomesemfundo.png";
+
 // Função para salvar os dados de suporte no local storage.
 function setLocalStorageSupport(minhaLista) {
   return localStorage.setItem("minhaLista", JSON.stringify(minhaLista));

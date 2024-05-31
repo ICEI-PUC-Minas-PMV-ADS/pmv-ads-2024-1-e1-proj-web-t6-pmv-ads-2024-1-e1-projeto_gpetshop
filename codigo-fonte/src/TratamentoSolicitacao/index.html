@@ -14,145 +14,105 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="../assets/fonts.css">
 </head>
 
 <body>
-    
+
     <header>
         <!-- INICIO CABEÇALHO -->
         <div class="header">
-            <!-- Barra de navegação lateral oculta-->
-            <div id="slide" class="animar animate__animated animate__fadeInLeft animate__bounceOutLeft">
-                <li><i class="fa-solid fa-home fa-2xl"></i><a href="#">Inicio</a></li>
-                <li><i class="fa-solid fa-calendar fa-2xl"></i><a href="#">Agenda<i
-                    class="fa-solid fa-angle-down um"></i></a>
-                    <div class="drop-down-agenda">
-                        <ul>
-                            <li><a href="/codigo-fonte/src/NovoAgendamento/index.html">Inserir Agendamento</a>
-                            </li>
-                            <li><a href="#">Consultar Agenda</a></li>
-                            <li><a href="/codigo-fonte/src/ListagemSolicitacoes/index.html">Tratar
-                                Solicitações</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><i class="fa-solid fa-user-group fa-2xl"></i><a href="#">Cadastros<i
-                            class="fa-solid fa-angle-down dois"></i></a>
-                            <div class="drop-down-cadastro">
-                        <ul>
-                            <li><a href="/codigo-fonte/src/Cadastroclientes/index.html">Clientes</a></li>
-                            <li><a href="#">Colaboradores</a></li>
-                            <li><a href="codigo-fonte/src/CadastroServicos/CadastroServicos.html">Serviços</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><i class="fa-solid fa-file-lines fa-2xl"></i><a href="#">Relatórios</a></li>
-                <li><i class="fa-solid fa-headset fa-2xl"></i><a href="#">Suporte</a></li>
-                <li><i class="fa-solid fa-power-off fa-2xl"></i><a href="#">Sair</a></li>
-            </div>
-            <!-- Barra de navegação lateral oculta-->
             <div class="menu-icon-container">
-                <a href="/codigo-fonte/src/ListagemSolicitacoes/index.html"><i class="fa-solid fa-arrow-left fa-2xl"></i></a>
+                <a href="/codigo-fonte/src/ListagemSolicitacoes/index.html"><i
+                        class="fa-solid fa-arrow-left fa-2xl"></i></a>
             </div>
-            
+
             <div>
-                <h3 class="title-principal">Tratamento da Solicitação</h3>
+                <h3 class="title-principal">Tratamento Solicitação</h3>
             </div>
 
             <div class="logo">
-                <img src="../Imagens/nomesemfundo.png" alt="" width="80" height="43">
-                <style>
-                    @media screen and (max-width: 414px) {
-                        img {
-                            width: 60px;
-                            height: 37px;
-                        }
-                    }
-                    </style>
+                <img class="image_logo" src="../Imagens/nomesemfundo.png" alt="" width="80" height="43">
             </div>
-        </div>
-        <!-- FIM CABEÇALHO -->
+            <!-- FIM CABEÇALHO -->
     </header>
 
-    <main>
-        <!-- INICIO FORMULÁRIO -->
-        <form id="form">
-            <!-- INICIO CLIENTE -->
-            <div id="client">
-                <div class="label-title-cliente">
-                    <div class="text-title-cliente">CLIENTE</div>
-                </div>
-                <!-- INICIO NOME CLIENTE -->
-                <input type="hidden" id="id" name="id">
-                <div class="name-client-container">
-                    <i class="fa-solid fa-user"></i>
-                    <label for="nameClient"></label>
-                    <input class="dataClient" id="nameClient" type="text" name="name-client" placeholder="ABCDEF" maxlength="100"
-                    required>
-                </div>
-                <!-- FIM NOME CLIENTE -->
-                
-                <!-- INICIO E-MAIL CLIENTE -->
-                <div class="email-client-container">
-                    <i class="fa-solid fa-envelope"></i>
-                    <label for="emailClient"></label>
-                    <input class="dataClient" id="emailClient" type="text" name="email-client"
-                    placeholder="abcd@email.com" maxlength="100" required>
-                </div>
-                <!-- FIM E-MAIL CLIENTE -->
-
-                <!-- INICIO TELEFONE CLIENTE -->
-                <div class="fone-client-container">
-                    <i class="fa-solid fa-phone"></i>
-                    <label for="foneClient"></label>
-                    <input class="dataClient" id="foneClient" type="text" name="fone-client"
-                    placeholder="(00) 11111-2222" maxlength="15" required>
-                </div>
-                <!-- FIM TELEFONE CLIENTE -->
+    <!-- INICIO FORMULÁRIO -->
+    <form id="form">
+        <h3 class="title-pagina">Tratamento Solicitação</h3>
+        <!-- INICIO CLIENTE -->
+        <div id="client">
+            <div class="label-title-cliente">
+                <div class="text-title-cliente">CLIENTE</div>
             </div>
-            <!-- FIM CLIENTE -->
+            <!-- INICIO NOME CLIENTE -->
+            <input id="idClient" type="hidden" name="id" />
+            <div class="name-client-container">
+                <i class="fa-solid fa-user"></i>
+                <label for="nameClient"></label>
+                <input class="dataClient" id="nameClient" type="text" name="name-client" placeholder="ABCDEF"
+                    maxlength="100" required>
+            </div>
+            <!-- FIM NOME CLIENTE -->
+
+            <!-- INICIO E-MAIL CLIENTE -->
+            <div class="email-client-container">
+                <i class="fa-solid fa-envelope"></i>
+                <label for="emailClient"></label>
+                <input class="dataClient" id="emailClient" type="text" name="email-client" placeholder="abcd@email.com"
+                    maxlength="100" required>
+            </div>
+            <!-- FIM E-MAIL CLIENTE -->
+
+            <!-- INICIO TELEFONE CLIENTE -->
+            <div class="fone-client-container">
+                <i class="fa-solid fa-phone"></i>
+                <label for="foneClient"></label>
+                <input class="dataClient" id="foneClient" type="text" name="fone-client" placeholder="(00) 11111-2222"
+                    maxlength="15" required>
+            </div>
+            <!-- FIM TELEFONE CLIENTE -->
+        </div>
+        <!-- FIM CLIENTE -->
 
 
-            <!-- INICIO PET -->
-            <div id="pet">
-                <div class="label-title-pet">
-                    <div class="text-title-pet">PET</div>
-                </div>
-                <div class="name-pet-container">
-                    <img class="dog-name-icon" src="../assets/icon_pet.svg" alt="">
-                    <label for="namePet"></label>
-                    <input class="dataClient" id="namePet" type="text" name="name-client" placeholder="ABCDEF"
-                    onkeyup="">
-                </div>
-                <!-- INICIO PROPRIEDADES -->
-                <div class="pet-properties">
+        <!-- INICIO PET -->
+        <div id="pet">
+            <div class="label-title-pet">
+                <div class="text-title-pet">PET</div>
+            </div>
+            <div class="name-pet-container">
+                <img class="dog-name-icon" src="../assets/svg/icon_pet.svg" alt="">
+                <label for="namePet"></label>
+                <input class="dataClient" id="namePet" type="text" name="name-client" placeholder="ABCDEF" onkeyup="">
+            </div>
+            <!-- INICIO PROPRIEDADES -->
+            <div class="pet-properties">
+                <div class="pet-properties-um">
                     <!-- INICIO PET IDADE -->
                     <div id="petIdade">
-                        <label class="text-idade" for="petIdade"><img class="icon-pet-idade" src="../assets/icon_pet_idade.svg"
-                            alt="">Idade</label>
-                            
-                            <div class="containerIdade">
-                                <input class="dataClient" id="idade" type="text" name="idade" placeholder="Selecionar"
+                        <label class="text-idade" for="petIdade">
+                            <img class="icon-pet-idade" src="../assets/svg/icon_pet_idade.svg" alt="">Idade</label>
+
+                        <div class="containerIdade">
+                            <input class="dataClient" id="idade" type="text" name="idade" placeholder="Selecionar"
                                 onfocus="dropDownIdade(0)" onblur="dropDownIdade(1)">
-                                <div class="dropDownIdade">
-                                    <div class="listDropDownIdade">
-                                        <div class="itemIdade" id="itemIdade-1" onmousedown="idade(1)">1 Ano</div>
-                                        <div class="itemIdade" id="itemIdade-2" onmousedown="idade(2)">2 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-3" onmousedown="idade(3)">3 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-4" onmousedown="idade(4)">4 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-5" onmousedown="idade(5)">5 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-6" onmousedown="idade(6)">6 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-7" onmousedown="idade(7)">7 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-8" onmousedown="idade(8)">8 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-9" onmousedown="idade(9)">9 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-10" onmousedown="idade(10)">10 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-11" onmousedown="idade(11)">11 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-12" onmousedown="idade(12)">12 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-13" onmousedown="idade(13)">13 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-14" onmousedown="idade(14)">14 Anos</div>
-                                        <div class="itemIdade" id="itemIdade-15" onmousedown="idade(15)">15 Anos</div>
+                            <div class="dropDownIdade">
+                                <div class="listDropDownIdade">
+                                    <div class="itemIdade" id="itemIdade-1" onmousedown="idade(1)">1 Ano</div>
+                                    <div class="itemIdade" id="itemIdade-2" onmousedown="idade(2)">2 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-3" onmousedown="idade(3)">3 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-4" onmousedown="idade(4)">4 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-5" onmousedown="idade(5)">5 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-6" onmousedown="idade(6)">6 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-7" onmousedown="idade(7)">7 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-8" onmousedown="idade(8)">8 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-9" onmousedown="idade(9)">9 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-10" onmousedown="idade(10)">10 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-11" onmousedown="idade(11)">11 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-12" onmousedown="idade(12)">12 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-13" onmousedown="idade(13)">13 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-14" onmousedown="idade(14)">14 Anos</div>
+                                    <div class="itemIdade" id="itemIdade-15" onmousedown="idade(15)">15 Anos</div>
                                 </div>
                             </div>
                         </div>
@@ -161,11 +121,11 @@
 
                     <!-- INICIO PET PORTE -->
                     <div id="petPorte">
-                        <label class="text-porte" for="petPorte"><img class="icon-pet-porte" src="../assets/icon_pet_porte.svg"
-                            alt="">Porte</label>
-                            
-                            <div class="containerPorte">
-                                <input class="dataClient" id="porte" type="text" name="porte" placeholder="Selecionar"
+                        <label class="text-porte" for="petPorte">
+                            <img class="icon-pet-porte" src="../assets/svg/icon_pet_porte.svg" alt="">Porte</label>
+
+                        <div class="containerPorte">
+                            <input class="dataClient" id="porte" type="text" name="porte" placeholder="Selecionar"
                                 onfocus="dropDownPorte(0)" onblur="dropDownPorte(1)">
                             <div class="dropDownPorte">
                                 <div class="listDropDownPorte">
@@ -178,17 +138,19 @@
                         </div>
                     </div>
                     <!-- FIM PET PORTE -->
+                </div>
 
+                <div class="pet-properties-dois">
                     <!-- INICIO PET PELAGEM -->
                     <div id="petPelagem">
-                        <label class="text-pelagem" for="petPelagem"><img class="icon-pet-pelagem" src="../assets/icon_pet_pelagem.svg"
-                            alt="">Pelagem</label>
-                            
-                            <div class="containerPelagem">
-                                <input class="dataClient" id="pelagem" type="text" name="pelagem" placeholder="Selecionar"
+                        <label class="text-pelagem" for="petPelagem">
+                            <img class="icon-pet-pelagem" src="../assets/svg/icon_pet_pelagem.svg" alt="">Pelagem</label>
+
+                        <div class="containerPelagem">
+                            <input class="dataClient" id="pelagem" type="text" name="pelagem" placeholder="Selecionar"
                                 onfocus="dropDownPelagem(0)" onblur="dropDownPelagem(1)">
-                                <div class="dropDownPelagem">
-                                    <div class="listDropDownPelagem">
+                            <div class="dropDownPelagem">
+                                <div class="listDropDownPelagem">
                                     <div class="itemPelagem" id="itemPelagem-1" onmousedown="pelagem(1)">Pelo curto liso
                                     </div>
                                     <div class="itemPelagem" id="itemPelagem-2" onmousedown="pelagem(2)">Pelo curto duro
@@ -206,13 +168,14 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <!-- FIM PET PELAGEM -->
 
                     <!-- INICIO PET RAÇA -->
                     <div id="petRaca">
-                        <label class="text-raca" for="petRaca"><img class="icon-pet-raca" src="../assets/icon_pet_raca.svg" alt="">Raça</label>
+                        <label class="text-raca" for="petRaca">
+                            <img class="icon-pet-raca" src="../assets/svg/icon_pet_raca.svg" alt="">Raça</label>
 
                         <div class="containerRaca">
                             <input class="dataClient" id="raca" type="text" name="raca" placeholder="Selecionar"
@@ -232,85 +195,85 @@
                     </div>
                     <!-- FIM PET RAÇA -->
                 </div>
-                <!-- FIM PROPRIEDADES -->
             </div>
-            <!-- FIM PET -->
-            
-            <!-- INICIO SERVIÇOS -->
-            <div id="servicos">
-                <label class="text-servicos" for="servicos">SERVIÇOS</label>
+            <!-- FIM PROPRIEDADES -->
+        </div>
+        <!-- FIM PET -->
 
-                <div class="containerServicos">
-                    <input class="dataClient" id="services" type="text" name="servicos" placeholder="Selecionar"
-                    onfocus="dropDownServico(0)" onblur="dropDownServico(1)" required>
-                    <div class="dropDownServico">
-                        <div class="listDropDownServico">
-                            <div class="itemServico" id="itemServico-1" onmousedown="servico(1)">Banho</div>
-                            <div class="itemServico" id="itemServico-2" onmousedown="servico(2)">Hidratação</div>
-                            <div class="itemServico" id="itemServico-3" onmousedown="servico(3)">Tosa na máquina</div>
-                            <div class="itemServico" id="itemServico-4" onmousedown="servico(4)">Tosa na tesoura</div>
-                            <div class="itemServico" id="itemServico-5" onmousedown="servico(5)">Tosa higiênica</div>
-                            <div class="itemServico" id="itemServico-6" onmousedown="servico(6)">Desembaraçamento</div>
-                            <div class="itemServico" id="itemServico-7" onmousedown="servico(7)">Tingimento dos pelos
-                            </div>
-                            <div class="itemServico" id="itemServico-8" onmousedown="servico(8)">Escovação de dentes
-                            </div>
-                            <div class="itemServico" id="itemServico-9" onmousedown="servico(9)">Limpeza de ouvido</div>
-                            <div class="itemServico" id="itemServico-10" onmousedown="servico(10)">Corte de unhas</div>
+        <!-- INICIO SERVIÇOS -->
+        <div id="servicos">
+            <label class="text-servicos" for="servicos">SERVIÇOS</label>
+
+            <div class="containerServicos">
+                <input class="dataClient" id="services" type="text" name="servicos" placeholder="Selecionar"
+                    onfocus="dropDownServico(0)" onblur="dropDownServico(1)">
+                <div class="dropDownServico">
+                    <div class="listDropDownServico">
+                        <div class="itemServico" id="itemServico-1" onmousedown="servico(1)">Banho</div>
+                        <div class="itemServico" id="itemServico-2" onmousedown="servico(2)">Hidratação</div>
+                        <div class="itemServico" id="itemServico-3" onmousedown="servico(3)">Tosa na máquina</div>
+                        <div class="itemServico" id="itemServico-4" onmousedown="servico(4)">Tosa na tesoura</div>
+                        <div class="itemServico" id="itemServico-5" onmousedown="servico(5)">Tosa higiênica</div>
+                        <div class="itemServico" id="itemServico-6" onmousedown="servico(6)">Desembaraçamento</div>
+                        <div class="itemServico" id="itemServico-7" onmousedown="servico(7)">Tingimento dos pelos
                         </div>
+                        <div class="itemServico" id="itemServico-8" onmousedown="servico(8)">Escovação de dentes
+                        </div>
+                        <div class="itemServico" id="itemServico-9" onmousedown="servico(9)">Limpeza de ouvido</div>
+                        <div class="itemServico" id="itemServico-10" onmousedown="servico(10)">Corte de unhas</div>
                     </div>
                 </div>
-
             </div>
-            <!-- FIM SERVIÇOS -->
-            
-            <!-- INICIO AGENDA -->
-            <div id="agendamento">
-                <div class="label-title-agenda">
-                    <div class="text-title-agenda">AGENDA</div>
-                </div>
-                
-                <div id="agenda">
-                    <label for="dt-agenda"></label>
-                    <input class="dataClient" id="dt-agenda" type="datetime-local" name="dt-agenda" onkeyup="">
-                </div>
-            </div>
-            <!-- FIM AGENDA -->
 
-            <!-- INICIO OBSERVAÇÕES -->
-            <div id="observacao">
-                <div class="label-title-obs">
-                    <div class="text-title-obs">OBSERVAÇÕES</div>
-                </div>
-                
-                <div id="observacoes">
-                    
-                    <div id="obs">
-                        <label for="text-value-obs"></label>
-                        <textarea class="dataClient" rows="10" name="obs" placeholder="Suas observações..."
+        </div>
+        <!-- FIM SERVIÇOS -->
+
+        <!-- INICIO AGENDA -->
+        <div id="agendamento">
+            <div class="label-title-agenda">
+                <div class="text-title-agenda">AGENDA</div>
+            </div>
+
+            <div id="agenda">
+                <label for="dt-agenda"></label>
+                <input class="dataClient" id="dt-agenda" type="datetime-local" name="dt-agenda" onkeyup="">
+            </div>
+        </div>
+        <!-- FIM AGENDA -->
+
+        <!-- INICIO OBSERVAÇÕES -->
+        <div id="observacao">
+            <div class="label-title-obs">
+                <div class="text-title-obs">OBSERVAÇÕES</div>
+            </div>
+
+            <div id="observacoes">
+
+                <div id="obs">
+                    <label for="text-value-obs"></label>
+                    <textarea class="dataClient" rows="10" name="obs" placeholder="Suas observações..."
                         id="text-value-obs"></textarea>
-                    </div>
-                    
                 </div>
+
             </div>
-            <!-- FIM OBSERVAÇÕES -->
-        </form>
-        <!-- FIM FORMULÁRIO -->
+        </div>
+        <!-- FIM OBSERVAÇÕES -->
+    </form>
+    <!-- FIM FORMULÁRIO -->
     </main>
-    
+
     <footer>
         <!-- INICIO AÇÕES -->
         <div id="actions">
             <button id="alterar-solicitacao" type="button" value="ALTERAR"
-            onclick="onClickButtonEnterAnswer()">ALTERAR</button>
+                onclick="onClickButtonEnterAnswer()">ALTERAR</button>
             <button id="excluir-solicitacao" type="button" value="EXCLUIR"
-            onclick="onClickButtonRecusar()">EXCLUIR</button>
+                onclick="onClickButtonRecusar()">EXCLUIR</button>
             <button id="aceitar-solicitacao" type="button" value="ACEITAR"
-            onclick="onClickButtonAceitar()">ACEITAR</button>
+                onclick="onClickButtonAceitar()">ACEITAR</button>
         </div>
         <!-- FIM AÇÕES -->
     </footer>
-    <script src="index.js" defer></script>
 </body>
 
 </html>

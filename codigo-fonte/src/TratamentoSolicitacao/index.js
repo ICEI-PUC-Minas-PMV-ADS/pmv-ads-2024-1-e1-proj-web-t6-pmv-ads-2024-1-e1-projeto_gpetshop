@@ -1,11 +1,16 @@
-// import "../TratamentoSolicitacao/index.css";
-// import "../assets/fonts.css";
+import "./index.css";
+import "../assets/fonts.css";
+import nomesemfundo from "../Imagens/nomesemfundo.png";
+import "../assets/svg/icon_pet.svg";
+import "../assets/svg/icon_pet_idade.svg";
+import "../assets/svg/icon_pet_porte.svg";
+import "../assets/svg/icon_pet_pelagem.svg";
+import "../assets/svg/icon_pet_raca.svg";
 
 /*
 RECUPERA OS DADOS DA KEY solicitacoes E PREENCHE OS CAMPOS DA TELA DE
 TRATAMENTO DA SOLICITAÇÃO
 */
-
 // Manipulação do localStorage para a key 'solicitacoes'
 function setLocalStorageSolicitation(solicitacoes) {
   return localStorage.setItem("solicitacoes", JSON.stringify(solicitacoes));
@@ -31,8 +36,12 @@ function getLocalStorageRefused() {
 // Move solicitação para 'db_agenda_refused' e remove de 'solicitacoes'
 function refuseSolicitation(id) {
   const solicitacoes = readSolicitation();
-  const refusedSolicitation = solicitacoes.find(client => client.id === parseInt(id));
-  const updatedList = solicitacoes.filter(client => client.id !== parseInt(id));
+  const refusedSolicitation = solicitacoes.find(
+    (client) => client.id === parseInt(id)
+  );
+  const updatedList = solicitacoes.filter(
+    (client) => client.id !== parseInt(id)
+  );
 
   if (refusedSolicitation) {
     const db_refused = getLocalStorageRefused();
@@ -136,7 +145,9 @@ function sendClient() {
 // Deleta uma solicitação da key 'solicitacoes'
 function deleteSolicitation(id) {
   const solicitacoes = readSolicitation();
-  const updatedList = solicitacoes.filter(client => client.id !== parseInt(id));
+  const updatedList = solicitacoes.filter(
+    (client) => client.id !== parseInt(id)
+  );
   setLocalStorageSolicitation(updatedList);
 }
 
@@ -148,7 +159,7 @@ const isValidFields = () => {
 // Limpa todos os campos do formulário
 function clearFields() {
   const dataClient = document.querySelectorAll(".dataClient");
-  dataClient.forEach(field => {
+  dataClient.forEach((field) => {
     field.value = "";
   });
 }
@@ -212,7 +223,8 @@ function dropDownIdade(parameterIdade) {
     elementsIdade.style.display = "block";
     const translateIdade = ["0px", "0px, -10px"];
     setTimeout(() => {
-      elementsIdade.style.transform = "translate(" + translateIdade[parameterIdade] + ")";
+      elementsIdade.style.transform =
+        "translate(" + translateIdade[parameterIdade] + ")";
     }, 0);
   } else {
     elementsIdade.style.display = "none";
@@ -232,7 +244,8 @@ function dropDownPorte(parameterPorte) {
     elementsPorte.style.display = "block";
     const translatePorte = ["0px", "0px, -10px"];
     setTimeout(() => {
-      elementsPorte.style.transform = "translate(" + translatePorte[parameterPorte] + ")";
+      elementsPorte.style.transform =
+        "translate(" + translatePorte[parameterPorte] + ")";
     }, 0);
   } else {
     elementsPorte.style.display = "none";
@@ -252,7 +265,8 @@ function dropDownPelagem(parameterPelagem) {
     elementsPelagem.style.display = "block";
     const translatePelagem = ["0px", "0px, -10px"];
     setTimeout(() => {
-      elementsPelagem.style.transform = "translate(" + translatePelagem[parameterPelagem] + ")";
+      elementsPelagem.style.transform =
+        "translate(" + translatePelagem[parameterPelagem] + ")";
     }, 0);
   } else {
     elementsPelagem.style.display = "none";
@@ -261,7 +275,9 @@ function dropDownPelagem(parameterPelagem) {
 
 // Seleciona pelagem no dropdown
 function pelagem(pelagem) {
-  const itemPelagem = document.getElementById("itemPelagem-" + pelagem).innerHTML;
+  const itemPelagem = document.getElementById(
+    "itemPelagem-" + pelagem
+  ).innerHTML;
   document.getElementsByTagName("input")[7].value = itemPelagem;
 }
 
@@ -272,7 +288,8 @@ function dropDownRaca(parameterRaca) {
     elementsRaca.style.display = "block";
     const translateRaca = ["0px", "0px, -10px"];
     setTimeout(() => {
-      elementsRaca.style.transform = "translate(" + translateRaca[parameterRaca] + ")";
+      elementsRaca.style.transform =
+        "translate(" + translateRaca[parameterRaca] + ")";
     }, 0);
   } else {
     elementsRaca.style.display = "none";
@@ -292,7 +309,8 @@ function dropDownServico(parameterServico) {
     elementsServico.style.display = "block";
     const translateServico = ["0px", "0px, -10px"];
     setTimeout(() => {
-      elementsServico.style.transform = "translate(" + translateServico[parameterServico] + ")";
+      elementsServico.style.transform =
+        "translate(" + translateServico[parameterServico] + ")";
     }, 0);
   } else {
     elementsServico.style.display = "none";
@@ -301,6 +319,8 @@ function dropDownServico(parameterServico) {
 
 // Seleciona serviço no dropdown
 function servico(servico) {
-  const itemServico = document.getElementById("itemServico-" + servico).innerHTML;
+  const itemServico = document.getElementById(
+    "itemServico-" + servico
+  ).innerHTML;
   document.getElementsByTagName("input")[9].value = itemServico;
 }

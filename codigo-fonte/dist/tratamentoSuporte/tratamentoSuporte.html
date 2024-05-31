@@ -14,8 +14,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="../assets/fonts.css">
 
 <script defer src="../tratamentoSuporte/tratamentoSuporte.js"></script></head>
 
@@ -23,37 +21,6 @@
     <header>
         <!-- INICIO CABEÇALHO -->
         <div class="header">
-            <!-- Barra de navegação lateral oculta-->
-            <div id="slide" class="animar animate__animated animate__fadeInLeft animate__bounceOutLeft">
-                <li><i class="fa-solid fa-home fa-2xl"></i><a href="#">Inicio</a></li>
-                <li><i class="fa-solid fa-calendar fa-2xl"></i><a href="#">Agenda<i
-                            class="fa-solid fa-angle-down um"></i></a>
-                    <div class="drop-down-agenda">
-                        <ul>
-                            <li><a href="/codigo-fonte/src/NovoAgendamento/index.html">Inserir Agendamento</a>
-                            </li>
-                            <li><a href="#">Consultar Agenda</a></li>
-                            <li><a href="/codigo-fonte/src/ListagemSolicitacoes/index.html">Tratar
-                                    Solicitações</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><i class="fa-solid fa-user-group fa-2xl"></i><a href="#">Cadastros<i
-                            class="fa-solid fa-angle-down dois"></i></a>
-                    <div class="drop-down-cadastro">
-                        <ul>
-                            <li><a href="/codigo-fonte/src/Cadastroclientes/index.html">Clientes</a></li>
-                            <li><a href="#">Colaboradores</a></li>
-                            <li><a href="/codigo-fonte/src/CadastroServicos/CadastroServicos.html">Serviços</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><i class="fa-solid fa-file-lines fa-2xl"></i><a href="#">Relatórios</a></li>
-                <li><i class="fa-solid fa-headset fa-2xl"></i><a
-                        href="/codigo-fonte/src/ListagemSuporte/index.html">Suporte</a></li>
-                <li><i class="fa-solid fa-power-off fa-2xl"></i><a href="#">Sair</a></li>
-            </div>
-            <!-- Barra de navegação lateral oculta-->
             <div class="menu-icon-container">
                 <a href="/codigo-fonte/src/ListagemSuporte/index.html"><i class="fa-solid fa-arrow-left fa-2xl"></i></a>
             </div>
@@ -72,6 +39,7 @@
     <main>
         <!-- INICIO FORMULÁRIO -->
         <form id="form">
+            <h3 class="title-pagina">Tratamento Solicitação</h3>
             <!-- INICIO CLIENTE -->
             <div id="client">
                 <div class="label-title-cliente">
@@ -108,21 +76,17 @@
             <!-- FIM CLIENTE -->
 
             <!-- INICIO OBSERVAÇÕES -->
-            <div id="mensagem">
-                <div id="mensagens">
-                    <div id="msg">
-                        <label for="text-value-msg"></label>
-                        <textarea rows="10" name="msg" placeholder="Mensagem..." id="text-value-msg"
-                            class="dataSupport"></textarea>
-                    </div>
-                </div>
+            <div id="msg">
+                <label for="text-value-msg"></label>
+                <textarea rows="10" name="msg" placeholder="Mensagem..." id="text-value-msg"
+                    class="dataSupport"></textarea>
             </div>
             <!-- FIM OBSERVAÇÕES -->
 
             <!-- INICIO RESPOSTA -->
             <div id="resposta">
-                <div class="label-title-msg">
-                    <div class="text-title-msg">RESPOSTA</div>
+                <div class="label-title-resp">
+                    <div class="text-title-resp">RESPOSTA</div>
                 </div>
                 <div id="respostas">
                     <div id="resp">
@@ -140,14 +104,14 @@
     <footer>
         <!-- INICIO AÇÕES -->
         <div id="actions">
-            <button id="inserir-resposta" type="button" value="INSERIR" onclick="onClickButtonEnterAnswer()">INSERIR RESPOSTA</button>
+            <button id="inserir-resposta" type="button" value="INSERIR" onclick="onClickButtonEnterAnswer()">INSERIR
+                RESPOSTA</button>
             <button id="excluir-mensagem" type="button" value="EXCLUIR" onclick="onClickButtonDelete()">EXCLUIR</button>
             <button id="enviar-resposta" type="submit" value="ENVIAR" onclick="onClickButtonSend()">ENVIAR</button>
         </div>
         <!-- FIM AÇÕES -->
     </footer>
 
-    <script src="index.js" defer></script>
 </body>
 
 </html>

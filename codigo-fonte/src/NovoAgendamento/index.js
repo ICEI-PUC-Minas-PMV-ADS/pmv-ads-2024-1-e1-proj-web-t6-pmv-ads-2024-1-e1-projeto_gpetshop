@@ -1,3 +1,12 @@
+import "./index.css";
+import "../assets/fonts.css";
+import nomesemfundo from "../Imagens/nomesemfundo.png";
+import "../assets/svg/icon_pet.svg";
+import "../assets/svg/icon_pet_idade.svg";
+import "../assets/svg/icon_pet_porte.svg";
+import "../assets/svg/icon_pet_pelagem.svg";
+import "../assets/svg/icon_pet_raca.svg";
+
 const clearFields = () => {
   const dataClient = document.querySelectorAll(".dataClient");
   dataClient.forEach((field) => (field.value = ""));
@@ -42,7 +51,7 @@ const sendRequest = () => {
   }
 };
 
-function onClickbButtonAgendar() {
+function onClickButtonAgendar() {
   sendRequest();
 }
 
