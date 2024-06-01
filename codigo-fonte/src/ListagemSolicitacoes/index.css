@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -26,7 +27,6 @@ body {
   background-color: #fdce6d;
   height: 100%;
   width: 250px;
-  font-family: poppinssemibold, sans-serif;
   z-index: 1000;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
   border-radius: 0px 10px 10px 0px;
@@ -181,7 +181,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: poppinsmedium, sans-serif;
   width: inherit;
   margin-top: 40px;
 }
@@ -195,17 +194,16 @@ body {
   margin-top: 10px;
   color: #2f435a;
   font-size: 20px;
-  font-family: poppinssemibold, sans-serif;
 }
 
 .menu-icon-container {
   display: flex;
   align-items: center;
-  height: 16px;
-  width: 30px;
+  width: 80px;
+  height: 43px;
   top: 0px;
   left: 0px;
-  padding-top: 16px;
+  padding-top: 5px;
   cursor: pointer;
   border-radius: 2px;
 }
@@ -235,7 +233,7 @@ body {
   display: flex;
   align-items: center;
   color: #2f435a;
-  font-family: poppinssemibold, sans-serif;
+  font-size: 24px;
 }
 
 .logo {
@@ -268,7 +266,6 @@ main {
   align-items: center;
   width: 231px;
   height: 20px;
-  font-family: poppinssemibold, sans-serif;
   font-size: 20px;
   color: #2f435a;
   border-bottom: 2px solid #fdce6d;
@@ -292,7 +289,6 @@ main {
   width: 405px;
   height: 30px;
   color: #fddb89;
-  font-family: poppinsmedium, sans-serif;
   font-size: 16px;
   background: #2f435a;
   border: none;
@@ -303,7 +299,6 @@ main {
 
 #searchBarList::placeholder {
   color: rgba(255, 231, 190, 0.79);
-  font-family: poppinsregular, sans-serif;
 }
 
 .material-symbols-rounded {
@@ -329,6 +324,7 @@ thead {
   padding-left: 10px;
   position: absolute;
   width: 98%;
+  margin-top: -3px;
   border-collapse: collapse;
 }
 
@@ -344,8 +340,7 @@ thead > tr > th {
   max-width: 350px;
   color: #2f435a;
   text-align: start;
-  font-size: 16px;
-  font-family: poppinsmedium, sans-serif;
+  font-size: 17px;
   border-collapse: collapse;
 }
 
@@ -378,7 +373,6 @@ tbody > tr {
   gap: 5px;
   border-collapse: collapse;
   font-size: 16px;
-  font-family: poppinsregular, sans-serif;
 }
 
 tbody > tr:hover {
@@ -387,11 +381,9 @@ tbody > tr:hover {
   transition: 0.2s all;
 
   font-size: 16px;
-  font-family: poppinssemibold, sans-serif;
 }
 
 .td-nome {
-  /*   border-bottom: 1px solid #dee0e4; */
   padding-left: 3px;
   align-self: center;
   min-width: 353px;
@@ -466,7 +458,6 @@ tbody::-webkit-scrollbar-thumb {
     align-items: center;
     color: #2f435a;
     font-size: 24px;
-    font-family: poppinssemibold, sans-serif;
   }
 
   main {
@@ -497,7 +488,6 @@ tbody::-webkit-scrollbar-thumb {
     align-items: center;
     width: 243px;
     height: 20px;
-    font-family: poppinssemibold, sans-serif;
     font-size: 21px;
     color: #2f435a;
     border-bottom: 2px solid #fdce6d;
@@ -521,7 +511,6 @@ tbody::-webkit-scrollbar-thumb {
     width: 405px;
     height: 35px;
     color: #fddb89;
-    font-family: poppinsmedium, sans-serif;
     font-size: 17px;
     line-height: 35px;
     background: #2f435a;
@@ -533,7 +522,6 @@ tbody::-webkit-scrollbar-thumb {
 
   #searchBarList::placeholder {
     color: rgba(255, 231, 190, 0.79);
-    font-family: poppinsregular, sans-serif;
   }
 
   .material-symbols-rounded {
@@ -576,7 +564,6 @@ tbody::-webkit-scrollbar-thumb {
     color: #2f435a;
     text-align: start;
     font-size: 16px;
-    font-family: poppinsmedium, sans-serif;
     border-collapse: collapse;
   }
 
@@ -601,7 +588,6 @@ tbody::-webkit-scrollbar-thumb {
     gap: 5px;
     border-collapse: collapse;
     font-size: 18px;
-    font-family: poppinsregular, sans-serif;
   }
 
   tbody>tr:hover {
@@ -610,7 +596,6 @@ tbody::-webkit-scrollbar-thumb {
     transition: 0.2s all;
 
     font-size: 17px;
-    font-family: poppinssemibold, sans-serif;
   }
 
   .td-nome {
@@ -689,7 +674,6 @@ tbody::-webkit-scrollbar-thumb {
     align-items: center;
     color: #2f435a;
     font-size: 24px;
-    font-family: poppinssemibold, sans-serif;
   }
 
   main {
@@ -720,7 +704,6 @@ tbody::-webkit-scrollbar-thumb {
     align-items: center;
     width: 243px;
     height: 20px;
-    font-family: poppinssemibold, sans-serif;
     font-size: 21px;
     color: #2f435a;
     border-bottom: 2px solid #fdce6d;
@@ -744,7 +727,6 @@ tbody::-webkit-scrollbar-thumb {
     width: 405px;
     height: 35px;
     color: #fddb89;
-    font-family: poppinsmedium, sans-serif;
     font-size: 17px;
     line-height: 35px;
     background: #2f435a;
@@ -756,7 +738,6 @@ tbody::-webkit-scrollbar-thumb {
 
   #searchBarList::placeholder {
     color: rgba(255, 231, 190, 0.79);
-    font-family: poppinsregular, sans-serif;
   }
 
   .material-symbols-rounded {
@@ -799,7 +780,6 @@ tbody::-webkit-scrollbar-thumb {
     color: #2f435a;
     text-align: start;
     font-size: 16px;
-    font-family: poppinsmedium, sans-serif;
     border-collapse: collapse;
   }
 
@@ -834,7 +814,6 @@ tbody::-webkit-scrollbar-thumb {
     gap: 5px;
     border-collapse: collapse;
     font-size: 18px;
-    font-family: poppinsregular, sans-serif;
   }
 
   tbody>tr:hover {
@@ -843,7 +822,6 @@ tbody::-webkit-scrollbar-thumb {
     transition: 0.2s all;
 
     font-size: 17px;
-    font-family: poppinssemibold, sans-serif;
   }
 
   .td-nome {
@@ -942,7 +920,6 @@ tbody::-webkit-scrollbar-thumb {
     margin-top: 30px;
     color: #2f435a;
     font-size: 24px;
-    font-family: poppinssemibold, sans-serif;
   }
 
 
@@ -970,7 +947,6 @@ tbody::-webkit-scrollbar-thumb {
     margin-top: 10px;
     color: #2f435a;
     font-size: 20px;
-    font-family: poppinssemibold, sans-serif;
   }
 
   /*lista*/
@@ -1011,7 +987,6 @@ tbody::-webkit-scrollbar-thumb {
     width: 100%;
     height: 35px;
     color: #fddb89;
-    font-family: poppinsmedium, sans-serif;
     font-size: 17px;
     line-height: 35px;
     background: #2f435a;
@@ -1023,7 +998,6 @@ tbody::-webkit-scrollbar-thumb {
 
   #searchBarList::placeholder {
     color: rgba(255, 231, 190, 0.79);
-    font-family: poppinsregular, sans-serif;
   }
 
   .material-symbols-rounded {
@@ -1067,7 +1041,6 @@ tbody::-webkit-scrollbar-thumb {
     color: #2f435a;
     text-align: start;
     font-size: 16px;
-    font-family: poppinsmedium, sans-serif;
     border-collapse: collapse;
   }
 
@@ -1118,7 +1091,6 @@ tbody::-webkit-scrollbar-thumb {
     border: none;
     background-color: transparent;
     font-size: 16px;
-    font-family: poppinsmedium, sans-serif;
   }
 
 
@@ -1164,7 +1136,6 @@ tbody::-webkit-scrollbar-thumb {
     background-color: #fdce6d;
     height: 100%;
     width: 200px;
-    font-family: poppinssemibold, sans-serif;
     z-index: 1000;
     filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
     border-radius: 0px 10px 10px 0px;

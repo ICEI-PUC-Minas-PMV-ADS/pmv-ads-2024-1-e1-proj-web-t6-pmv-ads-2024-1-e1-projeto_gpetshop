@@ -1,5 +1,5 @@
 import "./index.css";
-import "../assets/fonts.css";
+import "../assets/fonts/fonts.css";
 import nomesemfundo from "../Imagens/nomesemfundo.png";
 
 // Função para salvar os dados de suporte no local storage.

@@ -21,7 +21,7 @@
 
     <header>
 
-        <div class="header">
+        <div class="poppins-semibold header">
             <!-- Barra de navegação lateral oculta-->
             <div id="slide" class="animar animate__animated animate__fadeInLeft animate__fadeOutLeft">
                 <li><i class="fa-solid fa-home fa-2xl"></i><a href="#">Inicio</a></li>
@@ -58,7 +58,7 @@
             </div>
 
             <div>
-                <h3 class="title-principal">Tratar Solicitações</h3>
+                <h3 class="poppins-semibold title-principal">Tratar Solicitações</h3>
             </div>
 
             <div class="logo">
@@ -68,33 +68,33 @@
     </header>
 
     <main>
-        <div class="header-pagina">
+        <div class="poppins-semibold header-pagina">
             <h3 class="title-pagina">Tratar Solicitações</h3>
         </div>
 
-    <div class="list-container">
-        <div class="title">
-            <div class="title-list">LISTA DE SOLICITAÇÕES</div>
-            <div class="search-bar">
-                <input id="searchBarList" type="text" name="search-bar-list"
-                    placeholder="Pesquisar cliente" onkeyup="searchMessages()"> 
-                <i class="material-symbols-rounded">search</i>
+        <div class="list-container">
+            <div class="title">
+                <div class="poppins-semibold title-list">LISTA DE SOLICITAÇÕES</div>
+                <div class="search-bar">
+                    <input class="poppins-regular" id="searchBarList" type="text" name="search-bar-list"
+                        placeholder="Pesquisar cliente" onkeyup="searchMessages()">
+                    <i class="material-symbols-rounded">search</i>
+                </div>
             </div>
         </div>
-    </div>
-    <table id="tableClient">
-        <thead class="thead">
-            <tr class="thead-tr">
-                <th class="th th-clientes">CLIENTES</th>
-                <th class="th th-nome-cliente">NOME CLIENTE</th>
-                <th class="th th-nome-pet">NOME PET</th>
-                <th class="th th-telefone-cliente">TELEFONE</th>
-            </tr>
-        <tbody class="tbody">
-            <!-- Linhas da tabela serão adicionadas dinamicamente aqui -->
-        </tbody>
-    </table>
-</main>
+        <table id="tableClient">
+            <thead class="thead">
+                <tr class="poppins-medium thead-tr">
+                    <th class="th th-clientes">CLIENTES</th>
+                    <th class="th th-nome-cliente">NOME CLIENTE</th>
+                    <th class="th th-nome-pet">NOME PET</th>
+                    <th class="th th-telefone-cliente">TELEFONE</th>
+                </tr>
+            <tbody class="tbody">
+                <!-- Linhas da tabela serão adicionadas dinamicamente aqui -->
+            </tbody>
+        </table>
+    </main>
 </body>
 
 </html>
