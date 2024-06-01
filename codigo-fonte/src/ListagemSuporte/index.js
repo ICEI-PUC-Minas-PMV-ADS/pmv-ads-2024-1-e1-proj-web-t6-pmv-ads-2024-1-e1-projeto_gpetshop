@@ -1,5 +1,5 @@
 import "./index.css";
-import "../assets/fonts/fonts.css";
+import "../assets/fonts.css";
 import nomesemfundo from "../Imagens/nomesemfundo.png";
 
 // Função para salvar os dados de suporte no local storage.
@@ -45,8 +45,8 @@ function createRow(client) {
   const newRow = document.createElement("tr");
   newRow.setAttribute("data-id", client.id); // Adiciona um atributo de dados com o ID.
   newRow.innerHTML = `
-      <td class="td td-nome">${client.nome}</td>
-      <td class="td td-mensagem">${client.mensagem}</td>
+      <td class="poppins-regular td td-nome">${client.nome}</td>
+      <td class="poppins-regular td td-mensagem">${client.mensagem}</td>
       `;
   document.querySelector("#tableClient>tbody").appendChild(newRow);
   newRow.addEventListener("click", identifyingCustomer); // Adiciona o event listener à nova linha.
