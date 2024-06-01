@@ -1,5 +1,5 @@
 import "./index.css";
-import "../assets/fonts-poppins.css";
+import "../assets/fonts/fonts.css";
 import depoimentos1 from  "../Imagens/depoimentos1.png";
 import depoimentos2 from  "../Imagens/depoimentos2.png";
 import depoimentos3 from  "../Imagens/depoimentos3.png";

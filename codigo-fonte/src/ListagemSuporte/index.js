@@ -1,5 +1,5 @@
 import "./index.css";
-import "../assets/fonts.css";
+import "../assets/fonts/fonts.css";
 import nomesemfundo from "../Imagens/nomesemfundo.png";
 
 // Função para salvar os dados de suporte no local storage.
@@ -26,7 +26,7 @@ function identifyingCustomer(event) {
       // Serializar os dados do cliente como uma string JSON.
       const serializedData = JSON.stringify(clientData);
       // Redirecionar para a página de edição com os dados do cliente como parâmetros de consulta.
-      window.location.href = `/codigo-fonte/src/TratamentoSuporte/index.html?data=${encodeURIComponent(serializedData)}`;
+      window.location.href = `../assets/tratamentoSuporte/tratamentoSuporte.html?data=${encodeURIComponent(serializedData)}`;
   } else {
       console.log("Não foram encontrados dados para o ID", id);
   }
@@ -46,7 +46,7 @@ function createRow(client) {
   newRow.setAttribute("data-id", client.id); // Adiciona um atributo de dados com o ID.
   newRow.innerHTML = `
       <td class="poppins-regular td td-nome">${client.nome}</td>
-      <td class="poppins-regular td td-mensagem">${client.mensagem}</td>
+      <td class="poppins-light td td-mensagem">${client.mensagem}</td>
       `;
   document.querySelector("#tableClient>tbody").appendChild(newRow);
   newRow.addEventListener("click", identifyingCustomer); // Adiciona o event listener à nova linha.

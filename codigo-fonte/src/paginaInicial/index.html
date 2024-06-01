@@ -10,233 +10,237 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
 
 
 </head>
 
-<body>
+<body class="poppins-medium">
 
     <main>
 
 
 
-    <nav id="menu"> <!-- Barra de navegação lateral oculta-->
-        <label>
-            <input class="inputMenu" type="checkbox">
-            <div class="toggle"><i class="fas fa-list"></i></div>
-            <ul class="slide">
-                <div class="menu">
-                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <nav id="menu"> <!-- Barra de navegação lateral oculta-->
+            <label>
+                <input class="inputMenu" type="checkbox">
+                <div class="toggle"><i class="fas fa-list"></i></div>
+                <ul class="slide">
+                    <div class="menu">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    </div>
+                    <li><a href=""><i class="fas fa-calendar"></i> Agende aqui</a></li>
+                    <li><a href="#quemsomos"><i class="fas fa-building"></i> Quem somos</a></li>
+                    <li><a href="#dep"><i class="fas fa-comments"></i> Depoimentos</a></li>
+                    <li><a href="#sup"><i class="fas fa-headset"></i> Suporte</a></li>
+                </ul>
+            </label>
+        </nav> <!-- Fim da Barra de navegação lateral oculta-->
+
+
+        <div id="faixatopo"></div>
+
+        <header class="topo"> <!--Cabeçalho-->
+
+            <section class="cabecalho">
+
+                <div class="logo">
+                    <img src="../Imagens/LogoPetpuc.png">
                 </div>
-                <li><a href=""><i class="fas fa-calendar"></i> Agende aqui</a></li>
-                <li><a href="#quemsomos"><i class="fas fa-building"></i> Quem somos</a></li>
-                <li><a href="#dep"><i class="fas fa-comments"></i> Depoimentos</a></li>
-                <li><a href="#sup"><i class="fas fa-headset"></i> Suporte</a></li>
-            </ul>
-        </label>
-    </nav> <!-- Fim da Barra de navegação lateral oculta-->
+                <div class="textlogo">
+
+                    <p>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+
+                </div>
 
 
-    <div id="faixatopo"></div>
+        </header> <!-- fim Cabeçalho-->
 
-    <header class="topo"> <!--Cabeçalho-->
 
-        <section class="cabecalho">
-    
-            <div class="logo">
-                <img src="../Imagens/LogoPetpuc.png">
+        <h2> AGENDE AQUI O SEU SERVIÇO </h2> <!-- Sessão Agendamentos-->
+
+
+        <section class="container1">
+            <div class="card">
+                <div class="imagemagendamento">
+                    <img class="fototosa" src="../Imagens/servicoBanho.png" alt="Tosa">
+                </div>
+                <div class="textoagendamento">
+                    <h3>Banho</h3> <br>
+                    <p>Agende um banho completo e relaxante para o seu filhote!!!</p><br>
+                    <a href="../solicitacaoAgendamento/SolicitacaoAgendamento.html"
+                        target="_blank"><button>AGENDAR</button></a>
+                </div>
             </div>
-            <div class="textlogo">
+
+            <div class="card">
+                <div class="imagemagendamento">
+                    <img class="fototosa" src="../Imagens/servicoTosa.png" alt="Tosa">
+                </div>
+                <div class="textoagendamento">
+                    <h3>Tosa</h3> <br>
+                    <p>Um verdadeiro salão de beleza para o seu melhor amigo!!!!</p><br>
+                    <a href="" target="_blank"><button>AGENDAR</button></a>
+                </div>
+
+            </div>
+
+        </section> <!-- Fim da  Sessão Agendamentos-->
+
+
+
+        <h2> QUEM SOMOS </h2> <!-- Quem Somos-->
+
+
+        <section class="quemsomos">
+
+            <div class="textoquem">
 
                 <p>
 
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged.
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and
+                    more recently
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
                 </p>
 
             </div>
 
-
-    </header> <!-- fim Cabeçalho-->
-
-
-    <h2> AGENDE AQUI O SEU SERVIÇO </h2> <!-- Sessão Agendamentos-->
-
-
-    <section class="container1">
-        <div class="card">
-            <div class="imagemagendamento">
-                <img class="fototosa" src="../Imagens/servicoBanho.png" alt="Tosa">
+            <div class="foto">
+                <img src="../Imagens\imagemQuemSomos.png">
             </div>
-            <div class="textoagendamento">
-                <h3>Banho</h3> <br>
-                <p>Agende um banho completo e relaxante para o seu filhote!!!</p><br>
-                <a href="../solicitacaoAgendamento/SolicitacaoAgendamento.html" target="_blank"><button>AGENDAR</button></a>
-            </div>
-        </div>
 
-        <div class="card">
-            <div class="imagemagendamento">
-                <img class="fototosa" src="../Imagens/servicoTosa.png" alt="Tosa">
-            </div>
-            <div class="textoagendamento">
-                <h3>Tosa</h3> <br>
-                <p>Um verdadeiro salão de beleza para o seu melhor amigo!!!!</p><br>
-                <a href="" target="_blank"><button>AGENDAR</button></a>
-            </div>
-            
-        </div>
+        </section> <!-- Fim Quem Somos-->
 
-    </section> <!-- Fim da  Sessão Agendamentos-->
+        <br>
 
 
 
-    <h2> QUEM SOMOS </h2> <!-- Quem Somos-->
+        <h2> DEPOIMENTOS </h2>
 
+        <section class="grid1"> <!-- Depoimentos-->
 
-    <section class="quemsomos">
-
-        <div class="textoquem">
-
-            <p>
-
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                and
-                more recently
-                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-
-            </p>
-
-        </div>
-
-        <div class="foto">
-            <img src="../Imagens\imagemQuemSomos.png">
-        </div>
-
-    </section> <!-- Fim Quem Somos-->
-
-    <br>
-
-
-
-    <h2> DEPOIMENTOS </h2>
-
-    <section class="grid1"> <!-- Depoimentos-->
-
-        <div>
-            <img id="imgdepo" src="../Imagens/depoimentos1.png">
             <div>
-                <h3 id="depoTitles"> Depoimento 1 </h3> <br>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500.</p>
+                <img id="imgdepo" src="../Imagens/depoimentos1.png">
+                <div>
+                    <h3 id="depoTitles"> Depoimento 1 </h3> <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500.</p>
+                </div>
+
             </div>
 
-        </div>
-
-        <div>
-            <img id="imgdepo" src="../Imagens/depoimentos2.png">
             <div>
-                <h3 id="depoTitles"> Depoimento 2 </h3> <br>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500.</p>
+                <img id="imgdepo" src="../Imagens/depoimentos2.png">
+                <div>
+                    <h3 id="depoTitles"> Depoimento 2 </h3> <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500.</p>
+                </div>
             </div>
-        </div>
 
-        <div>
-            <img id="imgdepo" src="../Imagens/depoimentos3.png">
             <div>
-                <h3 id="depoTitles"> Depoimento 3 </h3> <br>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500.</p>
+                <img id="imgdepo" src="../Imagens/depoimentos3.png">
+                <div>
+                    <h3 id="depoTitles"> Depoimento 3 </h3> <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500.</p>
+                </div>
             </div>
-        </div>
 
-        <div>
-            <img id="imgdepo" src="../Imagens/depoimentos4.png">
             <div>
-                <h3 id="depoTitles"> Depoimento 4 </h3> <br>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500.</p>
+                <img id="imgdepo" src="../Imagens/depoimentos4.png">
+                <div>
+                    <h3 id="depoTitles"> Depoimento 4 </h3> <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500.</p>
+                </div>
             </div>
-        </div>
 
-        <div>
-            <img id="imgdepo" src="../Imagens/depoimentos5.png">
             <div>
-                <h3 id="depoTitles"> Depoimento 5 </h3> <br>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500.</p>
+                <img id="imgdepo" src="../Imagens/depoimentos5.png">
+                <div>
+                    <h3 id="depoTitles"> Depoimento 5 </h3> <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500.</p>
+                </div>
             </div>
-        </div>
 
-        <div>
-            <img id="imgdepo" src="../Imagens/depoimentos6.png">
             <div>
-                <h3 id="depoTitles"> Depoimento 6 </h3> <br>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500.</p>
+                <img id="imgdepo" src="../Imagens/depoimentos6.png">
+                <div>
+                    <h3 id="depoTitles"> Depoimento 6 </h3> <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500.</p>
+                </div>
             </div>
-        </div>
 
-    </section> <!-- Fim Depoimentos-->
-    <br>
-
+        </section> <!-- Fim Depoimentos-->
+        <br>
 
 
 
-    <h2> CONTATO COM O SUPORTE </h2> <!-- Contato com o Suporte e redes sociais-->
 
-    <section class="grid2"> 
+        <h2> CONTATO COM O SUPORTE </h2> <!-- Contato com o Suporte e redes sociais-->
 
-
-        <div class="container">
-
-            <div class="form_box">
-
-                <form>
-                    <input type="hidden" name="id"/>
-                    <input name="nome" type="text" maxlength="50" placeholder="Nome" required/>
-                    <input name="telefone" type="text" maxlength="11" placeholder="Telefone" onkeyup="formatarTelefone(this)" required/>
-                    <input name="email" type="email" maxlength="50" placeholder="email" required/>
-                    <textarea name="mensagem" type="text" placeholder="mensagem" required></textarea>
-
-                    <button type="submit" value="enviar mensagem">Enviar mensagem</button>
+        <section class="grid2">
 
 
-                </form>
+            <div class="container">
+
+                <div class="form_box">
+
+                    <form>
+                        <input type="hidden" name="id" />
+                        <input class="poppins-medium" name="nome" type="text" maxlength="50" placeholder="Nome" required />
+                        <input class="poppins-medium" name="telefone" type="text" maxlength="11" placeholder="Telefone"
+                            onkeyup="formatarTelefone(this)" required />
+                        <input class="poppins-medium" name="email" type="email" maxlength="50" placeholder="email" required />
+                        <textarea class="poppins-medium" name="mensagem" type="text" placeholder="mensagem" required></textarea>
+
+                        <button class="poppins-medium" type="submit" value="enviar mensagem">Enviar mensagem</button>
+
+
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="redessociais">
+
+
+                <header>Visite nossas redes sociais!</header>
+                <br>
+
+                <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"><img
+                        src="../Imagens/icon_whatsapp.png"></a>
+                <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img
+                        src="../Imagens/icon_facebook.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../Imagens/icon_instagram.png"></a>
 
             </div>
-        </div>
 
-        <div class="redessociais">
+        </section> <!-- Fim Contato com o Suporte e redes sociais-->
 
+    </main>
 
-            <header>Visite nossas redes sociais!</header>
-            <br>
+    <footer> <!--Footer-->
 
-            <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"><img src="../Imagens/icon_whatsapp.png"></a>
-            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="../Imagens/icon_facebook.png"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../Imagens/icon_instagram.png"></a>
+        <p> Copyrigth <span>&copy</span> Todos os direitos reservados</p>
 
-        </div>
-
-    </section> <!-- Fim Contato com o Suporte e redes sociais-->
-
-</main>
-
-<footer> <!--Footer-->
-
-   <p> Copyrigth <span>&copy</span> Todos os direitos reservados</p>
-
-</footer> <!-- Fim Footer-->
+    </footer> <!-- Fim Footer-->
 
 </body>
 

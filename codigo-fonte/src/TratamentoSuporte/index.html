@@ -26,7 +26,7 @@
             </div>
 
             <div>
-                <h3 class="title-principal">Tratamento do Suporte</h3>
+                <h3 class="poppins-semibold title-principal">Tratamento do Suporte</h3>
             </div>
 
             <div class="logo">
@@ -39,18 +39,18 @@
     <main>
         <!-- INICIO FORMULÁRIO -->
         <form id="form">
-            <h3 class="title-pagina">Tratamento Solicitação</h3>
+            <h3 class="poppins-semibold title-pagina">Tratamento Suporte</h3>
             <!-- INICIO CLIENTE -->
             <div id="client">
                 <div class="label-title-cliente">
-                    <div class="text-title-cliente">CLIENTE</div>
+                    <div class="poppins-semibold text-title-cliente">CLIENTE</div>
                 </div>
                 <input type="hidden" id="id" name="id">
                 <!-- INICIO NOME CLIENTE -->
                 <div class="name-client-container">
                     <i class="fa-solid fa-user"></i>
                     <label for="nameClient"></label>
-                    <input class="dataSupport" id="nameClient" type="text" name="name-client" placeholder="ABCDEF"
+                    <input class="dataSupport poppins-medium" id="nameClient" type="text" name="name-client" placeholder="ABCDEF"
                         maxlength="100" required>
                 </div>
                 <!-- FIM NOME CLIENTE -->
@@ -59,7 +59,7 @@
                 <div class="email-client-container">
                     <i class="fa-solid fa-envelope"></i>
                     <label for="emailClient"></label>
-                    <input class="dataSupport" id="emailClient" type="text" name="email-client"
+                    <input class="dataSupport poppins-medium" id="emailClient" type="text" name="email-client"
                         placeholder="abcd@email.com" maxlength="100" required>
                 </div>
                 <!-- FIM E-MAIL CLIENTE -->
@@ -68,7 +68,7 @@
                 <div class="fone-client-container">
                     <i class="fa-solid fa-phone"></i>
                     <label for="foneClient"></label>
-                    <input class="dataSupport" id="foneClient" type="text" name="fone-client"
+                    <input class="dataSupport poppins-medium" id="foneClient" type="text" name="fone-client"
                         placeholder="(00) 11111-2222" maxlength="15" required>
                 </div>
                 <!-- FIM TELEFONE CLIENTE -->
@@ -79,20 +79,20 @@
             <div id="msg">
                 <label for="text-value-msg"></label>
                 <textarea rows="10" name="msg" placeholder="Mensagem..." id="text-value-msg"
-                    class="dataSupport"></textarea>
+                    class="poppins-medium dataSupport"></textarea>
             </div>
             <!-- FIM OBSERVAÇÕES -->
 
             <!-- INICIO RESPOSTA -->
             <div id="resposta">
                 <div class="label-title-resp">
-                    <div class="text-title-resp">RESPOSTA</div>
+                    <div class="poppins-semibold text-title-resp">RESPOSTA</div>
                 </div>
                 <div id="respostas">
                     <div id="resp">
                         <label for="text-value-resp"></label>
                         <textarea rows="10" name="resp" placeholder="Mensagem de resposta..." id="text-value-resp"
-                            class="dataSupport" required></textarea>
+                            class="poppins-medium dataSupport" required></textarea>
                     </div>
                 </div>
             </div>
@@ -104,10 +104,10 @@
     <footer>
         <!-- INICIO AÇÕES -->
         <div id="actions">
-            <button id="inserir-resposta" type="button" value="INSERIR" onclick="onClickButtonEnterAnswer()">INSERIR
+            <button class="poppins-semibold" id="inserir-resposta" type="button" value="INSERIR" onclick="onClickButtonEnterAnswer()">INSERIR
                 RESPOSTA</button>
-            <button id="excluir-mensagem" type="button" value="EXCLUIR" onclick="onClickButtonDelete()">EXCLUIR</button>
-            <button id="enviar-resposta" type="submit" value="ENVIAR" onclick="onClickButtonSend()">ENVIAR</button>
+            <button class="poppins-semibold" id="excluir-mensagem" type="button" value="EXCLUIR" onclick="onClickButtonDelete()">EXCLUIR</button>
+            <button class="poppins-semibold" id="enviar-resposta" type="submit" value="ENVIAR" onclick="onClickButtonSend()">ENVIAR</button>
         </div>
         <!-- FIM AÇÕES -->
     </footer>

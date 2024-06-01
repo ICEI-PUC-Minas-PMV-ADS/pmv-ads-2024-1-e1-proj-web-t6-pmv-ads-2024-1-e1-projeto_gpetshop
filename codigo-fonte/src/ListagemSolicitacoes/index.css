@@ -11,7 +11,6 @@ body {
   width: 1024px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 40px;
 }
 
 /*menu-lateral*/
@@ -344,7 +343,7 @@ thead > tr > th {
   border-collapse: collapse;
 }
 
-.th-clientes {
+.th-solicitacoes {
   display: none;
 }
 
@@ -880,6 +879,7 @@ tbody::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 100vh;
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
@@ -900,33 +900,39 @@ tbody::-webkit-scrollbar-thumb {
     align-items: center;
   }
 
-  .menu-icon-container {
-    display: flex;
-    align-items: center;
-    height: 16px;
+  .menu-icon-container>button {
+    background-color: transparent;
     width: 80px;
-    top: 0px;
-    left: 0px;
-    padding-top: 16px;
+      height: 43px;
+    outline: 0;
+    border: none;
     cursor: pointer;
-    border-radius: 2px;
   }
 
   .title-principal {
     display: none;
-    position: absolute;
-    align-self: flex-start;
-    width: 90%;
-    margin-top: 30px;
-    color: #2f435a;
-    font-size: 24px;
   }
 
+  .title-pagina {
+    display: block;
+    width: max-content;
+    align-self: center;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    color: #2f435a;
+    font-size: 20px;
+  }
 
   .logo {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    position: absolute;
+    left: 42%;
+    border: none;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
   }
+
 
   main {
     display: flex;
@@ -1044,7 +1050,7 @@ tbody::-webkit-scrollbar-thumb {
     border-collapse: collapse;
   }
 
-  .th-clientes {
+  .th-solicitacoes {
     display: flex;
     width: 100px;
   }

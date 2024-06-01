@@ -59,7 +59,6 @@ body {
   display: block;
   align-items: center;
   color: #2f435a;
-  font-family: 'poppinsmedium', sans-serif;
   font-size: 24px;
 }
 
@@ -106,7 +105,6 @@ form {
   margin-left: 0.625em;
   align-items: center;
   color: #fdce6d;
-  font-family: 'poppinssemibold', sans-serif;
   font-size: 1.25em;
 }
 
@@ -144,7 +142,6 @@ form {
   width: 40.25em;
   height: 1.875em;
   color: rgb(47, 67, 90);
-  font-family: 'poppinsmedium', sans-serif;
   font-size: 1em;
   border: none;
   background-color: #fff1d4;
@@ -191,7 +188,6 @@ form {
   width: 40.25em;
   height: 1.875em;
   color: rgb(47, 67, 90);
-  font-family: 'poppinsmedium', sans-serif;
   font-size: 1em;
   border: none;
   background-color: #fff1d4;
@@ -236,7 +232,6 @@ form {
   width: 40.25em;
   height: 1.875em;
   color: rgb(47, 67, 90);
-  font-family: 'poppinsmedium', sans-serif;
   font-size: 1em;
   border: none;
   background-color: #fff1d4;
@@ -279,7 +274,6 @@ form {
   margin-left: 0.625em;
   align-items: center;
   color: #fdce6d;
-  font-family: 'poppinssemibold', sans-serif;
   font-size: 1.25em;
 }
 
@@ -309,7 +303,6 @@ form {
   width: 41em;
   height: 1.875em;
   color: rgb(47, 67, 90);
-  font-family: 'poppinsmedium', sans-serif;
   font-size: 1em;
   border: none;
   background-color: #fff1d4;
@@ -369,7 +362,6 @@ form {
   border-radius: 0.5em;
 
   color: #fdce6d;
-  font-family: 'poppinssemibold', sans-serif;
   font-size: 1.125em;
 }
 
@@ -385,7 +377,6 @@ form {
   outline: 0;
   border: none;
   border-radius: 0.5em;
-  font-family: 'poppinsmedium', sans-serif;
   font-size: 1em;
   line-height: 1.875em;
   box-sizing: border-box;
@@ -502,7 +493,6 @@ form {
   cursor: pointer;
   color: #2f435a;
   font-size: 1em;
-  font-family: 'poppinsmedium', sans-serif;
 }
 
 .itemIdade:hover,
@@ -512,7 +502,6 @@ form {
   background-color: rgba(255, 231, 190, 0.9);
   padding-left: 0.4375em;
   transition: 0.3s;
-  font-family: 'poppinssemibold', sans-serif;
 }
 
 /* FIM PET */
@@ -543,7 +532,6 @@ form {
   padding-top: 0.0625em;
   align-items: center;
   color: #fdce6d;
-  font-family: 'poppinssemibold', sans-serif;
   font-size: 1.25em;
 }
 
@@ -571,7 +559,6 @@ form {
   outline: 0;
   border: none;
   color: #2f435a;
-  font-family: 'poppinsmedium', sans-serif;
   font-size: 1em;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -615,14 +602,12 @@ form {
   cursor: pointer;
   color: #2f435a;
   font-size: 1em;
-  font-family: 'poppinsmedium', sans-serif;
 }
 
 .itemServico:hover {
   background-color: rgba(255, 231, 190, 0.9);
   padding-left: 0.4375em;
   transition: 0.3s;
-  font-family: 'poppinssemibold', sans-serif;
 }
 
 /* FIM SERVIÇOS */
@@ -647,7 +632,6 @@ form {
   margin-left: 0.625em;
   align-items: center;
   color: #fdce6d;
-  font-family: 'poppinssemibold', sans-serif;
   font-size: 1.25em;
 }
 
@@ -670,7 +654,6 @@ form {
   border-radius: 8px;
   color: #2f435a;
   font-size: 0.9375em;
-  font-family: 'poppinsmedium', sans-serif;
   outline: 0;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -697,7 +680,6 @@ form {
   margin-left: 0.625em;
   align-items: center;
   color: #fdce6d;
-  font-family: 'poppinssemibold', sans-serif;
   font-size: 1.25em;
 }
 
@@ -714,7 +696,6 @@ form {
   border: none;
   outline: none;
   border-radius: 0.5em;
-  font-family: 'poppinsmedium', sans-serif;
   font-size: 1em;
 }
 
@@ -750,7 +731,6 @@ form {
   border: none;
   border-radius: 3.125em;
   color: #fdce6d;
-  font-family: 'poppinssemibold', sans-serif;
   font-size: 1.1em;
   transition: 0.5s;
   cursor: pointer;
@@ -764,7 +744,6 @@ form {
   border: none;
   border-radius: 3.125em;
   color: #2f435a;
-  font-family: 'poppinssemibold', sans-serif;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -797,7 +776,6 @@ footer {
   border: none;
   border-radius: 3.125em;
   color: #FDCE6D;
-  font-family: 'poppinssemibold', sans-serif;
   font-size: 1em;
   transition: 0.5s;
   cursor: pointer;
@@ -811,7 +789,6 @@ footer {
   border: none;
   border-radius: 3.125em;
   color: #2F435A;
-  font-family: 'poppinssemibold', sans-serif;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -829,7 +806,6 @@ footer {
   border: none;
   border-radius: 3.125em;
   color: #FDCE6D;
-  font-family: 'poppinssemibold', sans-serif;
   font-size: 1em;
   transition: 0.5s;
   cursor: pointer;
@@ -843,7 +819,6 @@ footer {
   border: none;
   border-radius: 3.125em;
   color: #2F435A;
-  font-family: 'poppinssemibold', sans-serif;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -861,7 +836,6 @@ footer {
   border: none;
   border-radius: 3.125em;
   color: #FDCE6D;
-  font-family: 'poppinssemibold', sans-serif;
   font-size: 1em;
   transition: 0.5s;
   cursor: pointer;
@@ -875,7 +849,6 @@ footer {
   border: none;
   border-radius: 3.125em;
   color: #2F435A;
-  font-family: poppinssemibold, sans-serif;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -957,7 +930,6 @@ footer {
     margin-right: auto;
     margin-top: 40px;
     color: #2f435a;
-    font-family: 'poppinsmedium', sans-serif;
     font-size: 24px;
   }
 
@@ -984,7 +956,6 @@ footer {
     border-radius: 0.5em;
 
     color: #fdce6d;
-    font-family: 'poppinssemibold', sans-serif;
     font-size: 1.125em;
 
   }
@@ -1024,7 +995,6 @@ footer {
     border-radius: 0.5em;
 
     color: #fdce6d;
-    font-family: 'poppinssemibold', sans-serif;
     font-size: 1.125em;
   }
 
@@ -1041,7 +1011,6 @@ footer {
     outline: 0;
     border: none;
     border-radius: 0.5em;
-    font-family: 'poppinsmedium', sans-serif;
     font-size: 1em;
     line-height: 1.875em;
     box-sizing: border-box;
@@ -1089,7 +1058,6 @@ footer {
     border: none;
     border-radius: 3.125em;
     color: #FDCE6D;
-    font-family: 'poppinssemibold', sans-serif;
     font-size: 1em;
     transition: 0.5s;
     cursor: pointer;
@@ -1105,7 +1073,6 @@ footer {
     border: none;
     border-radius: 3.125em;
     color: #2F435A;
-    font-family: 'poppinssemibold', sans-serif;
     transition: 0.5s;
     cursor: pointer;
   }

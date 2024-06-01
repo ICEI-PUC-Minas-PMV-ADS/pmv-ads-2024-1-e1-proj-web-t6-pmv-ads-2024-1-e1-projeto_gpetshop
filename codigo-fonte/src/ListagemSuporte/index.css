@@ -10,7 +10,6 @@ body {
   width: 1024px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 40px;
 }
 
 /*menu-lateral*/
@@ -198,11 +197,11 @@ body {
 .menu-icon-container {
   display: flex;
   align-items: center;
-  height: 16px;
-  width: 30px;
+  width: 80px;
+  height: 43px;
   top: 0px;
   left: 0px;
-  padding-top: 16px;
+  padding-top: 5px;
   cursor: pointer;
   border-radius: 2px;
 }
@@ -220,7 +219,7 @@ body {
   transition: 0.2s all;
 }
 
-.menu-icon-container > button {
+.menu-icon-container>button {
   background-color: transparent;
   width: 34px;
   height: 30px;
@@ -228,11 +227,11 @@ body {
   border: none;
   cursor: pointer;
 }
-
 .title-principal {
   display: flex;
   align-items: center;
   color: #2f435a;
+  font-size: 24px;
 }
 
 .logo {
@@ -324,6 +323,7 @@ thead {
   padding-left: 10px;
   position: absolute;
   width: 98%;
+  margin-top: -3px;
   border-collapse: collapse;
 }
 
@@ -339,7 +339,7 @@ thead > tr > th {
   max-width: 350px;
   color: #2f435a;
   text-align: start;
-  font-size: 16px;
+  font-size: 17px;
   border-collapse: collapse;
 }
 
@@ -347,9 +347,8 @@ thead > tr > th {
   display: none;
 }
 
-.th-telefone-cliente {
-  min-width: 270px;
-  max-width: 270px;
+.th-mensagens {
+  display: none;
 }
 
 tbody {
@@ -867,31 +866,37 @@ tbody::-webkit-scrollbar-thumb {
     align-items: center;
   }
 
-  .menu-icon-container {
-    display: flex;
-    align-items: center;
-    height: 16px;
+  .menu-icon-container>button {
+    background-color: transparent;
     width: 80px;
-    top: 0px;
-    left: 0px;
-    padding-top: 16px;
+      height: 43px;
+    outline: 0;
+    border: none;
     cursor: pointer;
-    border-radius: 2px;
   }
 
   .title-principal {
     display: none;
-    position: absolute;
-    align-self: flex-start;
-    width: 90%;
-    margin-top: 30px;
+  }
+
+  .title-pagina {
+    display: block;
+    width: max-content;
+    align-self: center;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
     color: #2f435a;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .logo {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    position: absolute;
+    left: 42%;
+    border: none;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
   }
 
   main {
@@ -1011,8 +1016,11 @@ tbody::-webkit-scrollbar-thumb {
   }
 
   .th-mensagem {
+    display: none;
+  }
+
+  .th-mensagens {
     display: flex;
-    width: 100px;
   }
 
   .th-nome-cliente {
@@ -1080,7 +1088,6 @@ tbody::-webkit-scrollbar-thumb {
     justify-self: center;
     align-self: flex-start;
 
-    font-family: poppinslight, sans-serif;
     white-space: nowrap;
     /* Impede a quebra de linha */
     overflow: hidden;

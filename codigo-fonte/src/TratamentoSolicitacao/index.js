@@ -1,5 +1,5 @@
 import "./index.css";
-import "../assets/fonts.css";
+import "../assets/fonts/fonts.css";
 import nomesemfundo from "../Imagens/nomesemfundo.png";
 import "../assets/svg/icon_pet.svg";
 import "../assets/svg/icon_pet_idade.svg";
@@ -324,3 +324,8 @@ function servico(servico) {
   ).innerHTML;
   document.getElementsByTagName("input")[9].value = itemServico;
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  setLocalStorageSolicitation()
+  getLocalStorageSolicitation()
+});

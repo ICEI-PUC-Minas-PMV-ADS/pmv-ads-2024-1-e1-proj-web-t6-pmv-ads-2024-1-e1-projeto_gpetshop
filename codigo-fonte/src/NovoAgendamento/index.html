@@ -19,41 +19,10 @@
 <body>
     <header>
         <!-- INICIO CABEÇALHO -->
-        <!-- Barra de navegação lateral oculta-->
-        <div id="slide" class="animar animate__animated animate__fadeInLeft animate__bounceOutLeft">
-            <li><i class="fa-solid fa-home fa-2xl"></i><a href="#">Inicio</a></li>
-            <li><i class="fa-solid fa-calendar fa-2xl"></i><a href="#">Agenda<i
-                        class="fa-solid fa-angle-down um"></i></a>
-                <div class="drop-down-agenda">
-                    <ul>
-                        <li><a href="/codigo-fonte/src/NovoAgendamento/index.html">Inserir Agendamento</a>
-                        </li>
-                        <li><a href="/codigo-fonte/src/Visualização_Painel_Serviços_Agendados/index.html">Consultar Agenda</a></li>
-                        <li><a href="/codigo-fonte/src/ListagemSolicitacoes/index.html">Tratar
-                                Solicitações</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><i class="fa-solid fa-user-group fa-2xl"></i><a href="#">Cadastros<i
-                        class="fa-solid fa-angle-down dois"></i></a>
-                <div class="drop-down-cadastro">
-                    <ul>
-                        <li><a href="/codigo-fonte/src/Cadastroclientes/index.html">Clientes</a></li>
-                        <li><a href="#">Colaboradores</a></li>
-                        <li><a href="/codigo-fonte/src/CadastroServicos/CadastroServicos.html">Serviços</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><i class="fa-solid fa-file-lines fa-2xl"></i><a href="#">Relatórios</a></li>
-            <li><i class="fa-solid fa-headset fa-2xl"></i><a
-                    href="/codigo-fonte/src/ListagemSuporte/index.html">Suporte</a></li>
-            <li><i class="fa-solid fa-power-off fa-2xl"></i><a href="#">Sair</a></li>
-        </div>
-        <!-- Barra de navegação lateral oculta-->
         <a href="/codigo-fonte/src/Inicio/index.html"><i class="fa-solid fa-arrow-left fa-2xl"></i></a>
 
         <div>
-            <h3 class="title-principal">Novo Agendamento</h3>
+            <h3 class="poppins-semibold title-principal">Novo Agendamento</h3>
         </div>
 
         <div class="logo">
@@ -63,19 +32,19 @@
     </header>
 
     <!-- INICIO FORMULÁRIO -->
-    <form id="form">
-        <h3 class="title-pagina">Novo Agendamento</h3>
+    <form class="poppins-semibold" id="form">
+        <h3 class="poppins-semibold title-pagina">Novo Agendamento</h3>
         <!-- INICIO CLIENTE -->
         <div id="client">
             <div class="label-title-cliente">
-                <div class="text-title-cliente">CLIENTE</div>
+                <div class="poppins-semibold text-title-cliente">CLIENTE</div>
             </div>
             <!-- INICIO NOME CLIENTE -->
             <input id="idClient" type="hidden" name="id" />
             <div class="name-client-container">
                 <i class="fa-solid fa-user"></i>
                 <label for="nameClient"></label>
-                <input class="dataClient" id="nameClient" type="text" name="name-client" placeholder="ABCDEF"
+                <input class="dataClient poppins-medium" id="nameClient" type="text" name="name-client" placeholder="ABCDEF"
                     maxlength="100" required>
             </div>
             <!-- FIM NOME CLIENTE -->
@@ -84,7 +53,7 @@
             <div class="email-client-container">
                 <i class="fa-solid fa-envelope"></i>
                 <label for="emailClient"></label>
-                <input class="dataClient" id="emailClient" type="text" name="email-client" placeholder="abcd@email.com"
+                <input class="dataClient poppins-medium" id="emailClient" type="text" name="email-client" placeholder="abcd@email.com"
                     maxlength="100" required>
             </div>
             <!-- FIM E-MAIL CLIENTE -->
@@ -93,7 +62,7 @@
             <div class="fone-client-container">
                 <i class="fa-solid fa-phone"></i>
                 <label for="foneClient"></label>
-                <input class="dataClient" id="foneClient" type="text" name="fone-client" placeholder="(00) 11111-2222"
+                <input class="dataClient poppins-medium" id="foneClient" type="text" name="fone-client" placeholder="(00) 11111-2222"
                     maxlength="15" required>
             </div>
             <!-- FIM TELEFONE CLIENTE -->
@@ -104,25 +73,25 @@
         <!-- INICIO PET -->
         <div id="pet">
             <div class="label-title-pet">
-                <div class="text-title-pet">PET</div>
+                <div class="poppins-semibold text-title-pet">PET</div>
             </div>
             <div class="name-pet-container">
-                <img class="dog-name-icon" src="../assets/icon_pet.svg" alt="">
+                <img class="dog-name-icon" src="../assets/svg/icon_pet.svg" alt="">
                 <label for="namePet"></label>
-                <input class="dataClient" id="namePet" type="text" name="name-client" placeholder="ABCDEF" onkeyup="">
+                <input class="dataClient poppins-medium" id="namePet" type="text" name="name-client" placeholder="ABCDEF" onkeyup="">
             </div>
             <!-- INICIO PROPRIEDADES -->
             <div class="pet-properties">
                 <div class="pet-properties-um">
                     <!-- INICIO PET IDADE -->
                     <div id="petIdade">
-                        <label class="text-idade" for="petIdade">
-                            <img class="icon-pet-idade" src="../assets/icon_pet_idade.svg" alt="">Idade</label>
+                        <label class="poppins-medium text-idade" for="petIdade">
+                            <img class="icon-pet-idade" src="../assets/svg/icon_pet_idade.svg" alt="">Idade</label>
 
                         <div class="containerIdade">
-                            <input class="dataClient" id="idade" type="text" name="idade" placeholder="Selecionar"
+                            <input class="dataClient poppins-medium" id="idade" type="text" name="idade" placeholder="Selecionar"
                                 onfocus="dropDownIdade(0)" onblur="dropDownIdade(1)">
-                            <div class="dropDownIdade">
+                            <div class="dropDownIdade poppins-medium">
                                 <div class="listDropDownIdade">
                                     <div class="itemIdade" id="itemIdade-1" onmousedown="idade(1)">1 Ano</div>
                                     <div class="itemIdade" id="itemIdade-2" onmousedown="idade(2)">2 Anos</div>
@@ -147,13 +116,13 @@
 
                     <!-- INICIO PET PORTE -->
                     <div id="petPorte">
-                        <label class="text-porte" for="petPorte">
-                            <img class="icon-pet-porte" src="../assets/icon_pet_porte.svg" alt="">Porte</label>
+                        <label class="poppins-medium text-porte" for="petPorte">
+                            <img class="icon-pet-porte" src="../assets/svg/icon_pet_porte.svg" alt="">Porte</label>
 
                         <div class="containerPorte">
-                            <input class="dataClient" id="porte" type="text" name="porte" placeholder="Selecionar"
+                            <input class="dataClient poppins-medium" id="porte" type="text" name="porte" placeholder="Selecionar"
                                 onfocus="dropDownPorte(0)" onblur="dropDownPorte(1)">
-                            <div class="dropDownPorte">
+                            <div class="dropDownPorte poppins-medium">
                                 <div class="listDropDownPorte">
                                     <div class="itemPorte" id="itemPorte-1" onmousedown="porte(1)">Mini ou toy</div>
                                     <div class="itemPorte" id="itemPorte-2" onmousedown="porte(2)">Pequeno ou anão</div>
@@ -169,13 +138,13 @@
                 <div class="pet-properties-dois">
                     <!-- INICIO PET PELAGEM -->
                     <div id="petPelagem">
-                        <label class="text-pelagem" for="petPelagem">
-                            <img class="icon-pet-pelagem" src="../assets/icon_pet_pelagem.svg" alt="">Pelagem</label>
+                        <label class="poppins-medium text-pelagem" for="petPelagem">
+                            <img class="icon-pet-pelagem" src="../assets/svg/icon_pet_pelagem.svg" alt="">Pelagem</label>
 
                         <div class="containerPelagem">
-                            <input class="dataClient" id="pelagem" type="text" name="pelagem" placeholder="Selecionar"
+                            <input class="dataClient poppins-medium" id="pelagem" type="text" name="pelagem" placeholder="Selecionar"
                                 onfocus="dropDownPelagem(0)" onblur="dropDownPelagem(1)">
-                            <div class="dropDownPelagem">
+                            <div class="dropDownPelagem poppins-medium">
                                 <div class="listDropDownPelagem">
                                     <div class="itemPelagem" id="itemPelagem-1" onmousedown="pelagem(1)">Pelo curto liso
                                     </div>
@@ -200,13 +169,13 @@
 
                     <!-- INICIO PET RAÇA -->
                     <div id="petRaca">
-                        <label class="text-raca" for="petRaca">
-                            <img class="icon-pet-raca" src="../assets/icon_pet_raca.svg" alt="">Raça</label>
+                        <label class="poppins-medium text-raca" for="petRaca">
+                            <img class="icon-pet-raca" src="../assets/svg/icon_pet_raca.svg" alt="">Raça</label>
 
                         <div class="containerRaca">
-                            <input class="dataClient" id="raca" type="text" name="raca" placeholder="Selecionar"
+                            <input class="dataClient poppins-medium" id="raca" type="text" name="raca" placeholder="Selecionar"
                                 onfocus="dropDownRaca(0)" onblur="dropDownRaca(1)">
-                            <div class="dropDownRaca">
+                            <div class="dropDownRaca poppins-medium">
                                 <div class="listDropDownRaca">
                                     <div class="itemRaca" id="itemRaca-1" onmousedown="raca(1)">Labrador Retriever</div>
                                     <div class="itemRaca" id="itemRaca-2" onmousedown="raca(2)">Golden Retriever</div>
@@ -228,12 +197,12 @@
 
         <!-- INICIO SERVIÇOS -->
         <div id="servicos">
-            <label class="text-servicos" for="servicos">SERVIÇOS</label>
+            <label class="text-servicos poppins-semibold" for="servicos">SERVIÇOS</label>
 
             <div class="containerServicos">
-                <input class="dataClient" id="services" type="text" name="servicos" placeholder="Selecionar"
+                <input class="dataClient poppins-medium" id="services" type="text" name="servicos" placeholder="Selecionar"
                     onfocus="dropDownServico(0)" onblur="dropDownServico(1)">
-                <div class="dropDownServico">
+                <div class="dropDownServico poppins-medium">
                     <div class="listDropDownServico">
                         <div class="itemServico" id="itemServico-1" onmousedown="servico(1)">Banho</div>
                         <div class="itemServico" id="itemServico-2" onmousedown="servico(2)">Hidratação</div>
@@ -257,12 +226,12 @@
         <!-- INICIO AGENDA -->
         <div id="agendamento">
             <div class="label-title-agenda">
-                <div class="text-title-agenda">AGENDA</div>
+                <div class="text-title-agenda poppins-semibold">AGENDA</div>
             </div>
 
             <div id="agenda">
                 <label for="dt-agenda"></label>
-                <input class="dataClient" id="dt-agenda" type="datetime-local" name="dt-agenda" onkeyup="">
+                <input class="dataClient poppins-medium" id="dt-agenda" type="datetime-local" name="dt-agenda" onkeyup="">
             </div>
         </div>
         <!-- FIM AGENDA -->
@@ -270,14 +239,14 @@
         <!-- INICIO OBSERVAÇÕES -->
         <div id="observacao">
             <div class="label-title-obs">
-                <div class="text-title-obs">OBSERVAÇÕES</div>
+                <div class="text-title-obs poppins-semibold">OBSERVAÇÕES</div>
             </div>
 
             <div id="observacoes">
 
                 <div id="obs">
                     <label for="text-value-obs"></label>
-                    <textarea class="dataClient" rows="10" name="obs" placeholder="Suas observações..."
+                    <textarea class="dataClient poppins-medium" rows="10" name="obs" placeholder="Suas observações..."
                         id="text-value-obs"></textarea>
                 </div>
 
@@ -286,7 +255,7 @@
         <!-- FIM OBSERVAÇÕES -->
         <!-- INICIO AÇÕES -->
         <div id="actions">
-            <button id="agendar" type="button" value="agendar" onclick="onClickButtonAgendar()">AGENDAR</button>
+            <button id="agendar" class="poppins-semibold" type="button" value="agendar" onclick="onClickButtonAgendar()">AGENDAR</button>
         </div>
         <!-- FIM AÇÕES -->
     </form>

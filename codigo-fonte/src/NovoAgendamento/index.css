@@ -61,7 +61,6 @@ body {
     display: block;
     align-items: center;
     color: #2f435a;
-    font-family: poppinsmedium, sans-serif;
     font-size: 24px;
   }
 
@@ -76,171 +75,6 @@ body {
   }
 
 /* FIM CABEÇALHO */
-
-
-/* INICIO MENU LATERAL */
-
-  #slide {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    position: fixed;
-    align-items: flex-start;
-    top: 0;
-    left: 0;
-    padding: 40px 20px;
-    background-color: #fdce6d;
-    height: 100%;
-    width: 250px;
-    font-family: poppinssemibold, sans-serif;
-    z-index: 1000;
-    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-    border-radius: 0px 10px 10px 0px;
-  }
-
-  #slide>li {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  #slide>li:hover>.drop-down-agenda {
-    display: block;
-    position: absolute;
-    left: 210px;
-    top: 95px;
-    width: 210px;
-    background-color: rgb(255, 231, 190);
-    padding: 7px;
-    border-radius: 8px;
-    z-index: 100;
-    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
-  }
-
-  #slide>li:hover>.drop-down-cadastro {
-    display: block;
-    position: absolute;
-    left: 210px;
-    top: 135px;
-    width: 210px;
-    background-color: rgb(255, 231, 190);
-    padding: 7px;
-    border-radius: 8px;
-    z-index: 90;
-    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
-  }
-
-  #slide>li>a {
-    line-height: 18px;
-    color: #2f435a;
-    text-decoration: none;
-    font-size: 20px;
-    margin-left: 10px;
-  }
-
-  .menu-container {
-    display: flex;
-  }
-
-  .um {
-    margin-left: 75px;
-  }
-
-  .dois {
-    margin-left: 45px;
-  }
-
-  .drop-down-agenda {
-    display: none;
-    position: absolute;
-    left: 210px;
-    top: 90px;
-    width: 210px;
-    background-color: rgb(255, 231, 190);
-    padding: 7px;
-    border-radius: 8px;
-    z-index: 100;
-    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
-  }
-
-  .drop-down-agenda>ul {
-    list-style-type: none;
-  }
-
-  .drop-down-agenda>ul>li {
-    margin-bottom: 8px;
-  }
-
-  .drop-down-agenda>ul>li>a {
-    color: #2f435a;
-    font-size: 18px;
-    text-decoration: none;
-  }
-
-  .drop-down-agenda>ul>li>a:hover {
-    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
-  }
-
-  .drop-down-cadastro {
-    display: none;
-    position: absolute;
-    left: 210px;
-    top: 135px;
-    width: 210px;
-    background-color: rgb(255, 231, 190);
-    padding: 7px;
-    border-radius: 8px;
-    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
-  }
-
-  .drop-down-cadastro>ul {
-    list-style-type: none;
-  }
-
-  .drop-down-cadastro>ul>li {
-    margin-bottom: 8px;
-  }
-
-  .drop-down-cadastro>ul>li>a {
-    color: #2f435a;
-    font-size: 18px;
-    text-decoration: none;
-  }
-
-  .drop-down-cadastro>ul>li>a:hover {
-    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
-  }
-
-  .fa-home,
-  .fa-power-off {
-    color: #2f435a;
-    font-size: 24px;
-  }
-
-  .fa-headset {
-    font-size: 23px;
-    color: #2f435a;
-  }
-
-  .fa-calendar {
-    font-size: 23px;
-    padding-left: 3px;
-    color: #2f435a;
-  }
-
-  .fa-user-group {
-    font-size: 22px;
-    color: #2f435a;
-  }
-
-  .fa-file-lines {
-    font-size: 25px;
-    padding-left: 3px;
-    color: #2f435a;
-  }
-
-/* FIM MENU LATERAL */
 
 
 /* INICIO FORMULÁRIO */
@@ -273,7 +107,6 @@ body {
     margin-left: 0.625em;
     align-items: center;
     color: #fdce6d;
-    font-family: poppinssemibold, sans-serif;
     font-size: 1.25em;
   }
 
@@ -311,7 +144,6 @@ body {
     width: 40.25em;
     height: 1.875em;
     color: rgb(47, 67, 90);
-    font-family: poppinsmedium, sans-serif;
     font-size: 1em;
     border: none;
     background-color: #fff1d4;
@@ -358,7 +190,6 @@ body {
     width: 40.25em;
     height: 1.875em;
     color: rgb(47, 67, 90);
-    font-family: poppinsmedium, sans-serif;
     font-size: 1em;
     border: none;
     background-color: #fff1d4;
@@ -403,7 +234,6 @@ body {
     width: 40.25em;
     height: 1.875em;
     color: rgb(47, 67, 90);
-    font-family: poppinsmedium, sans-serif;
     font-size: 1em;
     border: none;
     background-color: #fff1d4;
@@ -446,7 +276,6 @@ body {
     margin-left: 0.625em;
     align-items: center;
     color: #fdce6d;
-    font-family: poppinssemibold, sans-serif;
     font-size: 1.25em;
   }
 
@@ -476,7 +305,6 @@ body {
     width: 41em;
     height: 1.875em;
     color: rgb(47, 67, 90);
-    font-family: poppinsmedium, sans-serif;
     font-size: 1em;
     border: none;
     background-color: #fff1d4;
@@ -532,7 +360,6 @@ body {
     border-radius: 0.5em;
 
     color: #fdce6d;
-    font-family: poppinssemibold, sans-serif;
     font-size: 1.125em;
   }
 
@@ -546,7 +373,6 @@ body {
     outline: 0;
     border: none;
     border-radius: 0.5em;
-    font-family: poppinsmedium, sans-serif;
     font-size: 1em;
     line-height: 1.875em;
     box-sizing: border-box;
@@ -653,7 +479,6 @@ body {
     cursor: pointer;
     color: #2f435a;
     font-size: 1em;
-    font-family: poppinsmedium, sans-serif;
   }
 
   .itemIdade:hover, .itemPorte:hover,
@@ -661,7 +486,6 @@ body {
     background-color: rgba(255, 231, 190, 0.9);
     padding-left: 0.4375em;
     transition: 0.3s;
-    font-family: poppinssemibold, sans-serif;
   }
 
 /* FIM PET */
@@ -695,7 +519,6 @@ body {
     padding-top: 0.0625em;
     align-items: center;
     color: #fdce6d;
-    font-family: poppinssemibold, sans-serif;
     font-size: 1.25em;
   }
 
@@ -723,7 +546,6 @@ body {
     outline: 0;
     border: none;
     color: #2f435a;
-    font-family: poppinsmedium, sans-serif;
     font-size: 1em;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   }
@@ -767,14 +589,12 @@ body {
     cursor: pointer;
     color: #2f435a;
     font-size: 1em;
-    font-family: poppinsmedium, sans-serif;
   }
 
   .itemServico:hover {
     background-color: rgba(255, 231, 190, 0.9);
     padding-left: 0.4375em;
     transition: 0.3s;
-    font-family: poppinssemibold, sans-serif;
   }
 
 /* FIM SERVIÇOS */
@@ -802,7 +622,6 @@ body {
     margin-left: 0.625em;
     align-items: center;
     color: #fdce6d;
-    font-family: poppinssemibold, sans-serif;
     font-size: 1.25em;
   }
 
@@ -825,7 +644,6 @@ body {
     border-radius: 8px;
     color: #2f435a;
     font-size: 0.9375em;
-    font-family: poppinsmedium, sans-serif;
     outline: 0;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   }
@@ -855,7 +673,6 @@ body {
     margin-left: 0.625em;
     align-items: center;
     color: #fdce6d;
-    font-family: poppinssemibold, sans-serif;
     font-size: 1.25em;
   }
 
@@ -872,7 +689,6 @@ body {
     border: none;
     outline: none;
     border-radius: 0.5em;
-    font-family: poppinsmedium, sans-serif;
     font-size: 1em;
   }
 
@@ -909,7 +725,6 @@ body {
     border: none;
     border-radius: 3.125em;
     color: #fdce6d;
-    font-family: poppinssemibold, sans-serif;
     font-size: 1.1em;
     transition: 0.5s;
     cursor: pointer;
@@ -923,7 +738,6 @@ body {
     border: none;
     border-radius: 3.125em;
     color: #2f435a;
-    font-family: poppinssemibold, sans-serif;
     transition: 0.5s;
     cursor: pointer;
   }
@@ -1009,7 +823,6 @@ body {
     margin-right: auto;
     margin-top: 40px;
     color: #2f435a;
-    font-family: poppinsmedium, sans-serif;
     font-size: 24px;
   }
 
@@ -1034,7 +847,6 @@ body {
     border-radius: 0.5em;
 
     color: #fdce6d;
-    font-family: poppinssemibold, sans-serif;
     font-size: 1.125em;
   }
 
@@ -1072,7 +884,6 @@ body {
     border-radius: 0.5em;
 
     color: #fdce6d;
-    font-family: poppinssemibold, sans-serif;
     font-size: 1.125em;
   }
 
@@ -1087,7 +898,6 @@ body {
     outline: 0;
     border: none;
     border-radius: 0.5em;
-    font-family: poppinsmedium, sans-serif;
     font-size: 1em;
     line-height: 1.875em;
     box-sizing: border-box;

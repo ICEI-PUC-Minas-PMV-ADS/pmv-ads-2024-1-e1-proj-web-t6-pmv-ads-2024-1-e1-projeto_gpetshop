@@ -1,5 +1,5 @@
 import "./index.css";
-import "../assets/fonts.css";
+import "../assets/fonts/fonts.css";
 import nomesemfundo from "../Imagens/nomesemfundo.png";
 
 // Função para salvar os dados de suporte no local storage.
@@ -26,7 +26,7 @@ function identifyingCustomer(event) {
     // Serializar os dados do cliente como uma string JSON.
     const serializedData = JSON.stringify(clientData);
     // Redirecionar para a página de edição com os dados do cliente como parâmetros de consulta.
-    window.location.href = `/codigo-fonte/src/TratamentoSolicitacao/index.html?data=${encodeURIComponent(
+    window.location.href = `../tratamentoSolicitacao/tratamentoSolicitacao.html?data=${encodeURIComponent(
       serializedData
     )}`;
   } else {
