@@ -9,6 +9,8 @@
 | Responsável pela elaboração do caso de teste | Rafael Santos Carvalho|
 <br>
 
+---
+
 | Caso de Teste | CT-003 - Criação de agendamento pelo colaborador |
 |:---|:---|
 | Requisitos Associados | RF 03 - Agendamento de Serviço pelo Colaborador |
