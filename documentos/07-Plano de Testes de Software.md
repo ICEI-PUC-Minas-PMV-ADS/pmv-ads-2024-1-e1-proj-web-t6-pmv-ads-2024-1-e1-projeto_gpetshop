@@ -1,5 +1,14 @@
 # Plano de Testes de Software
 
+| Caso de Teste | CT-002 - Criação de agendamento pelo colaborador |
+|:---|:---|
+| Requisitos Associados | RF 02 - Agendamento de Serviço pelo Cliente |
+| Objetivo do Teste | Agendamento do serviço online feito pelo cliente. |
+| Passos | <li>Estar na página inicial<li>Clicar no botao de AGENDAR para entrar na página de agendamento pelo cliente <li>Preencher todas as informações necessárias para o agendamento<li>Clicar na opção "Agendar" 
+| Critérios de êxito | <li>Preenchimento de todos os campos corretamente. <li>Clique no botão AGENDAR. <li> Exibição de mensagem de sucesso "Criado novo agendamento!" |
+| Responsável pela elaboração do caso de teste | Rafael Santos Carvalho|
+<br>
+
 | Caso de Teste | CT-003 - Criação de agendamento pelo colaborador |
 |:---|:---|
 | Requisitos Associados | RF 03 - Agendamento de Serviço pelo Colaborador |
