@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Relatório</h1>
+        </header>
+        <div class="card-f">
+            <p class="title">BASE DE CLIENTES</p>
+            <p class="number">510</p>
+        </div>
+        <div class="date-range">
+            <div class="date-picker">
+                <label for="start-date">DT. INICIAL</label>
+                <input type="text" id="start-date" name="start-date" placeholder="00/00/0000">
+            </div>
+            <div class="date-picker">
+                <label for="end-date">DT. FINAL</label>
+                <input type="text" id="end-date" name="end-date" placeholder="00/00/0000">
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <p class="title">TOTAL SOLICITADOS</p>
+                <p class="number">001</p>
+            </div>
+            <div class="card">
+                <p class="title">TOTAL AGENDAMENTOS</p>
+                <p class="number">005</p>
+            </div>
+            <div class="card">
+                <p class="title">TOTAL EXECUTADOS</p>
+                <p class="number">004</p>
+            </div>
+            <div class="card">
+                <p class="title">TOTAL CANCELADOS</p>
+                <p class="number">001</p>
+            </div>
+        </div>
+        <div class="title-search-list">
+            <div class="title-list">LISTA DE SOLICITAÇÕES</div>
+            <div class="search-bar">
+                <label for="searchBarList"></label><input id="searchBarList" type="text" name="search-bar-list"
+                    placeholder="Pesquisar cliente" onkeyup="search()">
+                <i class="material-symbols-rounded"></i>
+            </div>
+        </div>
+        <div class="box-list">
+            <div class="box-title">
+                <div class="box-title-name">NOME</div>
+                <div class="box-title-email">E-MAIL</div>
+                <div class="box-title-fone">TELEFONE</div>
+            </div>
+            <div class="border-box-list"></div>
+            <div class="select-name"></div>
+            <div class="lista">
+                <div class="lista-nome">
+                    <div class="listNameClient">
+                        <ul id="listaNome">
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                            <li class="list-name-item">cliente</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lista-email">
+                    <div class="listEmailClient">
+                        <ul>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                            <li class="list-email-item">email-cliente</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lista-fone">
+                    <div class="listFoneClient">
+                        <ul>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                            <li class="list-fone-item">fone-cliente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
