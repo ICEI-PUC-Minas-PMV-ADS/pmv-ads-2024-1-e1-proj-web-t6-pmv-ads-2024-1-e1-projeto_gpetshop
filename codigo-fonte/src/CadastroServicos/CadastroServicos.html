@@ -83,7 +83,7 @@
       <input id="novo-solicitacao" type="button" value="NOVO" onkeyup="">
       <input id="alterar-solicitacao" type="button" value="ALTERAR" onkeyup="">
       <input id="excluir-solicitacao" type="button" value="EXCLUIR" onkeyup="">
-      <input id="aceitar-solicitacao" type="button" value="ACEITAR" onkeyup="saveClient()">
+      <input id="aceitar-solicitacao" type="button" value="ACEITAR" onkeyup="">
     </div>
     <div class="label-title-servico">
       <div class="text-title-servico">SERVIÇO</div>
@@ -197,338 +197,31 @@
 
 <div class="list-container">
   <div class="title">
-    <div class="title-list">LISTA DE SERVIÇOS</div>
-    <div class="search-bar">
-      <label for="searchBarList"></label><input id="searchBarList" type="text" name="search-bar-list"
-                                                placeholder="Pesquisar serviço"
-                                                onkeyup="search()">
-      <i class="material-symbols-rounded">search</i>
-    </div>
-  </div>
-  <div class="box-list">
-    <div class="box-title">
-      <div class="box-title-name">NOME</div>
-      <div class="box-title-email">PREÇO</div>
-      <div class="box-title-fone">CATEGORIA</div>
-    </div>
-    <div class="border-box-list"></div>
-    <div class="select-name"></div>
-    <div class="lista">
-      <div class="lista-nome">
-        <div class="listNameClient">
-          <ul>
-            <li class="list-name-item">serviço 1</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 2</li>
-          </ul>
-          <ul>
-            <li class="list-name-item"></li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 4</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 5</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 6</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 7</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 8</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 9</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 1</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 2</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 3</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 4</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 5</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 6</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 7</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 8</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 9</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 2</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 3</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 4</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 5</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 6</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 7</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 8</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 9</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 2</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 3</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 4</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 5</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 6</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 7</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 8</li>
-          </ul>
-          <ul>
-            <li class="list-name-item">serviço 9</li>
-          </ul>
-        </div>
+      <div class="poppins-semibold title-list">LISTA DE SERVIÇOS</div>
+      <div class="search-bar">
+          <input class="poppins-regular" id="searchBarList" type="text" name="search-bar-list"
+              placeholder="Pesquisar serviço" onkeyup="searchMessages()">
+          <i class="material-symbols-rounded">search</i>
       </div>
-      <div class="lista-email">
-        <div class="listEmailClient">
-          <ul>
-            <li class="list-email-item">serviço 1</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 2</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 3</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 4</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 5</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 6</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 7</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 8</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 9</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 2</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 3</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 4</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 5</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 6</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 7</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 8</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 9</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 2</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 3</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 4</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 5</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 6</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 7</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 8</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 9</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 2</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 3</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 4</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 5</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 6</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 7</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 8</li>
-          </ul>
-          <ul>
-            <li class="list-email-item">serviço 9</li>
-          </ul>
-        </div>
-      </div>
-      <div class="lista-fone">
-        <div class="listFoneClient">
-          <ul>
-            <li class="list-fone-item">serviço 1</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 2</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 3</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 4</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 5</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 6</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 7</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 8</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 9</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 2</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 3</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 4</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 5</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 6</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 7</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 8</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 9</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 2</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 3</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 4</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 5</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 6</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 7</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 8</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 9</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 2</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 3</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 4</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 5</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 6</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 7</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 8</li>
-          </ul>
-          <ul>
-            <li class="list-fone-item">serviço 9</li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
+
+
+<table id="tableClient">
+  <thead class="thead">
+      <tr class="poppins-medium thead-tr">
+        <th class="th th-servicos">SERVIÇOS</th>
+        <th class="th th-nome-cliente">NOME SERVIÇO</th>
+        <th class="th th-nome-pet">PREÇO</th>
+        <th class="th th-nome-pet">DURAÇÃO</th>
+        <th class="th th-nome-pet">CATEGORIA</th>
+        <th class="th th-nome-pet">SERVIÇO PAI</th>
+      </tr>
+  <tbody class="tbody">
+      <!-- Linhas da tabela serão adicionadas dinamicamente aqui -->
+  </tbody>
+</table>
+
 </body>
 
 
