@@ -1,0 +1,314 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: #2E3B55;
+    color: #FFC107;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 10rem; /* Ajuste a largura conforme necessário */
+    margin-bottom: 20px;
+}
+
+.card-f {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: #2E3B55;
+    color: #FFC107;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: start;
+    width: 10rem; /* Ajuste a largura conforme necessário */
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.number {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.date-range {
+    margin: 30px;
+    margin-top: 0.4125em;
+    display: flex;
+    gap: 20px;
+}
+
+.date-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0.3125em;
+}
+
+.date-picker label {
+    font-size: 1em;
+    color: #2E3B55;
+    margin-bottom: 5px;
+    align-items: flex-start; 
+    padding-left: 0.625em;
+    font-weight: bold;
+}
+
+.date-picker input {
+    display: flex;
+    height: 1.5625em;
+    margin-left: 0.3125em;
+    margin-top: 0.3125em;
+    padding-left: 0.625em;
+    padding-right: 0.3125em;
+    align-items: flex-start; 
+    background-color: #FFF1D4;
+    border: none;
+    border-radius: 3.125em;
+    color: #2F435A;
+    font-size: 0.9em;
+    font-family: poppinsmedium, sans-serif;
+    outline: 0;
+}
+
+.card-container {
+    margin-top: 2.3125em;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.title-search-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1050px;
+    margin: 30px;
+}
+
+.title-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 232px;
+    height: 20px;
+    font-family: poppinssemibold, sans-serif;
+    font-size: 20px;
+    color: #2F435A;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+    margin: 30px;
+}
+
+.search-bar {
+    margin: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-bar input {
+    color: #FDCE6D;
+}
+
+#searchBarList {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    width: 305px;
+    height: 30px;
+    color: #fddb89;
+    font-family: poppinsmedium, sans-serif;
+    font-size: 16px;
+    background: #2F435A;
+    border: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    outline: 0;
+    margin-right: 5rem;
+}
+
+#searchBarList::placeholder {
+    color: rgba(255, 231, 190, 0.79);
+    font-family: poppinsregular, sans-serif;
+}
+
+.box-list {
+    margin: 30px;
+    display: flex;
+    position: relative;
+    width: 63.75em;
+    height: 20.25em;
+    background-color: rgba(47, 67, 90, 0.05);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-title {
+    display: flex;
+    margin-top: 0.3125em;
+    width: 63.75em;
+    height: 1em;
+    flex-direction: row;
+    color: #2F435A;
+    font-family: poppinssemibold, sans-serif;
+}
+
+.box-title-name {
+    display: flex;
+    margin-left: 1.5625em;
+    width: 3.375em;
+    height: 1em;
+    color: #2F435A;
+    font-family: poppinssemibold, sans-serif;
+}
+
+.box-title-email {
+    display: flex;
+    margin-left: 18.75em;
+    width: 3.9375em;
+    height: 1em;
+    color: #2F435A;
+    font-family: poppinssemibold, sans-serif;
+}
+
+.box-title-fone {
+    display: flex;
+    margin-left: 18.75em;
+    width: 5.6875em;
+    height: 1em;
+    color: #2F435A;
+    font-family: poppinssemibold, sans-serif;
+}
+
+.border-box-list {
+    box-sizing: border-box;
+    position: absolute;
+    width: 62.5em;
+    height: 17.9375em;
+    margin-left: 0.625em;
+    margin-right: 0.625em;
+    margin-top: 1.5625em;
+    border: 2px solid #2F435A;
+    border-radius: 10px;
+}
+
+.lista {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    margin-top: 1.8em;
+    margin-left: 0.15625em;
+    width: 62.5em;
+    height: 17.5em;
+    color: #2F435A;
+    overflow-y: auto;
+}
+
+.lista::-webkit-scrollbar {
+    width: 10px;
+    justify-content: flex-end;
+}
+
+.lista::-moz-list-bullet {
+    width: 10px;
+    justify-content: flex-end;
+}
+
+.lista::-webkit-scrollbar-track {
+    background-color: rgba(253, 206, 109, 0.3);
+    border-radius: 6px;
+}
+
+.lista::-webkit-scrollbar-thumb {
+    background-color: #2F435A;
+    border-radius: 6px;
+}
+
+.listNameClient {
+    display: flex;
+    position: absolute;
+    margin-left: 1.40625em;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 21.5625em;
+}
+
+.list-name-item {
+    list-style-type: none;
+    font-family: poppinsregular, sans-serif;
+    font-size: 16px;
+}
+
+.list-name-item a {
+    text-decoration: none;
+}
+
+/*lista email*/
+.listEmailClient {
+    display: flex;
+    position: absolute;
+    margin-left: 23.5625em;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 21.5625em;
+}
+
+.list-email-item {
+    list-style-type: none;
+    font-family: poppinsregular, sans-serif;
+    font-size: 16px;
+}
+
+/*lista telefone*/
+.listFoneClient {
+    display: flex;
+    position: absolute;
+    margin-left: 46.1875em;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 21.5625em;
+}
+
+.list-fone-item {
+    list-style-type: none;
+    font-family: poppinsregular, sans-serif;
+    font-size: 16px;
+}
