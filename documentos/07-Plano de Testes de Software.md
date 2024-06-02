@@ -78,7 +78,8 @@
 |:---|:---|
 | Requisitos Associados | RF 09 - Tela de Cadastro de Usuários Colaboradores |
 | Objetivo do Teste | Cadastrar um novo cliente no sistema. |
-| Passos | <li>Estar na tela inicial e logado como atendente ou gestor. <li>Clicar no ícone do menu lateral e selecionar "Cadastros" e em seguida "Clientes". <li>Na página de cadastro, devem aparecer os campos necessários para que um cliente seja inserido no sistema. <li>É necessário ter um crud, para inserir o novo registro, editar, excluir ou salvar as alterações. <li>Deve ter uma lista dinâmica para ser preenchida com os dados do cadastro. <li>Deve ser possível pesquisar por um cliente pelo filtro, através de seu nome.|||||
+| Passos | <li>Estar na tela inicial e logado como atendente ou gestor. <li>Clicar no ícone do menu lateral e selecionar "Cadastros" e em seguida "Clientes". <li>Na página de cadastro, devem aparecer os campos necessários para que um cliente seja inserido no sistema. <li>É necessário ter um crud, para inserir o novo registro, editar, excluir ou salvar as alterações. <li>Deve ter uma lista dinâmica para ser preenchida com os dados do cadastro. <li>Deve ser possível pesquisar por um cliente pelo filtro, através de seu nome.|
+| Critérios de êxito | <li>Preenchimento de todos os campos corretamente. <li>Funcionamento do CRUD. <li> Exibição de registros na lista dinâmica | <li>Funcionamento correto do filtro.
 | Responsável pela Elaboração do Caso de Teste | Thainá Crisóstomo Bernardes |
 
 ---
