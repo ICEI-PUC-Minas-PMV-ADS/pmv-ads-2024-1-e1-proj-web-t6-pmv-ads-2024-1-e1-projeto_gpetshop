@@ -1,6 +1,6 @@
 # Plano de Testes de Software
 
-| Caso de Teste | CT-002 - Criação de agendamento pelo colaborador |
+| Caso de Teste | CT-002 - Criação de agendamento pelo cliente |
 |:---|:---|
 | Requisitos Associados | RF 02 - Agendamento de Serviço pelo Cliente |
 | Objetivo do Teste | Agendamento do serviço online feito pelo cliente. |
@@ -31,7 +31,7 @@
 <br>
 
 
-| Caso de Teste | CT-006 - Tratamento das mensagens enviado à equipe de suporte |
+| Caso de Teste | CT-006 - Tratamento das mensagens enviadas à equipe de suporte |
 |:---|:---|
 | Requisitos Associados | RF 06 - Tratamento de Solicitações de Suporte |
 | Objetivo do Teste | Visualizar, excluir ou responder as mensagens recebidas. |
@@ -41,38 +41,14 @@
 <br>
 
 
----
-
 | Caso de Teste | CT-007 - Tratamento das tarefas que serão exibidas no calendário |
 |:---|:---|
 | Requisitos Associados | RF 07 - Visualização de Painel de Serviços Agendados |
 | Objetivo do Teste | Visualizar as tarefas recebidas. |
 | Passos | <li>Estar na tela inicial e logado como atendente ou gestor. <li>Clicar no ícone do menu lateral e selecionar "Agenda". <li>Na página da agenda, as tarefas com seus respectivos horários devem ser exibidas. <li>Pesquisar pelos componentes disponíveis e testar seu funcionamento. |
 | Responsável pela Elaboração do Caso de Teste | Gabriel Marchi Ziviani |
-
----
 <br>
 
-
-
----
-
-| Caso de Teste | CT-008 - Tratamento do Relatório |
-|:---|:---|
-| Requisitos Associados | RF 07 - Visualização dos Dados Presentes no Relatório |
-| Objetivo do Teste | Visualizar as tarefas recebidas. |
-| Passos | <li>Estar na tela inicial e logado como atendente ou gestor. <li>Clicar no ícone do menu lateral e selecionar "Relatório". <li>Na página do relatório, devem aparecer os números corretos sobre os agendamentos, solicitações e cancelamentos, além dos clientes que possuem solicitações em aberto. <li>Deve ser possível pesquisar por um cliente específico com uma solicitação em aberto. <li>Pesquisar pelos componentes disponíveis e testar seu funcionamento.|||||
-| Responsável pela Elaboração do Caso de Teste | Gabriel Marchi Ziviani |
-
----
-
-<br>
-
-
-
-
-
----
 
 | Caso de Teste | CT-009 - Cadastro de Usuários Colaboradores |
 |:---|:---|
@@ -81,8 +57,14 @@
 | Passos | <li>Estar na tela inicial e logado como atendente ou gestor. <li>Clicar no ícone do menu lateral e selecionar "Cadastros" e em seguida "Clientes". <li>Na página de cadastro, devem aparecer os campos necessários para que um cliente seja inserido no sistema. <li>É necessário ter um crud, para inserir o novo registro, editar, excluir ou salvar as alterações. <li>Deve ter uma lista dinâmica para ser preenchida com os dados do cadastro. <li>Deve ser possível pesquisar por um cliente pelo filtro, através de seu nome.|
 | Critérios de êxito | <li>Preenchimento de todos os campos corretamente. <li>Funcionamento do CRUD. <li> Exibição de registros na lista dinâmica | <li>Funcionamento correto do filtro.
 | Responsável pela Elaboração do Caso de Teste | Thainá Crisóstomo Bernardes |
+<br>
 
----
 
+| Caso de Teste | CT-011 - Tratamento do Relatório |
+|:---|:---|
+| Requisitos Associados | RF 11 - Dashboard de performance |
+| Objetivo do Teste | Visualização em dashboard quantitativo de todas as atividades existentes. |
+| Passos | <li>Estar na tela inicial e logado como atendente ou gestor. <li>Clicar no ícone do menu lateral e selecionar "Relatório". <li>Na página do relatório, devem aparecer os números corretos sobre os agendamentos, solicitações e cancelamentos, além dos clientes que possuem solicitações em aberto. <li>Deve ser possível pesquisar por um cliente específico com uma solicitação em aberto. <li>Pesquisar pelos componentes disponíveis e testar seu funcionamento.|
+| Responsável pela Elaboração do Caso de Teste | Gabriel Marchi Ziviani |
 <br>
 
