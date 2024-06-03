@@ -56,8 +56,7 @@
 |:---|:---|
 | Requisitos Associados | RF 08 Tela de Cadastro de Serviços Disponíveis |
 | Objetivo do Teste | Cadastrar novo serviço orferecido pelo estabelecimento|
-| Passos | <li>Estar na tela inicial e logado como gestor. <li>
-Clicar no ícone do menu lateral e selecionar "Cadastros" e em seguida "Cadastro de Serviços". <li>Clicar na opção "Novo" para abrir os campos disponibilizados no mesmo. <li>Preencher todos os campos corretamente, com informações como nome, preço e categoria. <li>É necessário ter um crud, para inserir o novo registro de serviço, alterar, excluir ou salvar as alterações.| <li>Deve ser possível pesquisar por um serviço pelo filtro (Parametro de busca).
+| Passos | <li>Estar na tela inicial e logado como gestor. <li>Clicar no ícone do menu lateral e selecionar "Cadastros" e em seguida "Cadastro de Serviços". <li>Clicar na opção "Novo" para abrir os campos disponibilizados no mesmo. <li>Preencher todos os campos corretamente, com informações como nome, preço e categoria. <li>É necessário ter um crud, para inserir o novo registro de serviço, alterar, excluir ou salvar as alterações. <li>Deve ser possível pesquisar por um serviço pelo filtro (Parametro de busca).|
 | Critérios de êxito | <li>Preenchimento de todos os campos corretamente. <li>Funcionamento do CRUD. <li> Exibição de registros na lista dinâmica " Lista de Serviços" |
 | Responsável pela Elaboração do Caso de Teste | Felipe Costa Moreira |
 <br>
