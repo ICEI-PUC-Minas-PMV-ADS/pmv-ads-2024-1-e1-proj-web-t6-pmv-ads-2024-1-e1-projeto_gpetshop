@@ -1,4 +1,6 @@
 # Plano de Testes de Software
+<br>
+<br>
 
 | Caso de Teste | CT-002 - Criação de agendamento pelo cliente |
 |:---|:---|
