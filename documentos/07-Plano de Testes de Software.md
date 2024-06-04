@@ -1,12 +1,12 @@
 # Plano de Testes de Software
 <br>
 
-| Caso de Teste | CT-001 - Página Inicial - Menu Lateral - Itens "Inicio", "Quem Somos", "Depoimentos"e "Suporte"|
+| Caso de Teste | CT-001 - Página Inicial - Menu Lateral - Itens "Inicio", "Quem Somos", "Depoimentos" e "Suporte"|
 |:---|:---|
 | Requisitos Associados | RF 01 - Página Inicial |
 | Objetivo do Teste | Navegação pelo menu lateral da página inicial nas opções "Inicio", "Quem Somos", "Depoimentos"e "Suporte" |
-| Passos | <li>Estar na página inicial<li>Clicar nas opções "Inicio", "Quem Somos", "Depoimentos"e "Suporte"</li>
-| Critérios de êxito | <li>Ser direcionado para as sessões correspondentes dentro da própria página inicial</li> |
+| Passos | <li>Estar na página inicial;<li>Clicar nas opções "Inicio", "Quem Somos", "Depoimentos"e "Suporte";</li>
+| Critérios de êxito | <li>Ser direcionado para as sessões correspondentes dentro da própria página inicial;</li> |
 | Responsável pela elaboração do caso de teste | João Henrique Andrade Leite|
 
 <br>
@@ -15,8 +15,8 @@
 |:---|:---|
 | Requisitos Associados | RF 01 - Página Inicial |
 | Objetivo do Teste | Navegação pelo menu lateral da página inicial na opção "Agende Aqui" |
-| Passos | <li>Estar na página inicial<li>Clicar na opção "Agende Aqui"</li>
-| Critérios de êxito | <li>Ser direcionado para a página de agendamento pelo cliente onde encontrará o formulário de agendamento para preencher</li> |
+| Passos | <li>Estar na página inicial;<li>Clicar na opção "Agende Aqui";</li>
+| Critérios de êxito | <li>Ser direcionado para a página de agendamento pelo cliente onde encontrará o formulário de agendamento para preencher;</li> |
 | Responsável pela elaboração do caso de teste | João Henrique Andrade Leite|
 
 <br>
@@ -27,8 +27,8 @@
 |:---|:---|
 | Requisitos Associados | RF 01 - Página Inicial |
 | Objetivo do Teste | Navegação pelos icones de redes sociais |
-| Passos | <li>Estar na página inicial<li>Rolar até a sessão redes socias (final da página)<li>Clicar em qualquer um dos ícones |
-| Critérios de êxito | <li> Ser direcionado para as páginas correspondentes aos ícones através da abertura de uma nova guia no navegador</li> |
+| Passos | <li>Estar na página inicial<li>Rolar até a sessão redes socias (final da página); <li>Clicar em qualquer um dos ícones; |
+| Critérios de êxito | <li> Ser direcionado para as páginas correspondentes aos ícones através da abertura de uma nova guia no navegador;</li> |
 | Responsável pela elaboração do caso de teste | João Henrique Andrade Leite|
 
 <br>
@@ -59,8 +59,8 @@
 |:---|:---|
 | Requisitos Associados | RF 04 - Solicitação de Suporte |
 | Objetivo do Teste | Preenchimento e envio de solicitação de suporte pelo cliente através do preenchimento do formulário na página inícial |
-| Passos | <li>Estar na página inicial<li>Rolar a página até a sessão "Contato com o Suporte (final da página)<li>Preencher todos os dados<li>clicar no botão "Enviar Mensagem"|
-| Critérios de êxito | <li>Ao deixar algum campo vazio: Exbir a mensagem "! Preencha este campo" no campo vazio<li> Ao preencher todos os campos: Exibir a mensagem de alerta "Recebemos a sua solicitação e logo retornaremos o contato!" |
+| Passos | <li>Estar na página inicial;<li>Rolar a página até a sessão "Contato com o Suporte (final da página); <li>Preencher todos os dados;<li>clicar no botão "Enviar Mensagem";|
+| Critérios de êxito | <li>Ao deixar algum campo vazio: Exbir a mensagem "! Preencha este campo" no campo vazio;<li> Ao preencher todos os campos: Exibir a mensagem de alerta "Mensagem Enviada com Sucesso! Em Breve retornaremos o contato!" |
 | Responsável pela elaboração do caso de teste | João Henrique Andrade Leite|
 
 <br>
