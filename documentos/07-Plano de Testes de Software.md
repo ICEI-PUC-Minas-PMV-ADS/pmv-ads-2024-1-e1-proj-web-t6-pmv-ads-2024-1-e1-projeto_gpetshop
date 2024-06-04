@@ -1,5 +1,36 @@
 # Plano de Testes de Software
 <br>
+
+| Caso de Teste | CT-001 - Página Inicial - Menu Lateral - Itens "Inicio", "Quem Somos", "Depoimentos"e "Suporte"|
+|:---|:---|
+| Requisitos Associados | RF 01 - Página Inicial |
+| Objetivo do Teste | Navegação pelo menu lateral da página inicial nas opções "Inicio", "Quem Somos", "Depoimentos"e "Suporte" |
+| Passos | <li>Estar na página inicial<li>Clicar nas opções "Inicio", "Quem Somos", "Depoimentos"e "Suporte"</li>
+| Critérios de êxito | <li>Ser direcionado para as sessões correspondentes dentro da própria página inicial</li> |
+| Responsável pela elaboração do caso de teste | João Henrique Andrade Leite|
+
+<br>
+
+| Caso de Teste | CT-001.1 - Página Inicial - Menu Lateral - Item "Agende Aqui"|
+|:---|:---|
+| Requisitos Associados | RF 01 - Página Inicial |
+| Objetivo do Teste | Navegação pelo menu lateral da página inicial na opção "Agende Aqui" |
+| Passos | <li>Estar na página inicial<li>Clicar na opção "Agende Aqui"</li>
+| Critérios de êxito | <li>Ser direcionado para a página de agendamento pelo cliente onde encontrará o formulário de agendamento para preencher</li> |
+| Responsável pela elaboração do caso de teste | João Henrique Andrade Leite|
+
+<br>
+
+<br>
+
+| Caso de Teste | CT-001.2 - Página Inicial - Sessão Redes Sociais |
+|:---|:---|
+| Requisitos Associados | RF 01 - Página Inicial |
+| Objetivo do Teste | Navegação pelos icones de redes sociais |
+| Passos | <li>Estar na página inicial<li>Rolar até a sessão redes socias (final da página)<li>Clicar em qualquer um dos ícones |
+| Critérios de êxito | <li> Ser direcionado para as páginas correspondentes aos ícones através da abertura de uma nova guia no navegador</li> |
+| Responsável pela elaboração do caso de teste | João Henrique Andrade Leite|
+
 <br>
 
 | Caso de Teste | CT-002 - Criação de agendamento pelo cliente |
