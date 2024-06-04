@@ -53,6 +53,18 @@
 | Responsável pela elaboração do caso de teste | Paulo Henrique Sousa Carvalho|
 <br>
 
+<br>
+
+| Caso de Teste | CT-004 - Preenchimento e envio da Solicitação de Suporte pelo cliente|
+|:---|:---|
+| Requisitos Associados | RF 04 - Solicitação de Suporte |
+| Objetivo do Teste | Preenchimento e envio de solicitação de suporte pelo cliente através do preenchimento do formulário na página inícial |
+| Passos | <li>Estar na página inicial<li>Rolar a página até a sessão "Contato com o Suporte (final da página)<li>Preencher todos os dados<li>clicar no botão "Enviar Mensagem"|
+| Critérios de êxito | <li>Ao deixar algum campo vazio: Exbir a mensagem "! Preencha este campo" no campo vazio<li> Ao preencher todos os campos: Exibir a mensagem de alerta "Recebemos a sua solicitação e logo retornaremos o contato!" |
+| Responsável pela elaboração do caso de teste | João Henrique Andrade Leite|
+
+<br>
+
 
 | Caso de Teste | CT-005 - Tratamento das solicitações para agendamento de serviços |
 |:---|:---|
