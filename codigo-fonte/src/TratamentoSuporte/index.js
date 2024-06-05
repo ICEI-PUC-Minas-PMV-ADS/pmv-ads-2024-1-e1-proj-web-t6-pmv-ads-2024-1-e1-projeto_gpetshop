@@ -22,13 +22,16 @@ function onClickButtonDelete() {
   if (id) {
     deleteSupport(id);
     alert("Mensagem excluída!");
-    window.location.href = "/codigo-fonte/src/ListagemSuporte/index.html"; // Redireciona para a página de listagem após a exclusão
+    window.location.href =
+      "/codigo-fonte/dist/listagemSuporte/listagemSuporte.html"; // Redireciona para a página de listagem após a exclusão
   } else {
     alert("ID não encontrado. Não foi possível excluir a mensagem.");
   }
   // Após cada operação
   console.log("Lista atualizada: ", getLocalStorageSupport());
 }
+const buttonDelete = document.getElementById("excluir-mensagem");
+buttonDelete.addEventListener("click", onClickButtonDelete);
 
 // Recupera os dados de suporte do local storage da key minhaLista
 function getLocalStorageSupport() {
@@ -48,11 +51,6 @@ function setLocalStorageSupport(minhaLista) {
 // Recupera as mensagens de suporte do local storage.
 function getLocalStorageSupportMessage() {
   return JSON.parse(localStorage.getItem("db_support_reply")) ?? [];
-}
-
-// Lê as mensagens de suporte do local storage.
-function readSupportMessage() {
-  return getLocalStorageSupportMessage();
 }
 
 // Salva a mensagem de suporte no local storage.
@@ -125,6 +123,8 @@ function setInputReadOnly(id, isReadOnly) {
 function onClickButtonEnterAnswer() {
   setInputReadOnly("text-value-resp", false);
 }
+const buttonEnterAnswer = document.getElementById("inserir-resposta");
+buttonEnterAnswer.addEventListener("click", onClickButtonEnterAnswer);
 
 function sendReply() {
   const id = document.getElementById("id").value.trim();
@@ -163,11 +163,8 @@ function sendReply() {
   // Exibe um alerta informando que a mensagem foi respondida.
   alert("Mensagem respondida!");
   console.log("Lista atualizada: ", getLocalStorageSupport());
-}
-
-// Verifica se os campos do formulário são válidos.
-function isValidFields() {
-  return document.getElementById("form").reportValidity();
+  window.location.href =
+      "/codigo-fonte/dist/listagemSuporte/listagemSuporte.html"; // Redireciona para a página de listagem após o envio do formulário com a resposta
 }
 
 // Limpa todos os campos do formulário.
@@ -182,6 +179,8 @@ function clearFields() {
 function onClickButtonSend() {
   sendReply();
 }
+const buttonSend = document.getElementById("enviar-resposta");
+buttonSend.addEventListener("click", onClickButtonSend);
 
 // Cria uma nova mensagem de suporte e a salva no local storage na key db_support_reply
 function createSupportMessage(client) {

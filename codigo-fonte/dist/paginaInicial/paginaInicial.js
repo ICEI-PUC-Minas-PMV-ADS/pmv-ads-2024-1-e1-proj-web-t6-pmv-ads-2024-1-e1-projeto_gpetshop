@@ -2005,6 +2005,7 @@ formulario.addEventListener("submit", function (e) {
     this.reset();
 
     localStorage.setItem("minhaLista", JSON.stringify(lista));
+    alert("Mensagem Enviada com Sucesso! Em Breve retornaremos o contato!")
 
 
 });

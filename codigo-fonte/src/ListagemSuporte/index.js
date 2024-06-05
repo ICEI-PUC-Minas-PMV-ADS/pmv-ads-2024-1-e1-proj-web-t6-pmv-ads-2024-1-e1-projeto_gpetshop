@@ -23,12 +23,14 @@ function identifyingCustomer(event) {
   const clientData = minhaLista.find((client) => client.id === parseInt(id));
   // Verificar se os dados do cliente existem.
   if (clientData) {
-      // Serializar os dados do cliente como uma string JSON.
-      const serializedData = JSON.stringify(clientData);
-      // Redirecionar para a página de edição com os dados do cliente como parâmetros de consulta.
-      window.location.href = `../assets/tratamentoSuporte/tratamentoSuporte.html?data=${encodeURIComponent(serializedData)}`;
+    // Serializar os dados do cliente como uma string JSON.
+    const serializedData = JSON.stringify(clientData);
+    // Redirecionar para a página de edição com os dados do cliente como parâmetros de consulta.
+    window.location.href = `/codigo-fonte/dist/tratamentoSuporte/tratamentoSuporte.html?data=${encodeURIComponent(
+      serializedData
+    )}`;
   } else {
-      console.log("Não foram encontrados dados para o ID", id);
+    console.log("Não foram encontrados dados para o ID", id);
   }
 }
 
@@ -72,16 +74,23 @@ function readSupport() {
 
 // Função de pesquisa
 function searchMessages() {
-  const input = document.getElementById('searchBarList');
+  const input = document.getElementById("searchBarList");
   const filter = input.value.toUpperCase();
   const minhaLista = readSupport();
-  
-  const filteredData = minhaLista.filter(client => {
-    return client.nome.toUpperCase().includes(filter) || client.mensagem.toUpperCase().includes(filter);
+
+  const filteredData = minhaLista.filter((client) => {
+    return (
+      client.nome.toUpperCase().includes(filter) ||
+      client.mensagem.toUpperCase().includes(filter)
+    );
   });
-  
+
   updateTable(filteredData);
 }
+
+const searchInput = document.getElementById("searchBarList");
+searchInput.addEventListener("input", searchMessages);
+
 
 var openSlide = document.querySelector("#ativar");
 

@@ -2111,7 +2111,7 @@ function identifyingCustomer(event) {
     // Serializar os dados do cliente como uma string JSON.
     const serializedData = JSON.stringify(clientData);
     // Redirecionar para a página de edição com os dados do cliente como parâmetros de consulta.
-    window.location.href = `../tratamentoSolicitacao/tratamentoSolicitacao.html?data=${encodeURIComponent(
+    window.location.href = `/codigo-fonte/dist/tratamentoSolicitacao/tratamentoSolicitacao.html?data=${encodeURIComponent(
       serializedData
     )}`;
   } else {
@@ -2172,6 +2172,10 @@ function searchMessages() {
 
   updateTable(filteredData);
 }
+
+const input = document.getElementById("searchBarList");
+input.addEventListener("click", searchMessages);
+
 
 var openSlide = document.querySelector("#ativar");
 
