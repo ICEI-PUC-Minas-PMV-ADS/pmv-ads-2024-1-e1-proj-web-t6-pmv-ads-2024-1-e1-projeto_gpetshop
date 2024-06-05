@@ -114,6 +114,14 @@
 | Responsável pela Elaboração do Caso de Teste | Thainá Crisóstomo Bernardes |
 <br>
 
+| Caso de Teste | CT-010 - Tela de Login para Colaboradores |
+|:---|:---|
+| Requisitos Associados | RF 10 - Validação de Login e senha para colaboradores |
+| Objetivo do Teste | Validação de login e senha para os colaboradores com os perfis "Gerente", "Banhista" e "Atendente". |
+| Passos | <li>Estar na tela de Login; <li> Inserir os dados de "Usuário" e "Senha"; <li> Clicar no botão "login";|
+| Critérios de êxito | <li>O usuário será direcionado para a página com as funcionalidades permitidas para ele; 
+| Responsável pela Elaboração do Caso de Teste | João Henrique Andrade Leite |
+<br>
 
 | Caso de Teste | CT-011 - Tratamento do Relatório |
 |:---|:---|
