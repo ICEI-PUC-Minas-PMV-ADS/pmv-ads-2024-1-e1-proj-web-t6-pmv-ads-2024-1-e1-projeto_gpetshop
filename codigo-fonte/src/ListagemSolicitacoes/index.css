@@ -297,7 +297,7 @@ main {
 }
 
 #searchBarList::placeholder {
-  color: rgba(255, 231, 190, 0.79);
+  color: rgba(255, 231, 190, 0.527);
 }
 
 .material-symbols-rounded {

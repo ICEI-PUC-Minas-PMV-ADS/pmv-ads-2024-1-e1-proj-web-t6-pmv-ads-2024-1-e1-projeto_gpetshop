@@ -7,10 +7,6 @@ import "../assets/svg/icon_pet_porte.svg";
 import "../assets/svg/icon_pet_pelagem.svg";
 import "../assets/svg/icon_pet_raca.svg";
 
-/*
-RECUPERA OS DADOS DA KEY solicitacoes E PREENCHE OS CAMPOS DA TELA DE
-TRATAMENTO DA SOLICITAÇÃO
-*/
 // Manipulação do localStorage para a key 'solicitacoes'
 function setLocalStorageSolicitation(solicitacoes) {
   return localStorage.setItem("solicitacoes", JSON.stringify(solicitacoes));
@@ -30,26 +26,8 @@ function setLocalStorageRefused(db_refused) {
 }
 
 function getLocalStorageRefused() {
-  return JSON.parse(localStorage.getItem("db_agenda_refused")) ?? [];
-}
-
-// Move solicitação para 'db_agenda_refused' e remove de 'solicitacoes'
-function refuseSolicitation(id) {
-  const solicitacoes = readSolicitation();
-  const refusedSolicitation = solicitacoes.find(
-    (client) => client.id === parseInt(id)
-  );
-  const updatedList = solicitacoes.filter(
-    (client) => client.id !== parseInt(id)
-  );
-
-  if (refusedSolicitation) {
-    const db_refused = getLocalStorageRefused();
-    db_refused.push(refusedSolicitation);
-    setLocalStorageRefused(db_refused);
-  }
-
-  setLocalStorageSolicitation(updatedList);
+  const data = JSON.parse(localStorage.getItem("db_agenda_refused"));
+  return Array.isArray(data) ? data : [];
 }
 
 // Recupera os parâmetros da query string da URL
@@ -64,27 +42,57 @@ function getQueryParams() {
   return params;
 }
 
-// Preenche o formulário com os dados da query string, se houver
+// Se houver dados nos parâmetros da query string, preenche o formulário com esses dados.
 const queryParams = getQueryParams();
 if (queryParams.data) {
-  fillFormWithData(queryParams.data);
+  const clientData = JSON.parse(decodeURIComponent(queryParams.data));
+  fillFormWithData(clientData);
 }
 
-// Preenche o formulário com os dados fornecidos pela key 'solicitacoes'
-function fillFormWithData(data) {
-  const clientData = JSON.parse(decodeURIComponent(data));
-  document.getElementById("form").setAttribute("data-id", clientData.id);
-  document.getElementById("nameClient").value = clientData.clientName;
-  document.getElementById("emailClient").value = clientData.clientEmail;
-  document.getElementById("foneClient").value = clientData.clientPhone;
-  document.getElementById("namePet").value = clientData.petName;
-  document.getElementById("pelagem").value = clientData.pelagemType;
-  document.getElementById("raca").value = clientData.raca;
-  document.getElementById("idade").value = clientData.idade;
-  document.getElementById("porte").value = clientData.porte;
-  document.getElementById("servicos").value = clientData.service;
-  document.getElementById("dt-agenda").value = clientData.agenda;
-  document.getElementById("text-value-obs").value = clientData.observacoes;
+// Função para preencher o formulário com os dados fornecidos.
+function fillFormWithData(clientData) {
+  const idField = document.getElementById("idClient");
+  const nameField = document.getElementById("nameClient");
+  const emailField = document.getElementById("emailClient");
+  const phoneField = document.getElementById("foneClient");
+  const namePetField = document.getElementById("namePet");
+  const pelagemField = document.getElementById("pelagem");
+  const racaField = document.getElementById("raca");
+  const idadeField = document.getElementById("idade");
+  const porteField = document.getElementById("porte");
+  const servicesField = document.getElementById("services");
+  const agendaField = document.getElementById("dt-agenda");
+  const obsField = document.getElementById("text-value-obs");
+
+  if (
+    idField &&
+    nameField &&
+    emailField &&
+    phoneField &&
+    namePetField &&
+    pelagemField &&
+    racaField &&
+    idadeField &&
+    porteField &&
+    servicesField &&
+    agendaField &&
+    obsField
+  ) {
+    idField.value = clientData.id;
+    nameField.value = clientData.clientName;
+    emailField.value = clientData.clientEmail;
+    phoneField.value = clientData.clientPhone;
+    namePetField.value = clientData.petName;
+    pelagemField.value = clientData.pelagemType;
+    racaField.value = clientData.raca;
+    idadeField.value = clientData.idade;
+    porteField.value = clientData.porte;
+    servicesField.value = clientData.service;
+    agendaField.value = clientData.agenda;
+    obsField.value = clientData.observacoes;
+  } else {
+    console.error("Um ou mais elementos do formulário não foram encontrados.");
+  }
 }
 
 // Define campos como somente leitura ao carregar a janela
@@ -104,45 +112,82 @@ window.addEventListener("load", () => {
 
 // Define um campo de entrada como somente leitura ou editável
 function setInputReadOnly(id, isReadOnly) {
-  const element = document.getElementById(id);
+const element = document.getElementById(id);
+if (element.tagName === "SELECT" || element.tagName === "TEXTAREA" || element.tagName === "INPUT") {
+  element.disabled = isReadOnly;
+} else {
   element.readOnly = isReadOnly;
+}
 }
 
 // Envia a solicitação confirmada para 'db_agenda' se os campos forem válidos
 function sendClient() {
-  if (isValidFields()) {
-    const clientRequest = {
-      id: document.getElementById("form").getAttribute("data-id"), // Adiciona o ID
-      cliente: {
-        nome: document.getElementById("nameClient").value,
-        email: document.getElementById("emailClient").value,
-        celular: document.getElementById("foneClient").value,
-      },
-      pet: {
-        nome: document.getElementById("namePet").value,
-        idade: document.getElementById("idade").value,
-        porte: document.getElementById("porte").value,
-        pelagem: document.getElementById("pelagem").value,
-        raça: document.getElementById("raca").value,
-      },
-      serviço: {
-        servicos: document.getElementById("services").value,
-      },
-      agendamento: {
-        horário: document.getElementById("dt-agenda").value,
-      },
-      observação: {
-        observação: document.getElementById("text-value-obs").value,
-      },
-    };
-    createAgendamento(clientRequest);
-    deleteSolicitation(clientRequest.id); // Remove solicitação aceita
-    clearFields();
-    alert("Solicitação aceita!");
+  const id = document.getElementById("idClient").value.trim();
+  const nome = document.getElementById("nameClient").value.trim();
+  const email = document.getElementById("emailClient").value.trim();
+  const celular = document.getElementById("foneClient").value.trim();
+  const namePet = document.getElementById("namePet").value.trim();
+  const idade = document.getElementById("idade").value.trim();
+  const porte = document.getElementById("porte").value.trim();
+  const pelagem = document.getElementById("pelagem").value.trim();
+  const raca = document.getElementById("raca").value.trim();
+  const services = document.getElementById("services").value.trim();
+  const agenda = document.getElementById("dt-agenda").value.trim();
+  const obs = document.getElementById("text-value-obs").value;
+
+  // Validar se todos os campos são preenchidos
+  if (
+    !id ||
+    !nome ||
+    !email ||
+    !celular ||
+    !namePet ||
+    !pelagem ||
+    !raca ||
+    !idade ||
+    !porte ||
+    !services ||
+    !agenda ||
+    !obs
+  ) {
+    alert("Por favor, preencha todos os campos.");
+    return;
   }
+
+  // Cria um objeto com os dados do cliente e manda para db_agenda.
+  const client = {
+    id: id,
+    nome: nome,
+    email: email,
+    celular: celular,
+    namePet: namePet,
+    idade: idade,
+    porte: porte,
+    pelagem: pelagem,
+    raca: raca,
+    services: services,
+    agenda: agenda,
+    obs: obs,
+    status: "Agendado", // Define o status como "Agendado"
+  };
+
+  // Salva a solicitação confirmada no local storage.
+  createAgendamento(client);
+
+  // Exclui a solicitação da lista de solicitações
+  deleteSolicitation(id);
+
+  // Limpa os campos do formulário.
+  clearFields();
+
+  // Exibe um alerta informando que a solicitação foi aceita.
+  alert("Solicitação aceita!");
+  console.log("Lista atualizada: ", getLocalStorageSolicitation());
+  window.location.href =
+    "/codigo-fonte/dist/listagemSolicitacoes/listagemSolicitacoes.html"; // Redireciona para a página de listagem após o envio do formulário com a resposta
 }
 
-// Deleta uma solicitação da key 'solicitacoes'
+// Função para deletar uma solicitação específica pelo ID da key 'solicitacoes'
 function deleteSolicitation(id) {
   const solicitacoes = readSolicitation();
   const updatedList = solicitacoes.filter(
@@ -150,11 +195,6 @@ function deleteSolicitation(id) {
   );
   setLocalStorageSolicitation(updatedList);
 }
-
-// Verifica se os campos do formulário são válidos
-const isValidFields = () => {
-  return document.getElementById("form").reportValidity();
-};
 
 // Limpa todos os campos do formulário
 function clearFields() {
@@ -164,13 +204,14 @@ function clearFields() {
   });
 }
 
-// Manipulação do localStorage para a key 'db_agenda'
-function setLocalStorageAgenda(db_agenda) {
-  return localStorage.setItem("db_agenda", JSON.stringify(db_agenda));
-}
-
+// Recupera as solicitações agendadas do local storage.
 function getLocalStorageAgenda() {
   return JSON.parse(localStorage.getItem("db_agenda")) ?? [];
+}
+
+// Salva a solicitação agendada no local storage.
+function setLocalStorageAgenda(db_agenda) {
+  return localStorage.setItem("db_agenda", JSON.stringify(db_agenda));
 }
 
 function readAgendamento() {
@@ -199,133 +240,61 @@ function onClickButtonEnterAnswer() {
   setInputReadOnly("dt-agenda", false);
   setInputReadOnly("text-value-obs", false);
 }
+const buttonEnterAnswer = document.getElementById("alterar-solicitacao");
+buttonEnterAnswer.addEventListener("click", onClickButtonEnterAnswer);
 
 // Aceita a solicitação
 function onClickButtonAceitar() {
   sendClient();
 }
+const buttonAceitar = document.getElementById("aceitar-solicitacao");
+buttonAceitar.addEventListener("click", onClickButtonAceitar);
 
-// Recusa a solicitação
+// Chama a função de deletar suporte e exibe um alerta informando que a mensagem foi excluída.
 function onClickButtonRecusar() {
-  const form = document.getElementById("form");
-  const id = form.getAttribute("data-id");
-  refuseSolicitation(id);
-  clearFields();
-  alert("Solicitação recusada!");
-}
+  const id = document.getElementById("idClient").value.trim();
+  const nome = document.getElementById("nameClient").value.trim();
+  const email = document.getElementById("emailClient").value.trim();
+  const celular = document.getElementById("foneClient").value.trim();
+  const namePet = document.getElementById("namePet").value.trim();
+  const idade = document.getElementById("idade").value.trim();
+  const porte = document.getElementById("porte").value.trim();
+  const pelagem = document.getElementById("pelagem").value.trim();
+  const raca = document.getElementById("raca").value.trim();
+  const services = document.getElementById("services").value.trim();
+  const agenda = document.getElementById("dt-agenda").value.trim();
+  const obs = document.getElementById("text-value-obs").value.trim();
 
-// Funções dropdown
+  if (id) {
+    const refusedClient = {
+      id: id,
+      nome: nome,
+      email: email,
+      celular: celular,
+      namePet: namePet,
+      idade: idade,
+      porte: porte,
+      pelagem: pelagem,
+      raca: raca,
+      services: services,
+      agenda: agenda,
+      obs: obs,
+      status: "Recusado", // Define o status como "Recusado"
+    };
 
-// Mostra ou esconde dropdown de idade
-function dropDownIdade(parameterIdade) {
-  const elementsIdade = document.getElementsByClassName("dropDownIdade")[0];
-  if (parameterIdade === 0) {
-    elementsIdade.style.display = "block";
-    const translateIdade = ["0px", "0px, -10px"];
-    setTimeout(() => {
-      elementsIdade.style.transform =
-        "translate(" + translateIdade[parameterIdade] + ")";
-    }, 0);
+    const db_refused = getLocalStorageRefused();
+    db_refused.push(refusedClient);
+    setLocalStorageRefused(db_refused);
+
+    deleteSolicitation(id);
+    alert("Solicitação recusada e excluída da Lista de Solicitações!");
+    window.location.href =
+      "/codigo-fonte/dist/listagemSolicitacoes/listagemSolicitacoes.html"; // Redireciona para a página de listagem após a exclusão
   } else {
-    elementsIdade.style.display = "none";
+    alert("ID não encontrado. Não foi possível excluir a mensagem.");
   }
+  // Após cada operação
+  console.log("Lista atualizada: ", getLocalStorageSolicitation());
 }
-
-// Seleciona idade no dropdown
-function idade(idade) {
-  const itemIdade = document.getElementById("itemIdade-" + idade).innerHTML;
-  document.getElementsByTagName("input")[5].value = itemIdade;
-}
-
-// Mostra ou esconde dropdown de porte
-function dropDownPorte(parameterPorte) {
-  const elementsPorte = document.getElementsByClassName("dropDownPorte")[0];
-  if (parameterPorte === 0) {
-    elementsPorte.style.display = "block";
-    const translatePorte = ["0px", "0px, -10px"];
-    setTimeout(() => {
-      elementsPorte.style.transform =
-        "translate(" + translatePorte[parameterPorte] + ")";
-    }, 0);
-  } else {
-    elementsPorte.style.display = "none";
-  }
-}
-
-// Seleciona porte no dropdown
-function porte(porte) {
-  const itemPorte = document.getElementById("itemPorte-" + porte).innerHTML;
-  document.getElementsByTagName("input")[6].value = itemPorte;
-}
-
-// Mostra ou esconde dropdown de pelagem
-function dropDownPelagem(parameterPelagem) {
-  const elementsPelagem = document.getElementsByClassName("dropDownPelagem")[0];
-  if (parameterPelagem === 0) {
-    elementsPelagem.style.display = "block";
-    const translatePelagem = ["0px", "0px, -10px"];
-    setTimeout(() => {
-      elementsPelagem.style.transform =
-        "translate(" + translatePelagem[parameterPelagem] + ")";
-    }, 0);
-  } else {
-    elementsPelagem.style.display = "none";
-  }
-}
-
-// Seleciona pelagem no dropdown
-function pelagem(pelagem) {
-  const itemPelagem = document.getElementById(
-    "itemPelagem-" + pelagem
-  ).innerHTML;
-  document.getElementsByTagName("input")[7].value = itemPelagem;
-}
-
-// Mostra ou esconde dropdown de raça
-function dropDownRaca(parameterRaca) {
-  const elementsRaca = document.getElementsByClassName("dropDownRaca")[0];
-  if (parameterRaca === 0) {
-    elementsRaca.style.display = "block";
-    const translateRaca = ["0px", "0px, -10px"];
-    setTimeout(() => {
-      elementsRaca.style.transform =
-        "translate(" + translateRaca[parameterRaca] + ")";
-    }, 0);
-  } else {
-    elementsRaca.style.display = "none";
-  }
-}
-
-// Seleciona raça no dropdown
-function raca(raca) {
-  const itemRaca = document.getElementById("itemRaca-" + raca).innerHTML;
-  document.getElementsByTagName("input")[8].value = itemRaca;
-}
-
-// Mostra ou esconde dropdown de serviço
-function dropDownServico(parameterServico) {
-  const elementsServico = document.getElementsByClassName("dropDownServico")[0];
-  if (parameterServico === 0) {
-    elementsServico.style.display = "block";
-    const translateServico = ["0px", "0px, -10px"];
-    setTimeout(() => {
-      elementsServico.style.transform =
-        "translate(" + translateServico[parameterServico] + ")";
-    }, 0);
-  } else {
-    elementsServico.style.display = "none";
-  }
-}
-
-// Seleciona serviço no dropdown
-function servico(servico) {
-  const itemServico = document.getElementById(
-    "itemServico-" + servico
-  ).innerHTML;
-  document.getElementsByTagName("input")[9].value = itemServico;
-}
-
-window.addEventListener("DOMContentLoaded", () => {
-  setLocalStorageSolicitation()
-  getLocalStorageSolicitation()
-});
+const buttonRecusar = document.getElementById("excluir-solicitacao");
+buttonRecusar.addEventListener("click", onClickButtonRecusar);

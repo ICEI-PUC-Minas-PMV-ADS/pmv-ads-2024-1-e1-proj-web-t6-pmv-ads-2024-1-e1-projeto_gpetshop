@@ -57,9 +57,12 @@
             <div class="title" id="pelagem">pelagem</div>
           </div>
           <select required id="dog-info-select" class="input-form input-border select-dog-info fs-16">
-            <option value="curto">curto</option>
-            <option value="medio">médio</option>
-            <option value="longo">longo</option>
+            <option value="curto_liso">Pelo curto liso</option>
+            <option value="curto_duro">Pelo curto duro</option>
+            <option value="longo_liso">Pelo longo liso</option>
+            <option value="longo_ondulado">Pelo longo ondulado</option>
+            <option value="longo_encaracolado">Pelo longo encaracolado</option>
+            <option value="duplo">Pelagem dupla</option>
           </select>
         </div>
 
@@ -89,9 +92,10 @@
             <div class="title" id="porte">porte</div>
           </div>
           <select id="porte-input" required class="input-form input-border select-dog-info fs-16">
-            <option value="pequeno">pequeno</option>
-            <option value="medio">médio</option>
-            <option value="grande">grande</option>
+            <option value="minitoy">Mini ou toy</option>
+            <option value="pequenoanao">Pequeno ou anão</option>
+            <option value="grande">Grande</option>
+            <option value="gigante">Gigante</option>
           </select>
         </div>
 
@@ -103,7 +107,18 @@
           <select 
             required
             class="input-form input-border select-service fs-16"
-            id="service-select" name="services"></select>
+            id="service-select" name="services">
+            <option value="banho">Banho</option>
+            <option value="hidratacao">Hidratação</option>
+            <option value="tosa_maquina">Tosa na máquina</option>
+            <option value="tosa_tesoura">Tosa na tesoura</option>
+            <option value="tosa_higienica">Tosa higiênica</option>
+            <option value="desembaracamento">Desembaraçamento</option>
+            <option value="tingimento_pelos">Tingimento dos pelos</option>
+            <option value="escovacao_dentes">Escovação de dentes</option>
+            <option value="limpeza_ouvido">Limpeza de ouvido</option>
+            <option value="corte_unhas">Corte de unhas</option>
+          </select>
         </div>
       </div>
 
@@ -126,8 +141,7 @@
           class="input-form input-border obs-text-area fs-16"
           placeholder="observações"
           id="observacoes-input"
-          >
-        </textarea>
+          ></textarea>
       </div>
 
       <button class="submit-button" id="agendar" type="submit">AGENDAR</button>
