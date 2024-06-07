@@ -44,8 +44,8 @@
             <div class="name-client-container">
                 <i class="fa-solid fa-user"></i>
                 <label for="nameClient"></label>
-                <input class="dataClient poppins-medium" id="nameClient" type="text" name="name-client" placeholder="ABCDEF"
-                    maxlength="100" required>
+                <input class="dataClient poppins-medium" id="nameClient" type="text" name="name-client"
+                    placeholder="ABCDEF" maxlength="100" required>
             </div>
             <!-- FIM NOME CLIENTE -->
 
@@ -53,8 +53,8 @@
             <div class="email-client-container">
                 <i class="fa-solid fa-envelope"></i>
                 <label for="emailClient"></label>
-                <input class="dataClient poppins-medium" id="emailClient" type="text" name="email-client" placeholder="abcd@email.com"
-                    maxlength="100" required>
+                <input class="dataClient poppins-medium" id="emailClient" type="text" name="email-client"
+                    placeholder="abcd@email.com" maxlength="100" required>
             </div>
             <!-- FIM E-MAIL CLIENTE -->
 
@@ -62,8 +62,8 @@
             <div class="fone-client-container">
                 <i class="fa-solid fa-phone"></i>
                 <label for="foneClient"></label>
-                <input class="dataClient poppins-medium" id="foneClient" type="text" name="fone-client" placeholder="(00) 11111-2222"
-                    maxlength="15" required>
+                <input class="dataClient poppins-medium" id="foneClient" type="text" name="fone-client"
+                    placeholder="(00) 11111-2222" maxlength="15" required>
             </div>
             <!-- FIM TELEFONE CLIENTE -->
         </div>
@@ -78,7 +78,8 @@
             <div class="name-pet-container">
                 <img class="dog-name-icon" src="../assets/svg/icon_pet.svg" alt="">
                 <label for="namePet"></label>
-                <input class="dataClient poppins-medium" id="namePet" type="text" name="name-client" placeholder="ABCDEF" onkeyup="">
+                <input class="dataClient poppins-medium" id="namePet" type="text" name="name-client"
+                    placeholder="Nome do pet">
             </div>
             <!-- INICIO PROPRIEDADES -->
             <div class="pet-properties">
@@ -88,29 +89,24 @@
                         <label class="poppins-medium text-idade" for="petIdade">
                             <img class="icon-pet-idade" src="../assets/svg/icon_pet_idade.svg" alt="">Idade</label>
 
-                        <div class="containerIdade">
-                            <input class="dataClient poppins-medium" id="idade" type="text" name="idade" placeholder="Selecionar"
-                                onfocus="dropDownIdade(0)" onblur="dropDownIdade(1)">
-                            <div class="dropDownIdade poppins-medium">
-                                <div class="listDropDownIdade">
-                                    <div class="itemIdade" id="itemIdade-1" onmousedown="idade(1)">1 Ano</div>
-                                    <div class="itemIdade" id="itemIdade-2" onmousedown="idade(2)">2 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-3" onmousedown="idade(3)">3 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-4" onmousedown="idade(4)">4 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-5" onmousedown="idade(5)">5 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-6" onmousedown="idade(6)">6 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-7" onmousedown="idade(7)">7 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-8" onmousedown="idade(8)">8 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-9" onmousedown="idade(9)">9 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-10" onmousedown="idade(10)">10 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-11" onmousedown="idade(11)">11 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-12" onmousedown="idade(12)">12 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-13" onmousedown="idade(13)">13 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-14" onmousedown="idade(14)">14 Anos</div>
-                                    <div class="itemIdade" id="itemIdade-15" onmousedown="idade(15)">15 Anos</div>
-                                </div>
-                            </div>
-                        </div>
+                        <select id="idade" class="dataClient poppins-medium">
+                            <option class="poppins-medium option" value="" disabled selected>Selecionar</option>
+                            <option class="poppins-medium option" value="1">1 Ano</option>
+                            <option class="poppins-medium option" value="2">2 Anos</option>
+                            <option class="poppins-medium option" value="3">3 Anos</option>
+                            <option class="poppins-medium option" value="4">4 Anos</option>
+                            <option class="poppins-medium option" value="5">5 Anos</option>
+                            <option class="poppins-medium option" value="6">6 Anos</option>
+                            <option class="poppins-medium option" value="7">7 Anos</option>
+                            <option class="poppins-medium option" value="8">8 Anos</option>
+                            <option class="poppins-medium option" value="9">9 Anos</option>
+                            <option class="poppins-medium option" value="10">10 Anos</option>
+                            <option class="poppins-medium option" value="11">11 Anos</option>
+                            <option class="poppins-medium option" value="12">12 Anos</option>
+                            <option class="poppins-medium option" value="13">13 Anos</option>
+                            <option class="poppins-medium option" value="14">14 Anos</option>
+                            <option class="poppins-medium option" value="15">15 Anos</option>
+                        </select>
                     </div>
                     <!-- FIM PET IDADE -->
 
@@ -119,50 +115,36 @@
                         <label class="poppins-medium text-porte" for="petPorte">
                             <img class="icon-pet-porte" src="../assets/svg/icon_pet_porte.svg" alt="">Porte</label>
 
-                        <div class="containerPorte">
-                            <input class="dataClient poppins-medium" id="porte" type="text" name="porte" placeholder="Selecionar"
-                                onfocus="dropDownPorte(0)" onblur="dropDownPorte(1)">
-                            <div class="dropDownPorte poppins-medium">
-                                <div class="listDropDownPorte">
-                                    <div class="itemPorte" id="itemPorte-1" onmousedown="porte(1)">Mini ou toy</div>
-                                    <div class="itemPorte" id="itemPorte-2" onmousedown="porte(2)">Pequeno ou anão</div>
-                                    <div class="itemPorte" id="itemPorte-3" onmousedown="porte(3)">Grande</div>
-                                    <div class="itemPorte" id="itemPorte-4" onmousedown="porte(4)">Gigante</div>
-                                </div>
-                            </div>
-                        </div>
+                        <select id="porte" class="dataClient poppins-medium">
+                            <option class="poppins-medium option" value="" disabled selected>Selecionar</option>
+                            <option class="poppins-medium option" value="minitoy">Mini ou toy</option>
+                            <option class="poppins-medium option" value="pequenoanao">Pequeno ou anão</option>
+                            <option class="poppins-medium option" value="grande">Grande</option>
+                            <option class="poppins-medium option" value="gigante">Gigante</option>
+                        </select>
                     </div>
                     <!-- FIM PET PORTE -->
                 </div>
+
 
                 <div class="pet-properties-dois">
                     <!-- INICIO PET PELAGEM -->
                     <div id="petPelagem">
                         <label class="poppins-medium text-pelagem" for="petPelagem">
-                            <img class="icon-pet-pelagem" src="../assets/svg/icon_pet_pelagem.svg" alt="">Pelagem</label>
+                            <img class="icon-pet-pelagem" src="../assets/svg/icon_pet_pelagem.svg"
+                                alt="">Pelagem</label>
 
-                        <div class="containerPelagem">
-                            <input class="dataClient poppins-medium" id="pelagem" type="text" name="pelagem" placeholder="Selecionar"
-                                onfocus="dropDownPelagem(0)" onblur="dropDownPelagem(1)">
-                            <div class="dropDownPelagem poppins-medium">
-                                <div class="listDropDownPelagem">
-                                    <div class="itemPelagem" id="itemPelagem-1" onmousedown="pelagem(1)">Pelo curto liso
-                                    </div>
-                                    <div class="itemPelagem" id="itemPelagem-2" onmousedown="pelagem(2)">Pelo curto duro
-                                    </div>
-                                    <div class="itemPelagem" id="itemPelagem-3" onmousedown="pelagem(3)">Pelo longo liso
-                                    </div>
-                                    <div class="itemPelagem" id="itemPelagem-4" onmousedown="pelagem(4)">Pelo longo
-                                        ondulado
-                                    </div>
-                                    <div class="itemPelagem" id="itemPelagem-5" onmousedown="pelagem(5)">Pelo longo
-                                        encaracolado
-                                    </div>
-                                    <div class="itemPelagem" id="itemPelagem-6" onmousedown="pelagem(6)">Pelagem dupla
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <select id="pelagem" class="dataClient poppins-medium">
+                            <option class="poppins-medium option" value="" disabled selected>Selecionar</option>
+                            <option class="poppins-medium option" value="curto_liso">Pelo curto liso</option>
+                            <option class="poppins-medium option" value="curto_duro">Pelo curto duro</option>
+                            <option class="poppins-medium option" value="longo_liso">Pelo longo liso</option>
+                            <option class="poppins-medium option" value="longo_ondulado">Pelo longo ondulado
+                            </option>
+                            <option class="poppins-medium option" value="longo_encaracolado">Pelo longo encaracolado
+                            </option>
+                            <option class="poppins-medium option" value="duplo">Pelagem dupla</option>
+                        </select>
 
                     </div>
                     <!-- FIM PET PELAGEM -->
@@ -172,26 +154,113 @@
                         <label class="poppins-medium text-raca" for="petRaca">
                             <img class="icon-pet-raca" src="../assets/svg/icon_pet_raca.svg" alt="">Raça</label>
 
-                        <div class="containerRaca">
-                            <input class="dataClient poppins-medium" id="raca" type="text" name="raca" placeholder="Selecionar"
-                                onfocus="dropDownRaca(0)" onblur="dropDownRaca(1)">
-                            <div class="dropDownRaca poppins-medium">
-                                <div class="listDropDownRaca">
-                                    <div class="itemRaca" id="itemRaca-1" onmousedown="raca(1)">Labrador Retriever</div>
-                                    <div class="itemRaca" id="itemRaca-2" onmousedown="raca(2)">Golden Retriever</div>
-                                    <div class="itemRaca" id="itemRaca-3" onmousedown="raca(3)">Pastor Alemão</div>
-                                    <div class="itemRaca" id="itemRaca-4" onmousedown="raca(4)">Bulldog Francês</div>
-                                    <div class="itemRaca" id="itemRaca-5" onmousedown="raca(5)">Beagle</div>
-                                    <div class="itemRaca" id="itemRaca-6" onmousedown="raca(6)">Poodle</div>
-                                    <div class="itemRaca" id="itemRaca-7" onmousedown="raca(7)">Dachshund</div>
-                                </div>
-                            </div>
-                        </div>
+                        <select id="raca" class="dataClient poppins-medium">
+                            <option class="poppins-medium option" value="" disabled selected>Selecionar</option>
+                            <option class="poppins-medium option" value="affenpinscher">Affenpinscher</option>
+                            <option class="poppins-medium option" value="african">African</option>
+                            <option class="poppins-medium option" value="airedale">Airedale</option>
+                            <option class="poppins-medium option" value="akita">Akita</option>
+                            <option class="poppins-medium option" value="appenzeller">Appenzeller</option>
+                            <option class="poppins-medium option" value="australian">Australian</option>
+                            <option class="poppins-medium option" value="basenji">Basenji</option>
+                            <option class="poppins-medium option" value="beagle">Beagle</option>
+                            <option class="poppins-medium option" value="bluetick">Bluetick</option>
+                            <option class="poppins-medium option" value="borzoi">Borzoi</option>
+                            <option class="poppins-medium option" value="bouvier">Bouvier</option>
+                            <option class="poppins-medium option" value="boxer">Boxer</option>
+                            <option class="poppins-medium option" value="brabancon">Brabancon</option>
+                            <option class="poppins-medium option" value="briard">Briard</option>
+                            <option class="poppins-medium option" value="buhund">Buhund</option>
+                            <option class="poppins-medium option" value="bulldog">Bulldog</option>
+                            <option class="poppins-medium option" value="bullterrier">Bullterrier</option>
+                            <option class="poppins-medium option" value="cattledog">Cattledog</option>
+                            <option class="poppins-medium option" value="chihuahua">Chihuahua</option>
+                            <option class="poppins-medium option" value="chow">Chow</option>
+                            <option class="poppins-medium option" value="clumber">Clumber</option>
+                            <option class="poppins-medium option" value="cockapoo">Cockapoo</option>
+                            <option class="poppins-medium option" value="collie">Collie</option>
+                            <option class="poppins-medium option" value="coonhound">Coonhound</option>
+                            <option class="poppins-medium option" value="corgi">Corgi</option>
+                            <option class="poppins-medium option" value="cotondetulear">Cotondetulear</option>
+                            <option class="poppins-medium option" value="dachshund">Dachshund</option>
+                            <option class="poppins-medium option" value="dalmatian">Dalmatian</option>
+                            <option class="poppins-medium option" value="dane">Dane</option>
+                            <option class="poppins-medium option" value="deerhound">Deerhound</option>
+                            <option class="poppins-medium option" value="dhole">Dhole</option>
+                            <option class="poppins-medium option" value="dingo">Dingo</option>
+                            <option class="poppins-medium option" value="doberman">Doberman</option>
+                            <option class="poppins-medium option" value="elkhound">Elkhound</option>
+                            <option class="poppins-medium option" value="entlebucher">Entlebucher</option>
+                            <option class="poppins-medium option" value="eskimo">Eskimo</option>
+                            <option class="poppins-medium option" value="finnish">Finnish</option>
+                            <option class="poppins-medium option" value="frise">Frise</option>
+                            <option class="poppins-medium option" value="germanshepherd">Germanshepherd</option>
+                            <option class="poppins-medium option" value="greyhound">Greyhound</option>
+                            <option class="poppins-medium option" value="groenendael">Groenendael</option>
+                            <option class="poppins-medium option" value="havanese">Havanese</option>
+                            <option class="poppins-medium option" value="hound">Hound</option>
+                            <option class="poppins-medium option" value="husky">Husky</option>
+                            <option class="poppins-medium option" value="keeshond">Keeshond</option>
+                            <option class="poppins-medium option" value="kelpie">Kelpie</option>
+                            <option class="poppins-medium option" value="komondor">Komondor</option>
+                            <option class="poppins-medium option" value="kuvasz">Kuvasz</option>
+                            <option class="poppins-medium option" value="labradoodle">Labradoodle</option>
+                            <option class="poppins-medium option" value="labrador">Labrador</option>
+                            <option class="poppins-medium option" value="leonberg">Leonberg</option>
+                            <option class="poppins-medium option" value="lhasa">Lhasa</option>
+                            <option class="poppins-medium option" value="malamute">Malamute</option>
+                            <option class="poppins-medium option" value="malinois">Malinois</option>
+                            <option class="poppins-medium option" value="maltese">Maltese</option>
+                            <option class="poppins-medium option" value="mastiff">Mastiff</option>
+                            <option class="poppins-medium option" value="mexicanhairless">Mexicanhairless</option>
+                            <option class="poppins-medium option" value="mix">Mix</option>
+                            <option class="poppins-medium option" value="mountain">Mountain</option>
+                            <option class="poppins-medium option" value="newfoundland">Newfoundland</option>
+                            <option class="poppins-medium option" value="otterhound">Otterhound</option>
+                            <option class="poppins-medium option" value="ovcharka">Ovcharka</option>
+                            <option class="poppins-medium option" value="papillon">Papillon</option>
+                            <option class="poppins-medium option" value="pekinese">Pekinese</option>
+                            <option class="poppins-medium option" value="pembroke">Pembroke</option>
+                            <option class="poppins-medium option" value="pinscher">Pinscher</option>
+                            <option class="poppins-medium option" value="pitbull">Pitbull</option>
+                            <option class="poppins-medium option" value="pointer">Pointer</option>
+                            <option class="poppins-medium option" value="pomeranian">Pomeranian</option>
+                            <option class="poppins-medium option" value="poodle">Poodle</option>
+                            <option class="poppins-medium option" value="pug">Pug</option>
+                            <option class="poppins-medium option" value="puggle">Puggle</option>
+                            <option class="poppins-medium option" value="pyrenees">Pyrenees</option>
+                            <option class="poppins-medium option" value="redbone">Redbone</option>
+                            <option class="poppins-medium option" value="retriever">Retriever</option>
+                            <option class="poppins-medium option" value="ridgeback">Ridgeback</option>
+                            <option class="poppins-medium option" value="rottweiler">Rottweiler</option>
+                            <option class="poppins-medium option" value="saluki">Saluki</option>
+                            <option class="poppins-medium option" value="samoyed">Samoyed</option>
+                            <option class="poppins-medium option" value="schipperke">Schipperke</option>
+                            <option class="poppins-medium option" value="schnauzer">Schnauzer</option>
+                            <option class="poppins-medium option" value="segugio">Segugio</option>
+                            <option class="poppins-medium option" value="setter">Setter</option>
+                            <option class="poppins-medium option" value="sharpei">Sharpei</option>
+                            <option class="poppins-medium option" value="sheepdog">Sheepdog</option>
+                            <option class="poppins-medium option" value="shiba">Shiba</option>
+                            <option class="poppins-medium option" value="shihtzu">Shihtzu</option>
+                            <option class="poppins-medium option" value="spaniel">Spaniel</option>
+                            <option class="poppins-medium option" value="spitz">Spitz</option>
+                            <option class="poppins-medium option" value="springer">Springer</option>
+                            <option class="poppins-medium option" value="stbernard">Stbernard</option>
+                            <option class="poppins-medium option" value="terrier">Terrier</option>
+                            <option class="poppins-medium option" value="tervuren">Tervuren</option>
+                            <option class="poppins-medium option" value="vizsla">Vizsla</option>
+                            <option class="poppins-medium option" value="waterdog">Waterdog</option>
+                            <option class="poppins-medium option" value="weimaraner">Weimaraner</option>
+                            <option class="poppins-medium option" value="whippet">Whippet</option>
+                            <option class="poppins-medium option" value="wolfhound">Wolfhound</option>
+                        </select>
                     </div>
                     <!-- FIM PET RAÇA -->
                 </div>
             </div>
-            <!-- FIM PROPRIEDADES -->
+        </div>
+        <!-- FIM PROPRIEDADES -->
         </div>
         <!-- FIM PET -->
 
@@ -199,26 +268,19 @@
         <div id="servicos">
             <label class="text-servicos poppins-semibold" for="servicos">SERVIÇOS</label>
 
-            <div class="containerServicos">
-                <input class="dataClient poppins-medium" id="services" type="text" name="servicos" placeholder="Selecionar"
-                    onfocus="dropDownServico(0)" onblur="dropDownServico(1)">
-                <div class="dropDownServico poppins-medium">
-                    <div class="listDropDownServico">
-                        <div class="itemServico" id="itemServico-1" onmousedown="servico(1)">Banho</div>
-                        <div class="itemServico" id="itemServico-2" onmousedown="servico(2)">Hidratação</div>
-                        <div class="itemServico" id="itemServico-3" onmousedown="servico(3)">Tosa na máquina</div>
-                        <div class="itemServico" id="itemServico-4" onmousedown="servico(4)">Tosa na tesoura</div>
-                        <div class="itemServico" id="itemServico-5" onmousedown="servico(5)">Tosa higiênica</div>
-                        <div class="itemServico" id="itemServico-6" onmousedown="servico(6)">Desembaraçamento</div>
-                        <div class="itemServico" id="itemServico-7" onmousedown="servico(7)">Tingimento dos pelos
-                        </div>
-                        <div class="itemServico" id="itemServico-8" onmousedown="servico(8)">Escovação de dentes
-                        </div>
-                        <div class="itemServico" id="itemServico-9" onmousedown="servico(9)">Limpeza de ouvido</div>
-                        <div class="itemServico" id="itemServico-10" onmousedown="servico(10)">Corte de unhas</div>
-                    </div>
-                </div>
-            </div>
+            <select id="services" class="dataClient poppins-medium">
+                <option class="poppins-medium option" value="" selected disabled>Selecionar</option>
+                <option class="poppins-medium option" value="banho">Banho</option>
+                <option class="poppins-medium option" value="hidratacao">Hidratação</option>
+                <option class="poppins-medium option" value="tosa_maquina">Tosa na máquina</option>
+                <option class="poppins-medium option" value="tosa_tesoura">Tosa na tesoura</option>
+                <option class="poppins-medium option" value="tosa_higienica">Tosa higiênica</option>
+                <option class="poppins-medium option" value="desembaracamento">Desembaraçamento</option>
+                <option class="poppins-medium option" value="tingimento_pelos">Tingimento dos pelos</option>
+                <option class="poppins-medium option" value="escovacao_dentes">Escovação de dentes</option>
+                <option class="poppins-medium option" value="limpeza_ouvido">Limpeza de ouvido</option>
+                <option class="poppins-medium option" value="corte_unhas">Corte de unhas</option>
+            </select>
 
         </div>
         <!-- FIM SERVIÇOS -->
@@ -231,7 +293,7 @@
 
             <div id="agenda">
                 <label for="dt-agenda"></label>
-                <input class="dataClient poppins-medium" id="dt-agenda" type="datetime-local" name="dt-agenda" onkeyup="">
+                <input class="dataClient poppins-medium" id="dt-agenda" type="datetime-local" name="dt-agenda">
             </div>
         </div>
         <!-- FIM AGENDA -->
@@ -255,7 +317,7 @@
         <!-- FIM OBSERVAÇÕES -->
         <!-- INICIO AÇÕES -->
         <div id="actions">
-            <button id="agendar" class="poppins-semibold" type="button" value="agendar" onclick="onClickButtonAgendar()">AGENDAR</button>
+            <button id="agendar" class="poppins-semibold" type="button" value="agendar">AGENDAR</button>
         </div>
         <!-- FIM AÇÕES -->
     </form>
