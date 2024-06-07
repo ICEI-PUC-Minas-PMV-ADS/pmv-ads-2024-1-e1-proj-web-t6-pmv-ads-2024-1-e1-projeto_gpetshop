@@ -9,7 +9,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: poppinsmedium, sans-serif;
   width: 43.75em;
   margin-right: auto;
   margin-left: auto;
@@ -60,27 +59,22 @@
   top: 0;
   left: 0;
   padding: 40px 20px;
-  background-color: #FDCE6D;
+  background-color: #fdce6d;
   height: 100%;
   width: 250px;
-  font-family: poppinssemibold, sans-serif;
   z-index: 1000;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
   border-radius: 0px 10px 10px 0px;
 }
 
-.animate__animated.animate__fadeInLeft::before {
-  --animate-duration: .5s;
-}
-
-#slide>li {
+#slide > li {
   display: flex;
   list-style-type: none;
   align-items: center;
   margin-bottom: 20px;
 }
 
-#slide>li:hover>.drop-down-agenda {
+#slide > li:hover > .drop-down-agenda {
   display: block;
   position: absolute;
   left: 210px;
@@ -93,7 +87,7 @@
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
 }
 
-#slide>li:hover>.drop-down-cadastro {
+#slide > li:hover > .drop-down-cadastro {
   display: block;
   position: absolute;
   left: 210px;
@@ -106,7 +100,7 @@
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
 }
 
-#slide>li>a {
+#slide > li > a {
   line-height: 18px;
   color: #2f435a;
   text-decoration: none;
@@ -139,21 +133,21 @@
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
 }
 
-.drop-down-agenda>ul {
+.drop-down-agenda > ul {
   list-style-type: none;
 }
 
-.drop-down-agenda>ul>li {
+.drop-down-agenda > ul > li {
   margin-bottom: 8px;
 }
 
-.drop-down-agenda>ul>li>a {
-  color: #2F435A;
+.drop-down-agenda > ul > li > a {
+  color: #2f435a;
   font-size: 18px;
   text-decoration: none;
 }
 
-.drop-down-agenda>ul>li>a:hover {
+.drop-down-agenda > ul > li > a:hover {
   filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
@@ -169,21 +163,21 @@
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
 }
 
-.drop-down-cadastro>ul {
+.drop-down-cadastro > ul {
   list-style-type: none;
 }
 
-.drop-down-cadastro>ul>li {
+.drop-down-cadastro > ul > li {
   margin-bottom: 8px;
 }
 
-.drop-down-cadastro>ul>li>a {
-  color: #2F435A;
+.drop-down-cadastro > ul > li > a {
+  color: #2f435a;
   font-size: 18px;
   text-decoration: none;
 }
 
-.drop-down-cadastro>ul>li>a:hover {
+.drop-down-cadastro > ul > li > a:hover {
   filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
@@ -221,7 +215,7 @@
   display: block;
   align-items: center;
   color: #2F435A;
-  font-family: poppinsmedium, sans-serif;
+  font-size: 24px;
 }
 
 .logo {
@@ -259,7 +253,6 @@ form {
   margin-left: 10px;
   align-items: center;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
   font-size: 20px;
 }
 
@@ -297,7 +290,6 @@ form {
   width: 644px;
   height: 30px;
   color: rgb(47, 67, 90);
-  font-family: poppinsmedium, sans-serif;
   font-size: 16px;
   border: none;
   background-color: rgba(255, 231, 190, 0.79);
@@ -340,7 +332,6 @@ form {
   width: 644px;
   height: 30px;
   color: rgb(47, 67, 90);
-  font-family: poppinsmedium, sans-serif;
   font-size: 16px;
   border: none;
   background-color: rgba(255, 231, 190, 0.79);
@@ -383,7 +374,6 @@ form {
   width: 644px;
   height: 30px;
   color: rgb(47, 67, 90);
-  font-family: poppinsmedium, sans-serif;
   font-size: 16px;
   border: none;
   background-color: rgba(255, 231, 190, 0.79);
@@ -426,7 +416,6 @@ form {
   width: 644px;
   height: 30px;
   color: rgb(47, 67, 90);
-  font-family: poppinsmedium, sans-serif;
   font-size: 16px;
   border: none;
   background-color: rgba(255, 231, 190, 0.79);
@@ -467,7 +456,6 @@ form {
   width: 644px;
   height: 30px;
   color: rgb(47, 67, 90);
-  font-family: poppinsmedium, sans-serif;
   font-size: 16px;
   border: none;
   background-color: rgba(255, 231, 190, 0.79);
@@ -498,8 +486,7 @@ form {
   border: none;
   border-radius: 50px;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -512,7 +499,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #2F435A;
-  font-family: poppinssemibold, sans-serif;
   font-size: 17px;
   transition: 0.2s;
   cursor: pointer;
@@ -530,7 +516,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
   font-size: 16px;
   transition: 0.2s;
   cursor: pointer;
@@ -544,7 +529,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #2F435A;
-  font-family: poppinssemibold, sans-serif;
   font-size: 17px;
   transition: 0.2s;
   cursor: pointer;
@@ -562,7 +546,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
   font-size: 16px;
   transition: 0.2s;
   cursor: pointer;
@@ -576,13 +559,12 @@ form {
   border: none;
   border-radius: 50px;
   color: #2F435A;
-  font-family: poppinssemibold, sans-serif;
   font-size: 17px;
   transition: 0.2s;
   cursor: pointer;
 }
 
-#aceitar-solicitacao {
+#salvar-solicitacao {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -594,12 +576,11 @@ form {
   border: none;
   border-radius: 50px;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
   font-size: 16px;
   transition: 0.2s;
 }
 
-#aceitar-solicitacao:hover {
+#salvar-solicitacao:hover {
   display: flex;
   background-color: #FDCE6D;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
@@ -607,7 +588,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #2F435A;
-  font-family: poppinssemibold, sans-serif;
   font-size: 17px;
   transition: 0.2s;
   cursor: pointer;
@@ -621,7 +601,6 @@ form {
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
-      font-family: poppinsmedium, sans-serif;
       margin-left: auto;
       margin-right: auto;
       width: 25em;
@@ -657,7 +636,6 @@ form {
       align-items: center;
       text-align: center;
       color: #2F435A;
-      font-family: poppinsmedium, sans-serif;
       font-size: 0.9375em;
   }
   
@@ -698,7 +676,6 @@ form {
     margin-left: 10px;
     align-items: center;
     color: #FDCE6D;
-    font-family: poppinssemibold, sans-serif;
     font-size: 16px;
   }
   
@@ -736,7 +713,6 @@ form {
     width: 644px;
     height: 25px;
     color: rgb(47, 67, 90);
-    font-family: poppinsmedium, sans-serif;
     font-size: 14px;
     border: none;
     background-color: rgba(255, 231, 190, 0.79);
@@ -779,7 +755,6 @@ form {
     width: 644px;
     height: 25px;
     color: rgb(47, 67, 90);
-    font-family: poppinsmedium, sans-serif;
     font-size: 14px;
     border: none;
     background-color: rgba(255, 231, 190, 0.79);
@@ -822,7 +797,6 @@ form {
     width: 644px;
     height: 25px;
     color: rgb(47, 67, 90);
-    font-family: poppinsmedium, sans-serif;
     font-size: 14px;
     border: none;
     background-color: rgba(255, 231, 190, 0.79);
@@ -865,7 +839,6 @@ form {
     width: 644px;
     height: 25px;
     color: rgb(47, 67, 90);
-    font-family: poppinsmedium, sans-serif;
     font-size: 14px;
     border: none;
     background-color: rgba(255, 231, 190, 0.79);
@@ -908,7 +881,6 @@ form {
     width: 644px;
     height: 25px;
     color: rgb(47, 67, 90);
-    font-family: poppinsmedium, sans-serif;
     font-size: 14px;
     border: none;
     background-color: rgba(255, 231, 190, 0.79);
@@ -939,7 +911,6 @@ form {
     border: none;
     border-radius: 50px;
     color: #FDCE6D;
-    font-family: poppinssemibold, sans-serif;
     font-size: 16px;
     transition: 0.2s;
     cursor: pointer;
@@ -953,7 +924,6 @@ form {
     border: none;
     border-radius: 50px;
     color: #2F435A;
-    font-family: poppinssemibold, sans-serif;
     font-size: 17px;
     transition: 0.2s;
     cursor: pointer;
@@ -971,7 +941,6 @@ form {
     border: none;
     border-radius: 50px;
     color: #FDCE6D;
-    font-family: poppinssemibold, sans-serif;
     font-size: 16px;
     transition: 0.2s;
     cursor: pointer;
@@ -985,7 +954,6 @@ form {
     border: none;
     border-radius: 50px;
     color: #2F435A;
-    font-family: poppinssemibold, sans-serif;
     font-size: 17px;
     transition: 0.2s;
     cursor: pointer;
@@ -1003,7 +971,6 @@ form {
     border: none;
     border-radius: 50px;
     color: #FDCE6D;
-    font-family: poppinssemibold, sans-serif;
     font-size: 16px;
     transition: 0.2s;
     cursor: pointer;
@@ -1017,13 +984,12 @@ form {
     border: none;
     border-radius: 50px;
     color: #2F435A;
-    font-family: poppinssemibold, sans-serif;
     font-size: 17px;
     transition: 0.2s;
     cursor: pointer;
   }
 
-  #aceitar-solicitacao {
+  #salvar-solicitacao {
     display: none;
     align-items: center;
     justify-content: center;
@@ -1035,12 +1001,11 @@ form {
     border: none;
     border-radius: 50px;
     color: #FDCE6D;
-    font-family: poppinssemibold, sans-serif;
     font-size: 16px;
     transition: 0.2s;
   }
 
-  #aceitar-solicitacao:hover {
+  #salvar-solicitacao:hover {
     display: none;
     background-color: #FDCE6D;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
@@ -1048,7 +1013,6 @@ form {
     border: none;
     border-radius: 50px;
     color: #2F435A;
-    font-family: poppinssemibold, sans-serif;
     font-size: 17px;
     transition: 0.2s;
     cursor: pointer;
