@@ -15,7 +15,8 @@ module.exports = {
         novoAgendamento: './src/NovoAgendamento/index.js',
         tratamentoSuporte: './src/TratamentoSuporte/index.js',
         cadastroServicos: './src/CadastroServicos/index.js',
-        cadastroPromocoes: './src/CadastroPromocoes/index.js'
+        cadastroPromocoes: './src/CadastroPromocoes/index.js',
+        telaLogin: './src/telaLogin/telaLogin.js'
     },
     devServer: {
         static: {
@@ -132,6 +133,11 @@ module.exports = {
             template: './src/CadastroPromocoes/CadastroPromocoes.html',
             filename: 'cadastroPromocoes/CadastroPromocoes.html', 
             chunks: ['cadastroPromocoes'], 
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/telaLogin/telaLogin.html',
+            filename: 'telaLogin/telaLogin.html', 
+            chunks: ['telaLogin'], 
         })
     ],
 }

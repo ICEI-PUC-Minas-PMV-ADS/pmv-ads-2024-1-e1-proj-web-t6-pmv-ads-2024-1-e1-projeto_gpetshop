@@ -178,7 +178,7 @@ header.topo section.cabecalho .textlogo {
   align-items: center;
   margin-right: 32px;
   width: 60%;
-  height: 180px;
+  height: 200px;
   border-radius: 15px;
   background-color: #FDCE6D4D;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
@@ -193,9 +193,9 @@ header.topo section.cabecalho .textlogo {
 
 .textoagendamento {
   height: 160px;
-  width: 60%;
-  padding: 16px;
-  max-width: 60%;
+  width: 80%;
+  padding: 0px;
+  /* max-width: 60%; */
 }
 
 /* Sessão Quem Somos*/
@@ -330,6 +330,208 @@ section.quemsomos .foto img {
   margin-left: 20%;
   margin-top: 10%;
 
+
+}
+
+/* Responsividade para tela grandes - Notebook 1024 ------------------------------------------------------------------*/
+
+
+
+@media only screen and (max-width: 1025px){
+
+  /* Cabeçalho */
+
+
+header.topo section.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-height: 1000px;
+  padding: 64px;
+}
+
+header.topo section.cabecalho .logo img {
+  width: 500px;
+  margin-right: 32px;
+
+}
+
+header.topo section.cabecalho .textlogo {
+  text-align: right;
+  margin-left: 64px;
+  margin-right: 32px;
+
+}
+
+/* Sessão de agendamento*/
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  padding: 64px;
+  background-color: 0;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 32px;
+  width: 60%;
+  height: 230px;
+  border-radius: 15px;
+  background-color: #FDCE6D4D;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.fototosa {
+  width: 150px;
+  height: 160px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.textoagendamento {
+  height: 180px;
+  width: 60%;
+  padding-left: 8px;
+
+  /* max-width: 60%; */
+}
+
+/* Sessão Quem Somos*/
+
+section.quemsomos {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding: 64px;
+  gap: 64px;
+}
+
+
+section.quemsomos .textoquem {
+  display: flex;
+  text-align: left;
+  align-self: center;
+}
+
+section.quemsomos .foto img {
+
+  width: 350px;
+  margin-right: 64px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+/* Sessão Depoimentos*/
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  font-size: 14px;
+  padding: 64px;
+  gap: 32px;
+}
+
+.grid1>div:nth-child(n + 1) {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding-right: 32px;
+}
+
+#imgdepo {
+  width: 250px;
+}
+
+
+
+/* Sessão Solicitação de Suporte*/
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background-color: 0;
+  padding-left: 32px;
+  margin-bottom: 64px;
+
+
+
+}
+
+.form_box {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+
+}
+
+.form_box form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-wrap: flex;
+  padding: 16px;
+  margin-left: 16px;
+}
+
+.form_box input,
+.form_box textarea {
+  width: calc(50% - 8px);
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  background-color: #FDCE6D4D;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.form_box input:first-child {
+  margin-right: 16px;
+
+}
+
+.form_box input {
+  width: 100%;
+
+}
+
+.form_box textarea {
+  width: 100%;
+  height: 100px;
+  padding: 16px;
+
+}
+
+
+/* Sessão Redes sociais */
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: 0;
+
+}
+
+.grid2 img {
+  margin-right: 24px;
+
+
+}
+
+.grid2 .redessociais {
+  margin-left: 20%;
+  margin-top: 10%;
+}
 
 }
 
@@ -553,7 +755,7 @@ section.quemsomos .foto img {
 
 /* Responsividade para telas médias - Celulares -------------------------------------------------- */
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 426px){
 
   /*cabeçalho*/
 
@@ -627,6 +829,7 @@ section.quemsomos .foto img {
     padding-top: 24px;
     max-width: 60%;
     align-self: flex-start;
+    font-size: 14px;
     
   }
 
@@ -819,11 +1022,11 @@ section.quemsomos .foto img {
   
   .card {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin-bottom: 32px;
     width: 80%;
-    height: 200px;
+    height: 230px;
     border-radius: 15px;
     background-color: #FDCE6D4D;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -832,6 +1035,7 @@ section.quemsomos .foto img {
   }
   
   .fototosa {
+    display: none;
     width: 90px;
     height: 95px;
     border-radius: 8px;
@@ -840,11 +1044,12 @@ section.quemsomos .foto img {
   
   .textoagendamento {
     height: 10px;
-    width: 60%;
-    padding: 8px;
+    width: 90%;
+    padding: 0px;
     padding-top: 24px;
-    max-width: 60%;
-    align-self: flex-start;
+   /*  align-self: flex-start; */
+   text-align: center;
+    align-items: center;
     font-size: 14px;
     
   }

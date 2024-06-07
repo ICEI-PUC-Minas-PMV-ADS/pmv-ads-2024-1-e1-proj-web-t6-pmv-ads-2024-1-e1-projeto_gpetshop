@@ -1,3 +1,6 @@
+import "../Imagens/LogoPetpuc.png";
+import "./telaLogin.css";
+
 function logar() {
     var login = document.getElementById('user-field').value;
     var senha = document.getElementById("password-field").value;
