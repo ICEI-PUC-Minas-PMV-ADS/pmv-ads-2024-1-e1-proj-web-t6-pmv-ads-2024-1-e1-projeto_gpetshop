@@ -51,7 +51,7 @@
 |:---|:---|
 |Para realizar este teste, é necessário seguir o passo a passo do teste 6 para ter uma base de clientes.|
 | Requisitos Associados | RF 07 - Visualização dos Dados Presentes no Relatório |
-| Objetivo do Teste | Visualizar as tarefas recebidas. |
+| Objetivo do Teste | Visualizar as tarefas recebidas. ||
 | Passos | <li>Estar na tela inicial e logado como atendente ou gestor. <li>Clicar no ícone do menu lateral e selecionar "Relatório". <li>Na página do relatório, devem aparecer os números corretos sobre os agendamentos, solicitações e cancelamentos, além dos clientes que possuem solicitações em aberto. <li>Deve ser possível pesquisar por um cliente específico com uma solicitação em aberto. <li>Pesquisar pelos componentes disponíveis e testar seu funcionamento.|||||
 | Responsável pela Elaboração do Caso de Teste | Gabriel Marchi Ziviani |
 
