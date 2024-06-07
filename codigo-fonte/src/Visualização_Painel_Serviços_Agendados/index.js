@@ -15287,12 +15287,28 @@
     
     
     
-    
+    function getLocalStorageAgenda() {
+        return JSON.parse(localStorage.getItem("db_agenda")) ?? [];
+      }
+    function convertAgendaToEvents(db_agenda) {
+        return db_agenda.map(item => ({
+          id: item.id,
+          title: 'Agendamento',
+          name: item.cliente.nome,
+          start: item.agendamento.horário, // Supondo que o horário está no formato 'YYYY-MM-DDTHH:mm:ss'
+          end: item.agendamento.horário, // Ajuste conforme necessário
+          email: item.cliente.email
+        }));
+    }
+      
     
     
     
     document.addEventListener('DOMContentLoaded', function() {
       var calendarEl = document.getElementById('calendar');
+      // Obtenha os dados do localStorage
+      const db_agenda = getLocalStorageAgenda();
+      const events = convertAgendaToEvents(db_agenda);
     
       var calendar = new _fullcalendar_core__WEBPACK_IMPORTED_MODULE_1__.Calendar(calendarEl, {
         plugins: [ _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_2__["default"], _fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_3__["default"], _fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_4__["default"], _fullcalendar_list__WEBPACK_IMPORTED_MODULE_5__["default"] ],
@@ -15309,29 +15325,26 @@
         dayMaxEvents: true,
         selectable: true,
         
-        events: [
-        {
-            id: '1', 
-            title: 'event',
-            name: 'Marcos', 
-            start: '2024-04-26T10:00:00', 
-            end: '2024-04-26T12:00:00', 
-            email: 'email@cliente.com' 
-            
-            },
-            
-          ],
+        events: events,
           eventClick: function(info) {
             var eventObj = info.event;
             var popupContent = `
-              <div id="event-popup">
+                <div id="event-popup">
                 <h2>${eventObj.title}</h2>
-                <p><strong>Nome:</strong> ${eventObj.extendedProps.name}</p>
-                <p><strong>Email:</strong> ${eventObj.extendedProps.email}</p>
+                <p><strong>Nome:</strong> ${eventObj.extendedProps.cliente.nome}</p>
+                <p><strong>Email:</strong> ${eventObj.extendedProps.cliente.email}</p>
+                <p><strong>Celular:</strong> ${eventObj.extendedProps.cliente.celular}</p>
+                <p><strong>Nome do Pet:</strong> ${eventObj.extendedProps.pet.nome}</p>
+                <p><strong>Idade do Pet:</strong> ${eventObj.extendedProps.pet.idade}</p>
+                <p><strong>Porte do Pet:</strong> ${eventObj.extendedProps.pet.porte}</p>
+                <p><strong>Pelagem do Pet:</strong> ${eventObj.extendedProps.pet.pelagem}</p>
+                <p><strong>Raça do Pet:</strong> ${eventObj.extendedProps.pet.raça}</p>
+                <p><strong>Serviços:</strong> ${eventObj.extendedProps.serviço.servicos}</p>
+                <p><strong>Observações:</strong> ${eventObj.extendedProps.observação.observação}</p>
                 <p><strong>Início:</strong> ${eventObj.start.toLocaleString()}</p>
                 <p><strong>Fim:</strong> ${eventObj.end.toLocaleString()}</p>
-                <button class='pop-button' onclick="closePopup() ">Fechar</button>
-              </div>
+                <button class='pop-button' onclick="closePopup()">Fechar</button>
+                </div>
             `;
             document.getElementById('popup-container').innerHTML = popupContent;
             document.getElementById('popup-container').style.display = 'block';

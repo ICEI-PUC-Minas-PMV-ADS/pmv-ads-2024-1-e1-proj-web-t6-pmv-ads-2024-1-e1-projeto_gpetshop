@@ -14,6 +14,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    margin-left: 10%;
 
     
 }
@@ -311,4 +312,68 @@ h1 {
     list-style-type: none;
     font-family: poppinsregular, sans-serif;
     font-size: 16px;
+}
+/*=================================*/
+/* configuração barra de navegação lateral oculta */
+
+
+#menu {
+    
+    width: 10%;
+    height: 100vh;
+    background-color: rgba(253, 206, 109, 1); 
+    float: left;
+    color: #2F435A; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    left: 0;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para centralizar perfeitamente */
+    
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+li {
+    display: flex; 
+    align-items: center; 
+    padding: 15px 10px; 
+    text-align: left; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    position: relative;
+    font-size: 12px; 
+}
+
+
+    li:hover {
+        background-color: rgba(253, 206, 109, 1); 
+    }
+
+.menu-icon {
+    width: 20px;
+     padding: 3px  5px;
+    margin-right: 10px;
+}
+
+ul ul {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #FFF1D4; 
+    width: 180px; 
+}
+
+li:hover > ul {
+    display: block;
 }
