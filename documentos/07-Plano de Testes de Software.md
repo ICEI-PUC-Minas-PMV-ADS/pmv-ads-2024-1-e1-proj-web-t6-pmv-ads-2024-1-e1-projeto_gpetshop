@@ -23,7 +23,20 @@
 
 <br>
 
-| Caso de Teste | CT-001.2 - Página Inicial - Sessão Redes Sociais |
+| Caso de Teste | CT-001.2 - Página Inicial - Menu Lateral - Item "Para Empresas"|
+|:---|:---|
+| Requisitos Associados | RF 01 - Página Inicial |
+| Objetivo do Teste | Navegação pelo menu lateral da página inicial na opção "Para Empresas" |
+| Passos | <li>Estar na página inicial;<li>Clicar na opção "Para Empresas";</li>
+| Critérios de êxito | <li>Ser direcionado para a página de Login;</li> |
+| Responsável pela elaboração do caso de teste | João Henrique Andrade Leite|
+
+
+<br>
+
+<br>
+
+| Caso de Teste | CT-001.3 - Página Inicial - Sessão Redes Sociais |
 |:---|:---|
 | Requisitos Associados | RF 01 - Página Inicial |
 | Objetivo do Teste | Navegação pelos icones de redes sociais |
@@ -32,6 +45,8 @@
 | Responsável pela elaboração do caso de teste | João Henrique Andrade Leite|
 
 <br>
+
+
 
 | Caso de Teste | CT-002 - Criação de agendamento pelo cliente |
 |:---|:---|
