@@ -57,3 +57,19 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 <br>
 <br>
 <br>
+
+|Caso de Teste    | CT-003 - Criação de agendamento pelo colaborador |
+|:---|:---|
+| Resultados obtidos | <li>Preenchimento correto de todos os campos do formulário; <li>Ao clicar no botão "Agendar" exibida a mensagem de sucesso "Criado novo agendamento!" corretamente; <li>Campos foram limpos corretamente quando clicado em "ok" |
+| Responsável pela execução do caso de Teste | João Henrique Andrade leite |
+
+Evidência Formulário Preenchido:
+<br>
+<img src="./img/test Formulário preenchido CT003.png" width="300px">
+<br>
+<br>
+Evidência Mensagem de Êxito:
+<br>
+<img src="./img/test Mensagem de êxito CT003.png" width="300px">
+<br>
+<br>
