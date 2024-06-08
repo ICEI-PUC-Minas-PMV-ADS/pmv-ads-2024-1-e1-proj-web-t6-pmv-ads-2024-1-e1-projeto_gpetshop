@@ -47,6 +47,7 @@ formulario.addEventListener("submit", function (e) {
 
 });
 
+
 function formatarTelefone(input) {
     var telefone = input.value.replace(/\D/g, '');
 
@@ -59,4 +60,8 @@ function formatarTelefone(input) {
     input.value = telefone
 }
 
+const campoFone = document.getElementById("telefone");
+campoFone.addEventListener("input", function(event) {
+    formatarTelefone(event.target);
+});
 
