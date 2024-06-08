@@ -109,8 +109,8 @@ thead > tr {
 
 thead > tr > th {
   align-self: flex-start;
-  min-width: 195px;
-  max-width: 195px;
+  min-width: 500px;
+  max-width: 500px;
   color: #2f435a;
   text-align: start;
   font-size: 17px;
@@ -171,8 +171,8 @@ tbody > tr:hover {
 .td-lista {
   padding-left: 3px;
   align-self: center;
-  min-width: 195px;
-  max-width: 195px;
+  min-width: 500px;
+  max-width: 500px;
   color: #2f435a;
   text-align: left;
   border-collapse: collapse;
@@ -344,8 +344,8 @@ tbody::-webkit-scrollbar-thumb {
 
   thead>tr>th {
     align-self: flex-start;
-    min-width: 195px;
-    max-width: 195px;
+    min-width: 500px;
+    max-width: 500px;
     color: #2f435a;
     text-align: start;
     font-size: 16px;
@@ -400,8 +400,8 @@ tbody::-webkit-scrollbar-thumb {
     /*   border-bottom: 1px solid #dee0e4; */
     padding-left: 3px;
     align-self: center;
-    min-width: 195px;
-    max-width: 195px;
+    min-width: 500px;
+    max-width: 500px;
     color: #2f435a;
     text-align: left;
     border-collapse: collapse;
@@ -573,8 +573,8 @@ tbody::-webkit-scrollbar-thumb {
 
   thead>tr>th {
     align-self: flex-start;
-    min-width: 195px;
-    max-width: 195px;
+    min-width: 500px;
+    max-width: 500px;
     color: #2f435a;
     text-align: start;
     font-size: 16px;

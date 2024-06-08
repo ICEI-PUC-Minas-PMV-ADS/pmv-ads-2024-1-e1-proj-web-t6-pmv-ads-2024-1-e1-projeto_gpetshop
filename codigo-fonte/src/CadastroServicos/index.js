@@ -53,12 +53,9 @@ document.getElementById("salvar-solicitacao").addEventListener("click", function
   // Obter os valores dos campos do formulário
   var nomeServico = document.getElementById("nomeServico").value;
   var precoServico = document.getElementById("precoServico").value;
-  var duracaoServico = document.getElementById("duracaoServico").value;
-  var categoriaServico = document.getElementById("categoriaServico").value;
-  var servicoPaiServico = document.getElementById("servicoPaiServico").value;
  
   // Verificar se algum campo está vazio
-  if (nomeServico === "" || precoServico === "" || duracaoServico === "" || categoriaServico === "" || servicoPaiServico === "") {
+  if (nomeServico === "" || precoServico === "") {
     // Se algum campo estiver vazio, exibir uma mensagem de erro
     alert("Por favor, preencha todos os campos antes de enviar o formulário.");
     return; // Parar a execução da função
@@ -67,10 +64,7 @@ document.getElementById("salvar-solicitacao").addEventListener("click", function
   // Criar um objeto com os dados do serviço
   var servico = {
       nome: nomeServico,
-      preco: precoServico,
-      duracao: duracaoServico,
-      categoriaServico: categoriaServico,
-      servicoPaiServico: servicoPaiServico
+      preco: precoServico
   };
 
   // Verificar se o índice do serviço a ser alterado está definido
@@ -90,9 +84,6 @@ document.getElementById("salvar-solicitacao").addEventListener("click", function
       // Limpar os campos do formulário após alterar o serviço
       document.getElementById("nomeServico").value = "";
       document.getElementById("precoServico").value = "";
-      document.getElementById("duracaoServico").value = "";
-      document.getElementById("categoriaServico").value = "";
-      document.getElementById("servicoPaiServico").value = "";
 
       // Atualizar a tabela na página com os novos dados
       atualizarListaServicos();
@@ -112,9 +103,6 @@ document.getElementById("salvar-solicitacao").addEventListener("click", function
   // Limpar os campos do formulário após adicionar o serviço
   document.getElementById("nomeServico").value = "";
   document.getElementById("precoServico").value = "";
-  document.getElementById("duracaoServico").value = "";
-  document.getElementById("categoriaServico").value = "";
-  document.getElementById("servicoPaiServico").value = "";
 
   // Atualizar a tabela na página com os novos dados
   atualizarListaServicos();
@@ -125,9 +113,6 @@ document.getElementById("alterar-solicitacao").addEventListener("click", functio
   // Permitir a edição dos campos
   document.getElementById("nomeServico").readOnly = false;
   document.getElementById("precoServico").readOnly = false;
-  document.getElementById("duracaoServico").readOnly = false;
-  document.getElementById("categoriaServico").readOnly = false;
-  document.getElementById("servicoPaiServico").readOnly = false;
 });
 
 // Event listener para o botão "Novo"
@@ -135,16 +120,10 @@ document.getElementById("novo-solicitacao").addEventListener("click", function()
   // Limpar os campos do formulário
   document.getElementById("nomeServico").value = "";
   document.getElementById("precoServico").value = "";
-  document.getElementById("duracaoServico").value = "";
-  document.getElementById("categoriaServico").value = "";
-  document.getElementById("servicoPaiServico").value = "";
 
   // Permitir a edição dos campos
   document.getElementById("nomeServico").readOnly = false;
   document.getElementById("precoServico").readOnly = false;
-  document.getElementById("duracaoServico").readOnly = false;
-  document.getElementById("categoriaServico").readOnly = false;
-  document.getElementById("servicoPaiServico").readOnly = false;
 
   // Remover o atributo data-index para garantir que um novo serviço seja criado
   document.getElementById("alterar-solicitacao").removeAttribute("data-index");
@@ -166,9 +145,6 @@ document.getElementById("excluir-solicitacao").addEventListener("click", functio
       // Limpar os campos do formulário após excluir o serviço
       document.getElementById("nomeServico").value = "";
       document.getElementById("precoServico").value = "";
-      document.getElementById("duracaoServico").value = "";
-      document.getElementById("categoriaServico").value = "";
-      document.getElementById("servicoPaiServico").value = "";
 
       // Atualizar a tabela na página com os novos dados
       atualizarListaServicos();
@@ -195,9 +171,6 @@ function atualizarListaServicos() {
       var newRowContent = `
           <td class="poppins-regular td td-lista">${servico.nome}</td>
           <td class="poppins-light td td-lista">${servico.preco}</td>
-          <td class="poppins-light td td-lista">${servico.duracao}</td>
-          <td class="poppins-light td td-lista">${servico.categoriaServico}</td>
-          <td class="poppins-light td td-lista">${servico.servicoPaiServico}</td>
       `;
       newRow.innerHTML = newRowContent;
       tabelaServicos.appendChild(newRow);
@@ -207,16 +180,10 @@ function atualizarListaServicos() {
           // Preencher os campos do formulário com os dados do serviço selecionado
           document.getElementById("nomeServico").value = servico.nome;
           document.getElementById("precoServico").value = servico.preco;
-          document.getElementById("duracaoServico").value = servico.duracao;
-          document.getElementById("categoriaServico").value = servico.categoriaServico;
-          document.getElementById("servicoPaiServico").value = servico.servicoPaiServico;
-
+ 
           // Definir os campos como somente leitura
           document.getElementById("nomeServico").readOnly = true;
           document.getElementById("precoServico").readOnly = true;
-          document.getElementById("duracaoServico").readOnly = true;
-          document.getElementById("categoriaServico").readOnly = true;
-          document.getElementById("servicoPaiServico").readOnly = true;
 
           // Definir o índice do serviço para edição
           document.getElementById("alterar-solicitacao").setAttribute("data-index", index);
@@ -234,8 +201,6 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
   atualizarListaServicos();
 });
-
-
 
 // Adicione um evento de entrada (input) ao campo de filtro
 document.getElementById("searchBarList").addEventListener("input", function() {
@@ -259,9 +224,6 @@ document.getElementById("searchBarList").addEventListener("input", function() {
           var newRowContent = `
               <td class="poppins-regular td td-lista">${servico.nome}</td>
               <td class="poppins-light td td-lista">${servico.preco}</td>
-              <td class="poppins-light td td-lista">${servico.duracao}</td>
-              <td class="poppins-light td td-lista">${servico.categoriaServico}</td>
-              <td class="poppins-light td td-lista">${servico.servicoPaiServico}</td>
           `;
           newRow.innerHTML = newRowContent;
           tabelaServicos.appendChild(newRow);
@@ -271,17 +233,11 @@ document.getElementById("searchBarList").addEventListener("input", function() {
               // Preencher os campos do formulário com os dados do serviço selecionado
               document.getElementById("nomeServico").value = servico.nome;
               document.getElementById("precoServico").value = servico.preco;
-              document.getElementById("duracaoServico").value = servico.duracao;
-              document.getElementById("categoriaServico").value = servico.categoriaServico;
-              document.getElementById("servicoPaiServico").value = servico.servicoPaiServico;
-
+   
               // Definir os campos como somente leitura
               document.getElementById("nomeServico").readOnly = true;
               document.getElementById("precoServico").readOnly = true;
-              document.getElementById("duracaoServico").readOnly = true;
-              document.getElementById("categoriaServico").readOnly = true;
-              document.getElementById("servicoPaiServico").readOnly = true;
-
+     
               // Definir o índice do serviço para edição
               document.getElementById("alterar-solicitacao").setAttribute("data-index", servicos.indexOf(servico));
           });
