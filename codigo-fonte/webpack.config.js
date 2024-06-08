@@ -8,7 +8,7 @@ module.exports = {
         solicitacaoAgendamento: './src/SolicitacaoAgendamento/index.js',
         paginaInicial: './src/paginaInicial/index.js',
         cadastroClientes: './src/Cadastroclientes/index.js',
-        visualizacaoPainelServicosAgendados: './src/Visualização_Painel_Serviços_Agendados/index.js',
+        visualizacaoPainelServicosAgendados: './src/Visualização_Painel_Serviços_Agendados/main.js',
         tratamentoSolicitacao: './src/TratamentoSolicitacao/index.js',
         listagemSolicitacoes: './src/ListagemSolicitacoes/index.js',
         listagemSuporte: './src/ListagemSuporte/index.js',
