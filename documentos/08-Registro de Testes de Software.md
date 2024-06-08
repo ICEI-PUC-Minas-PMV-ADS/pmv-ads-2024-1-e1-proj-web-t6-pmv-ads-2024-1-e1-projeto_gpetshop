@@ -65,11 +65,50 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 Evidência Formulário Preenchido:
 <br>
-<img src="./img/test Formulário preenchido CT003.png" width="300px">
+<br>
+<img src="./img/test Formulário preenchido CT003.png" width="500px">
 <br>
 <br>
 Evidência Mensagem de Êxito:
 <br>
-<img src="./img/test Mensagem de êxito CT003.png" width="300px">
+<br>
+<img src="./img/test Mensagem de êxito CT003.png" width="500px">
 <br>
 <br>
+
+|Caso de Teste    | CT-004 - Tratamento das solicitações para agendamento de serviços |
+|:---|:---|
+| Resultados obtidos | <li>Correta visualização em lista das solicitações pendentes; <li>Ao clicar na linha da lista foi direcionado corretamente à pagina de tratamento da solicitação; <li>Clicando na opção alterar foi possível fazer as devidas alterações; <li> Clicando na opção recusar foi exibida corretamente a mensagem de sucesso para as ações de Recusar: "Solicitação recusada!"; <li> Clicando na opção recusar foi exibida corretamente a mensagem de sucesso para as ações de Aceitar: "Solicitação aceita!"  |
+| Responsável pela execução do caso de Teste | João Henrique Andrade leite |
+
+Evidência Lista de Solicitações:
+<br>
+<br>
+<img src="./img/test Lista Solicitação filtro clicavel.png" width="900px">
+<br>
+<br>
+Evidência Filtro da Lista de Solicitações:
+<br>
+<br>
+<img src="./img/test Lista Solicitação filtro.png" width="900px">
+<br>
+<br>
+Evidência Alteração da Solicitação :
+<br>
+<br>
+<img src="./img/test Lista Solicitação Alterar.png" width="500px">
+<br>
+<br>
+Evidência Aceite da Solicitação:
+<br>
+<br>
+<img src="./img/test Lista Solicitação Aceitar.png" width="500px">
+<br>
+<br>
+Evidência Recusa da Solicitação :
+<br>
+<br>
+<img src="./img/test Lista Solicitação Exclusao confirmada.png" width="500px">
+<br>
+<br>
+
