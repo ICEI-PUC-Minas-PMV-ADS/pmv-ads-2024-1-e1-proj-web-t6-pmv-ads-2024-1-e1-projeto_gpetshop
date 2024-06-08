@@ -60,8 +60,8 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 |Caso de Teste    | CT-003 - Criação de agendamento pelo colaborador |
 |:---|:---|
-| Resultados obtidos | <li>Preenchimento correto de todos os campos do formulário; <li>Ao clicar no botão "Agendar" exibida a mensagem de sucesso "Criado novo agendamento!" corretamente; <li>Campos foram limpos corretamente quando clicado em "ok" |
-| Responsável pela execução do caso de Teste | João Henrique Andrade leite |
+| Resultados obtidos | <li>Preenchimento correto de todos os campos do formulário; <li>Ao clicar no botão "Agendar" exibida a mensagem de sucesso "Criado novo agendamento!" corretamente; <li>Campos foram limpos corretamente quando clicado em "ok"; |
+| Responsável pela execução do caso de Teste | João Henrique Andrade Leite |
 
 Evidência Formulário Preenchido:
 <br>
@@ -76,10 +76,10 @@ Evidência Mensagem de Êxito:
 <br>
 <br>
 
-|Caso de Teste    | CT-004 - Tratamento das solicitações para agendamento de serviços |
+|Caso de Teste    | CT-005 - Tratamento das solicitações para agendamento de serviços |
 |:---|:---|
-| Resultados obtidos | <li>Correta visualização em lista das solicitações pendentes; <li>Ao clicar na linha da lista foi direcionado corretamente à pagina de tratamento da solicitação; <li>Clicando na opção alterar foi possível fazer as devidas alterações; <li> Clicando na opção recusar foi exibida corretamente a mensagem de sucesso para as ações de Recusar: "Solicitação recusada!"; <li> Clicando na opção recusar foi exibida corretamente a mensagem de sucesso para as ações de Aceitar: "Solicitação aceita!"  |
-| Responsável pela execução do caso de Teste | João Henrique Andrade leite |
+| Resultados obtidos | <li>Correta visualização em lista das solicitações pendentes; <li>Ao clicar na linha da lista foi direcionado corretamente à pagina de tratamento da solicitação; <li>Clicando na opção alterar foi possível fazer as devidas alterações; <li> Clicando na opção recusar foi exibida corretamente a mensagem de sucesso para as ações de Recusar: "Solicitação recusada!"; <li> Clicando na opção recusar foi exibida corretamente a mensagem de sucesso para as ações de Aceitar: "Solicitação aceita!";  |
+| Responsável pela execução do caso de Teste | João Henrique Andrade Leite |
 
 Evidência Lista de Solicitações:
 <br>
@@ -109,6 +109,43 @@ Evidência Recusa da Solicitação :
 <br>
 <br>
 <img src="./img/test Lista Solicitação Exclusao confirmada.png" width="500px">
+<br>
+<br>
+
+
+|Caso de Teste    | CT-006 - Tratamento das mensagens enviadas à equipe de suporte |
+|:---|:---|
+| Resultados obtidos | <li>Correta visualização em lista das mensagens de suporte que aguardam resposta; <li>Ao clicar na linha da lista foi direcionado corretamente à pagina de tratamento da solicitação; <li>Clicando na opção "Inserir Resposta" foi possível inserir texto de resposta; <li> Clicando na opção "Excluir" foi exibida corretamente a mensagem de sucesso para a ação: "Mensagem excluída!"; <li> Clicando na opção "Enviar" foi exibida corretamente a mensagem de sucesso para esta ação: "mensagem respondida!";  |
+| Responsável pela execução do caso de Teste | João Henrique Andrade Leite |
+
+Evidência Lista de Solicitações do Suporte:
+<br>
+<br>
+<img src="./img/test Tela lista Solicitação Suporte.png" width="900px">
+<br>
+<br>
+Evidência Filtro da Lista de Solicitações do Suporte:
+<br>
+<br>
+<img src="./img/test Filtro Lista Suporte.png" width="900px">
+<br>
+<br>
+Evidência da inserção da resposta :
+<br>
+<br>
+<img src="./img/test Form Suport Inserir resposta.png" width="900px">
+<br>
+<br>
+Evidência de envio da resposta:
+<br>
+<br>
+<img src="./img/test Form Suport Confirmacao Resposta.png" width="500px">
+<br>
+<br>
+Evidência exclusão da solicitação de suporte :
+<br>
+<br>
+<img src="./img/test Form Suport mensagem confirm exclusão.png" width="500px">
 <br>
 <br>
 
