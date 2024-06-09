@@ -77,10 +77,10 @@
     <div class="geral">
 
         <div class="botoes">
-            <button>NOVO</button>
+            <button id="newButton">NOVO</button>
             <button>ALTERAR</button>
             <button>EXCLUIR</button>
-            <button>SALVAR</button>
+            <button id="saveButton">SALVAR</button>
         </div>
 
         <div class="formulario">
@@ -93,15 +93,17 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="28" viewBox="0 0 576 512">
                         <path
                             d="M0 96l576 0c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96zm0 32V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128H0zM64 405.3c0-29.5 23.9-53.3 53.3-53.3H234.7c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7H74.7c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16z" />
+                        <path
+                            d="M0 96l576 0c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96zm0 32V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128H0zM64 405.3c0-29.5 23.9-53.3 53.3-53.3H234.7c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7H74.7c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16z" />
                     </svg>
 
-                    <input type="text" class="idcliente" value="250001">
+                    <input type="text" class="idcliente" id="id" placeholder="ID">
 
                     <svg class="add" xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 448 512">
                         <path
                             d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
                     </svg>
-                    <input type="text" class="nomecliente" value="ALFREDO NETO DE SOUSA">
+                    <input type="text" class="nomecliente" id="nome" placeholder="Nome">
                 </div>
 
                 <div class="campo">
@@ -111,7 +113,7 @@
                             d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                     </svg>
 
-                    <input type="text" class="email" value="alfredim123@gmail.com">
+                    <input type="text" class="email" id="email" placeholder="Email">
                 </div>
 
                 <div class="campo">
@@ -119,7 +121,7 @@
                         <path
                             d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
                     </svg>
-                    <input type="text" class="telefone" value="(00) 11111 - 2222">
+                    <input type="text" class="telefone" id="telefone" placeholder="Telefone">
                 </div>
 
                 <div class="campo">
@@ -129,7 +131,7 @@
                             d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                     </svg>
 
-                    <input type="text" class="endereco" value="Rua das Macacheiras, 50">
+                    <input type="text" class="endereco" id="endereco" placeholder="Endereço">
                 </div>
 
             </div>
@@ -146,7 +148,7 @@
                             fill="#2F435A"></path>
                     </svg>
 
-                    <input type="text" class="nomepet" value="nome do pet">
+                    <input type="text" class="nomepet" id="nome_pet_1" placeholder="Nome do PET">
 
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="add"
@@ -168,7 +170,7 @@
                         </div>
 
                         <div class="campo">
-                            <select id="seuId1" class="combo-idade">
+                            <select id="combo_idade_1" class="combo-idade">
                                 <option value="valor1">Selecionar</option>
                                 <option value="valor1">Opção 1</option>
                                 <option value="valor2">Opção 2</option>
@@ -192,7 +194,7 @@
                         </div>
 
                         <div class="campo">
-                            <select id="seuId1" class="combo-idade">
+                            <select id="combo_idade_2" class="combo-idade">
                                 <option value="valor1">Selecionar</option>
                                 <option value="valor1">Opção 1</option>
                                 <option value="valor2">Opção 2</option>
@@ -264,7 +266,7 @@
                         </div>
 
                         <div class="campo">
-                            <select id="seuId1" class="combo-idade">
+                            <select id="combo_idade_3" class="combo-idade">
                                 <option value="valor1">Selecionar</option>
                                 <option value="valor1">Opção 1</option>
                                 <option value="valor2">Opção 2</option>
@@ -285,7 +287,7 @@
                         </div>
 
                         <div class="campo">
-                            <select id="seuId1" class="combo-idade">
+                            <select id="combo_idade_4" class="combo-idade">
                                 <option value="valor1">Selecionar</option>
                                 <option value="valor1">Opção 1</option>
                                 <option value="valor2">Opção 2</option>
@@ -308,7 +310,7 @@
                             Observação
                         </div>
 
-                        <textarea class="observacao">Conteúdo sobre meu pet...</textarea>
+                        <textarea id="observacao_pet_1" class="observacao" placeholder="Conteúdo sobre meu pet..."></textarea>
                     </div>
                 </div>
 
@@ -326,7 +328,7 @@
                             fill="#2F435A"></path>
                     </svg>
 
-                    <input type="text" class="nomepet" value="nome do pet">
+                    <input type="text" class="nomepet" id="nome_pet_2" placeholder="Nome do PET">
 
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -348,7 +350,7 @@
                         </div>
 
                         <div class="campo">
-                            <select id="seuId1" class="combo-idade">
+                            <select id="combo_idade_5" class="combo-idade">
                                 <option value="valor1">Selecionar</option>
                                 <option value="valor1">Opção 1</option>
                                 <option value="valor2">Opção 2</option>
@@ -372,7 +374,7 @@
                         </div>
 
                         <div class="campo">
-                            <select id="seuId1" class="combo-idade">
+                            <select id="combo_idade_6" class="combo-idade">
                                 <option value="valor1">Selecionar</option>
                                 <option value="valor1">Opção 1</option>
                                 <option value="valor2">Opção 2</option>
@@ -444,7 +446,7 @@
                         </div>
 
                         <div class="campo">
-                            <select id="seuId1" class="combo-idade">
+                            <select id="combo_idade_7" class="combo-idade">
                                 <option value="valor1">Selecionar</option>
                                 <option value="valor1">Opção 1</option>
                                 <option value="valor2">Opção 2</option>
@@ -465,7 +467,7 @@
                         </div>
 
                         <div class="campo">
-                            <select id="seuId1" class="combo-idade">
+                            <select id="combo_idade_8" class="combo-idade">
                                 <option value="valor1">Selecionar</option>
                                 <option value="valor1">Opção 1</option>
                                 <option value="valor2">Opção 2</option>
@@ -489,7 +491,7 @@
                             Observação
                         </div>
 
-                        <textarea class="observacao">Conteúdo sobre meu pet...</textarea>
+                        <textarea id="observacao_pet_2" placeholder="Conteúdo sobre meu pet..." class="observacao"></textarea>
                     </div>
                 </div>
             </div>
@@ -502,11 +504,12 @@
 </html>
 
 <script>
-
-    $(document).ready(function () {
-        $('.add').click(function () {
+     
+     $(document).ready(function(){
+        $('.add').click(function(){
             $('.pet1').toggle();
         });
     });
 
 </script>
+
