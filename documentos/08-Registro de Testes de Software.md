@@ -164,8 +164,9 @@ Evidência Lista de Solicitações:
 |Caso de Teste    | CT-007 - CT-007 - Tratamento das tarefas que serão exibidas no calendário |
 |:---|:---|
 | Resultados obtidos | <li> A tela gera um pop-up ao clicar em algum evento já na lista realizando exatamente o que era pra ser feito conforme o teste.
+| Responsável pela execução do caso de Teste | Rafael Santos Carvalho  |
 
-Evidência Cadastro de Clientes:
+Evidência Tratamento das tarefas que serão exibidas no calendário:
 <br>
 <br>
 <img src="./img/test Tela de Cadastro de Clientes.png" width="900px">
