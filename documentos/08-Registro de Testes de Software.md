@@ -169,7 +169,7 @@ Evidência Lista de Solicitações:
 Evidência Tratamento das tarefas que serão exibidas no calendário:
 <br>
 <br>
-<img src="./img/test Tela de Cadastro de Clientes.png" width="900px">
+<img src="./img/testeCT007.png" width="900px">
 <br>
 
 |Caso de Teste    | CT-008 –Cadastro de Serviços Disponíveis |
