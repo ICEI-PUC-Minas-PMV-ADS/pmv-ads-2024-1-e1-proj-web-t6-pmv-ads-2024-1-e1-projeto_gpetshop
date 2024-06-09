@@ -161,3 +161,15 @@ Evidência Lista de Solicitações:
 <br>
 <img src="./img/verify.png" width="900px">
 <br>
+
+
+|Caso de Teste    | CT-009 - Cadastro de Usuários Colaboradores (Clientes) |
+|:---|:---|
+| Resultados obtidos | <li> A tela segue fielmente o protótipo, com os devidos campos, ícones, menu lateral, além dos botões de Novo, Alterar, Excluir e Salvar; <li> Realizei o  preenchimento dos campos para realizar o cadastro; <li>Ao clicar para salvar o registro, por enquanto não foi implementado o LocalStorage, para que eu realize a conferência do CRUD  |
+| Responsável pela execução do caso de Teste | Thainá Crisóstomo Bernardes  |
+
+Evidência Cadastro de Clientes:
+<br>
+<br>
+<img src="./img/test Tela de Cadastro de Clientes.png" width="900px">
+<br>
