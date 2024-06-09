@@ -134,7 +134,7 @@
 |:---|:---|
 | Requisitos Associados | RF 09 - Tela de Cadastro de Usuário Colaborador |
 | Objetivo do Teste | Cadastrar um novo usuário colaborador no sistema. |
-| Passos | <li>Estar na tela inicial e logado como atendente ou gestor. <li>Clicar no ícone do menu lateral e selecionar "Cadastros" e em seguida "Colaborador". <li>Na página de cadastro, devem aparecer os campos necessários para seja inserido os dados do colaborador no sistema. <li>É necessário ter um crud, para inserir o novo registro, alterar, excluir ou salvar as alterações. <li> Ao clicar na opção " Salvar" as informações cadastradas são enviadas e exibidas corretamente na “Lista de Colaboradores. <li>.|
+| Passos | <li>Estar na tela inicial e logado como atendente ou gestor. <li>Clicar no ícone do menu lateral e selecionar "Cadastros" e em seguida "Colaborador". <li>Na página de cadastro, devem aparecer os campos necessários para seja inserido os dados do colaborador no sistema. <li>É necessário ter um crud, para inserir o novo registro, alterar, excluir ou salvar as alterações. <li> Ao clicar na opção " Salvar" as informações cadastradas são enviadas e exibidas corretamente na “Lista de Colaboradores.|
 | Critérios de êxito | <li>Preenchimento de todos os campos corretamente. <li>Funcionamento do CRUD. <li> Exibição de registros na lista dinâmica “ Lista de Colaboradores”| <li>Funcionamento correto do filtro.
 | Responsável pela Elaboração do Caso de Teste | Felipe Costa Moreira |
 
