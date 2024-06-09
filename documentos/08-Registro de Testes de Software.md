@@ -51,7 +51,6 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 <img src="./img/ct004-teste-paginaInicial.gif" width="900px">
 <br>
-<br>
 <p>Alert de erro no email quando não inserido da maneira correta:</p>
 <img src="./img/ct004-alert-teste-paginaInicial.png" width="400px">
 <br>
@@ -197,4 +196,13 @@ Evidência Cadastro de Clientes:
 <br>
 <br>
 <img src="./img/test Tela de Cadastro de Clientes.png" width="900px">
+<br>
+
+|Caso de Teste    | CT-010 - Tela de Login para Colaboradores |
+|:---|:---|
+| Resultados obtidos | Inserção e verficação das credenciais acontecendo de maneira correta e enviando à página inicial proposta para o usuário  |
+| Responsável pela execução do caso de Teste | Paulo Henrique Sousa Carvalho |
+
+<img src="./img/ct010-teste-paginaInicial.gif" width="900px">
+<br>
 <br>
