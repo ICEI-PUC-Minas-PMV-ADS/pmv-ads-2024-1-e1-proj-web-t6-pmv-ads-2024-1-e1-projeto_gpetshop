@@ -171,23 +171,21 @@ Evidência Lista de Solicitações:
 
 Evidência de preenchimento de formulário:
 
-![PROJETO 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/2a402575-97eb-4102-9c4a-25f48472e231)
-<br>
+![NOVO PROJETO PETSHOP](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/c7fef393-cf30-46aa-b1c7-22ad5f3dbe26) <br>
 <br>
 Evidência de inserção de item na Lista de Serviços :
 
 
-![PROJETO 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/40e06f24-4122-4f5a-b6f5-aaa5b42e7fd4)
-<br>
+![TESTE TELA BOTÃO ACEITAR](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/89d828d5-12db-437d-b257-698800a91afe)
 <br>
 Evidência exclusão de item :
 
-![PROJETO 3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/a86df2a2-729a-4355-85a9-81d6b476245d)
-<br>
+![NOVO EXLUIR PETSHOP](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/d41b32ed-47e2-438d-98db-229e9c9b3267) <br>
 <br>
 Evidência Filtro da Lista de Serviços :
 
-![PROJETO 4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/2040c3e8-5134-458d-9eca-de232c61312d)
+![NOVO LISTA PETSHOP](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/f1ad5e1f-044b-45c3-a946-e31ec49e49dd)
+
 
 
 |Caso de Teste    | CT-009 - Cadastro de Usuários Colaboradores (Clientes) |
