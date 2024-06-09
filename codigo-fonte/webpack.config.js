@@ -16,7 +16,8 @@ module.exports = {
         tratamentoSuporte: './src/TratamentoSuporte/index.js',
         cadastroServicos: './src/CadastroServicos/index.js',
         cadastroPromocoes: './src/CadastroPromocoes/index.js',
-        telaLogin: './src/telaLogin/telaLogin.js'
+        telaLogin: './src/telaLogin/telaLogin.js',
+        cadastroColaboradores: './src/CadastroColaboradores/index.js'
     },
     devServer: {
         static: {
@@ -138,6 +139,11 @@ module.exports = {
             template: './src/telaLogin/telaLogin.html',
             filename: 'telaLogin/telaLogin.html', 
             chunks: ['telaLogin'], 
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/CadastroColaboradores/index.html',
+            filename: 'cadastroColaboradores/cadastroColaboradores.html', 
+            chunks: ['cadastroColaboradores'], 
         })
     ],
 }

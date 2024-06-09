@@ -75,7 +75,7 @@
 | Requisitos Associados | RF 04 - Solicitação de Suporte |
 | Objetivo do Teste | Preenchimento e envio de solicitação de suporte pelo cliente através do preenchimento do formulário na página inícial |
 | Passos | <li>Estar na página inicial;<li>Rolar a página até a sessão "Contato com o Suporte (final da página); <li>Preencher todos os dados;<li>clicar no botão "Enviar Mensagem";|
-| Critérios de êxito | <li>Ao deixar algum campo vazio: Exbir a mensagem "! Preencha este campo" no campo vazio;<li> Ao preencher todos os campos: Exibir a mensagem de alerta "Mensagem Enviada com Sucesso! Em Breve retornaremos o contato!" |
+| Critérios de êxito | <li>Ao deixar algum campo vazio: Exbir a mensagem "Preencha este campo!" no campo vazio;<li> Ao preencher todos os campos: Exibir a mensagem de alerta "Mensagem Enviada com Sucesso! Em Breve retornaremos o contato!" |
 | Responsável pela elaboração do caso de teste | João Henrique Andrade Leite|
 
 <br>
@@ -115,9 +115,9 @@
 |:---|:---|
 | Requisitos Associados | RF 08 Tela de Cadastro de Serviços Disponíveis |
 | Objetivo do Teste | Cadastrar novo serviço orferecido pelo estabelecimento|
-| Passos | <li>Estar na tela inicial e logado como gestor. <li>Clicar no ícone do menu lateral e selecionar "Cadastros" e em seguida "Cadastro de Serviços". <li>Clicar na opção "Novo" para abrir os campos disponibilizados no mesmo. <li>Preencher todos os campos corretamente, com informações como nome, preço e categoria. <li>É necessário ter um crud, para inserir o novo registro de serviço, alterar, excluir ou salvar as alterações. <li>Deve ser possível pesquisar por um serviço pelo filtro (Parametro de busca).|
+| Passos | <li>Estar na tela inicial e logado como gestor. <li>Clicar no ícone do menu lateral e selecionar "Cadastros" e em seguida "Cadastro de Serviços". <li>Clicar na opção "Novo" para abrir os campos disponibilizados no mesmo. <li>Preencher todos os campos corretamente, com informações como nome e preço. <li>É necessário ter um crud, para inserir o novo registro de serviço, alterar, excluir ou salvar as alterações. <li>Deve ser possível pesquisar por um serviço pelo filtro (Parametro de busca).|
 | Critérios de êxito | <li>Preenchimento de todos os campos corretamente. <li>Funcionamento do CRUD. <li> Exibição de registros na lista dinâmica " Lista de Serviços" |
-| Responsável pela Elaboração do Caso de Teste | Felipe Costa Moreira |
+| Responsável pela Elaboração do Caso de Teste | Thainá Crisóstomo Bernardes |
 <br>
 
 
@@ -127,7 +127,7 @@
 | Objetivo do Teste | Cadastrar um novo cliente no sistema. |
 | Passos | <li>Estar na tela inicial e logado como atendente ou gestor. <li>Clicar no ícone do menu lateral e selecionar "Cadastros" e em seguida "Clientes". <li>Na página de cadastro, devem aparecer os campos necessários para que um cliente seja inserido no sistema. <li>É necessário ter um crud, para inserir o novo registro, editar, excluir ou salvar as alterações. <li>Deve ter uma lista dinâmica para ser preenchida com os dados do cadastro. <li>Deve ser possível pesquisar por um cliente pelo filtro, através de seu nome.|
 | Critérios de êxito | <li>Preenchimento de todos os campos corretamente. <li>Funcionamento do CRUD. <li> Exibição de registros na lista dinâmica | <li>Funcionamento correto do filtro.
-| Responsável pela Elaboração do Caso de Teste | Thainá Crisóstomo Bernardes |
+| Responsável pela Elaboração do Caso de Teste | Felipe Costa Moreira |
 <br>
 
 | Caso de Teste | CT-010 - Tela de Login para Colaboradores |
