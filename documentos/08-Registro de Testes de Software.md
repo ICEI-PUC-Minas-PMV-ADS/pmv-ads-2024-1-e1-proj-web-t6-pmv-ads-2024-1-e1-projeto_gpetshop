@@ -149,3 +149,15 @@ Evidência exclusão da solicitação de suporte :
 <br>
 <br>
 
+<br>
+
+|Caso de Teste    | CT-002 - Criação de agendamento pelo cliente |
+|:---|:---|
+| Resultados obtidos | <li> Realização do  preenchimentos dos campos ; <li>Ao clicar para agendar a solicitação; <li>Clicando na opção agendar foi possível fazer as o agendamento ;  <li> Foi exibida corretamente a mensagem de sucesso para as ações de Aceitar: "Solicitação aceita!";  |
+| Responsável pela execução do caso de Teste | Gabriel Marchi Ziviani  |
+
+Evidência Lista de Solicitações:
+<br>
+<br>
+<img src="./img/test Lista Solicitação filtro clicavel.png" width="900px">
+<br>
