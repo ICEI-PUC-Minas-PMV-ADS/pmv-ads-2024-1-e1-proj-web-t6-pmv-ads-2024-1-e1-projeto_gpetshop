@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
   }
   
   body > div {
@@ -31,7 +30,6 @@
   
   .header > h1 {
     width: 100%;
-    font-family: poppinsmedium, sans-serif;
     font-size: 58px;
     color: #fdce6d;
   }
@@ -62,7 +60,6 @@
     padding-left: 15px;
   
     font-size: 20px;
-    font-family: poppinsmedium, sans-serif;
     color: #2f435a;
     background-color: #fff1d4;
   }
@@ -86,7 +83,6 @@
     padding: 5px 15px;
   
     font-size: 20px;
-    font-family: poppinsmedium, sans-serif;
     color: #2f435a;
     background-color: #fff1d4;
   }
@@ -113,7 +109,6 @@
     border-radius: 50px;
     color: #fdce6d;
     font-size: 24px;
-    font-family: poppinssemibold, sans-serif;
     background-color: #2f435a;
     transition: all 0.8s;
   }
@@ -123,6 +118,10 @@
     color: #2f435a;
     transition: all 0.8s;
     cursor: pointer;
+  }
+
+  #Btn-logar {
+    height: 50px;
   }
   
   .container-img {
@@ -180,7 +179,6 @@
   
     .header > h1 {
       width: 100%;
-      font-family: poppinsmedium, sans-serif;
       font-size: 48px;
       color: #fdce6d;
       margin-top: -20px;
@@ -214,7 +212,6 @@
       line-height: 40px;
   
       font-size: 16px;
-      font-family: poppinsmedium, sans-serif;
       color: #2f435a;
       background-color: #fff1d4;
     }
@@ -238,7 +235,6 @@
       line-height: 40px;
   
       font-size: 16px;
-      font-family: poppinsmedium, sans-serif;
       color: #2f435a;
       background-color: #fff1d4;
     }
@@ -266,7 +262,6 @@
       border-radius: 50px;
       color: #fdce6d;
       font-size: 20px;
-      font-family: poppinssemibold, sans-serif;
       background-color: #2f435a;
       transition: all 0.8s;
     }

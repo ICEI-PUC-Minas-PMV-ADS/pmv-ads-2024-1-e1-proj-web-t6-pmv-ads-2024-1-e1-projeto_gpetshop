@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Relatórios</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
 </head>
-<body>
-    <header>
 
+<body>
+
+    <header>
         <div class="poppins-semibold header">
             <!-- Barra de navegação lateral oculta-->
             <div id="slide" class="animar animate__animated animate__fadeInLeft animate__fadeOutLeft">
-                <!-- <li><i class="fa-solid fa-home fa-2xl"></i><a href="#">Inicio</a></li> -->
+                <li><i class="fa-solid fa-home fa-2xl"></i><a href="#">Inicio</a></li>
                 <li><i class="fa-solid fa-calendar fa-2xl"></i><a href="#">Agenda<i
                             class="fa-solid fa-angle-down um"></i></a>
                     <div class="drop-down-agenda">
                         <ul>
-                            <li><a href="/codigo-fonte/dist/novoAgendamento/novoAgendamento.html">Inserir Agendamento</a>
+                            <li><a href="/codigo-fonte/dist/novoAgendamento/novoAgendamento.html">Inserir
+                                    Agendamento</a>
                             </li>
-                            <li><a href="/codigo-fonte/dist/visualizacaoPainelServicosAgendados/visualizacaoPainelServicosAgendados.html">Consultar
+                            <li><a
+                                    href="/codigo-fonte/dist/visualizacaoPainelServicosAgendados/visualizacaoPainelServicosAgendados.html">Consultar
                                     Agenda</a></li>
                             <li><a href="/codigo-fonte/dist/listagemSolicitacoes/listagemSolicitacoes.html">Tratar
                                     Solicitações</a></li>
@@ -31,7 +43,7 @@
                     <div class="drop-down-cadastro">
                         <ul>
                             <li><a href="/codigo-fonte/dist/cadastroClientes/CadastroClientes.html">Clientes</a></li>
-                            <li><a href="#">Colaboradores</a></li>
+                            <li><a href="/codigo-fonte/dist/cadastroColaboradores/cadastroColaboradores.html">Colaboradores</a></li>
                             <li><a href="/codigo-fonte/dist/cadastroPromocoes/CadastroPromocoes.html">Promoções</a></li>
                             <li><a href="/codigo-fonte/dist/cadastroServicos/CadastroServicos.html">Serviços</a></li>
                         </ul>
@@ -49,7 +61,7 @@
             </div>
 
             <div>
-                <h3 class="poppins-semibold title-principal">Tratar Solicitações</h3>
+                <h3 class="poppins-semibold title-principal">Relatórios</h3>
             </div>
 
             <div class="logo">
@@ -57,15 +69,14 @@
             </div>
         </div>
     </header>
+
     <div class="container">
-        <header>
-            <h1>Relatório</h1>
-        </header>
-        <div class="card-f">
+
+        <div class="poppins-medium card-f">
             <p class="title">BASE DE CLIENTES</p>
             <p class="number">510</p>
         </div>
-        <div class="date-range">
+        <div class="poppins-medium date-range">
             <div class="date-picker">
                 <label for="start-date">DT. INICIAL</label>
                 <input type="text" id="start-date" name="start-date" placeholder="00/00/0000">
@@ -75,7 +86,7 @@
                 <input type="text" id="end-date" name="end-date" placeholder="00/00/0000">
             </div>
         </div>
-        <div class="card-container">
+        <div class="poppins-medium card-container">
             <div class="card">
                 <p class="title">TOTAL SOLICITADOS</p>
                 <p class="number">001</p>
@@ -94,15 +105,16 @@
             </div>
         </div>
         <div class="title-search-list">
-            <div class="title-list">LISTA DE SOLICITAÇÕES</div>
+            <div class="poppins-medium title-list">LISTA DE SOLICITAÇÕES</div>
             <div class="search-bar">
-                <label for="searchBarList"></label><input id="searchBarList" type="text" name="search-bar-list"
+                <label for="searchBarList"></label>
+                <input class="poppins-medium" id="searchBarList" type="text" name="search-bar-list"
                     placeholder="Pesquisar cliente" onkeyup="search()">
                 <i class="material-symbols-rounded"></i>
             </div>
         </div>
         <div class="box-list">
-            <div class="box-title">
+            <div class="poppins-bold box-title">
                 <div class="box-title-name">NOME</div>
                 <div class="box-title-email">E-MAIL</div>
                 <div class="box-title-fone">TELEFONE</div>
@@ -111,16 +123,16 @@
             <div class="select-name"></div>
             <div class="lista">
                 <div class="lista-nome">
-                    <div class="listNameClient">
+                    <div class="poppins-regular listNameClient">
                         <ul id="listaNome"></ul>
                     </div>
                 </div>
-                <div class="lista-email">
+                <div class="poppins-regular lista-email">
                     <div class="listEmailClient">
                         <ul></ul>
                     </div>
                 </div>
-                <div class="lista-fone">
+                <div class="poppins-regular lista-fone">
                     <div class="listFoneClient">
                         <ul></ul>
                     </div>
@@ -128,7 +140,6 @@
             </div>
         </div>
     </div>
-    <script src="calculos.js"></script>
-    <script src="main.js"></script>
 </body>
+
 </html>

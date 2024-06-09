@@ -268,7 +268,6 @@ form {
   margin-left: 10px;
   align-items: center;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
   font-size: 20px;
 }
 
@@ -294,7 +293,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
   font-size: 16px;
   transition: 0.2s;
   cursor: pointer;
@@ -308,7 +306,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #2F435A;
-  font-family: poppinssemibold, sans-serif;
   font-size: 17px;
   transition: 0.2s;
   cursor: pointer;
@@ -326,7 +323,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
   font-size: 16px;
   transition: 0.2s;
   cursor: pointer;
@@ -340,7 +336,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #2F435A;
-  font-family: poppinssemibold, sans-serif;
   font-size: 17px;
   transition: 0.2s;
   cursor: pointer;
@@ -358,7 +353,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
   font-size: 16px;
   transition: 0.2s;
   cursor: pointer;
@@ -372,7 +366,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #2F435A;
-  font-family: poppinssemibold, sans-serif;
   font-size: 17px;
   transition: 0.2s;
   cursor: pointer;
@@ -390,7 +383,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
   font-size: 16px;
   transition: 0.2s;
 }
@@ -403,7 +395,6 @@ form {
   border: none;
   border-radius: 50px;
   color: #2F435A;
-  font-family: poppinssemibold, sans-serif;
   font-size: 17px;
   transition: 0.2s;
   cursor: pointer;
@@ -430,7 +421,6 @@ form {
   margin-left: 0.625em;
   align-items: center;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
   font-size: 1.25em;
 }
 
@@ -447,8 +437,8 @@ form {
   border: none;
   outline: none;
   border-radius: 0.5em;
-  font-family: poppinsmedium, sans-serif;
   font-size: 1em;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -481,8 +471,8 @@ form {
   margin-left: 0.625em;
   align-items: center;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
   font-size: 1.25em;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 #text-value-tit {
@@ -498,8 +488,8 @@ form {
   border: none;
   outline: none;
   border-radius: 0.5em;
-  font-family: poppinsmedium, sans-serif;
   font-size: 1em;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -517,7 +507,6 @@ form {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    font-family: poppinsmedium, sans-serif;
     margin-left: auto;
     margin-right: auto;
     width: 25em;
@@ -553,7 +542,6 @@ form {
     align-items: center;
     text-align: center;
     color: #2F435A;
-    font-family: poppinsmedium, sans-serif;
     font-size: 0.9375em;
 }
 
@@ -595,7 +583,7 @@ form {
     margin-left: 10px;
     align-items: center;
     color: #FDCE6D;
-    font-family: poppinssemibold, sans-serif;
+
     font-size: 16px;
   }
 
@@ -621,7 +609,7 @@ form {
     border: none;
     border-radius: 50px;
     color: #FDCE6D;
-    font-family: poppinssemibold, sans-serif;
+
     font-size: 16px;
     transition: 0.2s;
     cursor: pointer;
@@ -635,7 +623,7 @@ form {
     border: none;
     border-radius: 50px;
     color: #2F435A;
-    font-family: poppinssemibold, sans-serif;
+
     font-size: 17px;
     transition: 0.2s;
     cursor: pointer;
@@ -653,7 +641,7 @@ form {
     border: none;
     border-radius: 50px;
     color: #FDCE6D;
-    font-family: poppinssemibold, sans-serif;
+
     font-size: 16px;
     transition: 0.2s;
     cursor: pointer;
@@ -667,7 +655,7 @@ form {
     border: none;
     border-radius: 50px;
     color: #2F435A;
-    font-family: poppinssemibold, sans-serif;
+
     font-size: 17px;
     transition: 0.2s;
     cursor: pointer;
@@ -685,7 +673,7 @@ form {
     border: none;
     border-radius: 50px;
     color: #FDCE6D;
-    font-family: poppinssemibold, sans-serif;
+
     font-size: 16px;
     transition: 0.2s;
     cursor: pointer;
@@ -699,7 +687,7 @@ form {
     border: none;
     border-radius: 50px;
     color: #2F435A;
-    font-family: poppinssemibold, sans-serif;
+
     font-size: 17px;
     transition: 0.2s;
     cursor: pointer;
@@ -717,7 +705,7 @@ form {
     border: none;
     border-radius: 50px;
     color: #FDCE6D;
-    font-family: poppinssemibold, sans-serif;
+
     font-size: 16px;
     transition: 0.2s;
   }
@@ -730,7 +718,7 @@ form {
     border: none;
     border-radius: 50px;
     color: #2F435A;
-    font-family: poppinssemibold, sans-serif;
+
     font-size: 17px;
     transition: 0.2s;
     cursor: pointer;
@@ -760,7 +748,7 @@ form {
     margin-left: 0.625em;
     align-items: center;
     color: #FDCE6D;
-    font-family: poppinssemibold, sans-serif;
+
     font-size: 1em;
 }
 
@@ -777,7 +765,6 @@ form {
     border: none;
     outline: none;
     border-radius: 0.5em;
-    font-family: poppinsmedium, sans-serif;
     font-size: 0.875em;
 }
 
@@ -824,7 +811,6 @@ form {
   margin-left: 0.625em;
   align-items: center;
   color: #FDCE6D;
-  font-family: poppinssemibold, sans-serif;
   font-size: 1em;
 }
 
@@ -840,7 +826,6 @@ form {
   border: none;
   outline: none;
   border-radius: 0.5em;
-  font-family: poppinsmedium, sans-serif;
   font-size: 0.875em;
 }
 

@@ -1,3 +1,7 @@
+import "./index.css";
+import "../assets/fonts/fonts.css";
+
+
 const saveButton = document.getElementById("saveButton");
 const newButton = document.getElementById("newButton");
 

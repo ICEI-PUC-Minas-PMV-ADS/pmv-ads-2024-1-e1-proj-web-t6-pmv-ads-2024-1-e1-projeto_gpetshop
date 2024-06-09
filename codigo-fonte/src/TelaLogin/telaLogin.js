@@ -1,4 +1,5 @@
 import "../Imagens/LogoPetpuc.png";
+import '../assets/fonts/fonts.css'
 import "./telaLogin.css";
 
 window.addEventListener('DOMContentLoaded', () => {
