@@ -162,6 +162,33 @@ Evidência Lista de Solicitações:
 <img src="./img/verify.png" width="900px">
 <br>
 
+|Caso de Teste    | CT-008 –Cadastro de Serviços Disponíveis |
+|:---|:---|
+| Resultados obtidos | <li> Preenchimento correto de todos os campos do formulário;<li> Campos foram limpos corretamente quando clicado em "Novo";<li> Ao clicar na opção " Aceitar" as informações cadastradas são enviadas e exibidas corretamente para na lista corretamente a “Lista de Serviços”; <li> Ao Clicar na opção "Excluir" é excluída corretamente a opção selecionada.<li> No Campo "pesquisa de serviço" é exibido somente serviços correspondentes a palavra digitada. <li> O campo permanece travado para edições até o usuário clicar na opção "alterar", clicando na opção alterar foi possível fazer as devidas alterações; <li>Correta visualização em lista dos novos serviços cadastrados;|
+| Responsável pela execução do caso de Teste | Felipe Costa Moreira |
+
+
+
+Evidência de preenchimento de formulário:
+
+![PROJETO 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/2a402575-97eb-4102-9c4a-25f48472e231)
+<br>
+<br>
+Evidência de inserção de item na Lista de Serviços :
+
+
+![PROJETO 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/40e06f24-4122-4f5a-b6f5-aaa5b42e7fd4)
+<br>
+<br>
+Evidência exclusão de item :
+
+![PROJETO 3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/a86df2a2-729a-4355-85a9-81d6b476245d)
+<br>
+<br>
+Evidência Filtro da Lista de Serviços :
+
+![PROJETO 4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/2040c3e8-5134-458d-9eca-de232c61312d)
+
 
 |Caso de Teste    | CT-009 - Cadastro de Usuários Colaboradores (Clientes) |
 |:---|:---|
