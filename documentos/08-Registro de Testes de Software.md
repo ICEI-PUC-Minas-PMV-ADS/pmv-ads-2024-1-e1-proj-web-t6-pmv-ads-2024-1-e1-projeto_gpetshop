@@ -161,6 +161,16 @@ Evidência Lista de Solicitações:
 <img src="./img/verify.png" width="900px">
 <br>
 
+|Caso de Teste    | CT-007 - CT-007 - Tratamento das tarefas que serão exibidas no calendário |
+|:---|:---|
+| Resultados obtidos | <li> A tela gera um pop-up ao clicar em algum evento já na lista realizando exatamente o que era pra ser feito conforme o teste.
+
+Evidência Cadastro de Clientes:
+<br>
+<br>
+<img src="./img/test Tela de Cadastro de Clientes.png" width="900px">
+<br>
+
 |Caso de Teste    | CT-008 –Cadastro de Serviços Disponíveis |
 |:---|:---|
 | Resultados obtidos | <li> Preenchimento correto de todos os campos do formulário;<li> Campos foram limpos corretamente quando clicado em "Novo";<li> Ao clicar na opção " Aceitar" as informações cadastradas são enviadas e exibidas corretamente para na lista corretamente a “Lista de Serviços”; <li> Ao Clicar na opção "Excluir" é excluída corretamente a opção selecionada.<li> No Campo "pesquisa de serviço" é exibido somente serviços correspondentes a palavra digitada. <li> O campo permanece travado para edições até o usuário clicar na opção "alterar", clicando na opção alterar foi possível fazer as devidas alterações; <li>Correta visualização em lista dos novos serviços cadastrados;|
