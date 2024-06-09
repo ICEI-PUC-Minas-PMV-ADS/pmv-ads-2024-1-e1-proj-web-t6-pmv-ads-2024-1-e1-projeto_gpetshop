@@ -51,7 +51,6 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 <img src="./img/ct004-teste-paginaInicial.gif" width="900px">
 <br>
-<br>
 <p>Alert de erro no email quando não inserido da maneira correta:</p>
 <img src="./img/ct004-alert-teste-paginaInicial.png" width="400px">
 <br>
@@ -162,6 +161,31 @@ Evidência Lista de Solicitações:
 <img src="./img/verify.png" width="900px">
 <br>
 
+|Caso de Teste    | CT-008 –Cadastro de Serviços Disponíveis |
+|:---|:---|
+| Resultados obtidos | <li> Preenchimento correto de todos os campos do formulário;<li> Campos foram limpos corretamente quando clicado em "Novo";<li> Ao clicar na opção " Aceitar" as informações cadastradas são enviadas e exibidas corretamente para na lista corretamente a “Lista de Serviços”; <li> Ao Clicar na opção "Excluir" é excluída corretamente a opção selecionada.<li> No Campo "pesquisa de serviço" é exibido somente serviços correspondentes a palavra digitada. <li> O campo permanece travado para edições até o usuário clicar na opção "alterar", clicando na opção alterar foi possível fazer as devidas alterações; <li>Correta visualização em lista dos novos serviços cadastrados;|
+| Responsável pela execução do caso de Teste | Felipe Costa Moreira |
+
+
+
+Evidência de preenchimento de formulário:
+
+![NOVO PROJETO PETSHOP](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/c7fef393-cf30-46aa-b1c7-22ad5f3dbe26) <br>
+<br>
+Evidência de inserção de item na Lista de Serviços :
+
+
+![TESTE TELA BOTÃO ACEITAR](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/89d828d5-12db-437d-b257-698800a91afe)
+<br>
+Evidência exclusão de item :
+
+![NOVO EXLUIR PETSHOP](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/d41b32ed-47e2-438d-98db-229e9c9b3267) <br>
+<br>
+Evidência Filtro da Lista de Serviços :
+
+![NOVO LISTA PETSHOP](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/assets/90854853/f1ad5e1f-044b-45c3-a946-e31ec49e49dd)
+
+
 
 |Caso de Teste    | CT-009 - Cadastro de Usuários Colaboradores (Clientes) |
 |:---|:---|
@@ -172,4 +196,13 @@ Evidência Cadastro de Clientes:
 <br>
 <br>
 <img src="./img/test Tela de Cadastro de Clientes.png" width="900px">
+<br>
+
+|Caso de Teste    | CT-010 - Tela de Login para Colaboradores |
+|:---|:---|
+| Resultados obtidos | Inserção e verficação das credenciais acontecendo de maneira correta e enviando à página inicial proposta para o usuário  |
+| Responsável pela execução do caso de Teste | Paulo Henrique Sousa Carvalho |
+
+<img src="./img/ct010-teste-paginaInicial.gif" width="900px">
+<br>
 <br>

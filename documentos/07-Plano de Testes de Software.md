@@ -121,14 +121,26 @@
 <br>
 
 
-| Caso de Teste | CT-009 - Cadastro de Usuários Colaboradores |
+| Caso de Teste | CT-009.1 - Cadastro de Clientes |
 |:---|:---|
-| Requisitos Associados | RF 09 - Tela de Cadastro de Usuários Colaboradores |
+| Requisitos Associados | RF 09 - Tela de Cadastro de Clientes |
 | Objetivo do Teste | Cadastrar um novo cliente no sistema. |
 | Passos | <li>Estar na tela inicial e logado como atendente ou gestor. <li>Clicar no ícone do menu lateral e selecionar "Cadastros" e em seguida "Clientes". <li>Na página de cadastro, devem aparecer os campos necessários para que um cliente seja inserido no sistema. <li>É necessário ter um crud, para inserir o novo registro, editar, excluir ou salvar as alterações. <li>Deve ter uma lista dinâmica para ser preenchida com os dados do cadastro. <li>Deve ser possível pesquisar por um cliente pelo filtro, através de seu nome.|
 | Critérios de êxito | <li>Preenchimento de todos os campos corretamente. <li>Funcionamento do CRUD. <li> Exibição de registros na lista dinâmica | <li>Funcionamento correto do filtro.
 | Responsável pela Elaboração do Caso de Teste | Felipe Costa Moreira |
 <br>
+
+| Caso de Teste | CT-009.2 - Cadastro de Usuário Colaborador |
+|:---|:---|
+| Requisitos Associados | RF 09 - Tela de Cadastro de Usuário Colaborador |
+| Objetivo do Teste | Cadastrar um novo usuário colaborador no sistema. |
+| Passos | <li>Estar na tela inicial e logado como atendente ou gestor. <li>Clicar no ícone do menu lateral e selecionar "Cadastros" e em seguida "Colaborador". <li>Na página de cadastro, devem aparecer os campos necessários para seja inserido os dados do colaborador no sistema. <li>É necessário ter um crud, para inserir o novo registro, alterar, excluir ou salvar as alterações. <li> Ao clicar na opção " Salvar" as informações cadastradas são enviadas e exibidas corretamente na “Lista de Colaboradores.|
+| Critérios de êxito | <li>Preenchimento de todos os campos corretamente. <li>Funcionamento do CRUD. <li> Exibição de registros na lista dinâmica “ Lista de Colaboradores”| <li>Funcionamento correto do filtro.
+| Responsável pela Elaboração do Caso de Teste | Felipe Costa Moreira |
+
+
+
+
 
 | Caso de Teste | CT-010 - Tela de Login para Colaboradores |
 |:---|:---|
