@@ -22,8 +22,10 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `:root {
-  --color-day: #FDCE6D; /* Cor de fundo das células */
-  --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra das células */
+  --color-day: #FDCE6D;
+  /* Cor de fundo das células */
+  --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  /* Sombra das células */
 }
 
 /* ... Outras variáveis ... */
@@ -31,6 +33,236 @@ ___CSS_LOADER_EXPORT___.push([module.id, `:root {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  /*menu-lateral*/
+  #slide {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    padding: 40px 20px;
+    background-color: #fdce6d;
+    height: 100%;
+    width: 250px;
+    z-index: 1000;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  #slide>li {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #slide>li:hover>.drop-down-agenda {
+    display: block;
+    position: absolute;
+    left: 210px;
+    top: 95px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    z-index: 100;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+
+  #slide>li:hover>.drop-down-cadastro {
+    display: block;
+    position: absolute;
+    left: 210px;
+    top: 135px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    z-index: 90;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+
+  #slide>li>a {
+    line-height: 18px;
+    color: #2f435a;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .menu-container {
+    display: flex;
+  }
+
+  .um {
+    margin-left: 75px;
+  }
+
+  .dois {
+    margin-left: 45px;
+  }
+
+  .drop-down-agenda {
+    display: none;
+    position: absolute;
+    left: 210px;
+    top: 90px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    z-index: 100;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+
+  .drop-down-agenda>ul {
+    list-style-type: none;
+  }
+
+  .drop-down-agenda>ul>li {
+    margin-bottom: 8px;
+  }
+
+  .drop-down-agenda>ul>li>a {
+    color: #2f435a;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .drop-down-agenda>ul>li>a:hover {
+    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+
+  .drop-down-cadastro {
+    display: none;
+    position: absolute;
+    left: 210px;
+    top: 135px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+
+  .drop-down-cadastro>ul {
+    list-style-type: none;
+  }
+
+  .drop-down-cadastro>ul>li {
+    margin-bottom: 8px;
+  }
+
+  .drop-down-cadastro>ul>li>a {
+    color: #2f435a;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .drop-down-cadastro>ul>li>a:hover {
+    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+
+  .fa-home,
+  .fa-power-off {
+    color: #2f435a;
+    font-size: 24px;
+  }
+
+  .fa-headset {
+    font-size: 23px;
+    color: #2f435a;
+  }
+
+  .fa-calendar {
+    font-size: 23px;
+    padding-left: 3px;
+    color: #2f435a;
+  }
+
+  .fa-user-group {
+    font-size: 22px;
+    color: #2f435a;
+  }
+
+  .fa-file-lines {
+    font-size: 25px;
+    padding-left: 3px;
+    color: #2f435a;
+  }
+
+  /*menu-lateral*/
+
+  /*cabeçalho*/
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    margin-top: 40px;
+  }
+
+  .header-pagina {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #2f435a;
+    font-size: 20px;
+  }
+
+  .menu-icon-container {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 43px;
+    top: 0px;
+    left: 0px;
+    padding-top: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+
+  .fa-bars {
+    font-weight: 600;
+    font-size: 36px;
+    color: #2f435a;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  }
+
+  .fa-bars:hover {
+    font-weight: 600;
+    color: #fdce6d;
+    transition: 0.2s all;
+  }
+
+  .menu-icon-container>button {
+    background-color: transparent;
+    width: 34px;
+    height: 30px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  .title-principal {
+    display: flex;
+    align-items: center;
+    color: #2f435a;
+    font-size: 24px;
+  }
+
+  .logo {
+    display: flex;
+    border: none;
+  }
+
+
 }
 
 body {
@@ -40,49 +272,70 @@ body {
   background-color: #ffffff;
 
 }
-#calendar{
-  background-color: #ffffff; 
+
+#calendar {
+  background-color: #ffffff;
   margin: 40px auto;
   padding: 0 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra */
   display: flex;
   width: 900px;
-  
-  
+
+
 }
+
 /* Mudar a cor de fundo dos dias do calendário */
 
 .fc .fc-daygrid-day {
-  background-color: #ADD8E6; /* azul claro */
-  border-radius: 10%; /* bordas arredondadas */
-  height: 100px; /* ajuste a altura conforme necessário */
+  background-color: #ADD8E6;
+  /* azul claro */
+  border-radius: 10%;
+  /* bordas arredondadas */
+  height: 100px;
+  /* ajuste a altura conforme necessário */
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-} /* substitua com o código exato da cor que você quer */
-.fc .fc-col-header-cell {
-  background-color: #2F435A; /* azul mais escuro */
-  height: 40px; /* ajuste a altura conforme necessário */
-  border-radius: 5px; /* bordas arredondadas */
-  text-transform: uppercase; /* transforma o texto em maiúsculas */
-  color: #FDCE6D; /* muda a cor do texto para amarelo */
-  font-weight: 300; /* torna a fonte mais fina; pode usar 400 para 'normal' e 700 para 'bold' */
-  text-align: center; /* centraliza o texto */
-  text-transform: uppercase; /* mantém o texto em maiúsculas */
-  
 }
+
+/* substitua com o código exato da cor que você quer */
+.fc .fc-col-header-cell {
+  background-color: #2F435A;
+  /* azul mais escuro */
+  height: 40px;
+  /* ajuste a altura conforme necessário */
+  border-radius: 5px;
+  /* bordas arredondadas */
+  text-transform: uppercase;
+  /* transforma o texto em maiúsculas */
+  color: #FDCE6D;
+  /* muda a cor do texto para amarelo */
+  font-weight: 300;
+  /* torna a fonte mais fina; pode usar 400 para 'normal' e 700 para 'bold' */
+  text-align: center;
+  /* centraliza o texto */
+  text-transform: uppercase;
+  /* mantém o texto em maiúsculas */
+
+}
+
 .fc .fc-col-header-cell-cushion {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 300; /* texto mais fino */
-  text-transform: uppercase; /* texto em maiúsculas */
-  color: #FDCE6D; /* cor do texto amarela */
+  font-weight: 300;
+  /* texto mais fino */
+  text-transform: uppercase;
+  /* texto em maiúsculas */
+  color: #FDCE6D;
+  /* cor do texto amarela */
   height: 40px;
 }
 
 
 /* Mudar a altura dos dias do calendário */
 .fc .fc-daygrid-day {
-  height: 100px; /* ajuste conforme necessário */
+  height: 100px;
+  /* ajuste conforme necessário */
 }
 
 #searchButton {
@@ -90,13 +343,15 @@ body {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px; /* ajustado para ter uma aparência uniforme */
+  padding: 10px;
+  /* ajustado para ter uma aparência uniforme */
   cursor: pointer;
   padding: 10px 20px;
   margin: 10px auto;
   display: block;
   cursor: pointer;
 }
+
 #popup-container {
   position: fixed;
   top: 20%;
@@ -108,9 +363,10 @@ body {
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  display: none; /* Escondido por padrão */
+  display: none;
+  /* Escondido por padrão */
   border-radius: 10px;
-  
+
 
 }
 
@@ -123,19 +379,21 @@ body {
   margin: 10px;
   font-weight: 400;
 }
+
 .pop-button {
   background-color: rgba(239, 169, 49, 0.79);
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px; /* ajustado para ter uma aparência uniforme */
+  padding: 10px;
+  /* ajustado para ter uma aparência uniforme */
   cursor: pointer;
   padding: 10px 20px;
   margin: 10px auto;
   display: block;
   cursor: pointer;
   font-weight: bold;
-  
+
 }
 
 
@@ -145,12 +403,12 @@ body {
 }
 
 #menu {
-    
+
   width: 10%;
   height: 100vh;
-  background-color: rgba(253, 206, 109, 1); 
+  background-color: rgba(253, 206, 109, 1);
   float: left;
-  color: #2F435A; 
+  color: #2F435A;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -159,29 +417,29 @@ body {
 
 ul {
   list-style-type: none;
-  padding: 0; 
-  margin: 0; 
+  padding: 0;
+  margin: 0;
 }
 
 li {
-  display: flex; 
-  align-items: center; 
-  padding: 15px 10px; 
-  text-align: left; 
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  text-align: left;
   cursor: pointer;
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
   position: relative;
-  font-size: 12px; 
+  font-size: 12px;
 }
 
 
-  li:hover {
-      background-color: rgba(253, 206, 109, 1); 
-  }
+li:hover {
+  background-color: rgba(253, 206, 109, 1);
+}
 
 .menu-icon {
   width: 20px;
-   padding: 3px  5px;
+  padding: 3px 5px;
   margin-right: 10px;
 }
 
@@ -192,31 +450,33 @@ ul ul {
   position: absolute;
   top: 0;
   left: 100%;
-  background-color: #FFF1D4; 
-  width: 180px; 
+  background-color: #FFF1D4;
+  width: 180px;
 }
 
-li:hover > ul {
+li:hover>ul {
   display: block;
 }
+
 .geral {
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   align-items: center;
   height: 80%;
 }
 
 .titulo {
   font-size: 16px;
-  text-align: center; 
+  text-align: center;
   margin-bottom: 5px;
   font-weight: bold;
   margin-top: 10px;
-  line-height: 1.2; 
+  line-height: 1.2;
   text-align: center;
   color: #2F435A;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 /* CLIENTE */
 .label-title-cliente {
   display: flex;
@@ -412,15 +672,7 @@ li:hover > ul {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   outline: 0;
-}
-
-
-
-
-
-
-
-`, "",{"version":3,"sources":["webpack://./src/Visualização_Painel_Serviços_Agendados/index.css"],"names":[],"mappings":"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","sourcesContent":[":root {\r\n  --color-day: #FDCE6D; /* Cor de fundo das células */\r\n  --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra das células */\r\n}\r\n\r\n/* ... Outras variáveis ... */\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: Arial, sans-serif;\r\n  background-color: #ffffff;\r\n\r\n}\r\n#calendar{\r\n  background-color: #ffffff; \r\n  margin: 40px auto;\r\n  padding: 0 10px;\r\n  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */\r\n  display: flex;\r\n  width: 900px;\r\n  \r\n  \r\n}\r\n/* Mudar a cor de fundo dos dias do calendário */\r\n\r\n.fc .fc-daygrid-day {\r\n  background-color: #ADD8E6; /* azul claro */\r\n  border-radius: 10%; /* bordas arredondadas */\r\n  height: 100px; /* ajuste a altura conforme necessário */\r\n  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n} /* substitua com o código exato da cor que você quer */\r\n.fc .fc-col-header-cell {\r\n  background-color: #2F435A; /* azul mais escuro */\r\n  height: 40px; /* ajuste a altura conforme necessário */\r\n  border-radius: 5px; /* bordas arredondadas */\r\n  text-transform: uppercase; /* transforma o texto em maiúsculas */\r\n  color: #FDCE6D; /* muda a cor do texto para amarelo */\r\n  font-weight: 300; /* torna a fonte mais fina; pode usar 400 para 'normal' e 700 para 'bold' */\r\n  text-align: center; /* centraliza o texto */\r\n  text-transform: uppercase; /* mantém o texto em maiúsculas */\r\n  \r\n}\r\n.fc .fc-col-header-cell-cushion {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-weight: 300; /* texto mais fino */\r\n  text-transform: uppercase; /* texto em maiúsculas */\r\n  color: #FDCE6D; /* cor do texto amarela */\r\n  height: 40px;\r\n}\r\n\r\n\r\n/* Mudar a altura dos dias do calendário */\r\n.fc .fc-daygrid-day {\r\n  height: 100px; /* ajuste conforme necessário */\r\n}\r\n\r\n#searchButton {\r\n  background-color: rgba(255, 231, 190, 0.79);\r\n  border: none;\r\n  border-radius: 4px;\r\n  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);\r\n  padding: 10px; /* ajustado para ter uma aparência uniforme */\r\n  cursor: pointer;\r\n  padding: 10px 20px;\r\n  margin: 10px auto;\r\n  display: block;\r\n  cursor: pointer;\r\n}\r\n#popup-container {\r\n  position: fixed;\r\n  top: 20%;\r\n  left: 50%;\r\n  transform: translateX(-50%);\r\n  width: 80%;\r\n  max-width: 400px;\r\n  background-color: rgba(240, 223, 186, 0.97);\r\n  padding: 20px;\r\n  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);\r\n  z-index: 1000;\r\n  display: none; /* Escondido por padrão */\r\n  border-radius: 10px;\r\n  \r\n\r\n}\r\n\r\n#popup-container h2 {\r\n  color: #000000;\r\n}\r\n\r\n#popup-container p {\r\n  color: #000000;\r\n  margin: 10px;\r\n  font-weight: 400;\r\n}\r\n.pop-button {\r\n  background-color: rgba(239, 169, 49, 0.79);\r\n  border: none;\r\n  border-radius: 4px;\r\n  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);\r\n  padding: 10px; /* ajustado para ter uma aparência uniforme */\r\n  cursor: pointer;\r\n  padding: 10px 20px;\r\n  margin: 10px auto;\r\n  display: block;\r\n  cursor: pointer;\r\n  font-weight: bold;\r\n  \r\n}\r\n\r\n\r\n.event-name {\r\n  font-size: 16px;\r\n  font-weight: bold;\r\n}\r\n\r\n#menu {\r\n    \r\n  width: 10%;\r\n  height: 100vh;\r\n  background-color: rgba(253, 206, 109, 1); \r\n  float: left;\r\n  color: #2F435A; \r\n  border-top-right-radius: 10px;\r\n  border-bottom-right-radius: 10px;\r\n}\r\n\r\n\r\n\r\nul {\r\n  list-style-type: none;\r\n  padding: 0; \r\n  margin: 0; \r\n}\r\n\r\nli {\r\n  display: flex; \r\n  align-items: center; \r\n  padding: 15px 10px; \r\n  text-align: left; \r\n  cursor: pointer;\r\n  transition: background-color 0.3s; \r\n  position: relative;\r\n  font-size: 12px; \r\n}\r\n\r\n\r\n  li:hover {\r\n      background-color: rgba(253, 206, 109, 1); \r\n  }\r\n\r\n.menu-icon {\r\n  width: 20px;\r\n   padding: 3px  5px;\r\n  margin-right: 10px;\r\n}\r\n\r\nul ul {\r\n  border-top-right-radius: 10px;\r\n  border-bottom-right-radius: 10px;\r\n  display: none;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 100%;\r\n  background-color: #FFF1D4; \r\n  width: 180px; \r\n}\r\n\r\nli:hover > ul {\r\n  display: block;\r\n}\r\n.geral {\r\n  display: flex; \r\n  flex-direction: column; \r\n  align-items: center;\r\n  height: 80%;\r\n}\r\n\r\n.titulo {\r\n  font-size: 16px;\r\n  text-align: center; \r\n  margin-bottom: 5px;\r\n  font-weight: bold;\r\n  margin-top: 10px;\r\n  line-height: 1.2; \r\n  text-align: center;\r\n  color: #2F435A;\r\n  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n}\r\n/* CLIENTE */\r\n.label-title-cliente {\r\n  display: flex;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n  margin-top: 40px;\r\n  width: 700px;\r\n  height: 30px;\r\n  border-radius: 50px;\r\n  align-items: center;\r\n  background-color: #2F435A;\r\n  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n}\r\n\r\n.text-title-cliente {\r\n  display: flex;\r\n  height: 20px;\r\n  padding-top: 1px;\r\n  margin-left: 10px;\r\n  align-items: center;\r\n  color: #FDCE6D;\r\n  font-family: poppinssemibold, sans-serif;\r\n  font-size: 20px;\r\n}\r\n\r\n\r\n/*--> id e nome do cliente <--*/\r\n.input-line-1 {\r\n  display: flex;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n  justify-content: space-between;\r\n  width: 42.5em;\r\n}\r\n\r\n.id-client-container {\r\n  display: flex;\r\n  margin-top: 10px;\r\n  align-items: center;\r\n  width: 100px;\r\n  height: 30px;\r\n  gap: 0.15625em;\r\n}\r\n\r\n.fa-id-card {\r\n  color: #2F435A;\r\n  font-size: 26px;\r\n  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n}\r\n\r\n.id-client-container input {\r\n  color: #FDCE6D;\r\n}\r\n\r\n#idClient {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  padding-top: 1px;\r\n  padding-left: 8px;\r\n  width: 80px;\r\n  height: 26px;\r\n  color: rgba(47, 67, 90, 0.5);\r\n  font-family: poppinsmedium, sans-serif;\r\n  font-size: 16px;\r\n  border: none;\r\n  background-color: rgba(255, 231, 190, 0.79);\r\n  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n  border-radius: 8px;\r\n  outline: 0;\r\n}\r\n\r\n.name-client-container {\r\n  display: flex;\r\n  margin-left: 16px;\r\n  margin-top: 10px;\r\n  align-items: center;\r\n  width: 480px;\r\n  height: 30px;\r\n  gap: 0.15625em;\r\n}\r\n\r\n.fa-user {\r\n  color: #2F435A;\r\n  font-size: 24px;\r\n  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n}\r\n\r\n.name-client-container input {\r\n  color: #FDCE6D;\r\n}\r\n\r\n#nameClient {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  padding-left: 8px;\r\n  width: 530px;\r\n  height: 30px;\r\n  color: rgb(47, 67, 90);\r\n  font-family: poppinsmedium, sans-serif;\r\n  font-size: 16px;\r\n  border: none;\r\n  background-color: rgba(255, 231, 190, 0.79);\r\n  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n  border-radius: 8px;\r\n  outline: 0;\r\n}\r\n\r\n/*--> id e nome do cliente <--*/\r\n\r\n\r\n/*--> email do cliente <--*/\r\n.email-client-container {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-top: 10px;\r\n  align-items: center;\r\n  width: 42.5em;\r\n  height: 30px;\r\n  gap: 0.15625em;\r\n}\r\n\r\n.fa-envelope {\r\n  color: #2F435A;\r\n  font-size: 1.78125em;\r\n  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n}\r\n\r\n.email-client-container input {\r\n  color: #FDCE6D;\r\n  height: 30px;\r\n}\r\n\r\n#emailClient {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin-left: 0.08em;\r\n  padding-top: 1px;\r\n  padding-left: 8px;\r\n  width: 644px;\r\n  height: 30px;\r\n  color: rgb(47, 67, 90);\r\n  font-family: poppinsmedium, sans-serif;\r\n  font-size: 16px;\r\n  border: none;\r\n  background-color: rgba(255, 231, 190, 0.79);\r\n  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n  border-radius: 8px;\r\n  outline: 0;\r\n}\r\n\r\n\r\n/*--> telefone do cliente <--*/\r\n.fone-client-container {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-top: 10px;\r\n  align-items: center;\r\n  width: 42.5em;\r\n  height: 30px;\r\n  gap: 0.15625em;\r\n}\r\n\r\n.fa-phone {\r\n  color: #2F435A;\r\n  font-size: 1.7em;\r\n  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n}\r\n\r\n.fone-client-container input {\r\n  color: #FDCE6D;\r\n}\r\n\r\n#foneClient {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin-left: 3px;\r\n  padding-left: 8px;\r\n  width: 644px;\r\n  height: 30px;\r\n  color: rgb(47, 67, 90);\r\n  font-family: poppinsmedium, sans-serif;\r\n  font-size: 16px;\r\n  border: none;\r\n  background-color: rgba(255, 231, 190, 0.79);\r\n  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n  border-radius: 8px;\r\n  outline: 0;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/Visualização_Painel_Serviços_Agendados/index.css"],"names":[],"mappings":"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","sourcesContent":[":root {\r\n  --color-day: #FDCE6D;\r\n  /* Cor de fundo das células */\r\n  --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);\r\n  /* Sombra das células */\r\n}\r\n\r\n/* ... Outras variáveis ... */\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n\r\n  /*menu-lateral*/\r\n  #slide {\r\n    display: none;\r\n    flex-direction: column;\r\n    gap: 20px;\r\n    position: fixed;\r\n    align-items: flex-start;\r\n    top: 0;\r\n    left: 0;\r\n    padding: 40px 20px;\r\n    background-color: #fdce6d;\r\n    height: 100%;\r\n    width: 250px;\r\n    z-index: 1000;\r\n    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n    border-radius: 0px 10px 10px 0px;\r\n  }\r\n\r\n  #slide>li {\r\n    display: flex;\r\n    list-style-type: none;\r\n    align-items: center;\r\n    margin-bottom: 20px;\r\n  }\r\n\r\n  #slide>li:hover>.drop-down-agenda {\r\n    display: block;\r\n    position: absolute;\r\n    left: 210px;\r\n    top: 95px;\r\n    width: 210px;\r\n    background-color: rgb(255, 231, 190);\r\n    padding: 7px;\r\n    border-radius: 8px;\r\n    z-index: 100;\r\n    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));\r\n  }\r\n\r\n  #slide>li:hover>.drop-down-cadastro {\r\n    display: block;\r\n    position: absolute;\r\n    left: 210px;\r\n    top: 135px;\r\n    width: 210px;\r\n    background-color: rgb(255, 231, 190);\r\n    padding: 7px;\r\n    border-radius: 8px;\r\n    z-index: 90;\r\n    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));\r\n  }\r\n\r\n  #slide>li>a {\r\n    line-height: 18px;\r\n    color: #2f435a;\r\n    text-decoration: none;\r\n    font-size: 20px;\r\n    margin-left: 10px;\r\n  }\r\n\r\n  .menu-container {\r\n    display: flex;\r\n  }\r\n\r\n  .um {\r\n    margin-left: 75px;\r\n  }\r\n\r\n  .dois {\r\n    margin-left: 45px;\r\n  }\r\n\r\n  .drop-down-agenda {\r\n    display: none;\r\n    position: absolute;\r\n    left: 210px;\r\n    top: 90px;\r\n    width: 210px;\r\n    background-color: rgb(255, 231, 190);\r\n    padding: 7px;\r\n    border-radius: 8px;\r\n    z-index: 100;\r\n    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));\r\n  }\r\n\r\n  .drop-down-agenda>ul {\r\n    list-style-type: none;\r\n  }\r\n\r\n  .drop-down-agenda>ul>li {\r\n    margin-bottom: 8px;\r\n  }\r\n\r\n  .drop-down-agenda>ul>li>a {\r\n    color: #2f435a;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n  }\r\n\r\n  .drop-down-agenda>ul>li>a:hover {\r\n    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));\r\n  }\r\n\r\n  .drop-down-cadastro {\r\n    display: none;\r\n    position: absolute;\r\n    left: 210px;\r\n    top: 135px;\r\n    width: 210px;\r\n    background-color: rgb(255, 231, 190);\r\n    padding: 7px;\r\n    border-radius: 8px;\r\n    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));\r\n  }\r\n\r\n  .drop-down-cadastro>ul {\r\n    list-style-type: none;\r\n  }\r\n\r\n  .drop-down-cadastro>ul>li {\r\n    margin-bottom: 8px;\r\n  }\r\n\r\n  .drop-down-cadastro>ul>li>a {\r\n    color: #2f435a;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n  }\r\n\r\n  .drop-down-cadastro>ul>li>a:hover {\r\n    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));\r\n  }\r\n\r\n  .fa-home,\r\n  .fa-power-off {\r\n    color: #2f435a;\r\n    font-size: 24px;\r\n  }\r\n\r\n  .fa-headset {\r\n    font-size: 23px;\r\n    color: #2f435a;\r\n  }\r\n\r\n  .fa-calendar {\r\n    font-size: 23px;\r\n    padding-left: 3px;\r\n    color: #2f435a;\r\n  }\r\n\r\n  .fa-user-group {\r\n    font-size: 22px;\r\n    color: #2f435a;\r\n  }\r\n\r\n  .fa-file-lines {\r\n    font-size: 25px;\r\n    padding-left: 3px;\r\n    color: #2f435a;\r\n  }\r\n\r\n  /*menu-lateral*/\r\n\r\n  /*cabeçalho*/\r\n  .header {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    width: inherit;\r\n    margin-top: 40px;\r\n  }\r\n\r\n  .header-pagina {\r\n    display: none;\r\n    justify-content: center;\r\n    width: 100%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-top: 10px;\r\n    color: #2f435a;\r\n    font-size: 20px;\r\n  }\r\n\r\n  .menu-icon-container {\r\n    display: flex;\r\n    align-items: center;\r\n    width: 80px;\r\n    height: 43px;\r\n    top: 0px;\r\n    left: 0px;\r\n    padding-top: 5px;\r\n    cursor: pointer;\r\n    border-radius: 2px;\r\n  }\r\n\r\n  .fa-bars {\r\n    font-weight: 600;\r\n    font-size: 36px;\r\n    color: #2f435a;\r\n    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n  }\r\n\r\n  .fa-bars:hover {\r\n    font-weight: 600;\r\n    color: #fdce6d;\r\n    transition: 0.2s all;\r\n  }\r\n\r\n  .menu-icon-container>button {\r\n    background-color: transparent;\r\n    width: 34px;\r\n    height: 30px;\r\n    outline: 0;\r\n    border: none;\r\n    cursor: pointer;\r\n  }\r\n\r\n  .title-principal {\r\n    display: flex;\r\n    align-items: center;\r\n    color: #2f435a;\r\n    font-size: 24px;\r\n  }\r\n\r\n  .logo {\r\n    display: flex;\r\n    border: none;\r\n  }\r\n\r\n\r\n}\r\n\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: Arial, sans-serif;\r\n  background-color: #ffffff;\r\n\r\n}\r\n\r\n#calendar {\r\n  background-color: #ffffff;\r\n  margin: 40px auto;\r\n  padding: 0 10px;\r\n  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);\r\n  /* Sombra */\r\n  display: flex;\r\n  width: 900px;\r\n\r\n\r\n}\r\n\r\n/* Mudar a cor de fundo dos dias do calendário */\r\n\r\n.fc .fc-daygrid-day {\r\n  background-color: #ADD8E6;\r\n  /* azul claro */\r\n  border-radius: 10%;\r\n  /* bordas arredondadas */\r\n  height: 100px;\r\n  /* ajuste a altura conforme necessário */\r\n  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n}\r\n\r\n/* substitua com o código exato da cor que você quer */\r\n.fc .fc-col-header-cell {\r\n  background-color: #2F435A;\r\n  /* azul mais escuro */\r\n  height: 40px;\r\n  /* ajuste a altura conforme necessário */\r\n  border-radius: 5px;\r\n  /* bordas arredondadas */\r\n  text-transform: uppercase;\r\n  /* transforma o texto em maiúsculas */\r\n  color: #FDCE6D;\r\n  /* muda a cor do texto para amarelo */\r\n  font-weight: 300;\r\n  /* torna a fonte mais fina; pode usar 400 para 'normal' e 700 para 'bold' */\r\n  text-align: center;\r\n  /* centraliza o texto */\r\n  text-transform: uppercase;\r\n  /* mantém o texto em maiúsculas */\r\n\r\n}\r\n\r\n.fc .fc-col-header-cell-cushion {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-weight: 300;\r\n  /* texto mais fino */\r\n  text-transform: uppercase;\r\n  /* texto em maiúsculas */\r\n  color: #FDCE6D;\r\n  /* cor do texto amarela */\r\n  height: 40px;\r\n}\r\n\r\n\r\n/* Mudar a altura dos dias do calendário */\r\n.fc .fc-daygrid-day {\r\n  height: 100px;\r\n  /* ajuste conforme necessário */\r\n}\r\n\r\n#searchButton {\r\n  background-color: rgba(255, 231, 190, 0.79);\r\n  border: none;\r\n  border-radius: 4px;\r\n  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);\r\n  padding: 10px;\r\n  /* ajustado para ter uma aparência uniforme */\r\n  cursor: pointer;\r\n  padding: 10px 20px;\r\n  margin: 10px auto;\r\n  display: block;\r\n  cursor: pointer;\r\n}\r\n\r\n#popup-container {\r\n  position: fixed;\r\n  top: 20%;\r\n  left: 50%;\r\n  transform: translateX(-50%);\r\n  width: 80%;\r\n  max-width: 400px;\r\n  background-color: rgba(240, 223, 186, 0.97);\r\n  padding: 20px;\r\n  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);\r\n  z-index: 1000;\r\n  display: none;\r\n  /* Escondido por padrão */\r\n  border-radius: 10px;\r\n\r\n\r\n}\r\n\r\n#popup-container h2 {\r\n  color: #000000;\r\n}\r\n\r\n#popup-container p {\r\n  color: #000000;\r\n  margin: 10px;\r\n  font-weight: 400;\r\n}\r\n\r\n.pop-button {\r\n  background-color: rgba(239, 169, 49, 0.79);\r\n  border: none;\r\n  border-radius: 4px;\r\n  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);\r\n  padding: 10px;\r\n  /* ajustado para ter uma aparência uniforme */\r\n  cursor: pointer;\r\n  padding: 10px 20px;\r\n  margin: 10px auto;\r\n  display: block;\r\n  cursor: pointer;\r\n  font-weight: bold;\r\n\r\n}\r\n\r\n\r\n.event-name {\r\n  font-size: 16px;\r\n  font-weight: bold;\r\n}\r\n\r\n#menu {\r\n\r\n  width: 10%;\r\n  height: 100vh;\r\n  background-color: rgba(253, 206, 109, 1);\r\n  float: left;\r\n  color: #2F435A;\r\n  border-top-right-radius: 10px;\r\n  border-bottom-right-radius: 10px;\r\n}\r\n\r\n\r\n\r\nul {\r\n  list-style-type: none;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\nli {\r\n  display: flex;\r\n  align-items: center;\r\n  padding: 15px 10px;\r\n  text-align: left;\r\n  cursor: pointer;\r\n  transition: background-color 0.3s;\r\n  position: relative;\r\n  font-size: 12px;\r\n}\r\n\r\n\r\nli:hover {\r\n  background-color: rgba(253, 206, 109, 1);\r\n}\r\n\r\n.menu-icon {\r\n  width: 20px;\r\n  padding: 3px 5px;\r\n  margin-right: 10px;\r\n}\r\n\r\nul ul {\r\n  border-top-right-radius: 10px;\r\n  border-bottom-right-radius: 10px;\r\n  display: none;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 100%;\r\n  background-color: #FFF1D4;\r\n  width: 180px;\r\n}\r\n\r\nli:hover>ul {\r\n  display: block;\r\n}\r\n\r\n.geral {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  height: 80%;\r\n}\r\n\r\n.titulo {\r\n  font-size: 16px;\r\n  text-align: center;\r\n  margin-bottom: 5px;\r\n  font-weight: bold;\r\n  margin-top: 10px;\r\n  line-height: 1.2;\r\n  text-align: center;\r\n  color: #2F435A;\r\n  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n}\r\n\r\n/* CLIENTE */\r\n.label-title-cliente {\r\n  display: flex;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n  margin-top: 40px;\r\n  width: 700px;\r\n  height: 30px;\r\n  border-radius: 50px;\r\n  align-items: center;\r\n  background-color: #2F435A;\r\n  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n}\r\n\r\n.text-title-cliente {\r\n  display: flex;\r\n  height: 20px;\r\n  padding-top: 1px;\r\n  margin-left: 10px;\r\n  align-items: center;\r\n  color: #FDCE6D;\r\n  font-family: poppinssemibold, sans-serif;\r\n  font-size: 20px;\r\n}\r\n\r\n\r\n/*--> id e nome do cliente <--*/\r\n.input-line-1 {\r\n  display: flex;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n  justify-content: space-between;\r\n  width: 42.5em;\r\n}\r\n\r\n.id-client-container {\r\n  display: flex;\r\n  margin-top: 10px;\r\n  align-items: center;\r\n  width: 100px;\r\n  height: 30px;\r\n  gap: 0.15625em;\r\n}\r\n\r\n.fa-id-card {\r\n  color: #2F435A;\r\n  font-size: 26px;\r\n  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n}\r\n\r\n.id-client-container input {\r\n  color: #FDCE6D;\r\n}\r\n\r\n#idClient {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  padding-top: 1px;\r\n  padding-left: 8px;\r\n  width: 80px;\r\n  height: 26px;\r\n  color: rgba(47, 67, 90, 0.5);\r\n  font-family: poppinsmedium, sans-serif;\r\n  font-size: 16px;\r\n  border: none;\r\n  background-color: rgba(255, 231, 190, 0.79);\r\n  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n  border-radius: 8px;\r\n  outline: 0;\r\n}\r\n\r\n.name-client-container {\r\n  display: flex;\r\n  margin-left: 16px;\r\n  margin-top: 10px;\r\n  align-items: center;\r\n  width: 480px;\r\n  height: 30px;\r\n  gap: 0.15625em;\r\n}\r\n\r\n.fa-user {\r\n  color: #2F435A;\r\n  font-size: 24px;\r\n  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n}\r\n\r\n.name-client-container input {\r\n  color: #FDCE6D;\r\n}\r\n\r\n#nameClient {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  padding-left: 8px;\r\n  width: 530px;\r\n  height: 30px;\r\n  color: rgb(47, 67, 90);\r\n  font-family: poppinsmedium, sans-serif;\r\n  font-size: 16px;\r\n  border: none;\r\n  background-color: rgba(255, 231, 190, 0.79);\r\n  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n  border-radius: 8px;\r\n  outline: 0;\r\n}\r\n\r\n/*--> id e nome do cliente <--*/\r\n\r\n\r\n/*--> email do cliente <--*/\r\n.email-client-container {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-top: 10px;\r\n  align-items: center;\r\n  width: 42.5em;\r\n  height: 30px;\r\n  gap: 0.15625em;\r\n}\r\n\r\n.fa-envelope {\r\n  color: #2F435A;\r\n  font-size: 1.78125em;\r\n  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n}\r\n\r\n.email-client-container input {\r\n  color: #FDCE6D;\r\n  height: 30px;\r\n}\r\n\r\n#emailClient {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin-left: 0.08em;\r\n  padding-top: 1px;\r\n  padding-left: 8px;\r\n  width: 644px;\r\n  height: 30px;\r\n  color: rgb(47, 67, 90);\r\n  font-family: poppinsmedium, sans-serif;\r\n  font-size: 16px;\r\n  border: none;\r\n  background-color: rgba(255, 231, 190, 0.79);\r\n  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n  border-radius: 8px;\r\n  outline: 0;\r\n}\r\n\r\n\r\n/*--> telefone do cliente <--*/\r\n.fone-client-container {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-top: 10px;\r\n  align-items: center;\r\n  width: 42.5em;\r\n  height: 30px;\r\n  gap: 0.15625em;\r\n}\r\n\r\n.fa-phone {\r\n  color: #2F435A;\r\n  font-size: 1.7em;\r\n  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n}\r\n\r\n.fone-client-container input {\r\n  color: #FDCE6D;\r\n}\r\n\r\n#foneClient {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin-left: 3px;\r\n  padding-left: 8px;\r\n  width: 644px;\r\n  height: 30px;\r\n  color: rgb(47, 67, 90);\r\n  font-family: poppinsmedium, sans-serif;\r\n  font-size: 16px;\r\n  border: none;\r\n  background-color: rgba(255, 231, 190, 0.79);\r\n  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n  border-radius: 8px;\r\n  outline: 0;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

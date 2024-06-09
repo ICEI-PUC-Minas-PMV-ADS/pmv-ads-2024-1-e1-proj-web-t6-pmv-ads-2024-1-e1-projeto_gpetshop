@@ -4,52 +4,6 @@
   box-sizing: border-box;
 }
 
-/*cabeçalho*/
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: poppinsmedium, sans-serif;
-  width: 43.75em;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 2.5em;
-}
-
-.menu-icon-container {
-  display: flex;
-  align-items: center;
-  height: 16px;
-  width: 30px;
-  top: 0px;
-  left: 0px;
-  padding-top: 16px;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-.fa-bars {
-  font-weight: 600;
-  font-size: 36px;
-  color: #2F435A;
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-}
-
-.fa-bars:hover {
-  font-weight: 600;
-  color: #FDCE6D;
-  transition: .2s all;
-}
-
-.menu-icon-container > button {
-  background-color: transparent;
-  width: 34px;
-  height: 30px;
-  outline: 0;
-  border: none;
-  cursor: pointer;
-}
-
 /*menu-lateral*/
 #slide {
   display: none;
@@ -60,27 +14,22 @@
   top: 0;
   left: 0;
   padding: 40px 20px;
-  background-color: #FDCE6D;
+  background-color: #fdce6d;
   height: 100%;
   width: 250px;
-  font-family: poppinssemibold, sans-serif;
   z-index: 1000;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
   border-radius: 0px 10px 10px 0px;
 }
 
-.animate__animated.animate__fadeInLeft::before {
-  --animate-duration: .5s;
-}
-
-#slide>li {
+#slide > li {
   display: flex;
   list-style-type: none;
   align-items: center;
   margin-bottom: 20px;
 }
 
-#slide>li:hover>.drop-down-agenda {
+#slide > li:hover > .drop-down-agenda {
   display: block;
   position: absolute;
   left: 210px;
@@ -93,7 +42,7 @@
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
 }
 
-#slide>li:hover>.drop-down-cadastro {
+#slide > li:hover > .drop-down-cadastro {
   display: block;
   position: absolute;
   left: 210px;
@@ -106,7 +55,7 @@
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
 }
 
-#slide>li>a {
+#slide > li > a {
   line-height: 18px;
   color: #2f435a;
   text-decoration: none;
@@ -139,21 +88,21 @@
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
 }
 
-.drop-down-agenda>ul {
+.drop-down-agenda > ul {
   list-style-type: none;
 }
 
-.drop-down-agenda>ul>li {
+.drop-down-agenda > ul > li {
   margin-bottom: 8px;
 }
 
-.drop-down-agenda>ul>li>a {
-  color: #2F435A;
+.drop-down-agenda > ul > li > a {
+  color: #2f435a;
   font-size: 18px;
   text-decoration: none;
 }
 
-.drop-down-agenda>ul>li>a:hover {
+.drop-down-agenda > ul > li > a:hover {
   filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
@@ -169,21 +118,21 @@
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
 }
 
-.drop-down-cadastro>ul {
+.drop-down-cadastro > ul {
   list-style-type: none;
 }
 
-.drop-down-cadastro>ul>li {
+.drop-down-cadastro > ul > li {
   margin-bottom: 8px;
 }
 
-.drop-down-cadastro>ul>li>a {
-  color: #2F435A;
+.drop-down-cadastro > ul > li > a {
+  color: #2f435a;
   font-size: 18px;
   text-decoration: none;
 }
 
-.drop-down-cadastro>ul>li>a:hover {
+.drop-down-cadastro > ul > li > a:hover {
   filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
@@ -217,17 +166,77 @@
 
 /*menu-lateral*/
 
-.title-principal {
-  display: block;
+/*cabeçalho*/
+header{
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  color: #2F435A;
-  font-family: poppinsmedium, sans-serif;
+  width: inherit;
+  margin-top: 40px;
+  
+}
+
+.header-pagina {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  color: #2f435a;
+  font-size: 20px;
+}
+
+.menu-icon-container {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 43px;
+  top: 0px;
+  left: 0px;
+  padding-top: 5px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.fa-bars {
+  font-weight: 600;
+  font-size: 36px;
+  color: #2f435a;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+.fa-bars:hover {
+  font-weight: 600;
+  color: #fdce6d;
+  transition: 0.2s all;
+}
+
+.menu-icon-container>button {
+  background-color: transparent;
+  width: 34px;
+  height: 30px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+.title-principal {
+  display: flex;
+  align-items: center;
+  color: #2f435a;
+  font-size: 24px;
 }
 
 .logo {
   display: flex;
   border: none;
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 /* FIM CABEÇALHO */
 

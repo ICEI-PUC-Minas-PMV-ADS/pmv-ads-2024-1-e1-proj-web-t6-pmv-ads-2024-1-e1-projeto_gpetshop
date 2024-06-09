@@ -25,8 +25,242 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body,
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
+
+header{
+  display: flex;
+  width: 700px;
+  justify-content: center;
+  margin-right: auto ;
+  margin-left: auto;
+}
+
+/*menu-lateral*/
+#slide {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    padding: 40px 20px;
+    background-color: #fdce6d;
+    height: 100%;
+    width: 250px;
+    z-index: 1000;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  #slide > li {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #slide > li:hover > .drop-down-agenda {
+    display: block;
+    position: absolute;
+    left: 210px;
+    top: 95px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    z-index: 100;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+  
+  #slide > li:hover > .drop-down-cadastro {
+    display: block;
+    position: absolute;
+    left: 210px;
+    top: 135px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    z-index: 90;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+  
+  #slide > li > a {
+    line-height: 18px;
+    color: #2f435a;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .menu-container {
+    display: flex;
+  }
+  
+  .um {
+    margin-left: 75px;
+  }
+  
+  .dois {
+    margin-left: 45px;
+  }
+  
+  .drop-down-agenda {
+    display: none;
+    position: absolute;
+    left: 210px;
+    top: 90px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    z-index: 100;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+  
+  .drop-down-agenda > ul {
+    list-style-type: none;
+  }
+  
+  .drop-down-agenda > ul > li {
+    margin-bottom: 8px;
+  }
+  
+  .drop-down-agenda > ul > li > a {
+    color: #2f435a;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .drop-down-agenda > ul > li > a:hover {
+    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+  
+  .drop-down-cadastro {
+    display: none;
+    position: absolute;
+    left: 210px;
+    top: 135px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+  
+  .drop-down-cadastro > ul {
+    list-style-type: none;
+  }
+  
+  .drop-down-cadastro > ul > li {
+    margin-bottom: 8px;
+  }
+  
+  .drop-down-cadastro > ul > li > a {
+    color: #2f435a;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .drop-down-cadastro > ul > li > a:hover {
+    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+  
+  .fa-home,
+  .fa-power-off {
+    color: #2f435a;
+    font-size: 24px;
+  }
+  
+  .fa-headset {
+    font-size: 23px;
+    color: #2f435a;
+  }
+  
+  .fa-calendar {
+    font-size: 23px;
+    padding-left: 3px;
+    color: #2f435a;
+  }
+  
+  .fa-user-group {
+    font-size: 22px;
+    color: #2f435a;
+  }
+  
+  .fa-file-lines {
+    font-size: 25px;
+    padding-left: 3px;
+    color: #2f435a;
+  }
+  
+  /*menu-lateral*/
+  
+  /*cabeçalho*/
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    margin-top: 40px;
+  }
+  
+  .header-pagina {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #2f435a;
+    font-size: 20px;
+  }
+  
+  .menu-icon-container {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 43px;
+    top: 0px;
+    left: 0px;
+    padding-top: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  .fa-bars {
+    font-weight: 600;
+    font-size: 36px;
+    color: #2f435a;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  }
+  
+  .fa-bars:hover {
+    font-weight: 600;
+    color: #fdce6d;
+    transition: 0.2s all;
+  }
+  
+  .menu-icon-container>button {
+    background-color: transparent;
+    width: 34px;
+    height: 30px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+  }
+  .title-principal {
+    display: flex;
+    align-items: center;
+    color: #2f435a;
+    font-size: 24px;
+  }
+  
+  .logo {
+    display: flex;
+    border: none;
+  }
 
 input:disabled,
 button:disabled {
@@ -42,37 +276,9 @@ main {
     padding: 30px;
 }
 
-#menu {
-    width: 7%;
-    height: 100vh;
-    background-color: rgba(253, 206, 109, 1);
-    float: left;
-    color: #2F435A;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    display: flex;
-    align-items: center;
-    padding: 15px 10px;
-    text-align: left;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    position: relative;
-    font-size: 12px;
-}
 
 
-li:hover {
-    background-color: rgba(253, 206, 109, 1);
-}
+
 
 .menu-icon {
     width: 20px;
@@ -340,7 +546,7 @@ th {
 
 td {
     padding: 5px 0px 5px 20px;
-}`, "",{"version":3,"sources":["webpack://./src/CadastroColaboradores/index.css"],"names":[],"mappings":"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","sourcesContent":["body,\r\nhtml {\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: 'Poppins', sans-serif;\r\n}\r\n\r\ninput:disabled,\r\nbutton:disabled {\r\n    background-color: #f0f0f0;\r\n    color: #a0a0a0;\r\n    border: 1px solid #d0d0d0;\r\n    cursor: default;\r\n    opacity: 0.6;\r\n}\r\n\r\nmain {\r\n    display: flex;\r\n    padding: 30px;\r\n}\r\n\r\n#menu {\r\n    width: 7%;\r\n    height: 100vh;\r\n    background-color: rgba(253, 206, 109, 1);\r\n    float: left;\r\n    color: #2F435A;\r\n    border-top-right-radius: 10px;\r\n    border-bottom-right-radius: 10px;\r\n}\r\n\r\nul {\r\n    list-style-type: none;\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\nli {\r\n    display: flex;\r\n    align-items: center;\r\n    padding: 15px 10px;\r\n    text-align: left;\r\n    cursor: pointer;\r\n    transition: background-color 0.3s;\r\n    position: relative;\r\n    font-size: 12px;\r\n}\r\n\r\n\r\nli:hover {\r\n    background-color: rgba(253, 206, 109, 1);\r\n}\r\n\r\n.menu-icon {\r\n    width: 20px;\r\n    padding: 3px 5px;\r\n    margin-right: 10px;\r\n}\r\n\r\nul ul {\r\n    border-top-right-radius: 10px;\r\n    border-bottom-right-radius: 10px;\r\n    display: none;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 100%;\r\n    background-color: #FFF1D4;\r\n    width: 180px;\r\n}\r\n\r\nli:hover>ul {\r\n    display: block;\r\n}\r\n\r\n.geral {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    height: 80%;\r\n}\r\n\r\n.titulo {\r\n    font-size: 16px;\r\n    text-align: center;\r\n    margin-bottom: 22px;\r\n    font-weight: bold;\r\n    margin-top: 30px;\r\n    line-height: 1.2;\r\n    text-align: center;\r\n    color: #2F435A;\r\n    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n}\r\n\r\n.botoes {\r\n    width: 40%;\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n\r\n.botoes button {\r\n    font-family: 'Poppins', sans-serif;\r\n    border-radius: 20px;\r\n    padding: 5px 25px;\r\n    font-size: 12px;\r\n    border: none;\r\n    background-color: #2F435A;\r\n    color: rgba(253, 206, 109, 1);\r\n    cursor: pointer;\r\n    width: 25%;\r\n    max-width: fit-content;\r\n}\r\n\r\n.formulario {\r\n    margin-top: 2px;\r\n    width: 40%;\r\n    padding: 10px;\r\n}\r\n\r\n\r\n\r\n.cabecalho {\r\n    font-size: 14px;\r\n    font-weight: bold;\r\n    margin-bottom: 7px;\r\n    background-color: #2F435A;\r\n    color: rgba(253, 206, 109, 1);\r\n    border-radius: 20px;\r\n    padding: 4px 10px;\r\n    display: flex;\r\n    align-items: center;\r\n    text-align: left;\r\n    font-weight: bold;\r\n}\r\n\r\n.cabecalho svg {\r\n    margin-right: 5px;\r\n    vertical-align: middle;\r\n    fill: #FDCE6D;\r\n}\r\n\r\n.campo {\r\n    margin-bottom: 10px;\r\n    align-items: center;\r\n    display: flex;\r\n    height: 28px;\r\n    align-self: start;\r\n    border-radius: 10px;\r\n}\r\n\r\n.campo svg {\r\n    width: 24px;\r\n    height: 19px;\r\n    margin-right: 6px;\r\n    fill: var(--azul, #2F435A);\r\n}\r\n\r\n.campo input {\r\n    padding: 2px 10px;\r\n    border: 0px;\r\n    border-radius: 8px;\r\n    background-color: #FFF1D4;\r\n    font-family: 'Poppins', sans-serif;\r\n    color: #2F435A;\r\n    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.20);\r\n}\r\n\r\n.inputSelect {\r\n    display: none;\r\n}\r\n\r\n.selectFunctionBox {\r\n    position: relative;\r\n}\r\n\r\n.selectFunctionLabel {\r\n    display: flex;\r\n    padding: 2px 10px;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    border: 0px;\r\n    border-radius: 8px;\r\n    font-size: 13px;\r\n    background-color: #FFF1D4;\r\n    font-family: 'Poppins', sans-serif;\r\n    color: #2F435A;\r\n    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.20);\r\n    cursor: pointer;\r\n}\r\n\r\n.selectFunctionLabel svg {\r\n    width: 10px;\r\n    height: 10px;\r\n}\r\n\r\n.selectFunctionOptions {\r\n    position: absolute;\r\n    left: 101%;\r\n    top: -5%;\r\n    padding: 10px;\r\n    border-radius: 8px;\r\n    background: #FFDE9A;\r\n    display: none;\r\n}\r\n\r\n.campo input[type=\"checkbox\"]:checked+.selectFunctionBox .selectFunctionOptions {\r\n    display: block;\r\n}\r\n\r\n.radio-group-function {\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n\r\n.radio-group-function label {\r\n    color: #2F435A;\r\n    font-size: 14px;\r\n    margin-left: 3px;\r\n}\r\n\r\n.radio-group-function input {\r\n    margin: 0;\r\n}\r\n\r\n.fillWidth {\r\n    flex: 1;\r\n}\r\n\r\n.campo .idColaborador {\r\n    width: 70px;\r\n}\r\n\r\ninput .idColaborador {\r\n    max-width: fit-content;\r\n}\r\n\r\n.lista-colaboradores {\r\n    margin-left: 10px;\r\n}\r\n\r\n.lista-colaboradores-cabecalho {\r\n    font-size: 16px;\r\n    font-weight: bold;\r\n    color: #2F435A;\r\n    margin: 86px 0 10px;\r\n    text-transform: uppercase;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.title {\r\n    text-decoration: underline;\r\n    text-decoration-color: rgba(253, 206, 109, 1);\r\n    text-decoration-thickness: 2px;\r\n}\r\n\r\n.search-bar-box {\r\n    width: 50%;\r\n    display: flex;\r\n    padding: 5px 20px 5px 10px;\r\n    height: 20px;\r\n    border-radius: 50px;\r\n    background: #2F435A;\r\n    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.20);\r\n}\r\n\r\n.search-bar {\r\n    width: 100%;\r\n    color: #fff;\r\n    border: none;\r\n    outline: none;\r\n    background: #2F435A;\r\n}\r\n\r\n.search-bar-icon {\r\n    cursor: pointer;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n    text-align: left;\r\n    margin-top: 10px;\r\n    border-radius: 10px;\r\n    background: rgba(47, 67, 90, 0.05);\r\n    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.20);\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n}\r\n\r\nthead {\r\n    color: #2F435A;\r\n    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.20);\r\n    font-size: 16px;\r\n    font-weight: 600;\r\n    text-transform: uppercase;\r\n}\r\n\r\nth {\r\n    padding: 10px 20px 0px 20px;\r\n}\r\n\r\n.table-body {\r\n    color: #2F435A;\r\n    border: #2F435A;\r\n    font-size: 12px;\r\n    overflow-x: scroll;\r\n    font-weight: bolder;\r\n    border: 2px solid #2F435A;\r\n    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.20);\r\n}\r\n\r\n.tr-hover:hover {\r\n    border-radius: 50px;\r\n    background: var(--campos_background, #FFF1D4);\r\n    cursor: pointer;\r\n}\r\n\r\ntd {\r\n    padding: 5px 0px 5px 20px;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/CadastroColaboradores/index.css"],"names":[],"mappings":"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","sourcesContent":["body,\r\nhtml {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\nheader{\r\n  display: flex;\r\n  width: 700px;\r\n  justify-content: center;\r\n  margin-right: auto ;\r\n  margin-left: auto;\r\n}\r\n\r\n/*menu-lateral*/\r\n#slide {\r\n    display: none;\r\n    flex-direction: column;\r\n    gap: 20px;\r\n    position: fixed;\r\n    align-items: flex-start;\r\n    top: 0;\r\n    left: 0;\r\n    padding: 40px 20px;\r\n    background-color: #fdce6d;\r\n    height: 100%;\r\n    width: 250px;\r\n    z-index: 1000;\r\n    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n    border-radius: 0px 10px 10px 0px;\r\n  }\r\n  \r\n  #slide > li {\r\n    display: flex;\r\n    list-style-type: none;\r\n    align-items: center;\r\n    margin-bottom: 20px;\r\n  }\r\n  \r\n  #slide > li:hover > .drop-down-agenda {\r\n    display: block;\r\n    position: absolute;\r\n    left: 210px;\r\n    top: 95px;\r\n    width: 210px;\r\n    background-color: rgb(255, 231, 190);\r\n    padding: 7px;\r\n    border-radius: 8px;\r\n    z-index: 100;\r\n    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));\r\n  }\r\n  \r\n  #slide > li:hover > .drop-down-cadastro {\r\n    display: block;\r\n    position: absolute;\r\n    left: 210px;\r\n    top: 135px;\r\n    width: 210px;\r\n    background-color: rgb(255, 231, 190);\r\n    padding: 7px;\r\n    border-radius: 8px;\r\n    z-index: 90;\r\n    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));\r\n  }\r\n  \r\n  #slide > li > a {\r\n    line-height: 18px;\r\n    color: #2f435a;\r\n    text-decoration: none;\r\n    font-size: 20px;\r\n    margin-left: 10px;\r\n  }\r\n  \r\n  .menu-container {\r\n    display: flex;\r\n  }\r\n  \r\n  .um {\r\n    margin-left: 75px;\r\n  }\r\n  \r\n  .dois {\r\n    margin-left: 45px;\r\n  }\r\n  \r\n  .drop-down-agenda {\r\n    display: none;\r\n    position: absolute;\r\n    left: 210px;\r\n    top: 90px;\r\n    width: 210px;\r\n    background-color: rgb(255, 231, 190);\r\n    padding: 7px;\r\n    border-radius: 8px;\r\n    z-index: 100;\r\n    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));\r\n  }\r\n  \r\n  .drop-down-agenda > ul {\r\n    list-style-type: none;\r\n  }\r\n  \r\n  .drop-down-agenda > ul > li {\r\n    margin-bottom: 8px;\r\n  }\r\n  \r\n  .drop-down-agenda > ul > li > a {\r\n    color: #2f435a;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n  }\r\n  \r\n  .drop-down-agenda > ul > li > a:hover {\r\n    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));\r\n  }\r\n  \r\n  .drop-down-cadastro {\r\n    display: none;\r\n    position: absolute;\r\n    left: 210px;\r\n    top: 135px;\r\n    width: 210px;\r\n    background-color: rgb(255, 231, 190);\r\n    padding: 7px;\r\n    border-radius: 8px;\r\n    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));\r\n  }\r\n  \r\n  .drop-down-cadastro > ul {\r\n    list-style-type: none;\r\n  }\r\n  \r\n  .drop-down-cadastro > ul > li {\r\n    margin-bottom: 8px;\r\n  }\r\n  \r\n  .drop-down-cadastro > ul > li > a {\r\n    color: #2f435a;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n  }\r\n  \r\n  .drop-down-cadastro > ul > li > a:hover {\r\n    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));\r\n  }\r\n  \r\n  .fa-home,\r\n  .fa-power-off {\r\n    color: #2f435a;\r\n    font-size: 24px;\r\n  }\r\n  \r\n  .fa-headset {\r\n    font-size: 23px;\r\n    color: #2f435a;\r\n  }\r\n  \r\n  .fa-calendar {\r\n    font-size: 23px;\r\n    padding-left: 3px;\r\n    color: #2f435a;\r\n  }\r\n  \r\n  .fa-user-group {\r\n    font-size: 22px;\r\n    color: #2f435a;\r\n  }\r\n  \r\n  .fa-file-lines {\r\n    font-size: 25px;\r\n    padding-left: 3px;\r\n    color: #2f435a;\r\n  }\r\n  \r\n  /*menu-lateral*/\r\n  \r\n  /*cabeçalho*/\r\n  .header {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    width: inherit;\r\n    margin-top: 40px;\r\n  }\r\n  \r\n  .header-pagina {\r\n    display: none;\r\n    justify-content: center;\r\n    width: 100%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-top: 10px;\r\n    color: #2f435a;\r\n    font-size: 20px;\r\n  }\r\n  \r\n  .menu-icon-container {\r\n    display: flex;\r\n    align-items: center;\r\n    width: 80px;\r\n    height: 43px;\r\n    top: 0px;\r\n    left: 0px;\r\n    padding-top: 5px;\r\n    cursor: pointer;\r\n    border-radius: 2px;\r\n  }\r\n  \r\n  .fa-bars {\r\n    font-weight: 600;\r\n    font-size: 36px;\r\n    color: #2f435a;\r\n    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));\r\n  }\r\n  \r\n  .fa-bars:hover {\r\n    font-weight: 600;\r\n    color: #fdce6d;\r\n    transition: 0.2s all;\r\n  }\r\n  \r\n  .menu-icon-container>button {\r\n    background-color: transparent;\r\n    width: 34px;\r\n    height: 30px;\r\n    outline: 0;\r\n    border: none;\r\n    cursor: pointer;\r\n  }\r\n  .title-principal {\r\n    display: flex;\r\n    align-items: center;\r\n    color: #2f435a;\r\n    font-size: 24px;\r\n  }\r\n  \r\n  .logo {\r\n    display: flex;\r\n    border: none;\r\n  }\r\n\r\ninput:disabled,\r\nbutton:disabled {\r\n    background-color: #f0f0f0;\r\n    color: #a0a0a0;\r\n    border: 1px solid #d0d0d0;\r\n    cursor: default;\r\n    opacity: 0.6;\r\n}\r\n\r\nmain {\r\n    display: flex;\r\n    padding: 30px;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n.menu-icon {\r\n    width: 20px;\r\n    padding: 3px 5px;\r\n    margin-right: 10px;\r\n}\r\n\r\nul ul {\r\n    border-top-right-radius: 10px;\r\n    border-bottom-right-radius: 10px;\r\n    display: none;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 100%;\r\n    background-color: #FFF1D4;\r\n    width: 180px;\r\n}\r\n\r\nli:hover>ul {\r\n    display: block;\r\n}\r\n\r\n.geral {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    height: 80%;\r\n}\r\n\r\n.titulo {\r\n    font-size: 16px;\r\n    text-align: center;\r\n    margin-bottom: 22px;\r\n    font-weight: bold;\r\n    margin-top: 30px;\r\n    line-height: 1.2;\r\n    text-align: center;\r\n    color: #2F435A;\r\n    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);\r\n}\r\n\r\n.botoes {\r\n    width: 40%;\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n\r\n.botoes button {\r\n    font-family: 'Poppins', sans-serif;\r\n    border-radius: 20px;\r\n    padding: 5px 25px;\r\n    font-size: 12px;\r\n    border: none;\r\n    background-color: #2F435A;\r\n    color: rgba(253, 206, 109, 1);\r\n    cursor: pointer;\r\n    width: 25%;\r\n    max-width: fit-content;\r\n}\r\n\r\n.formulario {\r\n    margin-top: 2px;\r\n    width: 40%;\r\n    padding: 10px;\r\n}\r\n\r\n\r\n\r\n.cabecalho {\r\n    font-size: 14px;\r\n    font-weight: bold;\r\n    margin-bottom: 7px;\r\n    background-color: #2F435A;\r\n    color: rgba(253, 206, 109, 1);\r\n    border-radius: 20px;\r\n    padding: 4px 10px;\r\n    display: flex;\r\n    align-items: center;\r\n    text-align: left;\r\n    font-weight: bold;\r\n}\r\n\r\n.cabecalho svg {\r\n    margin-right: 5px;\r\n    vertical-align: middle;\r\n    fill: #FDCE6D;\r\n}\r\n\r\n.campo {\r\n    margin-bottom: 10px;\r\n    align-items: center;\r\n    display: flex;\r\n    height: 28px;\r\n    align-self: start;\r\n    border-radius: 10px;\r\n}\r\n\r\n.campo svg {\r\n    width: 24px;\r\n    height: 19px;\r\n    margin-right: 6px;\r\n    fill: var(--azul, #2F435A);\r\n}\r\n\r\n.campo input {\r\n    padding: 2px 10px;\r\n    border: 0px;\r\n    border-radius: 8px;\r\n    background-color: #FFF1D4;\r\n    font-family: 'Poppins', sans-serif;\r\n    color: #2F435A;\r\n    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.20);\r\n}\r\n\r\n.inputSelect {\r\n    display: none;\r\n}\r\n\r\n.selectFunctionBox {\r\n    position: relative;\r\n}\r\n\r\n.selectFunctionLabel {\r\n    display: flex;\r\n    padding: 2px 10px;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    border: 0px;\r\n    border-radius: 8px;\r\n    font-size: 13px;\r\n    background-color: #FFF1D4;\r\n    font-family: 'Poppins', sans-serif;\r\n    color: #2F435A;\r\n    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.20);\r\n    cursor: pointer;\r\n}\r\n\r\n.selectFunctionLabel svg {\r\n    width: 10px;\r\n    height: 10px;\r\n}\r\n\r\n.selectFunctionOptions {\r\n    position: absolute;\r\n    left: 101%;\r\n    top: -5%;\r\n    padding: 10px;\r\n    border-radius: 8px;\r\n    background: #FFDE9A;\r\n    display: none;\r\n}\r\n\r\n.campo input[type=\"checkbox\"]:checked+.selectFunctionBox .selectFunctionOptions {\r\n    display: block;\r\n}\r\n\r\n.radio-group-function {\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n\r\n.radio-group-function label {\r\n    color: #2F435A;\r\n    font-size: 14px;\r\n    margin-left: 3px;\r\n}\r\n\r\n.radio-group-function input {\r\n    margin: 0;\r\n}\r\n\r\n.fillWidth {\r\n    flex: 1;\r\n}\r\n\r\n.campo .idColaborador {\r\n    width: 70px;\r\n}\r\n\r\ninput .idColaborador {\r\n    max-width: fit-content;\r\n}\r\n\r\n.lista-colaboradores {\r\n    margin-left: 10px;\r\n}\r\n\r\n.lista-colaboradores-cabecalho {\r\n    font-size: 16px;\r\n    font-weight: bold;\r\n    color: #2F435A;\r\n    margin: 86px 0 10px;\r\n    text-transform: uppercase;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.title {\r\n    text-decoration: underline;\r\n    text-decoration-color: rgba(253, 206, 109, 1);\r\n    text-decoration-thickness: 2px;\r\n}\r\n\r\n.search-bar-box {\r\n    width: 50%;\r\n    display: flex;\r\n    padding: 5px 20px 5px 10px;\r\n    height: 20px;\r\n    border-radius: 50px;\r\n    background: #2F435A;\r\n    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.20);\r\n}\r\n\r\n.search-bar {\r\n    width: 100%;\r\n    color: #fff;\r\n    border: none;\r\n    outline: none;\r\n    background: #2F435A;\r\n}\r\n\r\n.search-bar-icon {\r\n    cursor: pointer;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n    text-align: left;\r\n    margin-top: 10px;\r\n    border-radius: 10px;\r\n    background: rgba(47, 67, 90, 0.05);\r\n    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.20);\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n}\r\n\r\nthead {\r\n    color: #2F435A;\r\n    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.20);\r\n    font-size: 16px;\r\n    font-weight: 600;\r\n    text-transform: uppercase;\r\n}\r\n\r\nth {\r\n    padding: 10px 20px 0px 20px;\r\n}\r\n\r\n.table-body {\r\n    color: #2F435A;\r\n    border: #2F435A;\r\n    font-size: 12px;\r\n    overflow-x: scroll;\r\n    font-weight: bolder;\r\n    border: 2px solid #2F435A;\r\n    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.20);\r\n}\r\n\r\n.tr-hover:hover {\r\n    border-radius: 50px;\r\n    background: var(--campos_background, #FFF1D4);\r\n    cursor: pointer;\r\n}\r\n\r\ntd {\r\n    padding: 5px 0px 5px 20px;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1240,7 +1446,69 @@ searchButton.addEventListener('click', searchColaborador);
 
 window.onload = () => {
     fillColabTable();
+    getPermitions()
 };
+
+function getPermitions() {
+    let userJson = localStorage.getItem('user')
+    let user = JSON.parse(userJson)
+    switch (user.cargo) {
+        case 'Banhista':
+        case 'Atendente':
+            document.getElementById('cadastros').style.display = 'none'
+            document.getElementById('relatorios').style.display = 'none'
+            break;
+  
+        default:
+            break;
+    }
+  
+  }
+
+
+var openSlide = document.querySelector("#ativar");
+
+openSlide.addEventListener("click", function (event) {
+    event.stopPropagation(); // Impede que o clique se propague para o documento
+    var slide = document.querySelector("#slide");
+
+    if (slide.style.display === "block") {
+        slide.classList.remove("animate__fadeInLeft");
+        slide.classList.add("animate__fadeOutLeft");
+
+        slide.addEventListener("animationend", function handleAnimationEnd() {
+            slide.style.display = "none";
+            slide.classList.remove("animate__fadeOutLeft");
+            slide.removeEventListener("animationend", handleAnimationEnd);
+        });
+    } else {
+        slide.style.display = "block";
+        slide.classList.add("animate__fadeInLeft");
+        slide.classList.remove("animate__fadeOutLeft");
+
+        slide.addEventListener("animationend", function handleAnimationEnd() {
+            slide.classList.remove("animate__fadeInLeft");
+            slide.removeEventListener("animationend", handleAnimationEnd);
+        });
+    }
+});
+
+// Evento de clique no documento para fechar a barra lateral quando clicar fora dela
+document.addEventListener("click", function (event) {
+    var slide = document.querySelector("#slide");
+
+    // Verifica se o clique foi fora da barra lateral e do botão de ativação
+    if (!slide.contains(event.target) && !openSlide.contains(event.target) && slide.style.display === "block") {
+        slide.classList.remove("animate__fadeInLeft");
+        slide.classList.add("animate__fadeOutLeft");
+
+        slide.addEventListener("animationend", function handleAnimationEnd() {
+            slide.style.display = "none";
+            slide.classList.remove("animate__fadeOutLeft");
+            slide.removeEventListener("animationend", handleAnimationEnd);
+        });
+    }
+});
 })();
 
 /******/ })()

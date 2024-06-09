@@ -1,6 +1,8 @@
 :root {
-  --color-day: #FDCE6D; /* Cor de fundo das células */
-  --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra das células */
+  --color-day: #FDCE6D;
+  /* Cor de fundo das células */
+  --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  /* Sombra das células */
 }
 
 /* ... Outras variáveis ... */
@@ -8,6 +10,236 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  /*menu-lateral*/
+  #slide {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    padding: 40px 20px;
+    background-color: #fdce6d;
+    height: 100%;
+    width: 250px;
+    z-index: 1000;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  #slide>li {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #slide>li:hover>.drop-down-agenda {
+    display: block;
+    position: absolute;
+    left: 210px;
+    top: 95px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    z-index: 100;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+
+  #slide>li:hover>.drop-down-cadastro {
+    display: block;
+    position: absolute;
+    left: 210px;
+    top: 135px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    z-index: 90;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+
+  #slide>li>a {
+    line-height: 18px;
+    color: #2f435a;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .menu-container {
+    display: flex;
+  }
+
+  .um {
+    margin-left: 75px;
+  }
+
+  .dois {
+    margin-left: 45px;
+  }
+
+  .drop-down-agenda {
+    display: none;
+    position: absolute;
+    left: 210px;
+    top: 90px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    z-index: 100;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+
+  .drop-down-agenda>ul {
+    list-style-type: none;
+  }
+
+  .drop-down-agenda>ul>li {
+    margin-bottom: 8px;
+  }
+
+  .drop-down-agenda>ul>li>a {
+    color: #2f435a;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .drop-down-agenda>ul>li>a:hover {
+    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+
+  .drop-down-cadastro {
+    display: none;
+    position: absolute;
+    left: 210px;
+    top: 135px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+
+  .drop-down-cadastro>ul {
+    list-style-type: none;
+  }
+
+  .drop-down-cadastro>ul>li {
+    margin-bottom: 8px;
+  }
+
+  .drop-down-cadastro>ul>li>a {
+    color: #2f435a;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .drop-down-cadastro>ul>li>a:hover {
+    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+
+  .fa-home,
+  .fa-power-off {
+    color: #2f435a;
+    font-size: 24px;
+  }
+
+  .fa-headset {
+    font-size: 23px;
+    color: #2f435a;
+  }
+
+  .fa-calendar {
+    font-size: 23px;
+    padding-left: 3px;
+    color: #2f435a;
+  }
+
+  .fa-user-group {
+    font-size: 22px;
+    color: #2f435a;
+  }
+
+  .fa-file-lines {
+    font-size: 25px;
+    padding-left: 3px;
+    color: #2f435a;
+  }
+
+  /*menu-lateral*/
+
+  /*cabeçalho*/
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    margin-top: 40px;
+  }
+
+  .header-pagina {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #2f435a;
+    font-size: 20px;
+  }
+
+  .menu-icon-container {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 43px;
+    top: 0px;
+    left: 0px;
+    padding-top: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+
+  .fa-bars {
+    font-weight: 600;
+    font-size: 36px;
+    color: #2f435a;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  }
+
+  .fa-bars:hover {
+    font-weight: 600;
+    color: #fdce6d;
+    transition: 0.2s all;
+  }
+
+  .menu-icon-container>button {
+    background-color: transparent;
+    width: 34px;
+    height: 30px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  .title-principal {
+    display: flex;
+    align-items: center;
+    color: #2f435a;
+    font-size: 24px;
+  }
+
+  .logo {
+    display: flex;
+    border: none;
+  }
+
+
 }
 
 body {
@@ -17,49 +249,70 @@ body {
   background-color: #ffffff;
 
 }
-#calendar{
-  background-color: #ffffff; 
+
+#calendar {
+  background-color: #ffffff;
   margin: 40px auto;
   padding: 0 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra */
   display: flex;
   width: 900px;
-  
-  
+
+
 }
+
 /* Mudar a cor de fundo dos dias do calendário */
 
 .fc .fc-daygrid-day {
-  background-color: #ADD8E6; /* azul claro */
-  border-radius: 10%; /* bordas arredondadas */
-  height: 100px; /* ajuste a altura conforme necessário */
+  background-color: #ADD8E6;
+  /* azul claro */
+  border-radius: 10%;
+  /* bordas arredondadas */
+  height: 100px;
+  /* ajuste a altura conforme necessário */
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-} /* substitua com o código exato da cor que você quer */
-.fc .fc-col-header-cell {
-  background-color: #2F435A; /* azul mais escuro */
-  height: 40px; /* ajuste a altura conforme necessário */
-  border-radius: 5px; /* bordas arredondadas */
-  text-transform: uppercase; /* transforma o texto em maiúsculas */
-  color: #FDCE6D; /* muda a cor do texto para amarelo */
-  font-weight: 300; /* torna a fonte mais fina; pode usar 400 para 'normal' e 700 para 'bold' */
-  text-align: center; /* centraliza o texto */
-  text-transform: uppercase; /* mantém o texto em maiúsculas */
-  
 }
+
+/* substitua com o código exato da cor que você quer */
+.fc .fc-col-header-cell {
+  background-color: #2F435A;
+  /* azul mais escuro */
+  height: 40px;
+  /* ajuste a altura conforme necessário */
+  border-radius: 5px;
+  /* bordas arredondadas */
+  text-transform: uppercase;
+  /* transforma o texto em maiúsculas */
+  color: #FDCE6D;
+  /* muda a cor do texto para amarelo */
+  font-weight: 300;
+  /* torna a fonte mais fina; pode usar 400 para 'normal' e 700 para 'bold' */
+  text-align: center;
+  /* centraliza o texto */
+  text-transform: uppercase;
+  /* mantém o texto em maiúsculas */
+
+}
+
 .fc .fc-col-header-cell-cushion {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 300; /* texto mais fino */
-  text-transform: uppercase; /* texto em maiúsculas */
-  color: #FDCE6D; /* cor do texto amarela */
+  font-weight: 300;
+  /* texto mais fino */
+  text-transform: uppercase;
+  /* texto em maiúsculas */
+  color: #FDCE6D;
+  /* cor do texto amarela */
   height: 40px;
 }
 
 
 /* Mudar a altura dos dias do calendário */
 .fc .fc-daygrid-day {
-  height: 100px; /* ajuste conforme necessário */
+  height: 100px;
+  /* ajuste conforme necessário */
 }
 
 #searchButton {
@@ -67,13 +320,15 @@ body {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px; /* ajustado para ter uma aparência uniforme */
+  padding: 10px;
+  /* ajustado para ter uma aparência uniforme */
   cursor: pointer;
   padding: 10px 20px;
   margin: 10px auto;
   display: block;
   cursor: pointer;
 }
+
 #popup-container {
   position: fixed;
   top: 20%;
@@ -85,9 +340,10 @@ body {
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  display: none; /* Escondido por padrão */
+  display: none;
+  /* Escondido por padrão */
   border-radius: 10px;
-  
+
 
 }
 
@@ -100,19 +356,21 @@ body {
   margin: 10px;
   font-weight: 400;
 }
+
 .pop-button {
   background-color: rgba(239, 169, 49, 0.79);
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px; /* ajustado para ter uma aparência uniforme */
+  padding: 10px;
+  /* ajustado para ter uma aparência uniforme */
   cursor: pointer;
   padding: 10px 20px;
   margin: 10px auto;
   display: block;
   cursor: pointer;
   font-weight: bold;
-  
+
 }
 
 
@@ -122,12 +380,12 @@ body {
 }
 
 #menu {
-    
+
   width: 10%;
   height: 100vh;
-  background-color: rgba(253, 206, 109, 1); 
+  background-color: rgba(253, 206, 109, 1);
   float: left;
-  color: #2F435A; 
+  color: #2F435A;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -136,29 +394,29 @@ body {
 
 ul {
   list-style-type: none;
-  padding: 0; 
-  margin: 0; 
+  padding: 0;
+  margin: 0;
 }
 
 li {
-  display: flex; 
-  align-items: center; 
-  padding: 15px 10px; 
-  text-align: left; 
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  text-align: left;
   cursor: pointer;
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
   position: relative;
-  font-size: 12px; 
+  font-size: 12px;
 }
 
 
-  li:hover {
-      background-color: rgba(253, 206, 109, 1); 
-  }
+li:hover {
+  background-color: rgba(253, 206, 109, 1);
+}
 
 .menu-icon {
   width: 20px;
-   padding: 3px  5px;
+  padding: 3px 5px;
   margin-right: 10px;
 }
 
@@ -169,31 +427,33 @@ ul ul {
   position: absolute;
   top: 0;
   left: 100%;
-  background-color: #FFF1D4; 
-  width: 180px; 
+  background-color: #FFF1D4;
+  width: 180px;
 }
 
-li:hover > ul {
+li:hover>ul {
   display: block;
 }
+
 .geral {
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   align-items: center;
   height: 80%;
 }
 
 .titulo {
   font-size: 16px;
-  text-align: center; 
+  text-align: center;
   margin-bottom: 5px;
   font-weight: bold;
   margin-top: 10px;
-  line-height: 1.2; 
+  line-height: 1.2;
   text-align: center;
   color: #2F435A;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 /* CLIENTE */
 .label-title-cliente {
   display: flex;
@@ -390,10 +650,3 @@ li:hover > ul {
   border-radius: 8px;
   outline: 0;
 }
-
-
-
-
-
-
-

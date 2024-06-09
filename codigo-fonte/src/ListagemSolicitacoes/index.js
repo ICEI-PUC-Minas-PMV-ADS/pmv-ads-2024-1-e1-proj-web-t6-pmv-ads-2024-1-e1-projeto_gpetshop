@@ -131,3 +131,23 @@ document.addEventListener("click", function (event) {
 });
 
 updateTable();
+
+function getPermitions() {
+    let userJson = localStorage.getItem('user')
+    let user = JSON.parse(userJson)
+    switch (user.cargo) {
+        case 'Banhista':
+        case 'Atendente':
+            document.getElementById('cadastros').style.display = 'none'
+            document.getElementById('relatorios').style.display = 'none'
+            break;
+
+        default:
+            break;
+    }
+
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    getPermitions()
+})

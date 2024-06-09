@@ -11,6 +11,234 @@ body {
     align-items: center;
 } 
 
+/*menu-lateral*/
+#slide {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    padding: 40px 20px;
+    background-color: #fdce6d;
+    height: 100%;
+    width: 250px;
+    z-index: 1000;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  #slide > li {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #slide > li:hover > .drop-down-agenda {
+    display: block;
+    position: absolute;
+    left: 210px;
+    top: 95px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    z-index: 100;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+  
+  #slide > li:hover > .drop-down-cadastro {
+    display: block;
+    position: absolute;
+    left: 210px;
+    top: 135px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    z-index: 90;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+  
+  #slide > li > a {
+    line-height: 18px;
+    color: #2f435a;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .menu-container {
+    display: flex;
+  }
+  
+  .um {
+    margin-left: 75px;
+  }
+  
+  .dois {
+    margin-left: 45px;
+  }
+  
+  .drop-down-agenda {
+    display: none;
+    position: absolute;
+    left: 210px;
+    top: 90px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    z-index: 100;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+  
+  .drop-down-agenda > ul {
+    list-style-type: none;
+  }
+  
+  .drop-down-agenda > ul > li {
+    margin-bottom: 8px;
+  }
+  
+  .drop-down-agenda > ul > li > a {
+    color: #2f435a;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .drop-down-agenda > ul > li > a:hover {
+    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+  
+  .drop-down-cadastro {
+    display: none;
+    position: absolute;
+    left: 210px;
+    top: 135px;
+    width: 210px;
+    background-color: rgb(255, 231, 190);
+    padding: 7px;
+    border-radius: 8px;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+  
+  .drop-down-cadastro > ul {
+    list-style-type: none;
+  }
+  
+  .drop-down-cadastro > ul > li {
+    margin-bottom: 8px;
+  }
+  
+  .drop-down-cadastro > ul > li > a {
+    color: #2f435a;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .drop-down-cadastro > ul > li > a:hover {
+    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+  
+  .fa-home,
+  .fa-power-off {
+    color: #2f435a;
+    font-size: 24px;
+  }
+  
+  .fa-headset {
+    font-size: 23px;
+    color: #2f435a;
+  }
+  
+  .fa-calendar {
+    font-size: 23px;
+    padding-left: 3px;
+    color: #2f435a;
+  }
+  
+  .fa-user-group {
+    font-size: 22px;
+    color: #2f435a;
+  }
+  
+  .fa-file-lines {
+    font-size: 25px;
+    padding-left: 3px;
+    color: #2f435a;
+  }
+  
+  /*menu-lateral*/
+  
+  /*cabeçalho*/
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    margin-top: 40px;
+  }
+  
+  .header-pagina {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #2f435a;
+    font-size: 20px;
+  }
+  
+  .menu-icon-container {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 43px;
+    top: 0px;
+    left: 0px;
+    padding-top: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  .fa-bars {
+    font-weight: 600;
+    font-size: 36px;
+    color: #2f435a;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  }
+  
+  .fa-bars:hover {
+    font-weight: 600;
+    color: #fdce6d;
+    transition: 0.2s all;
+  }
+  
+  .menu-icon-container>button {
+    background-color: transparent;
+    width: 34px;
+    height: 30px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+  }
+  .title-principal {
+    display: flex;
+    align-items: center;
+    color: #2f435a;
+    font-size: 24px;
+  }
+  
+  .logo {
+    display: flex;
+    border: none;
+  }
+
+
 .container {
     display: flex;
     flex-direction: column;

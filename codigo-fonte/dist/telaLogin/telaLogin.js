@@ -911,6 +911,7 @@ function logar() {
         if (colaborador) {
 
             colaboradorEncontrado = true
+            localStorage.setItem('user', JSON.stringify(colaborador))
             switch (colaborador.cargo) {
                 case "Gestor":
                     window.location.href = "/codigo-fonte/dist/cadastroServicos/CadastroServicos.html";
