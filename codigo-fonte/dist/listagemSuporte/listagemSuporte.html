@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tratar Suporte</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
+
+<script defer src="../listagemSuporte/listagemSuporte.js"></script></head>
+
+<body>
+
+    <header>
+
+        <div class="poppins-medium header">
+            <!-- Barra de navegação lateral oculta-->
+            <div id="slide" class="poppins-semibold animar animate__animated animate__fadeInLeft animate__fadeOutLeft">
+                <li><i class="fa-solid fa-home fa-2xl"></i><a href="#">Inicio</a></li>
+                <li><i class="fa-solid fa-calendar fa-2xl"></i><a href="#">Agenda<i
+                            class="fa-solid fa-angle-down um"></i></a>
+                    <div class="drop-down-agenda">
+                        <ul>
+                            <li><a href="/codigo-fonte/src/NovoAgendamento/NovoAgendamento.html">Inserir Agendamento</a>
+                            </li>
+                            <li><a href="/codigo-fonte/dist/visualizacaoPainelServicosAgendados/visualizacaoPainelServicosAgendados.html">Consultar Agenda</a></li>
+                            <li><a href="/codigo-fonte/src/ListagemSolicitacoes/ListagemSolicitacao.html">Tratar
+                                    Solicitações</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><i class="fa-solid fa-user-group fa-2xl"></i><a href="#">Cadastros<i
+                            class="fa-solid fa-angle-down dois"></i></a>
+                    <div class="drop-down-cadastro">
+                        <ul>
+                            <li><a href="/codigo-fonte/src/Cadastroclientes/index.html">Clientes</a></li>
+                            <li><a href="/codigo-fonte/dist/cadastroColaboradores/cadastroColaboradores.html">Colaboradores</a></li>
+                            <li><a href="/codigo-fonte/dist/cadastroPromocoes/CadastroPromocoes.html">Promoções</a></li>
+                            <li><a href="/codigo-fonte/src/CadastroServicos/CadastroServicos.html">Serviços</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><i class="fa-solid fa-file-lines fa-2xl"></i><a href="#">Relatórios</a></li>
+                <li><i class="fa-solid fa-headset fa-2xl"></i><a
+                        href="/codigo-fonte/src/ListagemSuporte/ListagemSuporte.html">Suporte</a></li>
+                <li><i class="fa-solid fa-power-off fa-2xl"></i><a href="#">Sair</a></li>
+            </div>
+            <!-- Barra de navegação lateral oculta-->
+            <div class="menu-icon-container">
+                <button id="ativar"><i class="fa-solid fa-bars fa-2xl"></i></button>
+            </div>
+
+            <div>
+                <h3 class="poppins-semibold title-principal">Tratar Suporte</h3>
+            </div>
+
+            <div class="logo">
+                <img src="../Imagens/nomesemfundo.png" alt="" width="80" height="43" />
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="poppins-semibold header-pagina">
+            <h3 class="title-pagina">Tratar Suporte</h3>
+        </div>
+
+        <div class="list-container">
+            <div class="title">
+                <div class="poppins-semibold title-list">LISTA DE MENSAGENS</div>
+                <div class="search-bar">
+                    <input class="poppins-medium" id="searchBarList" type="text" name="search-bar-list" placeholder="Nome do cliente ou mensagem...">
+                    <i class="material-symbols-rounded">search</i>
+                </div>
+            </div>
+        </div>
+        <table id="tableClient">
+            <thead class="thead">
+                <tr class="poppins-medium thead-tr">
+                    <th class="th th-nome-cliente">NOME</th>
+                    <th class="th th-mensagem">MENSAGEM</th>
+                    <th class="th th-mensagens">MENSAGENS</th>
+                </tr>
+            <tbody class="tbody">
+                <!-- Linhas da tabela serão adicionadas dinamicamente aqui -->
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
