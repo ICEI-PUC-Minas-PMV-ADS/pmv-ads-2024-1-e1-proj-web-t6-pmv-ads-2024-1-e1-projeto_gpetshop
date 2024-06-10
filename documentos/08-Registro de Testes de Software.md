@@ -36,7 +36,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 |Caso de Teste    | CT-001.3 - Página Inicial - Sessão Redes Sociais |
 |:---|:---|
-| Resultados obtidos | Direcionamento correto página proposta.  |
+| Resultados obtidos | Direcionamento correto para as páginas propostas.  |
 | Responsável pela execução do caso de Teste | Paulo Henrique Sousa Carvalho |
 
 <img src="./img/ct0013-teste-paginaInicial.gif" width="900px">
