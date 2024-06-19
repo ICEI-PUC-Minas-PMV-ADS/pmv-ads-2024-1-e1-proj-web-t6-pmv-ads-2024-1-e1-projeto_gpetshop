@@ -1099,13 +1099,13 @@ function logar() {
             localStorage.setItem('user', JSON.stringify(colaborador))
             switch (colaborador.cargo) {
                 case "Gestor":
-                    window.location.href = "/codigo-fonte/dist/cadastroServicos/CadastroServicos.html";
+                    window.location.href = "../cadastroServicos/CadastroServicos.html";
                     break;
                 case "Atendente":
-                    window.location.href = "/codigo-fonte/dist/listagemSolicitacoes/listagemSolicitacoes.html";
+                    window.location.href = "../listagemSolicitacoes/listagemSolicitacoes.html";
                     break;
                 case "Banhista":
-                    window.location.href = "/codigo-fonte/dist/visualizacaoPainelServicosAgendados/visualizacaoPainelServicosAgendados.html";
+                    window.location.href = "../visualizacaoPainelServicosAgendados/visualizacaoPainelServicosAgendados.html";
                     break;
 
 
