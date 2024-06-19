@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cadastro de Promoções</title>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
+
+<script defer src="../cadastroPromocoes/cadastroPromocoes.js"></script></head>
+
+<body>
+	<header>
+
+		<div class="poppins-semibold header">
+			<!-- Barra de navegação lateral oculta-->
+			<div id="slide" class="animar animate__animated animate__fadeInLeft animate__fadeOutLeft">
+				<li><i class="fa-solid fa-home fa-2xl"></i><a href="#">Inicio</a></li>
+				<li><i class="fa-solid fa-calendar fa-2xl"></i><a href="#">Agenda<i
+							class="fa-solid fa-angle-down um"></i></a>
+					<div class="drop-down-agenda">
+						<ul>
+							<li><a href="/codigo-fonte/dist/novoAgendamento/novoAgendamento.html">Inserir
+									Agendamento</a>
+							</li>
+							<li><a
+									href="/codigo-fonte/dist/visualizacaoPainelServicosAgendados/visualizacaoPainelServicosAgendados.html">Consultar
+									Agenda</a></li>
+							<li><a href="/codigo-fonte/dist/listagemSolicitacoes/listagemSolicitacoes.html">Tratar
+									Solicitações</a></li>
+						</ul>
+					</div>
+				</li>
+				<li id="cadastros"><i class="fa-solid fa-user-group fa-2xl"></i><a href="#">Cadastros<i
+							class="fa-solid fa-angle-down dois"></i></a>
+					<div class="drop-down-cadastro">
+						<ul>
+							<li><a href="/codigo-fonte/dist/cadastroClientes/CadastroClientes.html">Clientes</a></li>
+							<li><a href="#">Colaboradores</a></li>
+							<li><a href="/codigo-fonte/dist/cadastroPromocoes/CadastroPromocoes.html">Promoções</a></li>
+							<li><a href="/codigo-fonte/dist/cadastroServicos/CadastroServicos.html">Serviços</a></li>
+						</ul>
+					</div>
+				</li>
+				<li id="relatorios"><i class="fa-solid fa-file-lines fa-2xl"></i><a
+						href="/codigo-fonte/dist/dashboardPerfomance/dashboardPerfomance.html">Relatórios</a></li>
+				<li><i class="fa-solid fa-headset fa-2xl"></i><a
+						href="/codigo-fonte/dist/listagemSuporte/listagemSuporte.html">Suporte</a></li>
+				<li><i class="fa-solid fa-power-off fa-2xl"></i><a href="#">Sair</a></li>
+			</div>
+			<!-- Barra de navegação lateral oculta-->
+			<div class="menu-icon-container">
+				<button id="ativar"><i class="fa-solid fa-bars fa-2xl"></i></button>
+			</div>
+
+			<div>
+				<h3 class="poppins-semibold title-principal">Cadastro de Promoções</h3>
+			</div>
+
+			<div class="logo">
+				<img src="../Imagens/nomesemfundo.png" alt="" width="80" height="43" />
+			</div>
+		</div>
+	</header>
+
+	<form>
+		<!-- CLIENTE -->
+		<div id="servico">
+			<!-- AÇOES -->
+			<div id="actions">
+				<button class="poppins-semibold" id="novo-solicitacao" type="button" value="NOVO">NOVO</button>
+				<button class="poppins-semibold" id="alterar-solicitacao" type="button" value="ALTERAR">ALTERAR</button>
+				<button class="poppins-semibold" id="excluir-solicitacao" type="button" value="EXCLUIR">EXCLUIR</button>
+				<button class="poppins-semibold" id="aceitar-solicitacao" type="button" value="ACEITAR">SALVAR</button>
+			</div>
+			<div class="label-title-servico">
+				<div class="poppins-semibold text-title-servico">TÍTULO</div>
+			</div>
+
+			<div id="titulo">
+				<div id="tit">
+					<label for="text-value-tit"></label>
+					<input class="poppins-medium dataClient" name="tit" placeholder="Título da promoção..."
+						id="text-value-tit">
+				</div>
+			</div>
+
+			<div id="observacao">
+				<div class="label-title-obs">
+					<div class="poppins-semibold text-title-obs">CONTEÚDO</div>
+				</div>
+			</div>
+
+			<div id="observacoes">
+				<div id="obs">
+					<label for="text-value-obs"></label>
+					<textarea class="poppins-medium dataClient" rows="10" name="obs" placeholder="Texto da promoção..."
+						id="text-value-obs"></textarea>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+
+</html>

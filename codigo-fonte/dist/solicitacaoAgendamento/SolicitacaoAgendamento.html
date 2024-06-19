@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitação de Agendamento</title>
+<script defer src="../solicitacaoAgendamento/solicitacaoAgendamento.js"></script></head>
+<script>
+
+    const handlePhone = (event) => {
+      let input = event.target
+      input.value = phoneMask(input.value)
+    }
+
+    const phoneMask = (value) => {
+      if (!value) return ""
+      value = value.replace(/\D/g,'')
+      value = value.replace(/(\d{2})(\d)/,"($1) $2")
+      value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+      return value
+    }
+
+</script>
+<body>
+  <div style="width: 50%;" class="scheduling-request-body">
+
+    <div class="header pd-bt-10">
+      <div id="title-header" class="fs-20">Solicitação de Agendamento</div>
+    </div>
+
+    <form id="form">
+
+      <div class="forms-cliente pd-bt-10">
+        <div class="header-font mg-bt-10">CLIENTE</div>
+        <div id="name" class="body-user mg-bt-15">
+          <input required id="name-input" class="input-form input-border fs-16 input-name"/>
+        </div>
+        <div id="email" class="body-user mg-bt-15">
+          <input type="email" id="email-input" required class="input-form input-border fs-16 input-email"/>
+        </div>
+
+        <div id="phone" class="body-user mg-bt-15">
+          <input type="tel" id="tel-input" required onkeyup="handlePhone(event)" class="input-form input-border fs-16 input-phone"/>
+        </div>
+      </div>
+
+      <div class="pd-bt-10">
+        <div class="header-font mg-bt-10">PET</div>
+        <div class="pet-name-body">
+          <input required placeholder="nome do pet" id="pet-name" class="input-form input-border input-pet-name mg-bt-5 fs-16"/>
+        </div>
+      </div>
+
+      <div class="pd-bt-10 mg-bt-10 dog-info">
+        <div class="dog-info-body">
+          <div class="header-font mg-bt-10 dog-info-title">
+            <div class="title" id="pelagem">pelagem</div>
+          </div>
+          <select required id="dog-info-select" class="input-form input-border select-dog-info fs-16">
+            <option value="curto_liso">Pelo curto liso</option>
+            <option value="curto_duro">Pelo curto duro</option>
+            <option value="longo_liso">Pelo longo liso</option>
+            <option value="longo_ondulado">Pelo longo ondulado</option>
+            <option value="longo_encaracolado">Pelo longo encaracolado</option>
+            <option value="duplo">Pelagem dupla</option>
+          </select>
+        </div>
+
+        <div class="dog-info-body">
+          <div class="header-font mg-bt-10 dog-info-title">
+            <div class="title" id="raca">raça</div>
+          </div>
+          <select required id="raca-select" class="input-form input-border select-dog-info fs-16"></select>
+        </div>
+      </div>
+      
+      <div class="pd-bt-10 mg-bt-10 dog-info">
+        <div class="dog-info-body">
+          <div class="header-font mg-bt-10 dog-info-title">
+            <div class="title" id="idade">idade</div>
+          </div>
+          <input
+            required
+            id="idade-input"
+            class="input-form input-border select-dog-info fs-16"
+            type="number"
+            min="1"/>
+        </div>
+
+        <div class="dog-info-body">
+          <div class="header-font mg-bt-10 dog-info-title">
+            <div class="title" id="porte">porte</div>
+          </div>
+          <select id="porte-input" required class="input-form input-border select-dog-info fs-16">
+            <option value="minitoy">Mini ou toy</option>
+            <option value="pequenoanao">Pequeno ou anão</option>
+            <option value="medio">Médio</option>
+            <option value="grande">Grande</option>
+            <option value="gigante">Gigante</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="pd-bt-10">
+        <div class="header-font mg-bt-10">SERVIÇOS</div>
+        <div>
+          <select 
+            required
+            class="input-form input-border select-service fs-16"
+            id="service-select" name="services">
+            <option value="banho">Banho</option>
+            <option value="hidratacao">Hidratação</option>
+            <option value="tosa_maquina">Tosa na máquina</option>
+            <option value="tosa_tesoura">Tosa na tesoura</option>
+            <option value="tosa_higienica">Tosa higiênica</option>
+            <option value="desembaracamento">Desembaraçamento</option>
+            <option value="tingimento_pelos">Tingimento dos pelos</option>
+            <option value="escovacao_dentes">Escovação de dentes</option>
+            <option value="limpeza_ouvido">Limpeza de ouvido</option>
+            <option value="corte_unhas">Corte de unhas</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="pd-bt-10">
+        <div class="header-font mg-bt-10">AGENDA</div>
+        <input
+            required
+            class="input-form input-border fs-16"
+            type="datetime-local"
+            id="time-input"
+            name="time"/>
+      </div>
+
+      <div class="pd-bt-10 obs-forms mg-bt-10">
+        <div class="header-font mg-bt-10">
+
+          <div class="title" id="observacoes">observações</div>
+        </div>
+        <textarea
+          class="input-form input-border obs-text-area fs-16"
+          placeholder="observações"
+          id="observacoes-input"
+          ></textarea>
+      </div>
+
+      <button class="submit-button" id="agendar" type="submit">AGENDAR</button>
+
+    </form>
+  </div>
+</body>
+</html>
