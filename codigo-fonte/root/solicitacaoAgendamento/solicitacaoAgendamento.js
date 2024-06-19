@@ -847,7 +847,7 @@ function setImageSVG(imageSource) {
 
 function arrowLeftBackPage() {
     const a = document.createElement("a");
-    a.href = "../index.html";
+    a.href = "../paginaInicial/paginaInicial.html"
     const imageSVG = setImageSVG(_assets_svg_arrow_left_solid_svg__WEBPACK_IMPORTED_MODULE_8__["default"]);
     a.appendChild(imageSVG);
     return a;
@@ -1120,7 +1120,7 @@ function setSolicitacaoDeAgendamento() {
 
   document.getElementById("form").reset();
 
-  window.location.href = "./index.html";
+  window.location.href = "../paginaInicial/paginaInicial.html";
 }
 
 function attachFormSubmitEvent() {

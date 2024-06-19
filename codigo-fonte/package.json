@@ -8,7 +8,7 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf root"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.10",

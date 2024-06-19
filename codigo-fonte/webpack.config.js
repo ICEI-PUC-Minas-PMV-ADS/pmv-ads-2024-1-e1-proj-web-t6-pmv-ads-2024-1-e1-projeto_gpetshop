@@ -17,11 +17,12 @@ module.exports = {
         cadastroServicos: './src/CadastroServicos/index.js',
         cadastroPromocoes: './src/CadastroPromocoes/index.js',
         telaLogin: './src/TelaLogin/telaLogin.js',
-        cadastroColaboradores: './src/CadastroColaboradores/index.js'
+        cadastroColaboradores: './src/CadastroColaboradores/index.js',
+        dashboardPerfomance: './src/DashboardPerfomance/main.js'
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, 'dist'),
+            directory: path.join(__dirname, 'root'),
             staticOptions: {
                 index: 'paginaInicial/paginaInicial.html'
             }
@@ -74,7 +75,7 @@ module.exports = {
         ]
     },
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'root'),
         filename: ({ chunk }) => {
             return `${chunk.name}/${chunk.name}.js`;
         },
@@ -144,6 +145,11 @@ module.exports = {
             template: './src/CadastroColaboradores/index.html',
             filename: 'cadastroColaboradores/cadastroColaboradores.html', 
             chunks: ['cadastroColaboradores'], 
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/DashboardPerfomance/index.html',
+            filename: 'dashboardPerfomance/dashboardPerfomance.html', 
+            chunks: ['dashboardPerfomance'], 
         })
     ],
 }
