@@ -184,7 +184,7 @@ function sendClient() {
   alert("Solicitação aceita!");
   console.log("Lista atualizada: ", getLocalStorageSolicitation());
   window.location.href =
-    "/codigo-fonte/dist/listagemSolicitacoes/listagemSolicitacoes.html"; // Redireciona para a página de listagem após o envio do formulário com a resposta
+    "../listagemSolicitacoes/listagemSolicitacoes.html"; // Redireciona para a página de listagem após o envio do formulário com a resposta
 }
 
 // Função para deletar uma solicitação específica pelo ID da key 'solicitacoes'
@@ -289,7 +289,7 @@ function onClickButtonRecusar() {
     deleteSolicitation(id);
     alert("Solicitação recusada e excluída da Lista de Solicitações!");
     window.location.href =
-      "/codigo-fonte/dist/listagemSolicitacoes/listagemSolicitacoes.html"; // Redireciona para a página de listagem após a exclusão
+      "../listagemSolicitacoes/listagemSolicitacoes.html"; // Redireciona para a página de listagem após a exclusão
   } else {
     alert("ID não encontrado. Não foi possível excluir a mensagem.");
   }

@@ -23,7 +23,7 @@ function onClickButtonDelete() {
     deleteSupport(id);
     alert("Mensagem excluída!");
     window.location.href =
-      "/codigo-fonte/dist/listagemSuporte/listagemSuporte.html"; // Redireciona para a página de listagem após a exclusão
+      "../listagemSuporte/listagemSuporte.html"; // Redireciona para a página de listagem após a exclusão
   } else {
     alert("ID não encontrado. Não foi possível excluir a mensagem.");
   }
@@ -164,7 +164,7 @@ function sendReply() {
   alert("Mensagem respondida!");
   console.log("Lista atualizada: ", getLocalStorageSupport());
   window.location.href =
-      "/codigo-fonte/dist/listagemSuporte/listagemSuporte.html"; // Redireciona para a página de listagem após o envio do formulário com a resposta
+      "../listagemSuporte/listagemSuporte.html"; // Redireciona para a página de listagem após o envio do formulário com a resposta
 }
 
 // Limpa todos os campos do formulário.
