@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
+<script defer src="../dashboardPerfomance/dashboardPerfomance.js"></script></head>
+
+<body>
+
+    <header>
+        <div class="poppins-semibold header">
+            <!-- Barra de navegação lateral oculta-->
+            <div id="slide" class="animar animate__animated animate__fadeInLeft animate__fadeOutLeft">
+                <li><i class="fa-solid fa-home fa-2xl"></i><a href="#">Inicio</a></li>
+                <li><i class="fa-solid fa-calendar fa-2xl"></i><a href="#">Agenda<i
+                            class="fa-solid fa-angle-down um"></i></a>
+                    <div class="drop-down-agenda">
+                        <ul>
+                            <li><a href="/codigo-fonte/dist/novoAgendamento/novoAgendamento.html">Inserir
+                                    Agendamento</a>
+                            </li>
+                            <li><a
+                                    href="/codigo-fonte/dist/visualizacaoPainelServicosAgendados/visualizacaoPainelServicosAgendados.html">Consultar
+                                    Agenda</a></li>
+                            <li><a href="/codigo-fonte/dist/listagemSolicitacoes/listagemSolicitacoes.html">Tratar
+                                    Solicitações</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="cadastros"><i class="fa-solid fa-user-group fa-2xl"></i><a href="#">Cadastros<i
+                            class="fa-solid fa-angle-down dois"></i></a>
+                    <div class="drop-down-cadastro">
+                        <ul>
+                            <li><a href="/codigo-fonte/dist/cadastroClientes/CadastroClientes.html">Clientes</a></li>
+                            <li><a href="/codigo-fonte/dist/cadastroColaboradores/cadastroColaboradores.html">Colaboradores</a></li>
+                            <li><a href="/codigo-fonte/dist/cadastroPromocoes/CadastroPromocoes.html">Promoções</a></li>
+                            <li><a href="/codigo-fonte/dist/cadastroServicos/CadastroServicos.html">Serviços</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="relatorios"><i class="fa-solid fa-file-lines fa-2xl"></i><a
+                        href="/codigo-fonte/dist/dashboardPerfomance/dashboardPerfomance.html">Relatórios</a></li>
+                <li><i class="fa-solid fa-headset fa-2xl"></i><a
+                        href="/codigo-fonte/dist/listagemSuporte/listagemSuporte.html">Suporte</a></li>
+                <li><i class="fa-solid fa-power-off fa-2xl"></i><a href="#">Sair</a></li>
+            </div>
+            <!-- Barra de navegação lateral oculta-->
+            <div class="menu-icon-container">
+                <button id="ativar"><i class="fa-solid fa-bars fa-2xl"></i></button>
+            </div>
+
+            <div>
+                <h3 class="poppins-semibold title-principal">Relatórios</h3>
+            </div>
+
+            <div class="logo">
+                <img src="../Imagens/nomesemfundo.png" alt="" width="80" height="43" />
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="poppins-medium card-f">
+            <p class="title">BASE DE CLIENTES</p>
+            <p class="number">510</p>
+        </div>
+        <div class="poppins-medium date-range">
+            <div class="date-picker">
+                <label for="start-date">DT. INICIAL</label>
+                <input type="text" id="start-date" name="start-date" placeholder="00/00/0000">
+            </div>
+            <div class="date-picker">
+                <label for="end-date">DT. FINAL</label>
+                <input type="text" id="end-date" name="end-date" placeholder="00/00/0000">
+            </div>
+        </div>
+        <div class="poppins-medium card-container">
+            <div class="card">
+                <p class="title">TOTAL SOLICITADOS</p>
+                <p class="number">001</p>
+            </div>
+            <div class="card">
+                <p class="title">TOTAL AGENDAMENTOS</p>
+                <p class="number">005</p>
+            </div>
+            <div class="card">
+                <p class="title">TOTAL EXECUTADOS</p>
+                <p class="number">004</p>
+            </div>
+            <div class="card">
+                <p class="title">TOTAL CANCELADOS</p>
+                <p class="number">001</p>
+            </div>
+        </div>
+        <div class="title-search-list">
+            <div class="poppins-medium title-list">LISTA DE SOLICITAÇÕES</div>
+            <div class="search-bar">
+                <label for="searchBarList"></label>
+                <input class="poppins-medium" id="searchBarList" type="text" name="search-bar-list"
+                    placeholder="Pesquisar cliente" onkeyup="search()">
+                <i class="material-symbols-rounded"></i>
+            </div>
+        </div>
+        <div class="box-list">
+            <div class="poppins-bold box-title">
+                <div class="box-title-name">NOME</div>
+                <div class="box-title-email">E-MAIL</div>
+                <div class="box-title-fone">TELEFONE</div>
+            </div>
+            <div class="border-box-list"></div>
+            <div class="select-name"></div>
+            <div class="lista">
+                <div class="lista-nome">
+                    <div class="poppins-regular listNameClient">
+                        <ul id="listaNome"></ul>
+                    </div>
+                </div>
+                <div class="poppins-regular lista-email">
+                    <div class="listEmailClient">
+                        <ul></ul>
+                    </div>
+                </div>
+                <div class="poppins-regular lista-fone">
+                    <div class="listFoneClient">
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
