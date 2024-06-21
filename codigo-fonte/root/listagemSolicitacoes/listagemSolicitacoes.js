@@ -2107,7 +2107,7 @@ function identifyingCustomer(event) {
         // Serializar os dados do cliente como uma string JSON.
         const serializedData = JSON.stringify(clientData);
         // Redirecionar para a página de edição com os dados do cliente como parâmetros de consulta.
-        window.location.href = `/codigo-fonte/dist/tratamentoSolicitacao/tratamentoSolicitacao.html?data=${encodeURIComponent(serializedData)}`;
+        window.location.href = `../tratamentoSolicitacao/tratamentoSolicitacao.html?data=${encodeURIComponent(serializedData)}`;
     } else {
         console.log("Não foram encontrados dados para o ID", id);
     }

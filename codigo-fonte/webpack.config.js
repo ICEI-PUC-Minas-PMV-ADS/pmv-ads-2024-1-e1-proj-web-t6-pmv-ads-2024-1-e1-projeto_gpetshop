@@ -24,13 +24,13 @@ module.exports = {
         static: {
             directory: path.join(__dirname, 'root'),
             staticOptions: {
-                index: 'paginaInicial/paginaInicial.html'
+                index: 'paginaInicial.html'
             }
         },
         compress: true,
         port: 9000,
         historyApiFallback: {
-            index: '/paginaInicial/paginaInicial.html'
+            index: 'paginaInicial.html'
         },
     },
     module: {
@@ -88,7 +88,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: './src/paginaInicial/index.html',
-            filename: 'paginaInicial/paginaInicial.html', 
+            filename: 'paginaInicial.html', 
             chunks: ['paginaInicial'], 
         }),
         new HtmlWebpackPlugin({
