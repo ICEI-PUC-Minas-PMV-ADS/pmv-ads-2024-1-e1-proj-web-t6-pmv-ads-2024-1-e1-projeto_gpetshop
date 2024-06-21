@@ -31,7 +31,7 @@ function setImageSVG(imageSource) {
 
 function arrowLeftBackPage() {
     const a = document.createElement("a");
-    a.href = "./paginaInicial/paginaInicial.html"
+    a.href = "./paginaInicial.html"
     const imageSVG = setImageSVG(arrowLeft);
     a.appendChild(imageSVG);
     return a;
