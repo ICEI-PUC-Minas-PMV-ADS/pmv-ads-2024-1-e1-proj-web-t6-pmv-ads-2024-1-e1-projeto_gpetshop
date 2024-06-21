@@ -72,7 +72,7 @@ function setSolicitacaoDeAgendamento() {
 
   document.getElementById("form").reset();
 
-  window.location.href = "../paginaInicial.html";
+  window.location.href = "./paginaInicial.html";
 }
 
 function attachFormSubmitEvent() {
