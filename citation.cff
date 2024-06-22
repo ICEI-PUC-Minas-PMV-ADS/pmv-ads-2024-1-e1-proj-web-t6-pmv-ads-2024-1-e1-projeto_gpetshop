@@ -1,0 +1,31 @@
+message: Please cite this software using these metadata.
+title: PetPuc Gestão de Pet Shop
+authors:
+  - family-names: Costa Moreira
+    given-names: Felipe
+  - family-names: Marchi Ziviani
+    given-names: Gabriel
+  - family-names: Andrade Leite
+    given-names: João Henrique
+  - family-names: Sousa Carvalho
+    given-names: Paulo Henrique
+  - family-names: Santos Carvalho
+    given-names: Rafael
+  - family-names: Crisóstomo Bernardes
+    given-names: Thainá
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: 
+    given-names: 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: 
+    given-names: 
+keywords:
+  - Gestão
+  - Pet Shop
+  - Banho
+  - Tosa
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop
+version: 1.0.0
+date-released: 2024-06-22
