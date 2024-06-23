@@ -37,7 +37,10 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+[Link da hospedagem da página inicial.](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/codigo-fonte/root/paginaInicial.html)
+
+[Link para a criação de um usuário no localStorage pra conseguirem logar como gestor, atendente ou banhista.](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/codigo-fonte/root/cadastroColaboradores/cadastroColaboradores.html)
+
 
 # Código-Fonte
 
