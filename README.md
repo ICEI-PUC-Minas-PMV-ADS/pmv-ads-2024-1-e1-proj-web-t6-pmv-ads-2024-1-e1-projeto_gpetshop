@@ -6,8 +6,6 @@
 
 `SEMESTRE 01/2024`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
-
 ## Integrantes
 
 * Felipe Costa Moreira
