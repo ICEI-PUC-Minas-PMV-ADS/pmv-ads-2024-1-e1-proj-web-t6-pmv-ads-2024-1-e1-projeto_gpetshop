@@ -2,28 +2,16 @@
 
 ## Conjunto de Slides
 
-Nesse Slide apresentamos o projeto contemplando os seguintes itens:
-
-- Contexto (Problema, Público-alvo)
-- Requisitos
-- Solução Implementada (funcionalidades de software)
-- Conclusão da elaboração do projeto (pontos positivos, desafios, aprendizado).
-
-[[Slide Apresentação Pet Puc.pdf](https://github.com/user-attachments/files/15878403/Slide.Apresentacao.Pet.Puc.pdf)]
+[Slide Apresentação Pet Puc.pdf](https://github.com/user-attachments/files/15878403/Slide.Apresentacao.Pet.Puc.pdf)
 
 
 
 ## Vídeo de apresentação
 
-A equipe também deverá gravar um vídeo de, no máximo, três minutos, com a apresentação da solução. Vocês deverão abrir a aplicação hospedada e apresentar o seu funcionamento.  Poderão ser utilizados quaisquer recursos na montagem do vídeo, mas não se esqueçam de mostrar as funcionalidades da aplicação. Seguem as especificações técnicas que devem ser obedecidas na geração do vídeo:
-
-> - tamanho do arquivo limitado a 90Mb
-> - taxa de FPS limitada a 30 quadros por segundo
-> - resolução HD (720p) ou Full HD (1080p)
-> - formato mp4.
-
-[Adicione vídeo de apresentação.]
+[Vídeo de apresentação.](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/blob/main/apresentacao/Apresenta%C3%A7%C3%A3o%20Petuc.mp4)
 
 ## Hospedagem
 
-[Adicione o endereço eletrônico público onde o site encontra-se hospedado.]
+[Link da hospedagem da página inicial.](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/codigo-fonte/root/paginaInicial.html)
+
+[Link para a criação de um usuário no localStorage pra conseguirem logar como gestor, atendente ou banhista.](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_gpetshop/codigo-fonte/root/cadastroColaboradores/cadastroColaboradores.html)
